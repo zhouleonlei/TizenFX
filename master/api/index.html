@@ -8,14 +8,14 @@
     <title>TizenFX API </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="TizenFX API ">
-    <meta name="generator" content="docfx 2.30.0.0">
+    <meta name="generator" content="docfx 2.34.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     <meta property="docfx:rel" content="../">
     
   </head>
@@ -64,80 +64,87 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="tizenfx-api">TizenFX API</h2>
 
 <p>TizenFX API constists of the following namespaces:</p>
 <ul>
-<li><a href="xref:Tizen?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Account.AccountManager?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Account.FidoClient?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Account.OAuth2?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Account.SyncManager?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.AttachPanel?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.CoreBackend?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.DataControl?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.Exceptions?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.Messages?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.NotificationEventListener?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.Notifications?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Applications.Shortcut?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Common?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Content.Download?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Content.MediaContent?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Content.MimeType?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Context.AppHistory?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Internals.Errors?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Location?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Location.Geofence?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Maps?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Messaging.Email?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Messaging.Messages?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Messaging.Push?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Multimedia?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Multimedia.MediaCodec?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Multimedia.Remoting?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Multimedia.Util?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Multimedia.Vision?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.NUI?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.NUI.BaseComponents?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.NUI.Constants?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.NUI.UIComponents?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.Bluetooth?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.Connection?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.IoTConnectivity?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.Nfc?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.Nsd?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.Smartcard?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.WiFi?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Network.WiFiDirect?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.PhonenumberUtils?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Pims.Calendar?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Pims.Calendar.CalendarViews?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Pims.Contacts?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Pims.Contacts.ContactsViews?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Security?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Security.SecureRepository?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Security.SecureRepository.Crypto?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Security.TEEC?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Sensor?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.System?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.System.Usb?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Telephony?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.InputMethod?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.InputMethodManager?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.Stt?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.SttEngine?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.Tts?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.TtsEngine?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.Uix.VoiceControl?displayProperty=fullName"></a></li>
-<li><a href="xref:Tizen.WebView?displayProperty=fullName"></a></li>
-<li><a href="xref:ElmSharp?displayProperty=fullName"></a></li>
-<li><a href="xref:ElmSharp.Accessible?displayProperty=fullName"></a></li>
-<li><a href="xref:ElmSharp.Wearable?displayProperty=fullName"></a></li>
+<li><a class="xref" href="Tizen.html">Tizen</a></li>
+<li><a class="xref" href="Tizen.Account.AccountManager.html">Tizen.Account.AccountManager</a></li>
+<li><a class="xref" href="Tizen.Account.FidoClient.html">Tizen.Account.FidoClient</a></li>
+<li><a class="xref" href="Tizen.Account.OAuth2.html">Tizen.Account.OAuth2</a></li>
+<li><a class="xref" href="Tizen.Account.SyncManager.html">Tizen.Account.SyncManager</a></li>
+<li><a class="xref" href="Tizen.Applications.html">Tizen.Applications</a></li>
+<li><a class="xref" href="Tizen.Applications.AttachPanel.html">Tizen.Applications.AttachPanel</a></li>
+<li><a class="xref" href="Tizen.Applications.CoreBackend.html">Tizen.Applications.CoreBackend</a></li>
+<li><a class="xref" href="Tizen.Applications.DataControl.html">Tizen.Applications.DataControl</a></li>
+<li><a class="xref" href="Tizen.Applications.Exceptions.html">Tizen.Applications.Exceptions</a></li>
+<li><a class="xref" href="Tizen.Applications.Messages.html">Tizen.Applications.Messages</a></li>
+<li><a class="xref" href="Tizen.Applications.NotificationEventListener.html">Tizen.Applications.NotificationEventListener</a></li>
+<li><a class="xref" href="Tizen.Applications.Notifications.html">Tizen.Applications.Notifications</a></li>
+<li><a class="xref" href="Tizen.Applications.Shortcut.html">Tizen.Applications.Shortcut</a></li>
+<li><a class="xref" href="Tizen.Common.html">Tizen.Common</a></li>
+<li><a class="xref" href="Tizen.Content.Download.html">Tizen.Content.Download</a></li>
+<li><a class="xref" href="Tizen.Content.MediaContent.html">Tizen.Content.MediaContent</a></li>
+<li><a class="xref" href="Tizen.Content.MimeType.html">Tizen.Content.MimeType</a></li>
+<li><a class="xref" href="Tizen.Context.AppHistory.html">Tizen.Context.AppHistory</a></li>
+<li><a class="xref" href="Tizen.Internals.Errors.html">Tizen.Internals.Errors</a></li>
+<li><a class="xref" href="Tizen.Location.html">Tizen.Location</a></li>
+<li><a class="xref" href="Tizen.Location.Geofence.html">Tizen.Location.Geofence</a></li>
+<li><a class="xref" href="Tizen.Maps.html">Tizen.Maps</a></li>
+<li><a class="xref" href="Tizen.Messaging.Email.html">Tizen.Messaging.Email</a></li>
+<li><a class="xref" href="Tizen.Messaging.Messages.html">Tizen.Messaging.Messages</a></li>
+<li><a class="xref" href="Tizen.Messaging.Push.html">Tizen.Messaging.Push</a></li>
+<li><a class="xref" href="Tizen.Multimedia.html">Tizen.Multimedia</a></li>
+<li><a class="xref" href="Tizen.Multimedia.MediaCodec.html">Tizen.Multimedia.MediaCodec</a></li>
+<li><a class="xref" href="Tizen.Multimedia.Remoting.html">Tizen.Multimedia.Remoting</a></li>
+<li><a class="xref" href="Tizen.Multimedia.Util.html">Tizen.Multimedia.Util</a></li>
+<li><a class="xref" href="Tizen.Multimedia.Vision.html">Tizen.Multimedia.Vision</a></li>
+<li><a class="xref" href="Tizen.NUI.html">Tizen.NUI</a></li>
+<li><a class="xref" href="Tizen.NUI.BaseComponents.html">Tizen.NUI.BaseComponents</a></li>
+<li><a class="xref" href="Tizen.NUI.Constants.html">Tizen.NUI.Constants</a></li>
+<li><a class="xref" href="Tizen.NUI.UIComponents.html">Tizen.NUI.UIComponents</a></li>
+<li><a class="xref" href="Tizen.Network.Bluetooth.html">Tizen.Network.Bluetooth</a></li>
+<li><a class="xref" href="Tizen.Network.Connection.html">Tizen.Network.Connection</a></li>
+<li><a class="xref" href="Tizen.Network.IoTConnectivity.html">Tizen.Network.IoTConnectivity</a></li>
+<li><a class="xref" href="Tizen.Network.Nfc.html">Tizen.Network.Nfc</a></li>
+<li><a class="xref" href="Tizen.Network.Nsd.html">Tizen.Network.Nsd</a></li>
+<li><a class="xref" href="Tizen.Network.Smartcard.html">Tizen.Network.Smartcard</a></li>
+<li><a class="xref" href="Tizen.Network.WiFi.html">Tizen.Network.WiFi</a></li>
+<li><a class="xref" href="Tizen.Network.WiFiDirect.html">Tizen.Network.WiFiDirect</a></li>
+<li><a class="xref" href="Tizen.PhonenumberUtils.html">Tizen.PhonenumberUtils</a></li>
+<li><a class="xref" href="Tizen.Pims.Calendar.html">Tizen.Pims.Calendar</a></li>
+<li><a class="xref" href="Tizen.Pims.Calendar.CalendarViews.html">Tizen.Pims.Calendar.CalendarViews</a></li>
+<li><a class="xref" href="Tizen.Pims.Contacts.html">Tizen.Pims.Contacts</a></li>
+<li><a class="xref" href="Tizen.Pims.Contacts.ContactsViews.html">Tizen.Pims.Contacts.ContactsViews</a></li>
+<li><a class="xref" href="Tizen.Security.html">Tizen.Security</a></li>
+<li><a class="xref" href="Tizen.Security.SecureRepository.html">Tizen.Security.SecureRepository</a></li>
+<li><a class="xref" href="Tizen.Security.SecureRepository.Crypto.html">Tizen.Security.SecureRepository.Crypto</a></li>
+<li><a class="xref" href="Tizen.Security.TEEC.html">Tizen.Security.TEEC</a></li>
+<li><a class="xref" href="Tizen.Sensor.html">Tizen.Sensor</a></li>
+<li><a class="xref" href="Tizen.System.html">Tizen.System</a></li>
+<li><a class="xref" href="Tizen.System.Usb.html">Tizen.System.Usb</a></li>
+<li><a class="xref" href="Tizen.Telephony.html">Tizen.Telephony</a></li>
+<li><a class="xref" href="Tizen.Uix.InputMethod.html">Tizen.Uix.InputMethod</a></li>
+<li><a class="xref" href="Tizen.Uix.InputMethodManager.html">Tizen.Uix.InputMethodManager</a></li>
+<li><a class="xref" href="Tizen.Uix.Stt.html">Tizen.Uix.Stt</a></li>
+<li><a class="xref" href="Tizen.Uix.SttEngine.html">Tizen.Uix.SttEngine</a></li>
+<li><a class="xref" href="Tizen.Uix.Tts.html">Tizen.Uix.Tts</a></li>
+<li><a class="xref" href="Tizen.Uix.TtsEngine.html">Tizen.Uix.TtsEngine</a></li>
+<li><a class="xref" href="Tizen.Uix.VoiceControl.html">Tizen.Uix.VoiceControl</a></li>
+<li><a class="xref" href="Tizen.WebView.html">Tizen.WebView</a></li>
+<li><a class="xref" href="ElmSharp.html">ElmSharp</a></li>
+<li><a class="xref" href="ElmSharp.Accessible.html">ElmSharp.Accessible</a></li>
+<li><a class="xref" href="ElmSharp.Wearable.html">ElmSharp.Wearable</a></li>
 </ul>
 </article>
           </div>
