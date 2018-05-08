@@ -11814,7 +11814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.AnimatedImageVisual.html",
-          "hash": "abfUZ+aQSSlzKVwj+SH+YA=="
+          "hash": "eJkzKAYXktYN+GvKbiu6Aw=="
         }
       },
       "is_incremental": false,
@@ -12006,7 +12006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.ImageView.html",
-          "hash": "uHeI+oti1nglS2QyqmOeag=="
+          "hash": "020Y+IXx0YdAOEOlN120cA=="
         }
       },
       "is_incremental": false,
@@ -12138,7 +12138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextEditor.html",
-          "hash": "KrvABhodiA5tfAKJBridKA=="
+          "hash": "rYf2w5kA5rPTydAtu2d5Hw=="
         }
       },
       "is_incremental": false,
@@ -12174,7 +12174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextField.html",
-          "hash": "+vbZhwuobBibxTPXqlWMoQ=="
+          "hash": "apk/kYwiIGN5XJeIlJpHPg=="
         }
       },
       "is_incremental": false,
@@ -12186,7 +12186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextLabel.html",
-          "hash": "tCnVj6Lni3IxUR8FcX6pOA=="
+          "hash": "B/gYr6oDgi6KYZTUlYAPrg=="
         }
       },
       "is_incremental": false,
@@ -12366,7 +12366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseHandle.html",
-          "hash": "ZjTCxOrSvW8H1WDr1lmtGQ=="
+          "hash": "nMsPvDZ1HUBSiKZ+rRrZ6Q=="
         }
       },
       "is_incremental": false,
@@ -13086,7 +13086,163 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ImageVisualProperty.html",
-          "hash": "zcr8xBR+4KNKXJbdvsVzvg=="
+          "hash": "zewwYG3CKG21O+3KO35x0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.ActivatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.ActivatedEventArgs.html",
+          "hash": "D3kHxwBnKX+FUULjXW6gMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.EventReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.EventReceivedEventArgs.html",
+          "hash": "K6rng878iG/TSclFA/nQng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.ImfCallbackData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.ImfCallbackData.html",
+          "hash": "PyUORZ8gxyMihuuLm4+FGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.ImfEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.ImfEvent.html",
+          "hash": "pv8NQTsc2y9QaacGujXo5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.ImfEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.ImfEventData.html",
+          "hash": "hi5YXs6uo9qV+FO+8P9CuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.KeyboardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.KeyboardType.html",
+          "hash": "HgAnJ/ynbjiijY2YNfYDFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.KeyboardTypeChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.KeyboardTypeChangedEventArgs.html",
+          "hash": "p3gT9Vb0D4gc4HAymt7FCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.LanguageChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.LanguageChangedEventArgs.html",
+          "hash": "hxmm2NDXxlvEFUvOveHM/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.ResizedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.ResizedEventArgs.html",
+          "hash": "7D/sLqsHP1TzkzkCbQHRKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.State.html",
+          "hash": "3W+0lCrv7L0tZSudPyyngg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.StatusChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.StatusChangedEventArgs.html",
+          "hash": "EGHJ2iMqQGP2mcXuq01ASA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.TextDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.TextDirection.html",
+          "hash": "dRWa/+PdK7G3mIVYkQmTxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.ImfManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.ImfManager.html",
+          "hash": "Cwjp8TsV71MVr/I9kmOUIA=="
         }
       },
       "is_incremental": false,
@@ -13190,162 +13346,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.ActivatedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.ActivatedEventArgs.html",
-          "hash": "iDU2ar8K85MMrpOkoAMxxg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.CallbackData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.CallbackData.html",
-          "hash": "Ze7K1yPNHJge01VFmEAIGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.EventData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.EventData.html",
-          "hash": "2YNua4VoVIW7BeP7WPBx7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.EventReceivedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.EventReceivedEventArgs.html",
-          "hash": "mrXZjzw0eNAjG+tsH4/4pg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.EventType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.EventType.html",
-          "hash": "3NaEhryouN/G/VQFddgFyA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.KeyboardType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.KeyboardType.html",
-          "hash": "iaVAUwYQ381FbSU7id57mQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.KeyboardTypeChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.KeyboardTypeChangedEventArgs.html",
-          "hash": "sIRznmBqcQjrdci/PDjiNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.LanguageChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.LanguageChangedEventArgs.html",
-          "hash": "2mG1Cw0jlIxlayJ1xfIe4g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.ResizedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.ResizedEventArgs.html",
-          "hash": "MTkaRIr72XVothEb1/MvdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.State.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.State.html",
-          "hash": "OmpuP2UQlpfgXd/zB/UySA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.StatusChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.StatusChangedEventArgs.html",
-          "hash": "Vj/x4ujwfSXp+gmN+LOTQQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.TextDirection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.TextDirection.html",
-          "hash": "j/I1lJxDw+P+6zwNcNF3EQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.NUI.InputMethodContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.NUI.InputMethodContext.html",
-          "hash": "OVSYfiPn2EcV7M/vY40A/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.NUI.Key.StateType.yml",
       "output": {
         ".html": {
@@ -13386,7 +13386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.KeyboardTypeSignalType.html",
-          "hash": "IUFT1pmwVrhxXjDF6YwVIQ=="
+          "hash": "Z0pHnEF2uawM86HuBDa4Jw=="
         }
       },
       "is_incremental": false,
@@ -15390,7 +15390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.html",
-          "hash": "uImF4p5CNuIR+Jl5nmixww=="
+          "hash": "cwn8xPYeAtT7FmPCL6uQEw=="
         }
       },
       "is_incremental": false,
@@ -20118,7 +20118,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Security.Privilege.html",
-          "hash": "e//sotbf6Px9vRaOC/otrQ=="
+          "hash": "XnSw48zsF8G1q8lAVu9Z3A=="
         }
       },
       "is_incremental": false,
@@ -24378,7 +24378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1dpL86CMf8sWh6xh8vVU6w=="
+          "hash": "PheM7fgtPqxGGohXSHtc0w=="
         }
       },
       "is_incremental": false,
@@ -24450,14 +24450,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
