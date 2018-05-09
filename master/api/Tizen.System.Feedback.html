@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Feedback
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -160,6 +160,11 @@ VolumeKeyPressed</p>
     <pre><code class="lang-csharp hljs">public class Feedback</code></pre>
   </div>
   
+  <h5 id="Tizen_System_Feedback_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level0 privilege"><p>For controlling the haptic device:
+<a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a>
+For controlling the sound, privilege is not needed.</p>
+</div>
   
   <h5 id="Tizen_System_Feedback_examples"><strong>Examples</strong></h5>
   <pre><code>Feedback feedback = new Feedback();
@@ -177,6 +182,11 @@ bool res = feedback.IsSupportedPattern(FeedbackType.Vibration, &quot;Tap&quot;);
     <pre><code class="lang-csharp hljs">public Feedback()</code></pre>
   </div>
   
+  <h5 id="Tizen_System_Feedback__ctor_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_System_Feedback__ctor_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a></p>
+</div>
   
   <h5 id="Tizen_System_Feedback__ctor_examples">Examples</h5>
   <pre><code>Feedback feedback = new Feedback();</code></pre>
@@ -271,6 +281,11 @@ If you use FeedbackType.All for type parameter, this API will throw ArgumentExce
 To get the supported information for Vibration type, the application should have <a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a> privilege.</p>
 </div>
   
+  <h5 id="Tizen_System_Feedback_IsSupportedPattern_Tizen_System_FeedbackType_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_System_Feedback_IsSupportedPattern_Tizen_System_FeedbackType_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a></p>
+</div>
   
   <h5 id="Tizen_System_Feedback_IsSupportedPattern_Tizen_System_FeedbackType_System_String__examples">Examples</h5>
   <pre><code>Feedback feedback = new Feedback();
@@ -349,6 +364,11 @@ bool res = feedback.IsSupportedPattern(FeedbackType.Vibration, &quot;Tap&quot;);
   <div class="markdown level1 remarks"><p>To play Vibration type, app should have <a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a> privilege.</p>
 </div>
   
+  <h5 id="Tizen_System_Feedback_Play_Tizen_System_FeedbackType_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_System_Feedback_Play_Tizen_System_FeedbackType_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a></p>
+</div>
   
   <h5 id="Tizen_System_Feedback_Play_Tizen_System_FeedbackType_System_String__examples">Examples</h5>
   <pre><code>Feedback feedback = new Feedback();
@@ -403,6 +423,11 @@ feedback.Play(FeedbackType.All, &quot;Tap&quot;);</code></pre>
   <div class="markdown level1 remarks"><p>To stop vibration, the application should have <a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a> privilege.</p>
 </div>
   
+  <h5 id="Tizen_System_Feedback_Stop_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_System_Feedback_Stop_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/haptic">http://tizen.org/privilege/haptic</a></p>
+</div>
   
   <h5 id="Tizen_System_Feedback_Stop_examples">Examples</h5>
   <pre><code>Feedback Feedback1 = new Feedback();

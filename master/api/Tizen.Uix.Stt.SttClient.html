@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SttClient
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -137,6 +137,15 @@ The service has engines and a recorder, so that the client does not have the rec
     <pre><code class="lang-csharp hljs">public SttClient()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient__ctor_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient__ctor_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient__ctor_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,6 +206,11 @@ The service has engines and a recorder, so that the client does not have the rec
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_CurrentState_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_CurrentState_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
   
   <a id="Tizen_Uix_Stt_SttClient_DefaultLanguage_" data-uid="Tizen.Uix.Stt.SttClient.DefaultLanguage*"></a>
   <h4 id="Tizen_Uix_Stt_SttClient_DefaultLanguage" data-uid="Tizen.Uix.Stt.SttClient.DefaultLanguage">DefaultLanguage</h4>
@@ -226,6 +240,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_DefaultLanguage_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_DefaultLanguage_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
   
   <a id="Tizen_Uix_Stt_SttClient_Engine_" data-uid="Tizen.Uix.Stt.SttClient.Engine*"></a>
   <h4 id="Tizen_Uix_Stt_SttClient_Engine" data-uid="Tizen.Uix.Stt.SttClient.Engine">Engine</h4>
@@ -253,6 +272,14 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Engine_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Engine_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be created.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Engine_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -320,6 +347,14 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_RecordingVolume_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_RecordingVolume_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be recording.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_RecordingVolume_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
   
   <h3 id="methods">Methods
   </h3>
@@ -335,6 +370,23 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
     <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Cancel_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Cancel_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be Recording or Processing.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Cancel_post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>It will invoke the StateChanged event, if registered.
+If this function succeeds, the STT state will be ready.
+If you call this function again before the state changes, you will receive ErrorINProgressToReady.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Cancel_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Cancel_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -381,6 +433,8 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
   <h5 class="implements">Implements</h5>
       <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <a id="Tizen_Uix_Stt_SttClient_Dispose_" data-uid="Tizen.Uix.Stt.SttClient.Dispose*"></a>
   <h4 id="Tizen_Uix_Stt_SttClient_Dispose_System_Boolean_" data-uid="Tizen.Uix.Stt.SttClient.Dispose(System.Boolean)">Dispose(Boolean)</h4>
@@ -410,6 +464,8 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Dispose_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <a id="Tizen_Uix_Stt_SttClient_GetDetailedResult_" data-uid="Tizen.Uix.Stt.SttClient.GetDetailedResult*"></a>
   <h4 id="Tizen_Uix_Stt_SttClient_GetDetailedResult" data-uid="Tizen.Uix.Stt.SttClient.GetDetailedResult">GetDetailedResult()</h4>
@@ -440,6 +496,15 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
   <div class="markdown level1 remarks"><p>This function should only be called in the RecognitionResult event.</p>
 </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_GetDetailedResult_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetDetailedResult_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetDetailedResult_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -511,6 +576,18 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_GetPrivateData_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetPrivateData_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetPrivateData_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetPrivateData_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -564,6 +641,15 @@ After successful cancellation, the StateChanged event is invoked, otherwise if a
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedEngines_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedEngines_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedEngines_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -624,6 +710,15 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedLanguages_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedLanguages_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_GetSupportedLanguages_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -699,6 +794,18 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_IsRecognitionTypeSupported_Tizen_Uix_Stt_RecognitionType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_IsRecognitionTypeSupported_Tizen_Uix_Stt_RecognitionType__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_IsRecognitionTypeSupported_Tizen_Uix_Stt_RecognitionType__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_IsRecognitionTypeSupported_Tizen_Uix_Stt_RecognitionType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -736,6 +843,22 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <pre><code class="lang-csharp hljs">public void Prepare()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Prepare_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Prepare_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be created.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Prepare_post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>If this function is successful, the STT state will be ready.
+If this function is unsuccessful, ErrorOccurred event will be invoked.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Prepare_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Prepare_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -791,6 +914,18 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_SetCredential_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetCredential_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be created.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetCredential_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetCredential_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -866,6 +1001,18 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_SetPrivateData_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetPrivateData_System_String_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetPrivateData_System_String_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetPrivateData_System_String_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -926,6 +1073,18 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_SetSilenceDetection_Tizen_Uix_Stt_SilenceDetection__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetSilenceDetection_Tizen_Uix_Stt_SilenceDetection__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetSilenceDetection_Tizen_Uix_Stt_SilenceDetection__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetSilenceDetection_Tizen_Uix_Stt_SilenceDetection__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -982,6 +1141,18 @@ Sound file type should be .wav type.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStartSound_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStartSound_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStartSound_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStartSound_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1047,6 +1218,18 @@ Sound file type should be .wav type.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStopSound_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStopSound_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStopSound_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_SetStopSound_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1119,6 +1302,23 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Start_System_String_Tizen_Uix_Stt_RecognitionType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Start_System_String_Tizen_Uix_Stt_RecognitionType__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Start_System_String_Tizen_Uix_Stt_RecognitionType__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>It will invoke the StateChanged event, if registered.
+If this function succeeds, the STT state will be recording.
+If you call this function again before the state changes, you will receive ErrorINProgressToRecording.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Start_System_String_Tizen_Uix_Stt_RecognitionType__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Start_System_String_Tizen_Uix_Stt_RecognitionType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1167,6 +1367,24 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Stop_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Stop_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be Recording.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Stop_post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>It will invoke the StateChanged Event, if registered.
+If this function succeeds, the STT state will be processing.
+If you call this function again before the state changes, you will receive ErrorINProgressToProcessing.
+After processing of engine, the RecognitionResult event is invoked.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Stop_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Stop_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1211,6 +1429,21 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     <pre><code class="lang-csharp hljs">public void Unprepare()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_Unprepare_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_Unprepare_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state must be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Unprepare_post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>If this function is successful, the STT state will be Created.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Unprepare_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_Unprepare_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1248,6 +1481,18 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     <pre><code class="lang-csharp hljs">public void UnsetStartSound()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStartSound_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStartSound_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStartSound_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStartSound_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1289,6 +1534,18 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     <pre><code class="lang-csharp hljs">public void UnsetStopSound()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStopSound_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStopSound_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The state should be ready.</p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStopSound_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_Stt_SttClient_UnsetStopSound_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1346,6 +1603,8 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_DefaultLanguageChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Uix_Stt_SttClient_EngineChanged" data-uid="Tizen.Uix.Stt.SttClient.EngineChanged">EngineChanged</h4>
   <div class="markdown level1 summary"><p>Event to be invoked to detect the engine change.</p>
@@ -1371,6 +1630,8 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_EngineChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Uix_Stt_SttClient_ErrorOccurred" data-uid="Tizen.Uix.Stt.SttClient.ErrorOccurred">ErrorOccurred</h4>
   <div class="markdown level1 summary"><p>Event to be invoked when an error occurs.</p>
@@ -1396,6 +1657,8 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_ErrorOccurred_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <h4 id="Tizen_Uix_Stt_SttClient_RecognitionResult" data-uid="Tizen.Uix.Stt.SttClient.RecognitionResult">RecognitionResult</h4>
   <div class="markdown level1 summary"><p>Event to be invoked when the recognition is done.</p>
@@ -1421,6 +1684,8 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_RecognitionResult_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Uix_Stt_SttClient_StateChanged" data-uid="Tizen.Uix.Stt.SttClient.StateChanged">StateChanged</h4>
   <div class="markdown level1 summary"><p>Event to be invoked when the STT state changes.</p>
@@ -1446,6 +1711,8 @@ This work continues until stop, cancel, or silence is detected by engine.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_Stt_SttClient_StateChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
 </article>
           </div>
