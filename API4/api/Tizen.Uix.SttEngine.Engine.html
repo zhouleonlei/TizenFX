@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Engine
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -132,6 +132,12 @@
     <pre><code class="lang-csharp hljs">public Engine()</code></pre>
   </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine__ctor_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine__ctor_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h3 id="methods">Methods
   </h3>
@@ -166,6 +172,11 @@ This callback function is called by the engine service user to cancel to recogni
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_Cancel_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_Cancel_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The STT engine is in recognition processing or recording.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_CheckAppAgreed_" data-uid="Tizen.Uix.SttEngine.Engine.CheckAppAgreed*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_CheckAppAgreed_System_String_System_Boolean__" data-uid="Tizen.Uix.SttEngine.Engine.CheckAppAgreed(System.String,System.Boolean@)">CheckAppAgreed(String, out Boolean)</h4>
@@ -224,6 +235,8 @@ According to the need, the engine developer can provide some user interfaces to 
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_CheckAppAgreed_System_String_System_Boolean___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_Deinitialize_" data-uid="Tizen.Uix.SttEngine.Engine.Deinitialize*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_Deinitialize" data-uid="Tizen.Uix.SttEngine.Engine.Deinitialize">Deinitialize()</h4>
@@ -256,6 +269,8 @@ This callback function is called by the engine service user to request for the S
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_Deinitialize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_EngineMain_" data-uid="Tizen.Uix.SttEngine.Engine.EngineMain*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_EngineMain_System_Int32_System_String___" data-uid="Tizen.Uix.SttEngine.Engine.EngineMain(System.Int32,System.String[])">EngineMain(Int32, String[])</h4>
@@ -295,6 +310,15 @@ This function is the main function for operating the STT engine.</p>
   <div class="markdown level1 remarks"><p>ServiceAppMain should be used for working the engine after this function.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_EngineMain_System_Int32_System_String____sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_EngineMain_System_Int32_System_String____privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_EngineMain_System_Int32_System_String____feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -388,6 +412,14 @@ and user_data must be transferred to &apos;ResultTime&apos;. If &apos;ResultTime
 timeInfo is transferred from SendResult. The type of timeInfo is up to the STT engine developer.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_ForEachResultTime_System_IntPtr_Tizen_Uix_SttEngine_Engine_ResultTime_System_IntPtr__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_ForEachResultTime_System_IntPtr_Tizen_Uix_SttEngine_Engine_ResultTime_System_IntPtr__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>SendResult will invoke this function.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_ForEachResultTime_System_IntPtr_Tizen_Uix_SttEngine_Engine_ResultTime_System_IntPtr__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>This function invokes the ResultTime repeatedly for getting the result time information.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_ForEachSupportedLanguages_" data-uid="Tizen.Uix.SttEngine.Engine.ForEachSupportedLanguages*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_ForEachSupportedLanguages_Tizen_Uix_SttEngine_Engine_SupportedLanguages_System_IntPtr_" data-uid="Tizen.Uix.SttEngine.Engine.ForEachSupportedLanguages(Tizen.Uix.SttEngine.Engine.SupportedLanguages,System.IntPtr)">ForEachSupportedLanguages(Engine.SupportedLanguages, IntPtr)</h4>
@@ -448,6 +480,11 @@ timeInfo is transferred from SendResult. The type of timeInfo is up to the STT e
 and user_data must be transferred to &apos;SupportedLanguages&apos;. If &apos;SupportedLanguages&apos; returns false, it should be stopped to call &apos;SupportedLanguages&apos;.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_ForEachSupportedLanguages_Tizen_Uix_SttEngine_Engine_SupportedLanguages_System_IntPtr__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_ForEachSupportedLanguages_Tizen_Uix_SttEngine_Engine_SupportedLanguages_System_IntPtr__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>This callback function invokes SupportedLanguages repeatedly for getting the supported languages.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_GetInformation_" data-uid="Tizen.Uix.SttEngine.Engine.GetInformation*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_GetInformation_System_String__System_String__System_String__System_Boolean__" data-uid="Tizen.Uix.SttEngine.Engine.GetInformation(System.String@,System.String@,System.String@,System.Boolean@)">GetInformation(out String, out String, out String, out Boolean)</h4>
@@ -519,6 +556,8 @@ and user_data must be transferred to &apos;SupportedLanguages&apos;. If &apos;Su
   <div class="markdown level1 remarks"><p>In order to upload the engine at Tizen Appstore, both a service application and a UI application are necessary. Therefore, engineSetting must be transferred to the engine service user.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_GetInformation_System_String__System_String__System_String__System_Boolean___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_GetRecordingFormat_" data-uid="Tizen.Uix.SttEngine.Engine.GetRecordingFormat*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_GetRecordingFormat_Tizen_Uix_SttEngine_AudioType__System_Int32__System_Int32__" data-uid="Tizen.Uix.SttEngine.Engine.GetRecordingFormat(Tizen.Uix.SttEngine.AudioType@,System.Int32@,System.Int32@)">GetRecordingFormat(out AudioType, out Int32, out Int32)</h4>
@@ -581,6 +620,8 @@ The recording format is used for creating the recorder.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_GetRecordingFormat_Tizen_Uix_SttEngine_AudioType__System_Int32__System_Int32___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_Initialize_" data-uid="Tizen.Uix.SttEngine.Engine.Initialize*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_Initialize" data-uid="Tizen.Uix.SttEngine.Engine.Initialize">Initialize()</h4>
@@ -615,6 +656,8 @@ This callback function is called by the engine service user to request for the S
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_Initialize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_IsValidLanguage_" data-uid="Tizen.Uix.SttEngine.Engine.IsValidLanguage*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_IsValidLanguage_System_String_System_Boolean__" data-uid="Tizen.Uix.SttEngine.Engine.IsValidLanguage(System.String,System.Boolean@)">IsValidLanguage(String, out Boolean)</h4>
@@ -671,6 +714,8 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_IsValidLanguage_System_String_System_Boolean___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_NeedAppCredential_" data-uid="Tizen.Uix.SttEngine.Engine.NeedAppCredential*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_NeedAppCredential" data-uid="Tizen.Uix.SttEngine.Engine.NeedAppCredential">NeedAppCredential()</h4>
@@ -698,6 +743,8 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_NeedAppCredential_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_SendError_" data-uid="Tizen.Uix.SttEngine.Engine.SendError*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_SendError_Tizen_Uix_SttEngine_Error_System_String_" data-uid="Tizen.Uix.SttEngine.Engine.SendError(Tizen.Uix.SttEngine.Error,System.String)">SendError(Error, String)</h4>
@@ -733,6 +780,15 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendError_Tizen_Uix_SttEngine_Error_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendError_Tizen_Uix_SttEngine_Error_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The main function should be invoked before this function is called.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendError_Tizen_Uix_SttEngine_Error_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -824,6 +880,18 @@ The recognition result must be transferred to the engine service user through th
 The type of timeInfo is up to the STT engine developer.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendResult_Tizen_Uix_SttEngine_ResultEvent_System_String_System_String___System_Int32_Tizen_Uix_SttEngine_ResultMessage_System_IntPtr__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendResult_Tizen_Uix_SttEngine_ResultEvent_System_String_System_String___System_Int32_Tizen_Uix_SttEngine_ResultMessage_System_IntPtr__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The EngineMain function should be invoked before this function is called. Stop will invoke this function.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendResult_Tizen_Uix_SttEngine_ResultEvent_System_String_System_String___System_Int32_Tizen_Uix_SttEngine_ResultMessage_System_IntPtr__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>This function invokes ForEachResultTime</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendResult_Tizen_Uix_SttEngine_ResultEvent_System_String_System_String___System_Int32_Tizen_Uix_SttEngine_ResultMessage_System_IntPtr__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -882,6 +950,15 @@ The type of timeInfo is up to the STT engine developer.</p>
   <div class="markdown level1 remarks"><p>This API is invoked when the STT engine wants to notify the change of the speech status anytime. Note that this API can be invoked for recognizing the speech.</p>
 </div>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendSpeechStatus_Tizen_Uix_SttEngine_SpeechStatus__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendSpeechStatus_Tizen_Uix_SttEngine_SpeechStatus__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The main function should be invoked before this function is called. The Start() and SetRecordingData() will invoke this function.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SendSpeechStatus_Tizen_Uix_SttEngine_SpeechStatus__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -948,6 +1025,18 @@ The following error codes can be returned:</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataRequestedDelegate_Tizen_Uix_SttEngine_Engine_OutAction_System_String___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataRequestedDelegate_Tizen_Uix_SttEngine_Engine_OutAction_System_String___pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The main function should be invoked before this function is called.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataRequestedDelegate_Tizen_Uix_SttEngine_Engine_OutAction_System_String___privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataRequestedDelegate_Tizen_Uix_SttEngine_Engine_OutAction_System_String___feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1018,6 +1107,18 @@ The following error codes can be returned:</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataSetDelegate_Tizen_Uix_SttEngine_Engine_Action_System_String___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataSetDelegate_Tizen_Uix_SttEngine_Engine_Action_System_String___pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The main function should be invoked before this function is called.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataSetDelegate_Tizen_Uix_SttEngine_Engine_Action_System_String___privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetPrivateDataSetDelegate_Tizen_Uix_SttEngine_Engine_Action_System_String___feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.recognition">http://tizen.org/feature/speech.recognition</a>
+<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1108,6 +1209,14 @@ This function should be returned immediately after recording data copy.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetRecordingData_System_String_System_UInt32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetRecordingData_System_String_System_UInt32__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Start should succeed.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetRecordingData_System_String_System_UInt32__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>If the engine supports partial result, SendResult() should be invoked.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_SetSilenceDetection_" data-uid="Tizen.Uix.SttEngine.Engine.SetSilenceDetection*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_SetSilenceDetection_System_Boolean_" data-uid="Tizen.Uix.SttEngine.Engine.SetSilenceDetection(System.Boolean)">SetSilenceDetection(Boolean)</h4>
@@ -1159,6 +1268,8 @@ If the engine service user sets this option as &apos;TRUE&apos;, the STT engine 
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SetSilenceDetection_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_Start_" data-uid="Tizen.Uix.SttEngine.Engine.Start*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_Start_System_String_System_String_System_String_System_String_System_IntPtr_" data-uid="Tizen.Uix.SttEngine.Engine.Start(System.String,System.String,System.String,System.String,System.IntPtr)">Start(String, String, String, String, IntPtr)</h4>
@@ -1239,6 +1350,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_Start_System_String_System_String_System_String_System_String_System_IntPtr__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_Start_System_String_System_String_System_String_System_String_System_IntPtr__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>The engine is not in recognition processing.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_Stop_" data-uid="Tizen.Uix.SttEngine.Engine.Stop*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_Stop" data-uid="Tizen.Uix.SttEngine.Engine.Stop">Stop()</h4>
@@ -1273,6 +1389,14 @@ This callback function is called by the engine service user to stop recording an
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_Stop_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
+  <h5 id="Tizen_Uix_SttEngine_Engine_Stop_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Start should succeed.</p>
+</div>
+  <h5 id="Tizen_Uix_SttEngine_Engine_Stop_post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>After processing of the engine, SendResult() should be invoked.</p>
+</div>
   
   <a id="Tizen_Uix_SttEngine_Engine_SupportRecognitionType_" data-uid="Tizen.Uix.SttEngine.Engine.SupportRecognitionType*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_SupportRecognitionType_System_String_System_Boolean__" data-uid="Tizen.Uix.SttEngine.Engine.SupportRecognitionType(System.String,System.Boolean@)">SupportRecognitionType(String, out Boolean)</h4>
@@ -1329,6 +1453,8 @@ true to support the recognition type, false not to support the recognition type.
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SupportRecognitionType_System_String_System_Boolean___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
   <a id="Tizen_Uix_SttEngine_Engine_SupportSilenceDetection_" data-uid="Tizen.Uix.SttEngine.Engine.SupportSilenceDetection*"></a>
   <h4 id="Tizen_Uix_SttEngine_Engine_SupportSilenceDetection" data-uid="Tizen.Uix.SttEngine.Engine.SupportSilenceDetection">SupportSilenceDetection()</h4>
@@ -1356,6 +1482,8 @@ true to support the recognition type, false not to support the recognition type.
     </tbody>
   </table>
   
+  <h5 id="Tizen_Uix_SttEngine_Engine_SupportSilenceDetection_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">4 </span>
   
 </article>
           </div>

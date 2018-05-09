@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Led
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -127,6 +127,9 @@ It is recommended to design the feature related codes in your application for re
 You can check if a device supports the related features for this API by using system information, thereby controlling the procedure of your application.</p>
 </div>
   
+  <h5 id="Tizen_System_Led_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level0 privilege"><p><a href="http://tizen.org/privilege/led">http://tizen.org/privilege/led</a></p>
+</div>
   
   <h5 id="Tizen_System_Led_examples"><strong>Examples</strong></h5>
   <pre><code>    Console.WriteLine(&quot;Led MaxBrightness is: {0}&quot;, Tizen.System.Led.MaxBrightness);
@@ -163,6 +166,8 @@ You can check if a device supports the related features for this API by using sy
 Changing the brightness value will invoke the registered EventHandler for the LED BrightnessChanged (if any).</p>
 </div>
   
+  <h5 id="Tizen_System_Led_Brightness_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h5 id="Tizen_System_Led_Brightness_examples">Examples</h5>
   <pre><code>    Console.WriteLine(&quot;Led current Brightness is: {0}&quot;, Tizen.System.Led.Brightness);
@@ -220,6 +225,8 @@ Changing the brightness value will invoke the registered EventHandler for the LE
     </tbody>
   </table>
   
+  <h5 id="Tizen_System_Led_MaxBrightness_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -290,6 +297,8 @@ The first byte means opaque and the other 3 bytes are the RGB values.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_System_Led_Play_System_Int32_System_Int32_Tizen_Common_Color__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h5 id="Tizen_System_Led_Play_System_Int32_System_Int32_Tizen_Common_Color__examples">Examples</h5>
   <pre><code>    try
@@ -341,6 +350,8 @@ The first byte means opaque and the other 3 bytes are the RGB values.</p>
     <pre><code class="lang-csharp hljs">public static void Stop()</code></pre>
   </div>
   
+  <h5 id="Tizen_System_Led_Stop_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h5 id="Tizen_System_Led_Stop_examples">Examples</h5>
   <pre><code>    try
@@ -405,6 +416,8 @@ The first byte means opaque and the other 3 bytes are the RGB values.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_System_Led_BrightnessChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
 </article>
           </div>

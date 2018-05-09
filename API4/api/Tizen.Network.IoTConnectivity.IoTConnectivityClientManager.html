@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class IoTConnectivityClientManager
    ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../images/tizen_favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -146,6 +146,8 @@
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_MulticastAddress_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h3 id="properties">Properties
   </h3>
@@ -179,6 +181,11 @@ Setter can throw exception.</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PollingInterval_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PollingInterval_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PollingInterval_examples">Examples</h5>
   <pre><code>    IoTConnectivityClientManager.Initialize();
@@ -212,6 +219,11 @@ RemoteResource.GetAsync(), RemoteResource.PutAsync(), RemoteResource.PostAsync()
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_TimeOut_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_TimeOut_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_TimeOut_examples">Examples</h5>
   <pre><code>    IoTConnectivityClientManager.Initialize();
@@ -231,6 +243,14 @@ RemoteResource.GetAsync(), RemoteResource.PutAsync(), RemoteResource.PostAsync()
   <div class="markdown level1 remarks"><p>This API must be called if IoTCon API is no longer needed.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Deinitialize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Deinitialize_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Deinitialize_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Deinitialize_examples">Examples</h5>
   <pre><code>    IoTConnectivityClientManager.Deinitialize();</code></pre>
@@ -272,6 +292,20 @@ The file that is CBOR(Concise Binary Object Representation)-format must already 
 in <code data-dev-comment-type="paramref" class="paramref">filePath</code>. We recommend to use application-local file for <code data-dev-comment-type="paramref" class="paramref">filePath</code>.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>You must call Deinitialize() if IoTCon API is no longer needed.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a><br>
+<a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_Initialize_System_String__examples">Examples</h5>
   <pre><code>    string filePath = &quot;../../res/iotcon-test-svr-db-client.dat&quot;;
@@ -320,6 +354,14 @@ in <code data-dev-comment-type="paramref" class="paramref">filePath</code>. We r
 After calling the API, it continues the polling with existing interval.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_InvokePolling_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_InvokePolling_pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_InvokePolling_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_InvokePolling_examples">Examples</h5>
   <pre><code>    IoTConnectivityClientManager.InvokePolling();</code></pre>
@@ -394,6 +436,22 @@ If succeeded, <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivit
 <p><code data-dev-comment-type="paramref" class="paramref">hostAddress</code> could be <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_MulticastAddress">MulticastAddress</a> for the IPv4 multicast.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p><a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_DeviceInformationFound">DeviceInformationFound</a> event handler will be invoked.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingDeviceInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__examples">Examples</h5>
   <pre><code>    EventHandler&lt;DeviceInformationFoundEventArgs> handler = (sender, e) => {
@@ -499,6 +557,22 @@ If succeeded, <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivit
 <p><code data-dev-comment-type="paramref" class="paramref">hostAddress</code> could be <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_MulticastAddress">MulticastAddress</a> for IPv4 multicast.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p><a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PlatformInformationFound">PlatformInformationFound</a> event handler will be invoked.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingPlatformInformation_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__examples">Examples</h5>
   <pre><code>    EventHandler&lt;PlatformInformationFoundEventArgs> handler = (sender, e) => {
@@ -603,6 +677,22 @@ If succeeded, <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivit
 <p><code data-dev-comment-type="paramref" class="paramref">hostAddress</code> could be <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_MulticastAddress">MulticastAddress</a> for the IPv4 multicast.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>When the resource is found, <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_ResourceFound">ResourceFound</a> event handler will be invoked.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartFindingResource_System_String_Tizen_Network_IoTConnectivity_ResourceQuery__examples">Examples</h5>
   <pre><code>    EventHandler&lt;ResourceFoundEventArgs> handler = (sender, e) => {
@@ -713,6 +803,23 @@ The <code data-dev-comment-type="paramref" class="paramref">resourceType</code> 
 of lowercase alphabetic, numeric, &quot;.&quot;, or &quot;-&quot; characters, and contains no white space.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__post" class="postconditions">Postcondition</h5>
+  <div class="markdown level1 postconditions"><p>When the resource receive presence, <a class="xref" href="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.html#Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PresenceReceived">PresenceReceived</a> event handler will be invoked.<br>
+You must destroy presence by calling StopReceivingPresence() if presence event is no longer needed.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StartReceivingPresence_System_String_System_String__examples">Examples</h5>
   <pre><code>    EventHandler&lt;PresenceReceivedEventArgs> handler = (sender, e) => {
@@ -799,6 +906,19 @@ of lowercase alphabetic, numeric, &quot;.&quot;, or &quot;-&quot; characters, an
   <div class="markdown level1 remarks"><p>Sends request to not to receive server&apos;s presence any more.</p>
 </div>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__pre" class="preconditions">Precondition</h5>
+  <div class="markdown level1 preconditions"><p>Initialize() should be called to initialize.</p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
+</div>
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/iot.ocf">http://tizen.org/feature/iot.ocf</a></p>
+</div>
   
   <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_StopReceivingPresence_System_Int32__examples">Examples</h5>
   <pre><code>    EventHandler&lt;PresenceReceivedEventArgs> handler = (sender, e) => {
@@ -885,6 +1005,8 @@ after sending request using API StartFindingDeviceInformation().</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_DeviceInformationFound_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_FindingErrorOccurred" data-uid="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.FindingErrorOccurred">FindingErrorOccurred</h4>
   <div class="markdown level1 summary"><p>FindingError event. This event occurs when an error is found.</p>
@@ -910,6 +1032,8 @@ after sending request using API StartFindingDeviceInformation().</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_FindingErrorOccurred_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PlatformInformationFound" data-uid="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.PlatformInformationFound">PlatformInformationFound</h4>
   <div class="markdown level1 summary"><p>PlatformInformationFound event. This event occurs when platform information is found
@@ -936,6 +1060,8 @@ after sending request using API StartFindingPlatformInformation().</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PlatformInformationFound_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PresenceReceived" data-uid="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.PresenceReceived">PresenceReceived</h4>
   <div class="markdown level1 summary"><p>PresenceReceived event. This event occurs when server starts sending presence of a resource.</p>
@@ -961,6 +1087,8 @@ after sending request using API StartFindingPlatformInformation().</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_PresenceReceived_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_ResourceFound" data-uid="Tizen.Network.IoTConnectivity.IoTConnectivityClientManager.ResourceFound">ResourceFound</h4>
   <div class="markdown level1 summary"><p>ResourceFound event. This event occurs when a resource is found from the remote server
@@ -987,6 +1115,8 @@ after sending request using API StartFindingResource().</p>
     </tbody>
   </table>
   
+  <h5 id="Tizen_Network_IoTConnectivity_IoTConnectivityClientManager_ResourceFound_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">3 </span>
   
 </article>
           </div>
