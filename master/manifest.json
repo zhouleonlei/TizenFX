@@ -9026,6 +9026,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.DirectionOfView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.DirectionOfView.html",
+          "hash": "BGNP+tyVZrrA0KNM9ljeBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Display.yml",
       "output": {
         ".html": {
@@ -9103,6 +9115,18 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.FaceDetectionData.html",
           "hash": "DdqywUAyda1aYaC6OA2EGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.FieldOfView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.FieldOfView.html",
+          "hash": "whOrwR6/DEPvQA53TtxArA=="
         }
       },
       "is_incremental": false,
@@ -9654,7 +9678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "DEjcZL7NnDTmzQr1MPPKFA=="
+          "hash": "/lLR6paK3Ilnjhfd2cXVcg=="
         }
       },
       "is_incremental": false,
@@ -10435,6 +10459,18 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Size.html",
           "hash": "2vzJKjpzc7W1zNsYY6m8gQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.SphericalVideo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.SphericalVideo.html",
+          "hash": "oIAHxjf9y0d7z8em7obruw=="
         }
       },
       "is_incremental": false,
@@ -11718,7 +11754,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "iXU/3p41tneZOJjDRPFJug=="
+          "hash": "g4ZUBCz2RnBwHuQwe7faHw=="
         }
       },
       "is_incremental": false,
@@ -24390,7 +24426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "mKbHADg70I5dNyODGtLEsQ=="
+          "hash": "ydcz0lwiqom+7YQjNJgOGw=="
         }
       },
       "is_incremental": false,
@@ -24462,14 +24498,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
