@@ -21606,7 +21606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.AutomaticTimeUpdateChangedEventArgs.html",
-          "hash": "4tkxuPDUyECASglqJZDhfQ=="
+          "hash": "otdUUga3RTe7x0Tii87QLA=="
         }
       },
       "is_incremental": false,
@@ -21810,7 +21810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.FontSizeChangedEventArgs.html",
-          "hash": "ECtLiYvK392GZxO6cxGYXw=="
+          "hash": "2wvTcGOOcH5WoQkCcwYh2w=="
         }
       },
       "is_incremental": false,
@@ -21822,7 +21822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.FontTypeChangedEventArgs.html",
-          "hash": "GgcSqpZFoaYRa8OfGrtvJA=="
+          "hash": "vW0Cg3xzjLXbsWjndxy2sQ=="
         }
       },
       "is_incremental": false,
@@ -22278,7 +22278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.SystemSettings.html",
-          "hash": "e49futqon9O0HNpDV1V3dA=="
+          "hash": "7RZPwjqn+Bx/0hXotE08NA=="
         }
       },
       "is_incremental": false,
@@ -24498,14 +24498,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
