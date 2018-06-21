@@ -399,6 +399,73 @@ The Wi-Fi Manager enables your application to activate and deactivate a local Wi
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_" data-uid="Tizen.Network.WiFi.WiFiManager.BssidScanAsync*"></a>
+  <h4 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync" data-uid="Tizen.Network.WiFi.WiFiManager.BssidScanAsync">BssidScanAsync()</h4>
+  <div class="markdown level1 summary"><p>Starts BSSID scan asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task BssidScanAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A task indicating whether the BssidScanAsync method is done or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must be called from MainThread.</p>
+</div>
+  
+  <h5 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.set">http://tizen.org/privilege/network.set</a><br>
+<a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a></p>
+</div>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_BssidScanAsync_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.wifi">http://tizen.org/feature/network.wifi</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>Thrown when the Wi-Fi is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UnauthorizedAccessException</span></td>
+        <td><p>Thrown when the permission is denied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the method failed due to an invalid operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Network_WiFi_WiFiManager_DeactivateAsync_" data-uid="Tizen.Network.WiFi.WiFiManager.DeactivateAsync*"></a>
   <h4 id="Tizen_Network_WiFi_WiFiManager_DeactivateAsync" data-uid="Tizen.Network.WiFi.WiFiManager.DeactivateAsync">DeactivateAsync()</h4>
   <div class="markdown level1 summary"><p>Deactivates the Wi-Fi asynchronously.</p>
@@ -575,6 +642,74 @@ The Wi-Fi Manager enables your application to activate and deactivate a local Wi
   <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a></p>
 </div>
   <h5 id="Tizen_Network_WiFi_WiFiManager_GetFoundAPs_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.wifi">http://tizen.org/feature/network.wifi</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>Thrown when the Wi-Fi is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UnauthorizedAccessException</span></td>
+        <td><p>Thrown when the permission is denied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown when the method failed due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the method failed due to an invalid operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids_" data-uid="Tizen.Network.WiFi.WiFiManager.GetFoundBssids*"></a>
+  <h4 id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids" data-uid="Tizen.Network.WiFi.WiFiManager.GetFoundBssids">GetFoundBssids()</h4>
+  <div class="markdown level1 summary"><p>Gets the result of the BssidScanAsync() API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;WiFiAP&gt; GetFoundBssids()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Network.WiFi.WiFiAP.html">WiFiAP</a>&gt;</td>
+        <td><p>A list of the WiFiAP objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a></p>
+</div>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_GetFoundBssids_feature" class="feature">Feature</h5>
   <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.wifi">http://tizen.org/feature/network.wifi</a></p>
 </div>
   
