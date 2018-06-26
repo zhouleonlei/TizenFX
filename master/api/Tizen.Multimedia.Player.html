@@ -142,6 +142,34 @@ Note that only one video player can be played at one time.</p>
   
   <h3 id="properties">Properties
   </h3>
+  <a id="Tizen_Multimedia_Player_AdaptiveVariants_" data-uid="Tizen.Multimedia.Player.AdaptiveVariants*"></a>
+  <h4 id="Tizen_Multimedia_Player_AdaptiveVariants" data-uid="Tizen.Multimedia.Player.AdaptiveVariants">AdaptiveVariants</h4>
+  <div class="markdown level1 summary"><p>Gets the adaptive variants settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdaptiveVariants AdaptiveVariants { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AdaptiveVariants.html">AdaptiveVariants</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Player_AdaptiveVariants_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
   <a id="Tizen_Multimedia_Player_AudioEffect_" data-uid="Tizen.Multimedia.Player.AudioEffect*"></a>
   <h4 id="Tizen_Multimedia_Player_AudioEffect" data-uid="Tizen.Multimedia.Player.AudioEffect">AudioEffect</h4>
   <div class="markdown level1 summary"><p>Gets the audio effect.</p>
@@ -273,6 +301,69 @@ But, state transition like pause or resume can be more slower than default(<a cl
   <h5 id="Tizen_Multimedia_Player_AudioTrackInfo_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_Multimedia_Player_BufferingTime_" data-uid="Tizen.Multimedia.Player.BufferingTime*"></a>
+  <h4 id="Tizen_Multimedia_Player_BufferingTime" data-uid="Tizen.Multimedia.Player.BufferingTime">BufferingTime</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the streaming buffering time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerBufferingTime BufferingTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.PlayerBufferingTime.html">PlayerBufferingTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_BufferingTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_BufferingTime_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The player is not in the valid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><pramref name="PreBufferMillisecond"></pramref> is less than 0.<br>
+-or-<br>
+<pramref name="ReBufferMillisecond"></pramref> is less than 0.<br></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_BufferingTime_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.PlayerBufferingTime.html">PlayerBufferingTime</a></div>
+  </div>
   <a id="Tizen_Multimedia_Player_Cookie_" data-uid="Tizen.Multimedia.Player.Cookie*"></a>
   <h4 id="Tizen_Multimedia_Player_Cookie" data-uid="Tizen.Multimedia.Player.Cookie">Cookie</h4>
   <div class="markdown level1 summary"><p>Gets or sets the cookie for streaming playback.</p>
