@@ -111,6 +111,9 @@ When the button is disabled, the background button and the selected visuals are 
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_FlexProperty">View.FlexProperty</a>
+    </div>
+    <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_Add_Tizen_NUI_BaseComponents_View_">View.Add(View)</a>
     </div>
     <div>
@@ -160,6 +163,9 @@ When the button is disabled, the background button and the selected visuals are 
     </div>
     <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_ResourcesLoaded">View.ResourcesLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_InitXamlResource">View.InitXamlResource()</a>
     </div>
     <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_HasFocus">View.HasFocus()</a>
@@ -501,9 +507,6 @@ When the button is disabled, the background button and the selected visuals are 
       <a class="xref" href="Tizen.NUI.Animatable.html#Tizen_NUI_Animatable_RemovePropertyNotifications">Animatable.RemovePropertyNotifications()</a>
     </div>
     <div>
-      <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_NavigationProperty">BaseHandle.NavigationProperty</a>
-    </div>
-    <div>
       <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_swigCMemOwn">BaseHandle.swigCMemOwn</a>
     </div>
     <div>
@@ -543,9 +546,6 @@ When the button is disabled, the background button and the selected visuals are 
       <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_IsEqual_Tizen_NUI_BaseHandle_">BaseHandle.IsEqual(BaseHandle)</a>
     </div>
     <div>
-      <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_Navigation">BaseHandle.Navigation</a>
-    </div>
-    <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
     </div>
     <div>
@@ -565,7 +565,7 @@ When the button is disabled, the background button and the selected visuals are 
   <h6><strong>Assembly</strong>: Tizen.NUI.dll</h6>
   <h5 id="Tizen_NUI_UIComponents_Button_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Button : View, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, IElementController, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Button : View, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, IElementController, IDisposable, IResourcesProvider</code></pre>
   </div>
   
   
@@ -1201,7 +1201,7 @@ Only the derived versions can be instantiated.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <span class="xref">EventArgs</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1228,7 +1228,7 @@ Only the derived versions can be instantiated.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <span class="xref">EventArgs</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1255,7 +1255,7 @@ Only the derived versions can be instantiated.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <span class="xref">EventArgs</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1282,7 +1282,7 @@ Only the derived versions can be instantiated.<br></p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <span class="xref">EventArgs</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><a class="xref" href="Tizen.NUI.EventHandlerWithReturnType-3.html">EventHandlerWithReturnType</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventargs">EventArgs</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

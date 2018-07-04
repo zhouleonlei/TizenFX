@@ -97,6 +97,9 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_FlexProperty">View.FlexProperty</a>
+    </div>
+    <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_Add_Tizen_NUI_BaseComponents_View_">View.Add(View)</a>
     </div>
     <div>
@@ -146,6 +149,9 @@
     </div>
     <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_ResourcesLoaded">View.ResourcesLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_InitXamlResource">View.InitXamlResource()</a>
     </div>
     <div>
       <a class="xref" href="Tizen.NUI.BaseComponents.View.html#Tizen_NUI_BaseComponents_View_HasFocus">View.HasFocus()</a>
@@ -487,9 +493,6 @@
       <a class="xref" href="Tizen.NUI.Animatable.html#Tizen_NUI_Animatable_RemovePropertyNotifications">Animatable.RemovePropertyNotifications()</a>
     </div>
     <div>
-      <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_NavigationProperty">BaseHandle.NavigationProperty</a>
-    </div>
-    <div>
       <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_swigCMemOwn">BaseHandle.swigCMemOwn</a>
     </div>
     <div>
@@ -529,9 +532,6 @@
       <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_IsEqual_Tizen_NUI_BaseHandle_">BaseHandle.IsEqual(BaseHandle)</a>
     </div>
     <div>
-      <a class="xref" href="Tizen.NUI.BaseHandle.html#Tizen_NUI_BaseHandle_Navigation">BaseHandle.Navigation</a>
-    </div>
-    <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
     </div>
     <div>
@@ -551,7 +551,7 @@
   <h6><strong>Assembly</strong>: Tizen.NUI.dll</h6>
   <h5 id="Tizen_NUI_BaseComponents_TextField_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TextField : View, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, IElementController, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TextField : View, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, IElementController, IDisposable, IResourcesProvider</code></pre>
   </div>
   
   
@@ -825,34 +825,6 @@ Placeholder PropertyMap is used to add ellipsis to placeholder text.</p>
   
   <h5 id="Tizen_NUI_BaseComponents_TextField_EnableSelection_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
-  
-  <a id="Tizen_NUI_BaseComponents_TextField_EnableShiftSelection_" data-uid="Tizen.NUI.BaseComponents.TextField.EnableShiftSelection*"></a>
-  <h4 id="Tizen_NUI_BaseComponents_TextField_EnableShiftSelection" data-uid="Tizen.NUI.BaseComponents.TextField.EnableShiftSelection">EnableShiftSelection</h4>
-  <div class="markdown level1 summary"><p>Enables Text selection using Shift key.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EnableShiftSelection { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h5 id="Tizen_NUI_BaseComponents_TextField_EnableShiftSelection_sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">5 </span>
   
   <a id="Tizen_NUI_BaseComponents_TextField_ExceedPolicy_" data-uid="Tizen.NUI.BaseComponents.TextField.ExceedPolicy*"></a>
   <h4 id="Tizen_NUI_BaseComponents_TextField_ExceedPolicy" data-uid="Tizen.NUI.BaseComponents.TextField.ExceedPolicy">ExceedPolicy</h4>
