@@ -146,10 +146,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="Tizen_Multimedia_SphericalVideo_IsEnabled_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>, <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>,
-or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.</p>
-</div>
   
   <h5 id="Tizen_Multimedia_SphericalVideo_IsEnabled_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
@@ -266,11 +262,6 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
         <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to has been disposed of.</p>
 </td>
       </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to is not in the valid state.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <a id="Tizen_Multimedia_SphericalVideo_GetFieldOfView_" data-uid="Tizen.Multimedia.SphericalVideo.GetFieldOfView*"></a>
@@ -323,11 +314,6 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
       <tr>
         <td><span class="xref">System.ObjectDisposedException</span></td>
         <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to has been disposed of.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to is not in the valid state.</p>
 </td>
       </tr>
     </tbody>
@@ -385,11 +371,6 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
       <tr>
         <td><span class="xref">System.ObjectDisposedException</span></td>
         <td><p>The player has already been disposed of.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The player is not in the valid state.</p>
 </td>
       </tr>
     </tbody>
@@ -516,8 +497,10 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to is not in the valid state.</p>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><pramref name="directionOfView.Yaw"></pramref> should be in range of [-3.141593, 3.141593].<br>
+-or-<br>
+<pramref name="directionOfView.Pitch"></pramref> should be in range of [-1.570796, 1.570796].<br></p>
 </td>
       </tr>
     </tbody>
@@ -581,8 +564,14 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to is not in the valid state.</p>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><pramref name="fieldOfView.HorizontalDegrees"></pramref> is less than 1.<br>
+-or-<br>
+<pramref name="fieldOfView.HorizontalDegrees"></pramref> is greater than 360.<br>
+-or-<br>
+<pramref name="fieldOfView.VerticalDegrees"></pramref> is less than 1.<br>
+-or-<br>
+<pramref name="fieldOfView.VerticalDegrees"></pramref> is greater than 180.<br></p>
 </td>
       </tr>
     </tbody>
@@ -646,14 +635,98 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The player is not in the valid state.</p>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><pramref name="level"></pramref> is less than 1.0.
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">level</code> is greater than 10.0.<br></p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_SphericalVideo_SetZoom_System_Single__seealso">See Also</h5>
   <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.SphericalVideo.html#Tizen_Multimedia_SphericalVideo_GetZoom">GetZoom()</a></div>
+  </div>
+  <a id="Tizen_Multimedia_SphericalVideo_SetZoomWithFieldOfView_" data-uid="Tizen.Multimedia.SphericalVideo.SetZoomWithFieldOfView*"></a>
+  <h4 id="Tizen_Multimedia_SphericalVideo_SetZoomWithFieldOfView_System_Single_Tizen_Multimedia_FieldOfView_" data-uid="Tizen.Multimedia.SphericalVideo.SetZoomWithFieldOfView(System.Single,Tizen.Multimedia.FieldOfView)">SetZoomWithFieldOfView(Single, FieldOfView)</h4>
+  <div class="markdown level1 summary"><p>Sets the zoom with the field of view for spherical video.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetZoomWithFieldOfView(float level, FieldOfView fieldOfView)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>The zoom level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.FieldOfView.html">FieldOfView</a></td>
+        <td><span class="parametername">fieldOfView</span></td>
+        <td><p>The degree values to display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_SphericalVideo_SetZoomWithFieldOfView_System_Single_Tizen_Multimedia_FieldOfView__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  <h5 id="Tizen_Multimedia_SphericalVideo_SetZoomWithFieldOfView_System_Single_Tizen_Multimedia_FieldOfView__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/opengles.version.2_0">http://tizen.org/feature/opengles.version.2_0</a><br>
+<a href="http://tizen.org/feature/multimedia.player.spherical_video">http://tizen.org/feature/multimedia.player.spherical_video</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>The required feature is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that this instance belongs to has been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><pramref name="level"></pramref> is less than 1.0.
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">level</code> is greater than 10.0.<br>
+-or-<br>
+<pramref name="fieldOfView.HorizontalDegrees"></pramref> is less than 1.<br>
+-or-<br>
+<pramref name="fieldOfView.HorizontalDegrees"></pramref> is greater than 360.<br>
+-or-<br>
+<pramref name="fieldOfView.VerticalDegrees"></pramref> is less than 1.<br>
+-or-<br>
+<pramref name="fieldOfView.VerticalDegrees"></pramref> is greater than 180.<br></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_SphericalVideo_SetZoomWithFieldOfView_System_Single_Tizen_Multimedia_FieldOfView__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.FieldOfView.html">FieldOfView</a></div>
       <div><a class="xref" href="Tizen.Multimedia.SphericalVideo.html#Tizen_Multimedia_SphericalVideo_GetZoom">GetZoom()</a></div>
   </div>
 </article>
