@@ -1443,6 +1443,14 @@ If the position inheritance is disabled, sets the world position.<br></p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_Position2D_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This NUI object (Position2D) typed property can be configured by multiple cascade setting. <br>
+For example, this code ( view.Position2D.X = 100; view.Position2D.Y = 100; ) is equivalent to this ( view.Position2D = new Position2D(100, 100); ). <br>
+Please note that this multi-cascade setting is especially possible for this NUI object (Position2D). <br>
+This means by default others are impossible so it is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
+For example, this code is working fine : view.Scale = new Vector3( 2.0f, 1.5f, 0.0f); <br>
+but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br></p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Position2D_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1878,6 +1886,14 @@ The views default depth is the minimum of width and height.<br></p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_Size2D_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This NUI object (Size2D) typed property can be configured by multiple cascade setting. <br>
+For example, this code ( view.Size2D.Width = 100; view.Size2D.Height = 100; ) is equivalent to this ( view.Size2D = new Size2D(100, 100); ). <br>
+Please note that this multi-cascade setting is especially possible for this NUI object (Size2D). <br>
+This means by default others are impossible so it is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
+For example, this code is working fine : view.Scale = new Vector3( 2.0f, 1.5f, 0.0f); <br>
+but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br></p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Size2D_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
