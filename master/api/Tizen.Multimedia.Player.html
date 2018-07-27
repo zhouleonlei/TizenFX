@@ -1265,7 +1265,8 @@ The player is not in the valid state.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><p>The current position in milliseconds.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1301,6 +1302,68 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
   <h5 id="Tizen_Multimedia_Player_GetPlayPosition_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionAsync_System_Int32_System_Boolean_">SetPlayPositionAsync(Int32, Boolean)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean_">SetPlayPositionNanosecondsAsync(Int64, Boolean)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPositionNanoseconds">GetPlayPositionNanoseconds()</a></div>
+  </div>
+  <a id="Tizen_Multimedia_Player_GetPlayPositionNanoseconds_" data-uid="Tizen.Multimedia.Player.GetPlayPositionNanoseconds*"></a>
+  <h4 id="Tizen_Multimedia_Player_GetPlayPositionNanoseconds" data-uid="Tizen.Multimedia.Player.GetPlayPositionNanoseconds">GetPlayPositionNanoseconds()</h4>
+  <div class="markdown level1 summary"><p>Gets the play position in nanoseconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetPlayPositionNanoseconds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><p>The current position in nanoseconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_GetPlayPositionNanoseconds_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>, <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>,
+or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_GetPlayPositionNanoseconds_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The player is not in the valid state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_GetPlayPositionNanoseconds_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionAsync_System_Int32_System_Boolean_">SetPlayPositionAsync(Int32, Boolean)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean_">SetPlayPositionNanosecondsAsync(Int64, Boolean)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPosition">GetPlayPosition()</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_OnPreparing_" data-uid="Tizen.Multimedia.Player.OnPreparing*"></a>
   <h4 id="Tizen_Multimedia_Player_OnPreparing" data-uid="Tizen.Multimedia.Player.OnPreparing">OnPreparing()</h4>
@@ -1545,7 +1608,8 @@ Streaming playback.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
+        <td><p>A task that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1575,7 +1639,9 @@ but this might be considerably slow. If false, the play position will be a neare
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The player is not in the valid state.</p>
+        <td><p>The player is not in the valid state.<br>
+    -or-<br>
+    In case of non-seekable content, the player will return error and keep playing without changing the play position.</p>
 </td>
       </tr>
       <tr>
@@ -1587,7 +1653,102 @@ but this might be considerably slow. If false, the play position will be a neare
   </table>
   <h5 id="Tizen_Multimedia_Player_SetPlayPositionAsync_System_Int32_System_Boolean__seealso">See Also</h5>
   <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean_">SetPlayPositionNanosecondsAsync(Int64, Boolean)</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPosition">GetPlayPosition()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPositionNanoseconds">GetPlayPositionNanoseconds()</a></div>
+  </div>
+  <a id="Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_" data-uid="Tizen.Multimedia.Player.SetPlayPositionNanosecondsAsync*"></a>
+  <h4 id="Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean_" data-uid="Tizen.Multimedia.Player.SetPlayPositionNanosecondsAsync(System.Int64,System.Boolean)">SetPlayPositionNanosecondsAsync(Int64, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the seek position in nanoseconds for playback, asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetPlayPositionNanosecondsAsync(long position, bool accurate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The value indicating a desired position in nanoseconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">accurate</span></td>
+        <td><p>The value indicating whether the operation performs with accuracy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>, <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>,
+or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.</p>
+<p>If the <code data-dev-comment-type="paramref" class="paramref">accurate</code> is true, the play position will be adjusted as the specified <code data-dev-comment-type="paramref" class="paramref">position</code> value,
+but this might be considerably slow. If false, the play position will be a nearest keyframe position.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The player is not in the valid state.<br>
+    -or-<br>
+    In case of non-seekable content, the player will return error and keep playing without changing the play position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>The specified position is not valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionAsync_System_Int32_System_Boolean_">SetPlayPositionAsync(Int32, Boolean)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPosition">GetPlayPosition()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPositionNanoseconds">GetPlayPositionNanoseconds()</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_SetSource_" data-uid="Tizen.Multimedia.Player.SetSource*"></a>
   <h4 id="Tizen_Multimedia_Player_SetSource_Tizen_Multimedia_MediaSource_" data-uid="Tizen.Multimedia.Player.SetSource(Tizen.Multimedia.MediaSource)">SetSource(MediaSource)</h4>
@@ -1672,7 +1833,8 @@ It is not able to assign the source to the player.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The absolute path of the subtitle file, it can be NULL in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.</p>
+</td>
       </tr>
     </tbody>
   </table>
