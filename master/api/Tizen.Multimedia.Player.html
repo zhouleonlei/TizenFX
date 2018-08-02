@@ -1949,10 +1949,15 @@ No subtitle is set.</p>
     <pre><code class="lang-csharp hljs">public virtual void Start()</code></pre>
   </div>
   <h5 id="Tizen_Multimedia_Player_Start_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a> or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.
-It has no effect if the player is already in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a> state.<br>
-<br>
-Sound can be mixed with other sounds if you don&apos;t control the stream focus using <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_ApplyAudioStreamPolicy_Tizen_Multimedia_AudioStreamPolicy_">ApplyAudioStreamPolicy(AudioStreamPolicy)</a>.</p>
+  <div class="markdown level1 remarks"><p>Sound can be mixed with other sounds if you don&apos;t control the stream focus using <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_ApplyAudioStreamPolicy_Tizen_Multimedia_AudioStreamPolicy_">ApplyAudioStreamPolicy(AudioStreamPolicy)</a>.<br>
+<p>Before Tizen 5.0, The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a> or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.
+It has no effect if the player is already in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a> state.</p>
+<p>Since Tizen 5.0, The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>, <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>,
+or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.<br>
+In case of HTTP streaming playback, the player could be internally paused for buffering.
+If the application calls this function during the buffering, the playback will be resumed by force
+and the buffering message posting by <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_BufferingProgressChanged">BufferingProgressChanged</a> will be stopped.<br>
+In other cases, the player will keep playing without returning error.</p></p>
 </div>
   
   <h5 id="Tizen_Multimedia_Player_Start_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1986,6 +1991,7 @@ Sound can be mixed with other sounds if you don&apos;t control the stream focus 
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Pause">Pause()</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PlaybackCompleted">PlaybackCompleted</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_ApplyAudioStreamPolicy_Tizen_Multimedia_AudioStreamPolicy_">ApplyAudioStreamPolicy(AudioStreamPolicy)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_BufferingProgressChanged">BufferingProgressChanged</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_Stop_" data-uid="Tizen.Multimedia.Player.Stop*"></a>
   <h4 id="Tizen_Multimedia_Player_Stop" data-uid="Tizen.Multimedia.Player.Stop">Stop()</h4>
