@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -87,6 +90,10 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">AudioPlayback</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -175,14 +182,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">sampleRate</code> is less than <a class="xref" href="Tizen.Multimedia.AudioPlayback.html#Tizen_Multimedia_AudioPlayback_MinSampleRate">MinSampleRate</a>.<br>
 -or-<br>
 <code data-dev-comment-type="paramref" class="paramref">sampleRate</code> is greater than <a class="xref" href="Tizen.Multimedia.AudioPlayback.html#Tizen_Multimedia_AudioPlayback_MaxSampleRate">MaxSampleRate</a>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">channel</code> is invalid.<br>
 -or-<br>
 <code data-dev-comment-type="paramref" class="paramref">sampleType</code> is invalid.</p>
@@ -378,7 +385,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -427,24 +434,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">streamPolicy</code> is null.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">streamPolicy</code> has already been disposed of.<br>
 -or-<br>
 The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">streamPolicy</code> is not supported.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>Not able to retrieve information from <code data-dev-comment-type="paramref" class="paramref">streamPolicy</code>.</p>
 </td>
       </tr>
@@ -459,8 +466,6 @@ The AudioPlayback has already been disposed of.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
   
   <h5 id="Tizen_Multimedia_AudioPlayback_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -520,7 +525,7 @@ It blocks the calling thread until the drain of the stream buffer is complete, f
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -570,7 +575,7 @@ It blocks the calling thread until the drain of the stream buffer is complete, f
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -614,7 +619,7 @@ It blocks the calling thread until the drain of the stream buffer is complete, f
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -653,7 +658,7 @@ The method is called in the <a class="xref" href="Tizen.Multimedia.AudioPlayback
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -696,7 +701,7 @@ The current state is not <a class="xref" href="Tizen.Multimedia.AudioIOState.htm
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -739,7 +744,7 @@ The method is called in an event handler.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -779,7 +784,7 @@ The current state is <a class="xref" href="Tizen.Multimedia.AudioIOState.html#Ti
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -846,12 +851,12 @@ The current state is <a class="xref" href="Tizen.Multimedia.AudioIOState.html#Ti
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">buffer</code> is null.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>The length of <code data-dev-comment-type="paramref" class="paramref">buffer</code> is zero.</p>
 </td>
       </tr>
@@ -861,7 +866,7 @@ The current state is <a class="xref" href="Tizen.Multimedia.AudioIOState.html#Ti
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The AudioPlayback has already been disposed of.</p>
 </td>
       </tr>
@@ -927,6 +932,10 @@ The current state is <a class="xref" href="Tizen.Multimedia.AudioIOState.html#Ti
   <h5 id="Tizen_Multimedia_AudioPlayback_StateChanged_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
 </article>
           </div>
           

@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -89,6 +92,14 @@ This class is accessed by using a constructor to create a new instance of this o
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Attributes</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -152,12 +163,12 @@ This class is accessed by using a constructor to create a new instance of this o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>Thrown when the iotcon is not supported.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.OutOfMemoryException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></td>
         <td><p>Thrown when there is not enough memory.</p>
 </td>
       </tr>
@@ -190,8 +201,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.count#System_Collections_Generic_ICollection_1_Count">ICollection&lt;T&gt;.Count</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Count_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -226,8 +235,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.isreadonly#System_Collections_Generic_ICollection_1_IsReadOnly">ICollection&lt;T&gt;.IsReadOnly</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_IsReadOnly_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -282,8 +289,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.item#System_Collections_Generic_IDictionary_2_Item__0_">IDictionary&lt;TKey,TValue&gt;.Item[TKey]</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Item_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -317,8 +322,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.keys#System_Collections_Generic_IDictionary_2_Keys">IDictionary&lt;TKey,TValue&gt;.Keys</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Keys_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -355,8 +358,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.values#System_Collections_Generic_IDictionary_2_Values">IDictionary&lt;TKey,TValue&gt;.Values</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Values_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -397,8 +398,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.add#System_Collections_Generic_ICollection_1_Add__0_">ICollection&lt;T&gt;.Add(T)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Add_System_Collections_Generic_KeyValuePair_System_String_System_Object___sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -442,8 +441,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.add#System_Collections_Generic_IDictionary_2_Add__0__1_">IDictionary&lt;TKey,TValue&gt;.Add(TKey, TValue)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Add_System_String_System_Object__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -463,8 +460,6 @@ This class is accessed by using a constructor to create a new instance of this o
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.clear#System_Collections_Generic_ICollection_1_Clear">ICollection&lt;T&gt;.Clear()</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Clear_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -486,7 +481,7 @@ This class is accessed by using a constructor to create a new instance of this o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>Thrown when the iotcon is not supported</p>
 </td>
       </tr>
@@ -540,8 +535,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.contains#System_Collections_Generic_ICollection_1_Contains__0_">ICollection&lt;T&gt;.Contains(T)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Contains_System_Collections_Generic_KeyValuePair_System_String_System_Object___sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -596,8 +589,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.containskey#System_Collections_Generic_IDictionary_2_ContainsKey__0_">IDictionary&lt;TKey,TValue&gt;.ContainsKey(TKey)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_ContainsKey_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -642,8 +633,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.copyto#System_Collections_Generic_ICollection_1_CopyTo__0___System_Int32_">ICollection&lt;T&gt;.CopyTo(T[], Int32)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_CopyTo_System_Collections_Generic_KeyValuePair_System_String_System_Object____System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -666,8 +655,6 @@ This class is accessed by using a constructor to create a new instance of this o
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -745,8 +732,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator#System_Collections_Generic_IEnumerable_1_GetEnumerator">IEnumerable&lt;T&gt;.GetEnumerator()</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_GetEnumerator_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -803,8 +788,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1.remove#System_Collections_Generic_ICollection_1_Remove__0_">ICollection&lt;T&gt;.Remove(T)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Remove_System_Collections_Generic_KeyValuePair_System_String_System_Object___sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -829,12 +812,12 @@ This class is accessed by using a constructor to create a new instance of this o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>Thrown when the iotcon is not supported</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>Thrown when there is an invalid parameter</p>
 </td>
       </tr>
@@ -888,8 +871,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.remove#System_Collections_Generic_IDictionary_2_Remove__0_">IDictionary&lt;TKey,TValue&gt;.Remove(TKey)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_Remove_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -914,12 +895,12 @@ This class is accessed by using a constructor to create a new instance of this o
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>Thrown when the iotcon is not supported</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>Thrown when there is an invalid parameter</p>
 </td>
       </tr>
@@ -979,8 +960,6 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2.trygetvalue#System_Collections_Generic_IDictionary_2_TryGetValue__0__1__">IDictionary&lt;TKey,TValue&gt;.TryGetValue(TKey, TValue)</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_TryGetValue_System_String_System_Object___sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1019,12 +998,26 @@ This class is accessed by using a constructor to create a new instance of this o
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator#System_Collections_IEnumerable_GetEnumerator">IEnumerable.GetEnumerator()</a></div>
   
   <h5 id="Tizen_Network_IoTConnectivity_Attributes_System_Collections_IEnumerable_GetEnumerator_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.icollection-1">System.Collections.Generic.ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
 </article>
           </div>
           
