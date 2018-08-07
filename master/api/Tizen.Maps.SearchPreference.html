@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -87,6 +90,13 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">SearchPreference</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Tizen.Maps.IGeocodePreference.html">IGeocodePreference</a></div>
+    <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html">IPlaceSearchPreference</a></div>
+    <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html">IRouteSearchPreference</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -161,8 +171,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html#Tizen_Maps_IPlaceSearchPreference_CountryCode">IPlaceSearchPreference.CountryCode</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_CountryCode_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -191,9 +199,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IGeocodePreference.html#Tizen_Maps_IGeocodePreference_Language">IGeocodePreference.Language</a></div>
-      <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html#Tizen_Maps_IPlaceSearchPreference_Language">IPlaceSearchPreference.Language</a></div>
   <h5 id="Tizen_Maps_SearchPreference_Language_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Language should be specified as an ISO 3166 alpha-2 two letter country-code
 followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot;, &quot;en-US&quot;.</p>
@@ -226,9 +231,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IGeocodePreference.html#Tizen_Maps_IGeocodePreference_MaxResults">IGeocodePreference.MaxResults</a></div>
-      <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html#Tizen_Maps_IPlaceSearchPreference_MaxResults">IPlaceSearchPreference.MaxResults</a></div>
   <h5 id="Tizen_Maps_SearchPreference_MaxResults_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Setting negative value will not have any effect on MaxResults value.</p>
 </div>
@@ -260,8 +262,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_Mode">IRouteSearchPreference.Mode</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_Mode_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -290,8 +290,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_Optimization">IRouteSearchPreference.Optimization</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_Optimization_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -320,8 +318,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html#Tizen_Maps_IPlaceSearchPreference_Properties">IPlaceSearchPreference.Properties</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_Properties_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -350,8 +346,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_RouteFeature">IRouteSearchPreference.RouteFeature</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_RouteFeature_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -380,8 +374,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_RouteFeatureWeight">IRouteSearchPreference.RouteFeatureWeight</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_RouteFeatureWeight_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -410,8 +402,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_SearchAlternativeRoutes">IRouteSearchPreference.SearchAlternativeRoutes</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_SearchAlternativeRoutes_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -440,9 +430,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html#Tizen_Maps_IPlaceSearchPreference_Unit">IPlaceSearchPreference.Unit</a></div>
-      <div><a class="xref" href="Tizen.Maps.IRouteSearchPreference.html#Tizen_Maps_IRouteSearchPreference_Unit">IRouteSearchPreference.Unit</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_Unit_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -458,8 +445,6 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
   
   <h5 id="Tizen_Maps_SearchPreference_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -506,6 +491,19 @@ followed by ISO 639-1 for the two-letter language code.<br>e.g. &quot;ko-KR&quot
   </div>
   
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Tizen.Maps.IGeocodePreference.html">IGeocodePreference</a>
+  </div>
+  <div>
+      <a class="xref" href="Tizen.Maps.IPlaceSearchPreference.html">IPlaceSearchPreference</a>
+  </div>
+  <div>
+      <a class="xref" href="Tizen.Maps.IRouteSearchPreference.html">IRouteSearchPreference</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
 </article>
           </div>
           

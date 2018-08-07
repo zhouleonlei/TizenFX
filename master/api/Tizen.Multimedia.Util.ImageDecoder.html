@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -87,11 +90,15 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ImageDecoder</span></div>
-  </div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Util.BmpDecoder.html">BmpDecoder</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Util.GifDecoder.html">GifDecoder</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Util.JpegDecoder.html">JpegDecoder</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Util.PngDecoder.html">PngDecoder</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -216,12 +223,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">inputBuffer</code> is null.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">inputBuffer</code> is an empty array.</p>
 </td>
       </tr>
@@ -231,7 +238,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The <a class="xref" href="Tizen.Multimedia.Util.ImageDecoder.html">ImageDecoder</a> has already been disposed of.</p>
 </td>
       </tr>
@@ -300,24 +307,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">inputFilePath</code> is null.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">inputFilePath</code> is an empty string.<br>
 -or-<br>
 <code data-dev-comment-type="paramref" class="paramref">inputFilePath</code> is not a image file.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">inputFilePath</code> does not exists.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.UnauthorizedAccessException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
         <td><p>The caller does not have required permission to access the path.</p>
 </td>
       </tr>
@@ -327,7 +334,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The <a class="xref" href="Tizen.Multimedia.Util.ImageDecoder.html">ImageDecoder</a> has already been disposed of.</p>
 </td>
       </tr>
@@ -342,8 +349,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a></div>
   
   <h5 id="Tizen_Multimedia_Util_ImageDecoder_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
@@ -420,12 +425,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">colorSpace</code> is invalid.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">colorSpace</code> is not supported by the decoder.</p>
 </td>
       </tr>
@@ -434,6 +439,10 @@
   <h5 id="Tizen_Multimedia_Util_ImageDecoder_SetColorSpace_Tizen_Multimedia_ColorSpace__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Util.ImageUtil.html#Tizen_Multimedia_Util_ImageUtil_GetSupportedColorSpaces_Tizen_Multimedia_Util_ImageFormat_">GetSupportedColorSpaces(ImageFormat)</a></div>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
 </article>
           </div>

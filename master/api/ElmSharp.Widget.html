@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -90,7 +93,6 @@ Inherits from <a class="xref" href="ElmSharp.EvasObject.html">EvasObject</a>.</p
     <div class="level1"><a class="xref" href="ElmSharp.EvasObject.html">EvasObject</a></div>
     <div class="level2"><a class="xref" href="ElmSharp.Accessible.AccessibleObject.html">AccessibleObject</a></div>
     <div class="level3"><span class="xref">Widget</span></div>
-  </div>
       <div class="level4"><a class="xref" href="ElmSharp.Conformant.html">Conformant</a></div>
       <div class="level4"><a class="xref" href="ElmSharp.Container.html">Container</a></div>
       <div class="level4"><a class="xref" href="ElmSharp.GestureLayer.html">GestureLayer</a></div>
@@ -100,6 +102,11 @@ Inherits from <a class="xref" href="ElmSharp.EvasObject.html">EvasObject</a>.</p
       <div class="level4"><a class="xref" href="ElmSharp.Wearable.CircleProgressBar.html">CircleProgressBar</a></div>
       <div class="level4"><a class="xref" href="ElmSharp.Wearable.CircleSlider.html">CircleSlider</a></div>
       <div class="level4"><a class="xref" href="ElmSharp.Window.html">Window</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html">IAccessibleObject</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -1451,6 +1458,10 @@ When widget is set to automatic mode(true), it follows the system mirrored mode.
   <h5 id="ElmSharp_Widget_Unfocused_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html">IAccessibleObject</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="ElmSharp.Wearable.RotaryEventExtensions.html#ElmSharp_Wearable_RotaryEventExtensions_AddRotaryEventHandler_ElmSharp_EvasObject_ElmSharp_Wearable_RotaryEventHandler_">RotaryEventExtensions.AddRotaryEventHandler(EvasObject, RotaryEventHandler)</a>

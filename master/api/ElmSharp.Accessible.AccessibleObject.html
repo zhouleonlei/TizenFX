@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -61,7 +62,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -90,8 +93,12 @@ There are many relationships between two accessible objects, like <a class="xref
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="ElmSharp.EvasObject.html">EvasObject</a></div>
     <div class="level2"><span class="xref">AccessibleObject</span></div>
-  </div>
       <div class="level3"><a class="xref" href="ElmSharp.Widget.html">Widget</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html">IAccessibleObject</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -382,8 +389,6 @@ There are many relationships between two accessible objects, like <a class="xref
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Highlight()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_Highlight">IAccessibleObject.Highlight()</a></div>
   
   <h5 id="ElmSharp_Accessible_AccessibleObject_Highlight_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
@@ -397,8 +402,6 @@ There are many relationships between two accessible objects, like <a class="xref
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Unhighlight()</code></pre>
   </div>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_Unhighlight">IAccessibleObject.Unhighlight()</a></div>
   
   <h5 id="ElmSharp_Accessible_AccessibleObject_Unhighlight_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
@@ -434,8 +437,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_AppendRelation_ElmSharp_Accessible_IAccessibleRelation_">IAccessibleObject.AppendRelation(IAccessibleRelation)</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_CanHighlight_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#CanHighlight*"></a>
@@ -462,8 +463,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_CanHighlight">IAccessibleObject.CanHighlight</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_Description_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#Description*"></a>
@@ -490,8 +489,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_Description">IAccessibleObject.Description</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_DescriptionProvider_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#DescriptionProvider*"></a>
@@ -518,8 +515,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_DescriptionProvider">IAccessibleObject.DescriptionProvider</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_Name_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#Name*"></a>
@@ -546,8 +541,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_Name">IAccessibleObject.Name</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_NameProvider_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#NameProvider*"></a>
@@ -574,8 +567,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_NameProvider">IAccessibleObject.NameProvider</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_ReadingInfoType_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#ReadingInfoType*"></a>
@@ -602,8 +593,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_ReadingInfoType">IAccessibleObject.ReadingInfoType</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_RemoveRelation_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#RemoveRelation*"></a>
@@ -633,8 +622,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_RemoveRelation_ElmSharp_Accessible_IAccessibleRelation_">IAccessibleObject.RemoveRelation(IAccessibleRelation)</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_Role_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#Role*"></a>
@@ -661,8 +648,6 @@ AppendRelation API is asymmetric, which means that appending, for example, relat
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_Role">IAccessibleObject.Role</a></div>
   
   
   <a id="ElmSharp_Accessible_AccessibleObject_ElmSharp_Accessible_IAccessibleObject_TranslationDomain_" data-uid="ElmSharp.Accessible.AccessibleObject.ElmSharp#Accessible#IAccessibleObject#TranslationDomain*"></a>
@@ -692,10 +677,12 @@ It is the application developers responsibility to ensure that translation files
       </tr>
     </tbody>
   </table>
-  <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html#ElmSharp_Accessible_IAccessibleObject_TranslationDomain">IAccessibleObject.TranslationDomain</a></div>
   
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="ElmSharp.Accessible.IAccessibleObject.html">IAccessibleObject</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="ElmSharp.Wearable.RotaryEventExtensions.html#ElmSharp_Wearable_RotaryEventExtensions_AddRotaryEventHandler_ElmSharp_EvasObject_ElmSharp_Wearable_RotaryEventHandler_">RotaryEventExtensions.AddRotaryEventHandler(EvasObject, RotaryEventHandler)</a>
