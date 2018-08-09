@@ -693,6 +693,49 @@ Very useful for frames and decorations.</p>
   <h5 id="ElmSharp_EvasImage_CreateHandle_ElmSharp_EvasObject__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <a id="ElmSharp_EvasImage_Save_" data-uid="ElmSharp.EvasImage.Save*"></a>
+  <h4 id="ElmSharp_EvasImage_Save_System_String_System_String_System_String_" data-uid="ElmSharp.EvasImage.Save(System.String,System.String,System.String)">Save(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Save the given image object&apos;s contents to an (image) file.</p>
+<p>The extension suffix on file will determine which saver module Evas is to use when saving, thus the final file&apos;s format. If the file supports multiple data stored in it (Eet ones), you can specify the key to be used as the index of the image in it.</p>
+<p>You can specify some flags when saving the image.Currently acceptable flags are quality and compress.Eg.: &quot;quality=100 compress=9&quot; </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save(string file, string key, string flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The filename to be used to save the image (extension obligatory).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The image key in the file (if an Eet one), or null, otherwise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>String containing the flags to be used (null for none).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="ElmSharp_EvasImage_SetBorder_" data-uid="ElmSharp.EvasImage.SetBorder*"></a>
   <h4 id="ElmSharp_EvasImage_SetBorder_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="ElmSharp.EvasImage.SetBorder(System.Int32,System.Int32,System.Int32,System.Int32)">SetBorder(Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Sets the dimensions for an image object&apos;s border, a region which is not scaled together with its center ever.</p>
