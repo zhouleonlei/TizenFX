@@ -818,6 +818,47 @@ This function requests the Window Manager to not draw any decoration around the 
   <h5 id="ElmSharp_Window_Borderless_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <a id="ElmSharp_Window_Brightness_" data-uid="ElmSharp.Window.Brightness*"></a>
+  <h4 id="ElmSharp_Window_Brightness" data-uid="ElmSharp.Window.Brightness">Brightness</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user&apos;s preferred brightness of the specified window.
+This is useful when the application need to change the brightness of the screen when it is appeared on the screen.
+If the application sets the brightness 0 to 100 to its window and the application window is shown wholly or partially,
+the window manager requests the display system to change the brightness of the screen using user&apos;s preferred brightness.
+If the window is no longer shown, then the window manger request the display system to go back to default brightness.
+If the brightness is less than 0, this means to use the default screen brightness.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Brightness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_Window_Brightness_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This needs the privilege. If the application which is not get the privilege use this API, the window manager generates the permission deny error.</p>
+</div>
+  
+  <h5 id="ElmSharp_Window_Brightness_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  <h5 id="ElmSharp_Window_Brightness_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="ElmSharp_Window_Brightness_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a></p>
+</div>
+  
   <a id="ElmSharp_Window_DemandAttention_" data-uid="ElmSharp.Window.DemandAttention*"></a>
   <h4 id="ElmSharp_Window_DemandAttention" data-uid="ElmSharp.Window.DemandAttention">DemandAttention</h4>
   <div class="markdown level1 summary"><p>Gets or sets the demand attention state of the window.</p>
@@ -1167,6 +1208,42 @@ The noblank property may have no effect if the window is iconified/minimized or 
   <h5 id="ElmSharp_Window_NoBlank_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <a id="ElmSharp_Window_NotificationLevel_" data-uid="ElmSharp.Window.NotificationLevel*"></a>
+  <h4 id="ElmSharp_Window_NotificationLevel" data-uid="ElmSharp.Window.NotificationLevel">NotificationLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the priority level for the specified notification window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationLevel NotificationLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.NotificationLevel.html">NotificationLevel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_Window_NotificationLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used for a notification type window only.</p>
+</div>
+  
+  <h5 id="ElmSharp_Window_NotificationLevel_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  <h5 id="ElmSharp_Window_NotificationLevel_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="ElmSharp_Window_NotificationLevel_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/window.priority.set">http://tizen.org/privilege/window.priority.set</a></p>
+</div>
+  
   <a id="ElmSharp_Window_Profile_" data-uid="ElmSharp.Window.Profile*"></a>
   <h4 id="ElmSharp_Window_Profile" data-uid="ElmSharp.Window.Profile">Profile</h4>
   <div class="markdown level1 summary"><p>Gets the profile of the window.</p>
@@ -1310,6 +1387,47 @@ When this function returns true, object will never resize larger than the screen
   
   <h5 id="ElmSharp_Window_ScreenDpi_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_Window_ScreenMode_" data-uid="ElmSharp.Window.ScreenMode*"></a>
+  <h4 id="ElmSharp_Window_ScreenMode" data-uid="ElmSharp.Window.ScreenMode">ScreenMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the window&apos;s screen mode.
+This API is useful when the application need to keep the display turned on.
+If the application set the mode to ScreenMode.AlwaysOn to its window and the window is shown wholly or partially,
+the window manager requests the display system to keep the display on as long as the window is shown.
+If the window is no longer shown, then the window manger request the display system to go back to normal operation.
+Default screen mode of window is ScreenMode.Default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScreenMode ScreenMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.ScreenMode.html">ScreenMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_Window_ScreenMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This needs the privilege. If the application which is not get the privilege use this API, the window manager generates the permission deny error.</p>
+</div>
+  
+  <h5 id="ElmSharp_Window_ScreenMode_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  <h5 id="ElmSharp_Window_ScreenMode_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="ElmSharp_Window_ScreenMode_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/display">http://tizen.org/privilege/display</a></p>
+</div>
   
   <a id="ElmSharp_Window_ScreenPositionX_" data-uid="ElmSharp.Window.ScreenPositionX*"></a>
   <h4 id="ElmSharp_Window_ScreenPositionX" data-uid="ElmSharp.Window.ScreenPositionX">ScreenPositionX</h4>
@@ -1886,6 +2004,23 @@ Places the window pointed by object at the top of the stack, so that it&apos;s n
   <h5 id="ElmSharp_Window_PullUp_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <a id="ElmSharp_Window_SetOpaqueState_" data-uid="ElmSharp.Window.SetOpaqueState*"></a>
+  <h4 id="ElmSharp_Window_SetOpaqueState" data-uid="ElmSharp.Window.SetOpaqueState">SetOpaqueState()</h4>
+  <div class="markdown level1 summary"><p>Sets the alpha window&apos;s visual state to opaque state.
+This sets the alpha window&apos;s visual state to opaque state.
+If the alpha window sets the visual state to the opaque,
+then the window manager could handle it as the opaque window while calculating visibility.
+This will have no effect when used by a non-alpha window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOpaqueState()</code></pre>
+  </div>
+  
+  <h5 id="ElmSharp_Window_SetOpaqueState_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
   <a id="ElmSharp_Window_SetRotation_" data-uid="ElmSharp.Window.SetRotation*"></a>
   <h4 id="ElmSharp_Window_SetRotation_System_Int32_System_Boolean_" data-uid="ElmSharp.Window.SetRotation(System.Int32,System.Boolean)">SetRotation(Int32, Boolean)</h4>
   <div class="markdown level1 summary"><p>Sets the rotation of the window.</p>
@@ -1921,6 +2056,19 @@ Places the window pointed by object at the top of the stack, so that it&apos;s n
   </table>
   
   <h5 id="ElmSharp_Window_SetRotation_System_Int32_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_Window_UnsetOpaqueState_" data-uid="ElmSharp.Window.UnsetOpaqueState*"></a>
+  <h4 id="ElmSharp_Window_UnsetOpaqueState" data-uid="ElmSharp.Window.UnsetOpaqueState">UnsetOpaqueState()</h4>
+  <div class="markdown level1 summary"><p>Unsets the alpha window&apos;s visual state to opaque state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnsetOpaqueState()</code></pre>
+  </div>
+  
+  <h5 id="ElmSharp_Window_UnsetOpaqueState_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
   <h3 id="events">Events

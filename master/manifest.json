@@ -1982,6 +1982,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.NotificationLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.NotificationLevel.html",
+          "hash": "vSJMYXQMZ1mWfEzyeQ5Y3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ElmSharp.Panel.yml",
       "output": {
         ".html": {
@@ -2167,6 +2179,18 @@
         ".html": {
           "relative_path": "api/ElmSharp.RotationEffect.html",
           "hash": "kuRv9rBpuAAVD6avJdiZdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.ScreenMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.ScreenMode.html",
+          "hash": "W4E3HlrFssyygeuTI76KHA=="
         }
       },
       "is_incremental": false,
@@ -2790,7 +2814,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.Window.html",
-          "hash": "+jjD2ZRvOhl4EIldpjtcJg=="
+          "hash": "H3uHBZLWy5mWdDGWzxfTOg=="
         }
       },
       "is_incremental": false,
@@ -2874,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.html",
-          "hash": "wXUTXj6cfg0cKPG5gHimCw=="
+          "hash": "rCZ/IXMSF6nysvAcz0ctOw=="
         }
       },
       "is_incremental": false,
@@ -21918,7 +21942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.Display.html",
-          "hash": "1I6hQqdUWTkhcPrBAysW5A=="
+          "hash": "+GmFQ5c0teIcdSt7jmPY1g=="
         }
       },
       "is_incremental": false,
@@ -22266,7 +22290,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.Power.html",
-          "hash": "2pZaBv1hv2XyxA+pkF/pew=="
+          "hash": "Rlai3j19QVJ/gaga0I5tqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.System.PowerLock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.System.PowerLock.html",
+          "hash": "/TOP+mOZPM82sYAJNwRahw=="
         }
       },
       "is_incremental": false,
@@ -22830,7 +22866,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.html",
-          "hash": "5+3qplFm5bR6PzUIHLSO3Q=="
+          "hash": "z8B85kdoDHwUdbFA/EeGwg=="
         }
       },
       "is_incremental": false,
@@ -23286,7 +23322,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.InputMethod.EditorWindow.html",
-          "hash": "0UVzHzvHHAv6C+XBMlKRaA=="
+          "hash": "FFsIkAH3F4rcG0IdEcFfSw=="
         }
       },
       "is_incremental": false,
@@ -24618,7 +24654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "kykyZCc2dggFyNOmWfcPlA=="
+          "hash": "RhTm9OdV/JsBViF4qdW2iw=="
         }
       },
       "is_incremental": false,
@@ -24690,14 +24726,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {

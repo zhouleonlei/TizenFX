@@ -136,20 +136,18 @@ It can be made to hold the specific state to avoid the CPU state internally.</p>
   </h3>
   <a id="Tizen_System_Power_ReleaseCpuLock_" data-uid="Tizen.System.Power.ReleaseCpuLock*"></a>
   <h4 id="Tizen_System_Power_ReleaseCpuLock" data-uid="Tizen.System.Power.ReleaseCpuLock">ReleaseCpuLock()</h4>
-  <div class="markdown level1 summary"><p>Releases the CPU lock state.</p>
+  <div class="markdown level1 summary"><p>[Obsolete(&quot;Please do not use! this will be deprecated&quot;)]</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReleaseCpuLock()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please do not use! This will be deprecated! Please use ReleaseLock instead!&quot;)]
+public static void ReleaseCpuLock()</code></pre>
   </div>
   
   <h5 id="Tizen_System_Power_ReleaseCpuLock_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
-  <h5 id="Tizen_System_Power_ReleaseCpuLock_examples">Examples</h5>
-  <pre><code>Tizen.System.Power.ReleaseCpuLock();</code></pre>
-
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -171,15 +169,80 @@ It can be made to hold the specific state to avoid the CPU state internally.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Tizen_System_Power_RequestCpuLock_" data-uid="Tizen.System.Power.RequestCpuLock*"></a>
-  <h4 id="Tizen_System_Power_RequestCpuLock_System_Int32_" data-uid="Tizen.System.Power.RequestCpuLock(System.Int32)">RequestCpuLock(Int32)</h4>
-  <div class="markdown level1 summary"><p>Locks the CPU for a specified time.
-After the given timeout (in milliseconds), unlock the given lock state automatically.</p>
+  <a id="Tizen_System_Power_ReleaseLock_" data-uid="Tizen.System.Power.ReleaseLock*"></a>
+  <h4 id="Tizen_System_Power_ReleaseLock_Tizen_System_PowerLock_" data-uid="Tizen.System.Power.ReleaseLock(Tizen.System.PowerLock)">ReleaseLock(PowerLock)</h4>
+  <div class="markdown level1 summary"><p>Releases the lock state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RequestCpuLock(int timeout)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReleaseLock(PowerLock type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.System.PowerLock.html">PowerLock</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The power type to request lock</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_System_Power_ReleaseLock_Tizen_System_PowerLock__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 id="Tizen_System_Power_ReleaseLock_Tizen_System_PowerLock__examples">Examples</h5>
+  <pre><code>Tizen.System.Power.ReleaseLock(Tizen.System.Power.PowerLock.Cpu);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>When an invalid parameter value is set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>If the privilege is not set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>If power lock is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>In case of any system error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_System_Power_RequestCpuLock_" data-uid="Tizen.System.Power.RequestCpuLock*"></a>
+  <h4 id="Tizen_System_Power_RequestCpuLock_System_Int32_" data-uid="Tizen.System.Power.RequestCpuLock(System.Int32)">RequestCpuLock(Int32)</h4>
+  <div class="markdown level1 summary"><p>[Obsolete(&quot;Please do not use! this will be deprecated&quot;)]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please do not use! This will be deprecated! Please use RequestLock instead!&quot;)]
+public static void RequestCpuLock(int timeout)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,8 +270,76 @@ So you must release the permanent lock of the power state with ReleaseCpuLock() 
   <h5 id="Tizen_System_Power_RequestCpuLock_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
-  <h5 id="Tizen_System_Power_RequestCpuLock_System_Int32__examples">Examples</h5>
-  <pre><code>Tizen.System.Power.RequestCpuLock(2000);</code></pre>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>When an invalid parameter value is set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>If the privilege is not set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>In case of any system error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_System_Power_RequestLock_" data-uid="Tizen.System.Power.RequestLock*"></a>
+  <h4 id="Tizen_System_Power_RequestLock_Tizen_System_PowerLock_System_Int32_" data-uid="Tizen.System.Power.RequestLock(Tizen.System.PowerLock,System.Int32)">RequestLock(PowerLock, Int32)</h4>
+  <div class="markdown level1 summary"><p>Locks the given lock state for a specified time.
+After the given timeout (in milliseconds), unlock the given lock state automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RequestLock(PowerLock type, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.System.PowerLock.html">PowerLock</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The power type to request lock</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>The positive number in milliseconds or 0 for the permanent lock.
+So you must release the permanent lock of the power state with ReleaseLock() if timeout_ms is zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_System_Power_RequestLock_Tizen_System_PowerLock_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the process dies, then every lock will be removed.</p>
+</div>
+  
+  <h5 id="Tizen_System_Power_RequestLock_Tizen_System_PowerLock_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 id="Tizen_System_Power_RequestLock_Tizen_System_PowerLock_System_Int32__examples">Examples</h5>
+  <pre><code>Tizen.System.Power.RequestLock(Tizen.System.Power.PowerLock.Cpu, 2000);</code></pre>
 
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,6 +358,11 @@ So you must release the permanent lock of the power state with ReleaseCpuLock() 
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
         <td><p>If the privilege is not set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>If power lock is not supported.</p>
 </td>
       </tr>
       <tr>
