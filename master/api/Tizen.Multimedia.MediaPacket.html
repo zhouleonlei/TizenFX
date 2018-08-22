@@ -334,6 +334,63 @@ The MediaPacket is not in the writable state, which means it is being used by an
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_MediaPacket_Flip_" data-uid="Tizen.Multimedia.MediaPacket.Flip*"></a>
+  <h4 id="Tizen_Multimedia_MediaPacket_Flip" data-uid="Tizen.Multimedia.MediaPacket.Flip">Flip</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the flip value of the current packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Flips Flip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Flips.html">Flips</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_MediaPacket_Flip_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a class="xref" href="Tizen.Multimedia.Flips.html#Tizen_Multimedia_Flips_None">None</a> will be ignored in set case. It&apos;s not supported in Native FW.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_MediaPacket_Flip_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>The specified value to set is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The MediaPacket has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The MediaPacket is not in the writable state, which means it is being used by another module.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_MediaPacket_Format_" data-uid="Tizen.Multimedia.MediaPacket.Format*"></a>
   <h4 id="Tizen_Multimedia_MediaPacket_Format" data-uid="Tizen.Multimedia.MediaPacket.Format">Format</h4>
   <div class="markdown level1 summary"><p>Gets the media format of the current packet.</p>
@@ -473,6 +530,60 @@ The MediaPacket is not in the writable state, which means it is being used by an
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The MediaPacket has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The MediaPacket is not in the writable state, which means it is being used by another module.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_MediaPacket_Rotation_" data-uid="Tizen.Multimedia.MediaPacket.Rotation*"></a>
+  <h4 id="Tizen_Multimedia_MediaPacket_Rotation" data-uid="Tizen.Multimedia.MediaPacket.Rotation">Rotation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the rotation value of the current packet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rotation Rotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Rotation.html">Rotation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_MediaPacket_Rotation_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>The specified value to set is invalid.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
         <td><p>The MediaPacket has already been disposed of.</p>
