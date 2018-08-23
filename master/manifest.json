@@ -8778,7 +8778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.CameraDeviceException.html",
-          "hash": "HYfXHLO96mK0qirp3djX/Q=="
+          "hash": "cqUUlKsTxoBgEsPDxTmzmQ=="
         }
       },
       "is_incremental": false,
@@ -8790,7 +8790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.CameraDeviceNotFoundException.html",
-          "hash": "sPCAHodLKuhp44659urLjg=="
+          "hash": "KI6d20Uw9NxFfB9u7Ex2Fg=="
         }
       },
       "is_incremental": false,
@@ -8886,7 +8886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.CameraException.html",
-          "hash": "mVgfUL3Ft9E+lhARRfIdEg=="
+          "hash": "ySVnqKQYQRLcyzQQ96REXg=="
         }
       },
       "is_incremental": false,
@@ -9030,7 +9030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.CameraPixelFormat.html",
-          "hash": "zlIR14qtH3TUfTWhgpUIEQ=="
+          "hash": "Lv3im4x624/zMmDA1gtvhg=="
         }
       },
       "is_incremental": false,
@@ -9211,6 +9211,18 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.ContainerMediaFormat.html",
           "hash": "Z1/Hd3Oh4VWZll8eZg5VQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.DepthPlane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.DepthPlane.html",
+          "hash": "MErj/pV/tNTZ6DMzrU9pMA=="
         }
       },
       "is_incremental": false,
@@ -9834,7 +9846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.PlaneType.html",
-          "hash": "XYnPsu7OKBDvbGqsmiiZ4g=="
+          "hash": "rNbyYQK1W3zxGOjedpwKUA=="
         }
       },
       "is_incremental": false,
@@ -11970,7 +11982,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "hpINXEB5i03S7C8eDEqbyQ=="
+          "hash": "gGx+qnG4ibJZ1NR8hV9U/w=="
         }
       },
       "is_incremental": false,
@@ -17118,7 +17130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Connection.IAddressInformation.html",
-          "hash": "vK4SCkFL/XWq7nMzGWN+1g=="
+          "hash": "p2yGTDx94AiMBgMWwN7RyQ=="
         }
       },
       "is_incremental": false,
@@ -22302,7 +22314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.Power.html",
-          "hash": "Rlai3j19QVJ/gaga0I5tqg=="
+          "hash": "5+vjHL7VXSlMtJX9/LtfVA=="
         }
       },
       "is_incremental": false,
@@ -24666,7 +24678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "B04dI1Q30aYFNQiIKGw2Eg=="
+          "hash": "z4uDKg8jE93yLilqAAx/LA=="
         }
       },
       "is_incremental": false,
