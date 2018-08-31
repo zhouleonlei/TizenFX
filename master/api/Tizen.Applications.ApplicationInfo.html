@@ -494,6 +494,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_Applications_ApplicationInfo_SharedDataPath_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An application that wants to use shared/data directory must declare <a href="http://tizen.org/privilege/appdir.shareddata">http://tizen.org/privilege/appdir.shareddata</a> privilege. If the application doesn&apos;t declare the privilege, the framework will not create shared/data directory for the application. This property will return empty string when the application doesn&apos;t have shared/data directory.</p>
+</div>
   
   <h5 id="Tizen_Applications_ApplicationInfo_SharedDataPath_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
