@@ -83,7 +83,7 @@
   
   <h1 id="Tizen_NUI_InputMethodContext" data-uid="Tizen.NUI.InputMethodContext" class="text-break">Class InputMethodContext
   </h1>
-  <div class="markdown level0 summary"><p>Specifically manages the input method framework which enables the virtual or hardware keyboards.</p>
+  <div class="markdown level0 summary"><p>Specifically manages the input method framework (IMF) that enables the virtual or hardware keyboards.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -184,8 +184,8 @@
   <a id="Tizen_NUI_InputMethodContext_Activate_" data-uid="Tizen.NUI.InputMethodContext.Activate*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_Activate" data-uid="Tizen.NUI.InputMethodContext.Activate">Activate()</h4>
   <div class="markdown level1 summary"><p>Activates the IMF.<br>
-It means that the text editing is started somewhere.<br>
-If the hardware keyboard isn&apos;t connected, then it will show the virtual keyboard.</p>
+It means that the text editing has started.<br>
+If the hardware keyboard is not connected, then it shows the virtual keyboard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -230,7 +230,7 @@ If the hardware keyboard isn&apos;t connected, then it will show the virtual key
   <a id="Tizen_NUI_InputMethodContext_Deactivate_" data-uid="Tizen.NUI.InputMethodContext.Deactivate*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_Deactivate" data-uid="Tizen.NUI.InputMethodContext.Deactivate">Deactivate()</h4>
   <div class="markdown level1 summary"><p>Deactivates the IMF.<br>
-It means that the text editing is finished somewhere.</p>
+It means that the text editing is complete.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,7 +243,7 @@ It means that the text editing is finished somewhere.</p>
   
   <a id="Tizen_NUI_InputMethodContext_DestroyContext_" data-uid="Tizen.NUI.InputMethodContext.DestroyContext*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_DestroyContext" data-uid="Tizen.NUI.InputMethodContext.DestroyContext">DestroyContext()</h4>
-  <div class="markdown level1 summary"><p>Destroy the context of the IMF.<br></p>
+  <div class="markdown level1 summary"><p>Destroys the context of the IMF.<br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -289,7 +289,7 @@ It means that the text editing is finished somewhere.</p>
 The position is relative to whether the keyboard is visible or not.<br>
 If the keyboard is not visible, then the position will be off the screen.<br>
 If the keyboard is not being shown when this method is called, the keyboard is partially setup (IMFContext) to get/&gt;
-the values then taken down. So ideally, GetInputMethodArea() should be called after Show().</p>
+the values then taken down. So ideally, GetInputMethodArea() must be called after Show().</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -307,7 +307,7 @@ the values then taken down. So ideally, GetInputMethodArea() should be called af
     <tbody>
       <tr>
         <td><a class="xref" href="Tizen.NUI.Rectangle.html">Rectangle</a></td>
-        <td><p>Rectangle which is keyboard panel x, y, width, height.</p>
+        <td><p>Rectangle which is keyboard panel x, y, width, and height.</p>
 </td>
       </tr>
     </tbody>
@@ -319,7 +319,7 @@ the values then taken down. So ideally, GetInputMethodArea() should be called af
   <a id="Tizen_NUI_InputMethodContext_GetInputPanelLocale_" data-uid="Tizen.NUI.InputMethodContext.GetInputPanelLocale*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_GetInputPanelLocale" data-uid="Tizen.NUI.InputMethodContext.GetInputPanelLocale">GetInputPanelLocale()</h4>
   <div class="markdown level1 summary"><p>Gets the current language locale of the input panel.<br>
-For example, en_US, en_GB, en_PH, fr_FR, ...</p>
+For example, en_US, en_GB, en_PH, fr_FR, and so on.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -467,7 +467,7 @@ The default keyboard type is SoftwareKeyboard.</p>
   
   <a id="Tizen_NUI_InputMethodContext_GetTextDirection_" data-uid="Tizen.NUI.InputMethodContext.GetTextDirection*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_GetTextDirection" data-uid="Tizen.NUI.InputMethodContext.GetTextDirection">GetTextDirection()</h4>
-  <div class="markdown level1 summary"><p>Returns the text direction of the keyboard&apos;s current input language.</p>
+  <div class="markdown level1 summary"><p>Returns the text direction of the current input language of the keyboard.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -509,7 +509,7 @@ The default keyboard type is SoftwareKeyboard.</p>
   
   <a id="Tizen_NUI_InputMethodContext_NotifyCursorPosition_" data-uid="Tizen.NUI.InputMethodContext.NotifyCursorPosition*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_NotifyCursorPosition" data-uid="Tizen.NUI.InputMethodContext.NotifyCursorPosition">NotifyCursorPosition()</h4>
-  <div class="markdown level1 summary"><p>Notifies the IMF context that the cursor position has changed, required for features like auto-capitalization.</p>
+  <div class="markdown level1 summary"><p>Notifies the IMF context that the cursor position has changed, required for features such as auto-capitalization.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -553,7 +553,7 @@ The default keyboard type is SoftwareKeyboard.</p>
   
   <a id="Tizen_NUI_InputMethodContext_Reset_" data-uid="Tizen.NUI.InputMethodContext.Reset*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_Reset" data-uid="Tizen.NUI.InputMethodContext.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Sends a message reset to the preedit state or the IMF module.</p>
+  <div class="markdown level1 summary"><p>Sends a message reset to the pre-edit state or the IMF module.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -566,8 +566,8 @@ The default keyboard type is SoftwareKeyboard.</p>
   
   <a id="Tizen_NUI_InputMethodContext_RestoreAfterFocusLost_" data-uid="Tizen.NUI.InputMethodContext.RestoreAfterFocusLost*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_RestoreAfterFocusLost" data-uid="Tizen.NUI.InputMethodContext.RestoreAfterFocusLost">RestoreAfterFocusLost()</h4>
-  <div class="markdown level1 summary"><p>Gets the restoration status which controls if the keyboard is restored after the focus is lost and then regained.<br>
-If true, then the keyboard will be restored (activated) after focus is regained.</p>
+  <div class="markdown level1 summary"><p>Gets the restoration status, which controls if the keyboard is restored after the focus is lost and then regained.<br>
+If true, then the keyboard will be restored (activated) after the focus is regained.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -627,7 +627,7 @@ If true, then the keyboard will be restored (activated) after focus is regained.
   
   <a id="Tizen_NUI_InputMethodContext_SetInputPanelUserData_" data-uid="Tizen.NUI.InputMethodContext.SetInputPanelUserData*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_SetInputPanelUserData_System_String_" data-uid="Tizen.NUI.InputMethodContext.SetInputPanelUserData(System.String)">SetInputPanelUserData(String)</h4>
-  <div class="markdown level1 summary"><p>Sets up the input-panel specific data.</p>
+  <div class="markdown level1 summary"><p>Sets up the input panel specific data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -678,7 +678,7 @@ If true, then the keyboard will be restored (activated) after focus is regained.
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">toggle</span></td>
-        <td><p>True means that keyboard should be restored after the focus is lost and regained.</p>
+        <td><p>True means that keyboard must be restored after the focus is lost and regained.</p>
 </td>
       </tr>
     </tbody>
@@ -690,7 +690,7 @@ If true, then the keyboard will be restored (activated) after focus is regained.
   <a id="Tizen_NUI_InputMethodContext_SetReturnKeyState_" data-uid="Tizen.NUI.InputMethodContext.SetReturnKeyState*"></a>
   <h4 id="Tizen_NUI_InputMethodContext_SetReturnKeyState_System_Boolean_" data-uid="Tizen.NUI.InputMethodContext.SetReturnKeyState(System.Boolean)">SetReturnKeyState(Boolean)</h4>
   <div class="markdown level1 summary"><p>Sets the return key on the input panel to be visible or invisible.<br>
-The default is true.</p>
+The default value is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
