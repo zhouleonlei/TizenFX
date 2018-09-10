@@ -1213,6 +1213,37 @@ Please Set Layout if you want to use Margin property.</p>
   <h5 id="Tizen_NUI_BaseComponents_View_Name_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_BaseComponents_View_NaturalSize_" data-uid="Tizen.NUI.BaseComponents.View.NaturalSize*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_NaturalSize" data-uid="Tizen.NUI.BaseComponents.View.NaturalSize">NaturalSize</h4>
+  <div class="markdown level1 summary"><p>Returns the natural size of the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 NaturalSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_NaturalSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Deriving classes stipulate the natural size and by default a view has a zero natural size.</p>
+</div>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_NaturalSize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
   <a id="Tizen_NUI_BaseComponents_View_NaturalSize2D_" data-uid="Tizen.NUI.BaseComponents.View.NaturalSize2D*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_NaturalSize2D" data-uid="Tizen.NUI.BaseComponents.View.NaturalSize2D">NaturalSize2D</h4>
   <div class="markdown level1 summary"><p>Returns the natural size (Size2D) of the view.</p>
@@ -1870,6 +1901,43 @@ The values set by this property will likely change.</p>
   
   <h5 id="Tizen_NUI_BaseComponents_View_SiblingOrder_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_NUI_BaseComponents_View_Size_" data-uid="Tizen.NUI.BaseComponents.View.Size*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_Size" data-uid="Tizen.NUI.BaseComponents.View.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Sets the size of a view for the width, the height and the depth.<br>
+Geometry can be scaled to fit within this area.<br>
+This does not interfere with the view&apos;s scale factor.<br>
+The views default depth is the minimum of width and height.<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Size.html">Size</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_Size_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Please note that multi-cascade setting is not possible for this NUI object. <br>
+It is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
+For example, this code is working fine : view.Size = new Size( 1.0f, 1.0f, 0.0f); <br>
+but this will not work! : view.Size.Width = 2.0f; view.Size.Height = 2.0f; <br></p>
+</div>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_Size_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
   
   <a id="Tizen_NUI_BaseComponents_View_Size2D_" data-uid="Tizen.NUI.BaseComponents.View.Size2D*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_Size2D" data-uid="Tizen.NUI.BaseComponents.View.Size2D">Size2D</h4>
