@@ -1370,6 +1370,65 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetPlayPositionNanosecondsAsync_System_Int64_System_Boolean_">SetPlayPositionNanosecondsAsync(Int64, Boolean)</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetPlayPosition">GetPlayPosition()</a></div>
   </div>
+  <a id="Tizen_Multimedia_Player_GetVideoRoi_" data-uid="Tizen.Multimedia.Player.GetVideoRoi*"></a>
+  <h4 id="Tizen_Multimedia_Player_GetVideoRoi" data-uid="Tizen.Multimedia.Player.GetVideoRoi">GetVideoRoi()</h4>
+  <div class="markdown level1 summary"><p>Get the relative ROI (Region Of Interest) area as a decimal fraction based on the video source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScaleRectangle GetVideoRoi()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.ScaleRectangle.html">ScaleRectangle</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.ScaleRectangle.html">ScaleRectangle</a> containing the ROI area information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_GetVideoRoi_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The specified ROI area is valid only in <span class="xref">Tizen.Multimedia.PlayerDisplayType.Overlay</span>.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_GetVideoRoi_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Operation failed; internal error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_GetVideoRoi_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Display">Display</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.StreamInfo.html#Tizen_Multimedia_StreamInfo_GetVideoProperties">GetVideoProperties()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetVideoRoi_Tizen_Multimedia_ScaleRectangle_">SetVideoRoi(ScaleRectangle)</a></div>
+  </div>
   <a id="Tizen_Multimedia_Player_OnPreparing_" data-uid="Tizen.Multimedia.Player.OnPreparing*"></a>
   <h4 id="Tizen_Multimedia_Player_OnPreparing" data-uid="Tizen.Multimedia.Player.OnPreparing">OnPreparing()</h4>
   <div class="markdown level1 summary"><p>Called when the <span class="xref">Tizen.Multimedia.Player.Prepare</span> is invoked.</p>
@@ -1943,6 +2002,84 @@ No subtitle is set.</p>
   <h5 id="Tizen_Multimedia_Player_SetSubtitleOffset_System_Int32__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_SetSubtitle_System_String_">SetSubtitle(String)</a></div>
+  </div>
+  <a id="Tizen_Multimedia_Player_SetVideoRoi_" data-uid="Tizen.Multimedia.Player.SetVideoRoi*"></a>
+  <h4 id="Tizen_Multimedia_Player_SetVideoRoi_Tizen_Multimedia_ScaleRectangle_" data-uid="Tizen.Multimedia.Player.SetVideoRoi(Tizen.Multimedia.ScaleRectangle)">SetVideoRoi(ScaleRectangle)</h4>
+  <div class="markdown level1 summary"><p>Set the relative ROI (Region Of Interest) area as a decimal fraction based on the video source.
+It can be regarded as zooming operation because the specified video area will be rendered to fit to the display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVideoRoi(ScaleRectangle scaleRectangle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.ScaleRectangle.html">ScaleRectangle</a></td>
+        <td><span class="parametername">scaleRectangle</span></td>
+        <td><p>The containing the ROI area information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_SetVideoRoi_Tizen_Multimedia_ScaleRectangle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function requires the ratio of the each coordinate and size to the video resolution size
+to guarantee of showing the same area for the dynamic resolution video content.
+This function have to be called after setting <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Display">Display</a></p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_SetVideoRoi_Tizen_Multimedia_ScaleRectangle__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Operation failed; internal error.
+-or-<br>
+The <span class="xref">Tizen.Multimedia.PlayerDisplayType</span> is not set to <span class="xref">Tizen.Multimedia.PlayerDisplayType.Overlay</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">scaleRectangle.ScaleX.ScaleX</code> is less than 0.0 or greater than 1.0.<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">scaleRectangle.ScaleY.ScaleY</code> is less than 0.0 or greater than 1.0.<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">scaleRectangle.ScaleWidth.ScaleWidth</code> is less than or equal to 0.0 or greater than 1.0.<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">scaleRectangle.ScaleHeight.ScaleHeight</code> is less than or equal to 0.0 or greater than 1.0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_SetVideoRoi_Tizen_Multimedia_ScaleRectangle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.ScaleRectangle.html">ScaleRectangle</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Display">Display</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.StreamInfo.html#Tizen_Multimedia_StreamInfo_GetVideoProperties">GetVideoProperties()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_GetVideoRoi">GetVideoRoi()</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_Start_" data-uid="Tizen.Multimedia.Player.Start*"></a>
   <h4 id="Tizen_Multimedia_Player_Start" data-uid="Tizen.Multimedia.Player.Start">Start()</h4>
