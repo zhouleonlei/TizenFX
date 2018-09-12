@@ -1718,6 +1718,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.InputDeviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.InputDeviceType.html",
+          "hash": "I5+Fu5x3qBHS704oFzfoxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.InputGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.InputGenerator.html",
+          "hash": "A+CroXvIRJv5R9kRsQTGUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ElmSharp.InputHints.yml",
       "output": {
         ".html": {
@@ -1759,6 +1783,30 @@
         ".html": {
           "relative_path": "api/ElmSharp.InputPanelReturnKeyType.html",
           "hash": "xIDqP9hfZnknWDCPNowllA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.InputPointerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.InputPointerType.html",
+          "hash": "VgJ2G7iG9SruR9ylyfoszw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ElmSharp.InputTouchType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ElmSharp.InputTouchType.html",
+          "hash": "eBeFSvaQX2+Dh6l1bBTq7A=="
         }
       },
       "is_incremental": false,
@@ -2898,7 +2946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.html",
-          "hash": "rCZ/IXMSF6nysvAcz0ctOw=="
+          "hash": "QTjGKGp/6sVGPyqSE2zQrQ=="
         }
       },
       "is_incremental": false,
@@ -24798,7 +24846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wDiUCuj5lgQ/3I6HMsBSow=="
+          "hash": "swYYjcSBRZejp9YzSRlSFQ=="
         }
       },
       "is_incremental": false,
@@ -24870,21 +24918,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
