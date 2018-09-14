@@ -9894,7 +9894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.PlaneType.html",
-          "hash": "rNbyYQK1W3zxGOjedpwKUA=="
+          "hash": "XpLcdSzVBbzUkzrggfoMcA=="
         }
       },
       "is_incremental": false,
@@ -10370,6 +10370,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.Command.html",
+          "hash": "dE4O9kFSZopvafFj86+2aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.CustomCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.CustomCommand.html",
+          "hash": "Q2b+UnD9oVyruy+RPpL6bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.CustomCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.CustomCommandReceivedEventArgs.html",
+          "hash": "G51GU44KgrzqXh6mhyOtMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlMetadata.yml",
       "output": {
         ".html": {
@@ -10386,7 +10422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html",
-          "hash": "uOaiS+FnomsosauvY7woAQ=="
+          "hash": "tRqE7nwOOhmTlEelV8iXlA=="
         }
       },
       "is_incremental": false,
@@ -10398,7 +10434,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaybackState.html",
-          "hash": "xXa4Hveptonp8ZN3HBTjSw=="
+          "hash": "yf8zD6waH0kmk52RNRsh6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaylist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaylist.html",
+          "hash": "QFws0ePsUVzu/rbbCjuxgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaylistMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlPlaylistMode.html",
+          "hash": "Bd0f6GjjKYDBSUjddsOV5Q=="
         }
       },
       "is_incremental": false,
@@ -10410,7 +10470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlRepeatMode.html",
-          "hash": "Ug5PG+EguHHgH7x8TeAa3w=="
+          "hash": "XGpIDKzJoZvXvtXWqmttqg=="
         }
       },
       "is_incremental": false,
@@ -10422,7 +10482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlServer.html",
-          "hash": "KtzpLp3D7ZFaUFhQD8XuTg=="
+          "hash": "qsP+I8OER+7LrE5NkWopxA=="
         }
       },
       "is_incremental": false,
@@ -10458,7 +10518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaController.html",
-          "hash": "n/JUrj82o0x2xPATVhCP9Q=="
+          "hash": "l5G4Y9ux2rr5HTxqVwNG2g=="
         }
       },
       "is_incremental": false,
@@ -10490,11 +10550,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackActionCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackActionCommandReceivedEventArgs.html",
+          "hash": "tsfZYujwtGZ3a8CxX39itQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommand.html",
+          "hash": "5WQ5WJDX9uD1Q8dpNEr7hQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommandReceivedEventArgs.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommandReceivedEventArgs.html",
-          "hash": "9Wgy489KcjjTP0E0I6Nrgg=="
+          "hash": "XVJUpcqItPeCPfhkJtR/8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackPositionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackPositionCommand.html",
+          "hash": "Q5SeNEWq5daPS0RGS0BhDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackPositionCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackPositionCommandReceivedEventArgs.html",
+          "hash": "kHnaAbMJVr8DtnzNqM0jog=="
         }
       },
       "is_incremental": false,
@@ -10507,6 +10615,66 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackStateUpdatedEventArgs.html",
           "hash": "59O+FDVNPLjx01S4Td2qMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaylistCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaylistCommand.html",
+          "hash": "vjvWWB/NFTYihRyemdT27w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaylistCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaylistCommandReceivedEventArgs.html",
+          "hash": "O3LNOuRZyGyWoy+O3H7kAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaylistUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaylistUpdatedEventArgs.html",
+          "hash": "fzfY4LtQhn2776+gkZ0Itg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCommand.html",
+          "hash": "FZl/utB/TLCy5UXFTTX/vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCommandReceivedEventArgs.html",
+          "hash": "1olZg+gbrxizu6tTB63FVA=="
         }
       },
       "is_incremental": false,
@@ -10646,6 +10814,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommand.html",
+          "hash": "I2miDYcnuhK6S1k9DBdptg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommandReceivedEventArgs.html",
+          "hash": "UJz0lZm/PeWC4nEMLFVcuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeUpdatedEventArgs.yml",
       "output": {
         ".html": {
@@ -10662,7 +10854,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.html",
-          "hash": "wNCuZNAy4p9Uz1pF0gMEIg=="
+          "hash": "0BNx83dply1IWj6KOKfl0Q=="
         }
       },
       "is_incremental": false,
@@ -10675,6 +10867,18 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.ResourceLimitException.html",
           "hash": "n1Ktttce0swdgXZcX1vqeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.RgbPlane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.RgbPlane.html",
+          "hash": "agMblxIAUy9NJ+k4K4CaHg=="
         }
       },
       "is_incremental": false,
@@ -12042,7 +12246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "KS8tLzP7wNOR5icxhiRKpQ=="
+          "hash": "dvh/UrppvrPBehn2RUisfg=="
         }
       },
       "is_incremental": false,
@@ -24846,7 +25050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "swYYjcSBRZejp9YzSRlSFQ=="
+          "hash": "JIFkuRz9maqares4K58/Fg=="
         }
       },
       "is_incremental": false,
