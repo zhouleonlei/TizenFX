@@ -161,6 +161,53 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_GetActivatedClients_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.GetActivatedClients*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_GetActivatedClients" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.GetActivatedClients">GetActivatedClients()</h4>
+  <div class="markdown level1 summary"><p>Gets the active clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; GetActivatedClients()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>the activated client ids.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_GetActivatedClients_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Remoting_MediaControlServer_RemovePlaylist_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.RemovePlaylist*"></a>
   <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_RemovePlaylist_Tizen_Multimedia_Remoting_MediaControlPlaylist_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.RemovePlaylist(Tizen.Multimedia.Remoting.MediaControlPlaylist)">RemovePlaylist(MediaControlPlaylist)</h4>
   <div class="markdown level1 summary"><p>Delete playlist.</p>
@@ -204,6 +251,81 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_RequestAsync_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.RequestAsync*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_RequestAsync_Tizen_Multimedia_Remoting_Command_System_String_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.RequestAsync(Tizen.Multimedia.Remoting.Command,System.String)">RequestAsync(Command, String)</h4>
+  <div class="markdown level1 summary"><p>Requests commands to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task RequestAsync(Command command, string clientId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.Command.html">Command</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>A <a class="xref" href="Tizen.Multimedia.Remoting.Command.html">Command</a> class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">clientId</span></td>
+        <td><p>The client Id to send command.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A task that represents the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_RequestAsync_Tizen_Multimedia_Remoting_Command_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The client can request the command to execute <a class="xref" href="Tizen.Multimedia.Remoting.Command.html">Command</a>, <br>
+and then, the server receive the result of each request(command).</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_RequestAsync_Tizen_Multimedia_Remoting_Command_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
 -or-<br>
 An internal error occurs.</p>
 </td>
@@ -326,6 +448,60 @@ An internal error occurs.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetIconPath_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIconPath*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetIconPath_System_String_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIconPath(System.String)">SetIconPath(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the path of icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetIconPath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetIconPath_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetIndexOfCurrentPlayingMedia_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIndexOfCurrentPlayingMedia*"></a>
   <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetIndexOfCurrentPlayingMedia_System_String_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIndexOfCurrentPlayingMedia(System.String)">SetIndexOfCurrentPlayingMedia(String)</h4>
   <div class="markdown level1 summary"><p>Sets the index of current playing media.</p>
@@ -430,6 +606,174 @@ An internal error occurs.</p>
         <td><p>The server is not running .<br>
 -or-<br>
 An internal error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability(System.Collections.Generic.Dictionary{Tizen.Multimedia.Remoting.MediaControlPlaybackCommand,Tizen.Multimedia.Remoting.MediaControlCapabilitySupport})">SetPlaybackCapability(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the capabilities by <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlaybackCapability(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt; capabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a>, <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a>&gt;</td>
+        <td><span class="parametername">capabilities</span></td>
+        <td><p>The set of <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a> and <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">capabilities</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability(Tizen.Multimedia.Remoting.MediaControlPlaybackCommand,Tizen.Multimedia.Remoting.MediaControlCapabilitySupport)">SetPlaybackCapability(MediaControlPlaybackCommand, MediaControlCapabilitySupport)</h4>
+  <div class="markdown level1 summary"><p>Sets the capabilities by <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlaybackCapability(MediaControlPlaybackCommand action, MediaControlCapabilitySupport support)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>A playback command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a></td>
+        <td><span class="parametername">support</span></td>
+        <td><p>A value indicating whether the <code data-dev-comment-type="paramref" class="paramref">action</code> is supported or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">action</code> or <code data-dev-comment-type="paramref" class="paramref">support</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackContentType_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackContentType*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackContentType_Tizen_Multimedia_Remoting_MediaControlContentType_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackContentType(Tizen.Multimedia.Remoting.MediaControlContentType)">SetPlaybackContentType(MediaControlContentType)</h4>
+  <div class="markdown level1 summary"><p>Sets the content type of latest played media.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPlaybackContentType(MediaControlContentType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlContentType.html">MediaControlContentType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A value indicating the content type of the latest played media.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackContentType_Tizen_Multimedia_Remoting_MediaControlContentType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">type</code> is invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -549,6 +893,114 @@ An internal error occurs.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">mode</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetRepeatModeCapability_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetRepeatModeCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetRepeatModeCapability_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetRepeatModeCapability(Tizen.Multimedia.Remoting.MediaControlCapabilitySupport)">SetRepeatModeCapability(MediaControlCapabilitySupport)</h4>
+  <div class="markdown level1 summary"><p>Sets the content type of latest played media.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRepeatModeCapability(MediaControlCapabilitySupport support)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a></td>
+        <td><span class="parametername">support</span></td>
+        <td><p>A value indicating whether the <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlRepeatMode.html">MediaControlRepeatMode</a> is supported or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetRepeatModeCapability_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">support</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetShuffleModeCapability_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetShuffleModeCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetShuffleModeCapability_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetShuffleModeCapability(Tizen.Multimedia.Remoting.MediaControlCapabilitySupport)">SetShuffleModeCapability(MediaControlCapabilitySupport)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a> indicating shuffle mode is supported or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetShuffleModeCapability(MediaControlCapabilitySupport support)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a></td>
+        <td><span class="parametername">support</span></td>
+        <td><p>A value indicating whether the shuffle mode is supported or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetShuffleModeCapability_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">support</code> is invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -849,6 +1301,33 @@ public static event EventHandler&lt;PlaybackCommandReceivedEventArgs&gt; Playbac
   </table>
   
   <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_RepeatModeCommandReceived_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SearchCommandReceived" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SearchCommandReceived">SearchCommandReceived</h4>
+  <div class="markdown level1 summary"><p>Occurs when a client sends search command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;SearchCommandReceivedEventArgs&gt; SearchCommandReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.SearchCommandReceivedEventArgs.html">SearchCommandReceivedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SearchCommandReceived_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
   
   <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_ShuffleModeCommandReceived" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.ShuffleModeCommandReceived">ShuffleModeCommandReceived</h4>

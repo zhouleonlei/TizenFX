@@ -10374,7 +10374,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.Command.html",
-          "hash": "dE4O9kFSZopvafFj86+2aQ=="
+          "hash": "CPAe+Ci3bKf9WZgXCjTuHw=="
         }
       },
       "is_incremental": false,
@@ -10386,7 +10386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.CustomCommand.html",
-          "hash": "Q2b+UnD9oVyruy+RPpL6bw=="
+          "hash": "WcwEFqkD+/ea5e2qPtapvQ=="
         }
       },
       "is_incremental": false,
@@ -10398,7 +10398,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.CustomCommandReceivedEventArgs.html",
-          "hash": "G51GU44KgrzqXh6mhyOtMA=="
+          "hash": "Me01onXluBej3wOx25nS9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html",
+          "hash": "A0UVrI5T201q2HGwSD+Eqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlContentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlContentType.html",
+          "hash": "QXbuUVAXCwb7hGzwNN+VEQ=="
         }
       },
       "is_incremental": false,
@@ -10478,11 +10502,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlSearchCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlSearchCategory.html",
+          "hash": "RZFYlvVxRIrKokAIsTOwZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlSearchCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlSearchCondition.html",
+          "hash": "EyPglnFr8r9ecSekWbvLvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.MediaControlServer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlServer.html",
-          "hash": "qsP+I8OER+7LrE5NkWopxA=="
+          "hash": "g3MakxLHMGGf8v4tnVP7uA=="
         }
       },
       "is_incremental": false,
@@ -10518,7 +10566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaController.html",
-          "hash": "l5G4Y9ux2rr5HTxqVwNG2g=="
+          "hash": "fq1/QYgypaKmLINy17ip1w=="
         }
       },
       "is_incremental": false,
@@ -10562,11 +10610,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCapabilityUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCapabilityUpdatedEventArgs.html",
+          "hash": "/+HxhoQvf8BPHsg22ebzaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommand.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackCommand.html",
-          "hash": "5WQ5WJDX9uD1Q8dpNEr7hQ=="
+          "hash": "4hlha353flyVdw4fKte7qg=="
         }
       },
       "is_incremental": false,
@@ -10590,7 +10650,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaybackPositionCommand.html",
-          "hash": "Q5SeNEWq5daPS0RGS0BhDQ=="
+          "hash": "szbaP6nRlc5A5vgOm1aukA=="
         }
       },
       "is_incremental": false,
@@ -10626,7 +10686,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaylistCommand.html",
-          "hash": "vjvWWB/NFTYihRyemdT27w=="
+          "hash": "tbEUzku9zaVsI1ucIi5k8w=="
         }
       },
       "is_incremental": false,
@@ -10650,7 +10710,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.PlaylistUpdatedEventArgs.html",
-          "hash": "fzfY4LtQhn2776+gkZ0Itg=="
+          "hash": "UWmYTBam6GnKVeK3+0KB+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCapabilityUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCapabilityUpdatedEventArgs.html",
+          "hash": "Kree3ytp7XomPQmS1kZGdg=="
         }
       },
       "is_incremental": false,
@@ -10662,7 +10734,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.RepeatModeCommand.html",
-          "hash": "FZl/utB/TLCy5UXFTTX/vA=="
+          "hash": "C3SASXyLbq/wGwJdjlHqSw=="
         }
       },
       "is_incremental": false,
@@ -10814,11 +10886,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.SearchCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.SearchCommand.html",
+          "hash": "O2Lp95V5eGbj93CdAGye8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.SearchCommandReceivedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.SearchCommandReceivedEventArgs.html",
+          "hash": "s37eDe+nurVOLE9HNQVApg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCapabilityUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCapabilityUpdatedEventArgs.html",
+          "hash": "MbW/xHTsMNIceNjhpQ4IsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommand.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCommand.html",
-          "hash": "I2miDYcnuhK6S1k9DBdptg=="
+          "hash": "oUpGq3sBsEHEf3ckT6nLTg=="
         }
       },
       "is_incremental": false,
@@ -10854,7 +10962,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.html",
-          "hash": "0BNx83dply1IWj6KOKfl0Q=="
+          "hash": "MlRnlQcvXCQN+dDJGzxPKw=="
         }
       },
       "is_incremental": false,
@@ -25050,7 +25158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "JIFkuRz9maqares4K58/Fg=="
+          "hash": "KI3mgb77GYot/h1DFlmQNQ=="
         }
       },
       "is_incremental": false,
@@ -25132,11 +25240,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }

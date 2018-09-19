@@ -95,6 +95,7 @@
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Remoting.PlaybackPositionCommand.html">PlaybackPositionCommand</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Remoting.PlaylistCommand.html">PlaylistCommand</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Remoting.RepeatModeCommand.html">RepeatModeCommand</a></div>
+      <div class="level2"><a class="xref" href="Tizen.Multimedia.Remoting.SearchCommand.html">SearchCommand</a></div>
       <div class="level2"><a class="xref" href="Tizen.Multimedia.Remoting.ShuffleModeCommand.html">ShuffleModeCommand</a></div>
   </div>
   <div class="inheritedMembers">
@@ -141,18 +142,21 @@
     <pre><code class="lang-csharp hljs">protected Command()</code></pre>
   </div>
   
+  <h5 id="Tizen_Multimedia_Remoting_Command__ctor_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
   
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
-  <h4 id="Tizen_Multimedia_Remoting_Command__serverId" data-uid="Tizen.Multimedia.Remoting.Command._serverId">_serverId</h4>
-  <div class="markdown level1 summary"><p>The server id.</p>
+  <a id="Tizen_Multimedia_Remoting_Command_ReceiverId_" data-uid="Tizen.Multimedia.Remoting.Command.ReceiverId*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_Command_ReceiverId" data-uid="Tizen.Multimedia.Remoting.Command.ReceiverId">ReceiverId</h4>
+  <div class="markdown level1 summary"><p>The id for command receiver.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string _serverId</code></pre>
+    <pre><code class="lang-csharp hljs">protected string ReceiverId { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -168,7 +172,22 @@
     </tbody>
   </table>
   
-  <h5 id="Tizen_Multimedia_Remoting_Command__serverId_sinceTizen" class="sinceTizen">API Version</h5>
+  <h5 id="Tizen_Multimedia_Remoting_Command_ReceiverId_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Tizen_Multimedia_Remoting_Command_OnResponseCompleted_" data-uid="Tizen.Multimedia.Remoting.Command.OnResponseCompleted*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_Command_OnResponseCompleted" data-uid="Tizen.Multimedia.Remoting.Command.OnResponseCompleted">OnResponseCompleted()</h4>
+  <div class="markdown level1 summary"><p>Represents a method that is called when an response command completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnResponseCompleted()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_Multimedia_Remoting_Command_OnResponseCompleted_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
   
 </article>
