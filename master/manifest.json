@@ -12438,7 +12438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Animatable.html",
-          "hash": "D2g+KahTDpHDqIYr7Orx+Q=="
+          "hash": "5pqLyMBLeaKpad8D4gajww=="
         }
       },
       "is_incremental": false,
@@ -12498,7 +12498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Animation.html",
-          "hash": "TGx6ddZnc5qWxeo9xTx3ZA=="
+          "hash": "z4iwDvlXxVykyMR9zUan+w=="
         }
       },
       "is_incremental": false,
@@ -12522,7 +12522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.CustomView.html",
-          "hash": "nl05jvACywLw0zR0tOnmzQ=="
+          "hash": "cX3x+eFUQmiOVt+xZ5qg0A=="
         }
       },
       "is_incremental": false,
@@ -12606,7 +12606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.FlexContainer.html",
-          "hash": "laTpltPBqk6EOu0EF4jFRA=="
+          "hash": "q/AMdj26SsLYejXyQesRZQ=="
         }
       },
       "is_incremental": false,
@@ -12642,7 +12642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.ImageView.html",
-          "hash": "qnM8RkJKNth4roW1qylv9Q=="
+          "hash": "CVBMpwV6JeT31L5HeWB5Eg=="
         }
       },
       "is_incremental": false,
@@ -12702,7 +12702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.Scrollable.html",
-          "hash": "8JczOe9RLUH76tZ6D4bW0Q=="
+          "hash": "f91b1Ip1deeJCZ8v2W7bOA=="
         }
       },
       "is_incremental": false,
@@ -12714,7 +12714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TableView.CellPosition.html",
-          "hash": "UhDTi4NrZE3DWBGjRBWBKg=="
+          "hash": "Q0o/mIMpD9R+mqRHO1Mljw=="
         }
       },
       "is_incremental": false,
@@ -12738,7 +12738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TableView.html",
-          "hash": "YJmSDzxjkAGlYi8K4pk7lQ=="
+          "hash": "G2eptXAj60fOFukrBVP/Xw=="
         }
       },
       "is_incremental": false,
@@ -12774,7 +12774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextEditor.html",
-          "hash": "dNDuOR69nbEsm0puD4m4VA=="
+          "hash": "KhrlZNnsi5r6s2DjMxLL6Q=="
         }
       },
       "is_incremental": false,
@@ -12810,7 +12810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextField.html",
-          "hash": "WqP52kV6oF6u5JiuWIjFcw=="
+          "hash": "rOXXWSLZTvyvX1iCMTXCyg=="
         }
       },
       "is_incremental": false,
@@ -12822,7 +12822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextLabel.html",
-          "hash": "1kL2j1mhPU5xL3MVl/CeXg=="
+          "hash": "xt0y/tMnMMldTWWVr1nvvg=="
         }
       },
       "is_incremental": false,
@@ -12846,7 +12846,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.VideoView.html",
-          "hash": "7PZDHCrJmtEmhJ5RZk8bhw=="
+          "hash": "HhAm5P7tDIKSKIRZ2/xAzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.View.ChildAddedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.View.ChildAddedEventArgs.html",
+          "hash": "zGs4G2YhNdU4KAK/eqn5cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.View.ChildRemovedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.View.ChildRemovedEventArgs.html",
+          "hash": "CsuDw+4Fx9fw4Ddue2foCQ=="
         }
       },
       "is_incremental": false,
@@ -12954,7 +12978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.View.html",
-          "hash": "5sFhqytHs7x5G78vHI9QsQ=="
+          "hash": "eherZolBuvJFBPmm90bPew=="
         }
       },
       "is_incremental": false,
@@ -12978,7 +13002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.VisualView.html",
-          "hash": "aJvi8Dl8sUEgMx+Zanvwcg=="
+          "hash": "FGEVSNnJ0P9LPfpvffYTkQ=="
         }
       },
       "is_incremental": false,
@@ -12990,7 +13014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.html",
-          "hash": "OHPNPWuyNCY8wXrdGy2C/g=="
+          "hash": "F3M+WEJYlCFKoG5QVkcH8g=="
         }
       },
       "is_incremental": false,
@@ -13014,7 +13038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseHandle.html",
-          "hash": "8oPDTJzBxJbbFqGskYKw1w=="
+          "hash": "hyAZiIqnoZk1OPTnUY3qpw=="
         }
       },
       "is_incremental": false,
@@ -13230,7 +13254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Container.html",
-          "hash": "I5izDkyPsyIShtfoPLdtIQ=="
+          "hash": "v3J1otG3iMx1jmq8mSrKHw=="
         }
       },
       "is_incremental": false,
@@ -13482,7 +13506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.FocusManager.html",
-          "hash": "ISCP/cNe/1nL+cPzsPcFrA=="
+          "hash": "H/o82EebIGrf1/dBkg1Srg=="
         }
       },
       "is_incremental": false,
@@ -13494,7 +13518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.FontClient.html",
-          "hash": "CPFKJfLVYsWIxyqrJ6KzxQ=="
+          "hash": "YVy6hcZ3GRA2WHr31qmfTA=="
         }
       },
       "is_incremental": false,
@@ -13554,7 +13578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Geometry.html",
-          "hash": "Wf39Q8hEK/LESGqLcrmYAQ=="
+          "hash": "TSpHdlq3kBuAC5dbRfFnYg=="
         }
       },
       "is_incremental": false,
@@ -13998,7 +14022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.InputMethodContext.html",
-          "hash": "WK0JYTH/wuin9wG35N62hA=="
+          "hash": "DmaTqoFdMrt2OJtaU+QeUQ=="
         }
       },
       "is_incremental": false,
@@ -14034,7 +14058,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.KeyFrames.html",
-          "hash": "SZoARCugfcsgSmpXqAdqzg=="
+          "hash": "HXo5a8+VzL/ngXoQxBP+tQ=="
         }
       },
       "is_incremental": false,
@@ -14082,7 +14106,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Layer.html",
-          "hash": "5cUXGwoczqP29VjJ7dOQAg=="
+          "hash": "55+I3Ck+9ZL2PaxderKZ5A=="
         }
       },
       "is_incremental": false,
@@ -14334,7 +14358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Path.html",
-          "hash": "+E5mCVGbW9+RtXXwi/365Q=="
+          "hash": "/qLixqSZkpw88Jc5T0sMNA=="
         }
       },
       "is_incremental": false,
@@ -14502,7 +14526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyBuffer.html",
-          "hash": "meM25Zik0FAnBqojGBPGMw=="
+          "hash": "MBUNZGRmjPpPKI+I/C2zeA=="
         }
       },
       "is_incremental": false,
@@ -14514,7 +14538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyCondition.html",
-          "hash": "Z4he09V0JMmUQyhEG3bhbw=="
+          "hash": "xvebpAH2xWbuKbNhzN1W7Q=="
         }
       },
       "is_incremental": false,
@@ -14586,7 +14610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyNotification.html",
-          "hash": "jilULvjaUDaSWaEEcg2Puw=="
+          "hash": "8JbLlJ9XAi0NSt6TP47Xkg=="
         }
       },
       "is_incremental": false,
@@ -14730,7 +14754,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Renderer.html",
-          "hash": "bdll7yzaG9BG78tOyQMQ+A=="
+          "hash": "3E30nXfXg6KkCaJR2YgG6w=="
         }
       },
       "is_incremental": false,
@@ -14802,7 +14826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Sampler.html",
-          "hash": "HvvodPBDU0eZacu5Fz5oPg=="
+          "hash": "p+8C7dtKvJ4l7U+ee+v8yg=="
         }
       },
       "is_incremental": false,
@@ -14922,7 +14946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ScrollView.html",
-          "hash": "XrCNrn4wNR5pgzommrvunA=="
+          "hash": "rBa8u88O+4zxaTymqEidlw=="
         }
       },
       "is_incremental": false,
@@ -14934,7 +14958,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ScrollViewEffect.html",
-          "hash": "JbV3uMK46XQV+Qkky0aKkA=="
+          "hash": "Tg/XNnwE00xZ7FhBNZffbg=="
         }
       },
       "is_incremental": false,
@@ -14982,7 +15006,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Shader.html",
-          "hash": "FWAj21MNxdVInUnGXba4cw=="
+          "hash": "/4TjupFYX1hgH1v+2ka/zA=="
         }
       },
       "is_incremental": false,
@@ -15030,7 +15054,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Spin.html",
-          "hash": "2AL7Ljwlxb81ni3HjKMCOQ=="
+          "hash": "VCUDPY8TSgxBtzODHtczcQ=="
         }
       },
       "is_incremental": false,
@@ -15066,7 +15090,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.StyleManager.html",
-          "hash": "gIqvDxlwhlVZNF3HiKLiBQ=="
+          "hash": "tmK6nAK62vNFuZri7f2fRg=="
         }
       },
       "is_incremental": false,
@@ -15114,7 +15138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TTSPlayer.html",
-          "hash": "7Vm543RPGRswSDIcBE285g=="
+          "hash": "Q0YH752gc5OalSBYorqLFQ=="
         }
       },
       "is_incremental": false,
@@ -15174,7 +15198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Texture.html",
-          "hash": "JU4EmjcmSuk50SKRZifgNw=="
+          "hash": "RZ+jHUAHgAeAamMeI+Qz8Q=="
         }
       },
       "is_incremental": false,
@@ -15186,7 +15210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TextureSet.html",
-          "hash": "EX7J98Vnq4liEr0KbgKL6Q=="
+          "hash": "h6+TO6OAiMnW6yOLt4D6eA=="
         }
       },
       "is_incremental": false,
@@ -15222,7 +15246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Timer.html",
-          "hash": "ed8gKSETWtPi49Yo3OIchw=="
+          "hash": "9F9WJzY2Wvc+TLiyBjUt5A=="
         }
       },
       "is_incremental": false,
@@ -15246,7 +15270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ToggleButton.html",
-          "hash": "wWS4DVYAATUxVPkT8B4KBA=="
+          "hash": "k5SidTDPZvKsxJObdWrdDg=="
         }
       },
       "is_incremental": false,
@@ -15258,7 +15282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Touch.html",
-          "hash": "nAHxO/uvAnC+s+lXrxFZNg=="
+          "hash": "Gx9+l97RVKfUsY56F/0qrg=="
         }
       },
       "is_incremental": false,
@@ -15270,7 +15294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TransitionData.html",
-          "hash": "XxS92ruzWegjrQoQPE2EpQ=="
+          "hash": "+zr9Znxt/Qg9ClZZz2tBjg=="
         }
       },
       "is_incremental": false,
@@ -15282,7 +15306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TypeInfo.html",
-          "hash": "TYWXVfW5N/MEsKxQk7XPJQ=="
+          "hash": "7iP52sMbbRHMT949+utDKg=="
         }
       },
       "is_incremental": false,
@@ -15306,7 +15330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Button.html",
-          "hash": "EKvWJiX0jo7xDNS0cp3B+Q=="
+          "hash": "cjxY/7STGfW++kFcvoUU5Q=="
         }
       },
       "is_incremental": false,
@@ -15318,7 +15342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.CheckBoxButton.html",
-          "hash": "NmdsFoArAfXf0O2Js++myQ=="
+          "hash": "jkdVD/I64P/2tEnH1zDsAg=="
         }
       },
       "is_incremental": false,
@@ -15426,7 +15450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Popup.html",
-          "hash": "r+QsYUsDTmpjfjKw7sTkcA=="
+          "hash": "JQ8/KkA/KEsMaQQ9WjsLRw=="
         }
       },
       "is_incremental": false,
@@ -15450,7 +15474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.ProgressBar.html",
-          "hash": "d3xZIhWMRf2/4UgzyR6Hfg=="
+          "hash": "4m337SthMW635PsmtJyIAA=="
         }
       },
       "is_incremental": false,
@@ -15462,7 +15486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.PushButton.html",
-          "hash": "amAL1Uo5K1m+gwT5n3PLmQ=="
+          "hash": "45uohcyROfz/uO9RS1ON0A=="
         }
       },
       "is_incremental": false,
@@ -15474,7 +15498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.RadioButton.html",
-          "hash": "mHnDxEHIoQXyUkpqF2wFbw=="
+          "hash": "/ktjr50cDdsSm0OzhmfhTQ=="
         }
       },
       "is_incremental": false,
@@ -15534,7 +15558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.ScrollBar.html",
-          "hash": "yIiqEW3Dp9NnVw2Sh3yRcA=="
+          "hash": "4IOsGDkN/a0EJqPxk68Icg=="
         }
       },
       "is_incremental": false,
@@ -15582,7 +15606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Slider.html",
-          "hash": "jsOBhZOgpK1qp8UGpIySgg=="
+          "hash": "+oy31Bcv9VyACkhjzVQxiA=="
         }
       },
       "is_incremental": false,
@@ -15678,7 +15702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ViewWrapper.html",
-          "hash": "6G2jJ617+YcD+FpjX989Xg=="
+          "hash": "jtAD9U0u1/npSZ5M2d0G3A=="
         }
       },
       "is_incremental": false,
@@ -15774,7 +15798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.VisualBase.html",
-          "hash": "Rc+r3aj+MD2LImHucwPIfw=="
+          "hash": "LAgNfXiJ08yLTdA85/6TMA=="
         }
       },
       "is_incremental": false,
@@ -15786,7 +15810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.VisualFactory.html",
-          "hash": "oe60rZ9qfR7pYdluC+ZryA=="
+          "hash": "sf46Bx+7YYXqJSIneyAuFA=="
         }
       },
       "is_incremental": false,
@@ -15882,7 +15906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Widget.html",
-          "hash": "ES4wD0qw5ilVGNHNum+Puw=="
+          "hash": "KcoyUkblKY7Dq18nLM65Aw=="
         }
       },
       "is_incremental": false,
@@ -15906,7 +15930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.WidgetView.html",
-          "hash": "xx2m+eQRVEzghyGtyYCoWw=="
+          "hash": "xqVz13Kdx8py0G4NlZhAsQ=="
         }
       },
       "is_incremental": false,
@@ -15918,7 +15942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.WidgetViewManager.html",
-          "hash": "7j9PC1TzYydWY3lxJNuH2Q=="
+          "hash": "EjZqh5y0OV0U7w/yGiIThQ=="
         }
       },
       "is_incremental": false,
@@ -16038,7 +16062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Window.html",
-          "hash": "UsPU2wVDrt/SjLXCogVE/g=="
+          "hash": "W/xTOnPBcmGjl0nTzBKGaA=="
         }
       },
       "is_incremental": false,
@@ -19166,18 +19190,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Nlp.LemmatizeResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Tizen.Nlp.LemmatizeResult.html",
-          "hash": "1YgoTfJ//5syexqnyD0nMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Nlp.NamedEntityRecognitionResult.yml",
       "output": {
         ".html": {
@@ -19194,7 +19206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Nlp.NaturalLanguageProcess.html",
-          "hash": "2lfA/magQWSOqS81h3FeCA=="
+          "hash": "xvPjNirdFzI10D9gcpTlNA=="
         }
       },
       "is_incremental": false,
@@ -19230,7 +19242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Nlp.html",
-          "hash": "PLRLdwCZDIdcHLnAGP3pPA=="
+          "hash": "W34nLuZFKARTPSebQQz+bw=="
         }
       },
       "is_incremental": false,
@@ -25158,7 +25170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "KI3mgb77GYot/h1DFlmQNQ=="
+          "hash": "Mh3dJM0Ll7mkEZZVnQJSKQ=="
         }
       },
       "is_incremental": false,
@@ -25240,11 +25252,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
