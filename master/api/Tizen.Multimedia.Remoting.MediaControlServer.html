@@ -448,6 +448,61 @@ An internal error occurs.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetAgeRating_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetAgeRating*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetAgeRating_System_Int32_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetAgeRating(System.Int32)">SetAgeRating(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the age rating of latest played media.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAgeRating(int ageRating)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">ageRating</span></td>
+        <td><p>The Age rating of latest played media. The valid range is 0 to 19, inclusive.
+Especially, 0 means that media is suitable for all ages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetAgeRating_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>The specified <code data-dev-comment-type="paramref" class="paramref">ageRating</code> is not valid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetIconPath_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIconPath*"></a>
   <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetIconPath_System_String_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetIconPath(System.String)">SetIconPath(String)</h4>
   <div class="markdown level1 summary"><p>Sets the path of icon.</p>
@@ -509,7 +564,8 @@ An internal error occurs.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIndexOfCurrentPlayingMedia(string index)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please do not use! This will be deprecated. Please use SetInfoOfCurrentPlayingMedia instead.&quot;)]
+public static void SetIndexOfCurrentPlayingMedia(string index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -545,6 +601,66 @@ An internal error occurs.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">index</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server is not running .<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetInfoOfCurrentPlayingMedia_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetInfoOfCurrentPlayingMedia*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetInfoOfCurrentPlayingMedia_System_String_System_String_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetInfoOfCurrentPlayingMedia(System.String,System.String)">SetInfoOfCurrentPlayingMedia(String, String)</h4>
+  <div class="markdown level1 summary"><p>Sets the playlist name and index of current playing media.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetInfoOfCurrentPlayingMedia(string playlistName, string index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">playlistName</span></td>
+        <td><p>The playlist name of current playing media.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of current playing media.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetInfoOfCurrentPlayingMedia_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">playlistName</code> or <code data-dev-comment-type="paramref" class="paramref">index</code> is null.</p>
 </td>
       </tr>
       <tr>
@@ -610,14 +726,14 @@ An internal error occurs.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability*"></a>
-  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapability(System.Collections.Generic.Dictionary{Tizen.Multimedia.Remoting.MediaControlPlaybackCommand,Tizen.Multimedia.Remoting.MediaControlCapabilitySupport})">SetPlaybackCapability(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt;)</h4>
+  <a id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapabilities_" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapabilities*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapabilities_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport__" data-uid="Tizen.Multimedia.Remoting.MediaControlServer.SetPlaybackCapabilities(System.Collections.Generic.Dictionary{Tizen.Multimedia.Remoting.MediaControlPlaybackCommand,Tizen.Multimedia.Remoting.MediaControlCapabilitySupport})">SetPlaybackCapabilities(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt;)</h4>
   <div class="markdown level1 summary"><p>Sets the capabilities by <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetPlaybackCapability(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt; capabilities)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetPlaybackCapabilities(Dictionary&lt;MediaControlPlaybackCommand, MediaControlCapabilitySupport&gt; capabilities)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -638,7 +754,7 @@ An internal error occurs.</p>
     </tbody>
   </table>
   
-  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapability_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport___sinceTizen" class="sinceTizen">API Version</h5>
+  <h5 id="Tizen_Multimedia_Remoting_MediaControlServer_SetPlaybackCapabilities_System_Collections_Generic_Dictionary_Tizen_Multimedia_Remoting_MediaControlPlaybackCommand_Tizen_Multimedia_Remoting_MediaControlCapabilitySupport___sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
   
   <h5 class="exceptions">Exceptions</h5>
