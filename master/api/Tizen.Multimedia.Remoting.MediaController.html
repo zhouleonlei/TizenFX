@@ -1010,7 +1010,7 @@ An internal error occurs.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RequestAsync(Command command)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Bundle&gt; RequestAsync(Command command)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1040,8 +1040,8 @@ An internal error occurs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A task that represents the asynchronous operation.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Tizen.Applications.Bundle.html">Bundle</a>&gt;</td>
+        <td><p><a class="xref" href="Tizen.Applications.Bundle.html">Bundle</a> represents the extra data from server and it can be null.</p>
 </td>
       </tr>
     </tbody>
