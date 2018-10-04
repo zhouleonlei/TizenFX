@@ -1386,7 +1386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.GenList.html",
-          "hash": "7LJGKPo0nkRkLn9zoYoLmw=="
+          "hash": "KpGZ80GhSOfi2WCJaLvAOA=="
         }
       },
       "is_incremental": false,
@@ -2610,7 +2610,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.Wearable.CircleGenList.html",
-          "hash": "Qnf8E+4Z3hgDAI+0QZFmdA=="
+          "hash": "rRwS195HRPdIRpXvypJoaQ=="
         }
       },
       "is_incremental": false,
@@ -25266,14 +25266,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
