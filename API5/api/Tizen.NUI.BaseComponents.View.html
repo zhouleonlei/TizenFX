@@ -1936,7 +1936,8 @@ The views default depth is the minimum of width and height.<br></p>
   <div class="markdown level1 remarks"><p>Please note that multi-cascade setting is not possible for this NUI object. <br>
 It is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
 For example, this code is working fine : view.Size = new Size( 1.0f, 1.0f, 0.0f); <br>
-but this will not work! : view.Size.Width = 2.0f; view.Size.Height = 2.0f; <br></p>
+but this will not work! : view.Size.Width = 2.0f; view.Size.Height = 2.0f; <br>
+It may not match the current value in some cases, i.e. when the animation is progressing or the maximum or minimu size is set. <br></p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Size_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1975,7 +1976,8 @@ For example, this code ( view.Size2D.Width = 100; view.Size2D.Height = 100; ) is
 Please note that this multi-cascade setting is especially possible for this NUI object (Size2D). <br>
 This means by default others are impossible so it is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
 For example, this code is working fine : view.Scale = new Vector3( 2.0f, 1.5f, 0.0f); <br>
-but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br></p>
+but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br>
+It may not match the current value in some cases, i.e. when the animation is progressing or the maximum or minimu size is set. <br></p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Size2D_sinceTizen" class="sinceTizen">API Version</h5>
