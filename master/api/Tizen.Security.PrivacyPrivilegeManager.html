@@ -214,6 +214,102 @@
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Security_PrivacyPrivilegeManager_CheckPermissions_" data-uid="Tizen.Security.PrivacyPrivilegeManager.CheckPermissions*"></a>
+  <h4 id="Tizen_Security_PrivacyPrivilegeManager_CheckPermissions_System_Collections_Generic_IEnumerable_System_String__" data-uid="Tizen.Security.PrivacyPrivilegeManager.CheckPermissions(System.Collections.Generic.IEnumerable{System.String})">CheckPermissions(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the status of a privacy privileges permission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;CheckResult&gt; CheckPermissions(IEnumerable&lt;string&gt; privileges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">privileges</span></td>
+        <td><p>The privacy privileges to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Security.CheckResult.html">CheckResult</a>&gt;</td>
+        <td><p>The permission setting for a respective privileges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Security_PrivacyPrivilegeManager_CheckPermissions_System_Collections_Generic_IEnumerable_System_String___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 id="Tizen_Security_PrivacyPrivilegeManager_CheckPermissions_System_Collections_Generic_IEnumerable_System_String___examples">Examples</h5>
+  <pre><code>    string[] privileges = new [] {&quot;http://tizen.org/privilege/account.read&quot;,
+                                  &quot;http://tizen.org/privilege/alarm&quot;};
+    CheckResult[] results = PrivacyPrivilegeManager.CheckPermissions(privileges).ToArray();
+    List&lt;string> privilegesWithAskStatus = new List&lt;string>();
+    for (int iterator = 0; iterator &lt; results.Length; ++iterator)
+    {
+        switch (results[iterator])
+        {
+            case CheckResult.Allow:
+                // Privilege can be used
+                break;
+            case CheckResult.Deny:
+                // Privilege can&apos;t be used
+                break;
+            case CheckResult.Ask:
+                // User permission request required
+                privilegesWithAskStatus.Add(privileges[iterator]);
+                break;
+        }
+    }
+    PrivacyPrivilegeManager.RequestPermissions(privilegesWithAskStatus);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when an invalid parameter is passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></td>
+        <td><p>Thrown when a memory error occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td><p>Thrown when the method failed due to an internal I/O error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Security_PrivacyPrivilegeManager_GetResponseContext_" data-uid="Tizen.Security.PrivacyPrivilegeManager.GetResponseContext*"></a>
   <h4 id="Tizen_Security_PrivacyPrivilegeManager_GetResponseContext_System_String_" data-uid="Tizen.Security.PrivacyPrivilegeManager.GetResponseContext(System.String)">GetResponseContext(String)</h4>
   <div class="markdown level1 summary"><p>Gets the response context for a given privilege.</p>
@@ -368,6 +464,103 @@
             PrivacyPrivilegeManager.RequestPermission(&quot;http://tizen.org/privilege/account.read&quot;);
             break;
     }</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when an invalid parameter is passed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></td>
+        <td><p>Thrown when a memory error occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td><p>Thrown when the method failed due to an internal I/O error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Security_PrivacyPrivilegeManager_RequestPermissions_" data-uid="Tizen.Security.PrivacyPrivilegeManager.RequestPermissions*"></a>
+  <h4 id="Tizen_Security_PrivacyPrivilegeManager_RequestPermissions_System_Collections_Generic_IEnumerable_System_String__" data-uid="Tizen.Security.PrivacyPrivilegeManager.RequestPermissions(System.Collections.Generic.IEnumerable{System.String})">RequestPermissions(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Triggers the permissions request for a user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;RequestMultipleResponseEventArgs&gt; RequestPermissions(IEnumerable&lt;string&gt; privileges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">privileges</span></td>
+        <td><p>The privacy privileges to be requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Tizen.Security.RequestMultipleResponseEventArgs.html">RequestMultipleResponseEventArgs</a>&gt;</td>
+        <td><p>Permission request Task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Security_PrivacyPrivilegeManager_RequestPermissions_System_Collections_Generic_IEnumerable_System_String___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 id="Tizen_Security_PrivacyPrivilegeManager_RequestPermissions_System_Collections_Generic_IEnumerable_System_String___examples">Examples</h5>
+  <pre><code>    string[] privileges = new [] {&quot;http://tizen.org/privilege/account.read&quot;,
+                                  &quot;http://tizen.org/privilege/alarm&quot;};
+    CheckResult[] results = PrivacyPrivilegeManager.CheckPermissions(privileges).ToArray();
+    List&lt;string> privilegesWithAskStatus = new List&lt;string>();
+    for (int iterator = 0; iterator &lt; results.Length; ++iterator)
+    {
+        switch (results[iterator])
+        {
+            case CheckResult.Allow:
+                // Privilege can be used
+                break;
+            case CheckResult.Deny:
+                // Privilege can&apos;t be used
+                break;
+            case CheckResult.Ask:
+                // User permission request required
+                privilegesWithAskStatus.Add(privileges[iterator]);
+                break;
+        }
+    }
+    IEnumerable&lt;PermissionRequestResponse> responses = PrivacyPrivilegeManager.RequestPermissions(privilegesWithAskStatus).Result;
+    //handle responses</code></pre>
 
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">

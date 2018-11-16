@@ -20894,6 +20894,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.PermissionRequestResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.PermissionRequestResponse.html",
+          "hash": "As19flQn5CH6RfMYzaganw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Security.PrivacyPrivilegeManager.ResponseContext.yml",
       "output": {
         ".html": {
@@ -20910,7 +20922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Security.PrivacyPrivilegeManager.html",
-          "hash": "uur4RB9chLlc9EAv4/qXxA=="
+          "hash": "ny35CpGaMOLOJujL4P3d1A=="
         }
       },
       "is_incremental": false,
@@ -20930,11 +20942,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.RequestMultipleResponseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.RequestMultipleResponseEventArgs.html",
+          "hash": "v4TDPraSzj3PVUZvO/HxJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Security.RequestResponseEventArgs.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Security.RequestResponseEventArgs.html",
-          "hash": "lZYXz0Fe3Xt464uKCm6Oxw=="
+          "hash": "FSmMnHzHJC5FleOeVlPi0A=="
         }
       },
       "is_incremental": false,
@@ -21534,7 +21558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Security.html",
-          "hash": "A3gE4+75oYL7Kha5tic4iA=="
+          "hash": "Yo3YeHuwUpu3AEw/sIRelg=="
         }
       },
       "is_incremental": false,
@@ -25194,7 +25218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "FAQ5EIfzslF0aW3zPCSfCA=="
+          "hash": "c33LAiWNxTO7DDs8TyZiPg=="
         }
       },
       "is_incremental": false,
@@ -25266,21 +25290,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
