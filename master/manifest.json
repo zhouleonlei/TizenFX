@@ -18710,6 +18710,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.WiFi.ScanStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.WiFi.ScanStateChangedEventArgs.html",
+          "hash": "jBt2W+mpsghsgCCw903olg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Network.WiFi.WiFiAP.yml",
       "output": {
         ".html": {
@@ -18810,7 +18822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.WiFi.WiFiManager.html",
-          "hash": "U1qtmwo7BRAD/z6JojL4lA=="
+          "hash": "tLMs2pEphGyYEzBcaunyEg=="
         }
       },
       "is_incremental": false,
@@ -18847,6 +18859,18 @@
         ".html": {
           "relative_path": "api/Tizen.Network.WiFi.WiFiRssiLevel.html",
           "hash": "jFb/z+IM7bAlYDpmaI1nvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.WiFi.WiFiScanState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.WiFi.WiFiScanState.html",
+          "hash": "pkF4qz7hSC0kmD+NDR2ySw=="
         }
       },
       "is_incremental": false,
@@ -18906,7 +18930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.WiFi.html",
-          "hash": "0RThfT5gNkSE88nN23sGDA=="
+          "hash": "Hmf8/z0+Arlo3ZzWuSz0cw=="
         }
       },
       "is_incremental": false,
@@ -25218,7 +25242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "c33LAiWNxTO7DDs8TyZiPg=="
+          "hash": "xEHqYVm+rwuN/D5DuYdq0g=="
         }
       },
       "is_incremental": false,
@@ -25290,22 +25314,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

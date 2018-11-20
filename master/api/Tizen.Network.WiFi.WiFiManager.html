@@ -262,6 +262,35 @@ The Wi-Fi Manager enables your application to activate and deactivate a local Wi
   <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a></p>
 </div>
   
+  <a id="Tizen_Network_WiFi_WiFiManager_ScanState_" data-uid="Tizen.Network.WiFi.WiFiManager.ScanState*"></a>
+  <h4 id="Tizen_Network_WiFi_WiFiManager_ScanState" data-uid="Tizen.Network.WiFi.WiFiManager.ScanState">ScanState</h4>
+  <div class="markdown level1 summary"><p>The Wi-Fi scan state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WiFiScanState ScanState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.WiFi.WiFiScanState.html">WiFiScanState</a></td>
+        <td><p>Represents the scan state of the Wi-Fi.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Network_WiFi_WiFiManager_ScanState_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <h3 id="methods">Methods
   </h3>
   <a id="Tizen_Network_WiFi_WiFiManager_ActivateAsync_" data-uid="Tizen.Network.WiFi.WiFiManager.ActivateAsync*"></a>
@@ -1214,6 +1243,36 @@ The background scan starts automatically when Wi-Fi is activated. The callback w
   <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/network.get">http://tizen.org/privilege/network.get</a></p>
 </div>
   <h5 id="Tizen_Network_WiFi_WiFiManager_RssiLevelChanged_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.wifi">http://tizen.org/feature/network.wifi</a></p>
+</div>
+  
+  <h4 id="Tizen_Network_WiFi_WiFiManager_ScanStateChanged" data-uid="Tizen.Network.WiFi.WiFiManager.ScanStateChanged">ScanStateChanged</h4>
+  <div class="markdown level1 summary"><p>ScanStateChanged is raised when the scan state is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;ScanStateChangedEventArgs&gt; ScanStateChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Network.WiFi.ScanStateChangedEventArgs.html">ScanStateChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Network_WiFi_WiFiManager_ScanStateChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_WiFi_WiFiManager_ScanStateChanged_feature" class="feature">Feature</h5>
   <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.wifi">http://tizen.org/feature/network.wifi</a></p>
 </div>
   
