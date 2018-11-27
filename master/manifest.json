@@ -5846,6 +5846,246 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.Complication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.Complication.html",
+          "hash": "ohyVm5OEPjBDV8UZmB3IfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationData.html",
+          "hash": "oJZR1lhyHcJEjPD6uMuB4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationError.html",
+          "hash": "oCFiJSlAVZutVy3IAlZ+2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationProvider.html",
+          "hash": "cRt6P8BzubLFzPyFeMKW3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationProviderSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationProviderSetup.html",
+          "hash": "7l8QYZAs1l1csYxlSVOQOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ComplicationTypes.html",
+          "hash": "riF/AbKFAmGhmvfJ4vDnfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.DesignElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.DesignElement.html",
+          "hash": "chUd7wwm8fILCg3h0uvAzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.EditablesContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.EditablesContainer.html",
+          "hash": "adiq/9EsvhBJG1rSc1VExQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.EventTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.EventTypes.html",
+          "hash": "QcWjNWaMMTUel0z8TDDX9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.Highlight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.Highlight.html",
+          "hash": "F7CCgBJ+ueLBIf/ATW5jDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.IEditable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.IEditable.html",
+          "hash": "6SX6ky7lQU6Ii4KYa9miHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.IconData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.IconData.html",
+          "hash": "WMQl4O9WptFEuDa2cSnEhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ImageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ImageData.html",
+          "hash": "LBT20iYWd1urXDWIC5kOoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.LongTextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.LongTextData.html",
+          "hash": "Vp9ZfDi6+VIC5inNOFSzbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.RangedValueData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.RangedValueData.html",
+          "hash": "pntW4pE5sUF/JcrNGuN0SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ShapeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ShapeType.html",
+          "hash": "kvtyU+3HMqR310R8enlHNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.ShortTextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.ShortTextData.html",
+          "hash": "k1rIIi14K9vRZf0qBUZC0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.State.html",
+          "hash": "uQn2fHt+NXcWeqr1VjRX+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.TimeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.TimeData.html",
+          "hash": "mz35c8ztuqmyMlnDTy2dkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.WatchfaceComplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.WatchfaceComplication.html",
+          "hash": "wUiN8wUj55delvD2cxgUsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.WidgetApplication.yml",
       "output": {
         ".html": {
@@ -25242,7 +25482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "xEHqYVm+rwuN/D5DuYdq0g=="
+          "hash": "3LTjuQW1vtfco4DTZQGTOw=="
         }
       },
       "is_incremental": false,
@@ -25314,21 +25554,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
