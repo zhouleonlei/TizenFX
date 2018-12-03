@@ -6126,7 +6126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetControl.Instance.html",
-          "hash": "UkE3a+GzjwwWQoLOVr23ig=="
+          "hash": "oXxObFWZi3Z7rOgKFKPSzA=="
         }
       },
       "is_incremental": false,
@@ -6162,7 +6162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetControl.html",
-          "hash": "+kISL8eeKlODWrDx5ADPHQ=="
+          "hash": "4zkZkHdZFagSS8VjVU1U3Q=="
         }
       },
       "is_incremental": false,
@@ -25559,17 +25559,17 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
