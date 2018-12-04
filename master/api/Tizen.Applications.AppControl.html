@@ -785,6 +785,98 @@ AppControl.SendLaunchRequest(appControl, (launchRequest, replyRequest, result) =
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Applications_AppControl_SendLaunchRequestAsync_" data-uid="Tizen.Applications.AppControl.SendLaunchRequestAsync*"></a>
+  <h4 id="Tizen_Applications_AppControl_SendLaunchRequestAsync_Tizen_Applications_AppControl_Tizen_Applications_AppControlReplyCallback_" data-uid="Tizen.Applications.AppControl.SendLaunchRequestAsync(Tizen.Applications.AppControl,Tizen.Applications.AppControlReplyCallback)">SendLaunchRequestAsync(AppControl, AppControlReplyCallback)</h4>
+  <div class="markdown level1 summary"><p>Sends the launch request asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;AppControlResult&gt; SendLaunchRequestAsync(AppControl launchRequest, AppControlReplyCallback replyAfterLaunching)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.AppControl.html">AppControl</a></td>
+        <td><span class="parametername">launchRequest</span></td>
+        <td><p>The AppControl.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.AppControlReplyCallback.html">AppControlReplyCallback</a></td>
+        <td><span class="parametername">replyAfterLaunching</span></td>
+        <td><p>The callback function to be called when the reply is delivered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Tizen.Applications.AppControlResult.html">AppControlResult</a>&gt;</td>
+        <td><p>A task with the result of the launch request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Applications_AppControl_SendLaunchRequestAsync_Tizen_Applications_AppControl_Tizen_Applications_AppControlReplyCallback__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The operation is mandatory information for the launch request.
+If the operation is not specified, AppControlOperations.Default is used by default.
+If the operation is AppControlOperations.Default, the application ID is mandatory to explicitly launch the application.<br>
+Since Tizen 2.4, the launch request of the service application over out of packages is restricted by the platform.
+Also, implicit launch requests are NOT delivered to service applications since 2.4.
+To launch a service application, an explicit launch request with the application ID given by property ApplicationId MUST be sent.</p>
+</div>
+  
+  <h5 id="Tizen_Applications_AppControl_SendLaunchRequestAsync_Tizen_Applications_AppControl_Tizen_Applications_AppControlReplyCallback__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Applications_AppControl_SendLaunchRequestAsync_Tizen_Applications_AppControl_Tizen_Applications_AppControlReplyCallback__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Applications_AppControl_SendLaunchRequestAsync_Tizen_Applications_AppControl_Tizen_Applications_AppControlReplyCallback__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/appmanager.launch">http://tizen.org/privilege/appmanager.launch</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when failed because of the argument is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.Exceptions.AppNotFoundException.html">AppNotFoundException</a></td>
+        <td><p>Thrown when the application to run is not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.Exceptions.LaunchRejectedException.html">LaunchRejectedException</a></td>
+        <td><p>Thrown when the launch request is rejected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Applications_AppControl_SendTerminateRequest_" data-uid="Tizen.Applications.AppControl.SendTerminateRequest*"></a>
   <h4 id="Tizen_Applications_AppControl_SendTerminateRequest_Tizen_Applications_AppControl_" data-uid="Tizen.Applications.AppControl.SendTerminateRequest(Tizen.Applications.AppControl)">SendTerminateRequest(AppControl)</h4>
   <div class="markdown level1 summary"><p>Sends the terminate request to the application that is launched by AppControl.</p>

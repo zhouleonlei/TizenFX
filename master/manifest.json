@@ -3690,7 +3690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.AppControl.html",
-          "hash": "8+TQSc0zuoUnsWFBYamTPQ=="
+          "hash": "4WOz5EN5vvnF+O2CYT0Liw=="
         }
       },
       "is_incremental": false,
@@ -3770,11 +3770,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.AppControlResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.AppControlResult.html",
+          "hash": "wrS/0FbZtJKA/GpT26zNEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.Application.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.Application.html",
-          "hash": "zSXgIUdOmc7UF+12CvZKHg=="
+          "hash": "KU5xfMUNlHbwr/OPDVMcRA=="
         }
       },
       "is_incremental": false,
@@ -3822,7 +3834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ApplicationInfo.html",
-          "hash": "5M2beDI+VewBK2x9haIx2w=="
+          "hash": "gpUytIt+CAHHPtuWGqFlwQ=="
         }
       },
       "is_incremental": false,
@@ -3894,7 +3906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ApplicationManager.html",
-          "hash": "bxJOBlORprF8Xi0DF1YTBA=="
+          "hash": "qFNErvTUbgPxrzHKaN/f3w=="
         }
       },
       "is_incremental": false,
@@ -3918,7 +3930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ApplicationRunningContext.html",
-          "hash": "xd/z47uDrFjvpWVDEjqKew=="
+          "hash": "o6s1kWqsexDwp9sCB4NkkA=="
         }
       },
       "is_incremental": false,
@@ -4122,7 +4134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.CoreApplication.html",
-          "hash": "OsRXQvmK1dNKSLVVC98ybA=="
+          "hash": "uU0ue/dxaEwf88a4KAMnSQ=="
         }
       },
       "is_incremental": false,
@@ -4206,7 +4218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.CoreUIApplication.html",
-          "hash": "mtXPZcYU0GHC60kKASu+Dw=="
+          "hash": "p2D313hQidxe66+UAHsQwA=="
         }
       },
       "is_incremental": false,
@@ -4410,7 +4422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.DataControl.Provider.html",
-          "hash": "ZumVZvDGxZSCNGJ3slLnWQ=="
+          "hash": "1lZ6A7E3Ce9A5Kv3haydiw=="
         }
       },
       "is_incremental": false,
@@ -5466,7 +5478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ReceivedAppControl.html",
-          "hash": "lMXBp1Zi3wLj9TIvuCuI4A=="
+          "hash": "McplfgA3JphUidP3wXw5xQ=="
         }
       },
       "is_incremental": false,
@@ -5574,7 +5586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ServiceApplication.html",
-          "hash": "Anal/FfHBhcOmVaMciRjMQ=="
+          "hash": "i+smVY9RDjSNMIQPWfOVHA=="
         }
       },
       "is_incremental": false,
@@ -5826,7 +5838,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WatchApplication.html",
-          "hash": "2zeBMJDPss7BcmIrpnRlhQ=="
+          "hash": "HZgx3tEICnLySXNWUwkjjA=="
         }
       },
       "is_incremental": false,
@@ -6090,7 +6102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetApplication.html",
-          "hash": "fv0JdVXzdivR7zMfsDZkcA=="
+          "hash": "UxrgfCsYZgU/KgyJw22W8g=="
         }
       },
       "is_incremental": false,
@@ -6114,7 +6126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetBase.html",
-          "hash": "GL6LSiiKSCOKVVBxrqqplQ=="
+          "hash": "LfW7+fg6NFlHZG63yGDrxQ=="
         }
       },
       "is_incremental": false,
@@ -6126,7 +6138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetControl.Instance.html",
-          "hash": "oXxObFWZi3Z7rOgKFKPSzA=="
+          "hash": "aQX67gRKsZyBZ4V6LxnNYg=="
         }
       },
       "is_incremental": false,
@@ -6162,7 +6174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.WidgetControl.html",
-          "hash": "4zkZkHdZFagSS8VjVU1U3Q=="
+          "hash": "w+UvniA3+fKyavXgQmLNLA=="
         }
       },
       "is_incremental": false,
@@ -6198,7 +6210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.html",
-          "hash": "WkdZch5KwgzKTrXMFMENsw=="
+          "hash": "hczzUIVxHKOZUDB5drhlYA=="
         }
       },
       "is_incremental": false,
@@ -11910,7 +11922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.VideoMediaFormat.html",
-          "hash": "4nrOEK52cmE9TVlvGe2YZg=="
+          "hash": "g7if8utgC5LAS9TC3pGQeA=="
         }
       },
       "is_incremental": false,
@@ -14466,7 +14478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.NUIApplication.html",
-          "hash": "NjwISP4JyfEFJqbRoA6cbQ=="
+          "hash": "lOXapzSo1egTSA1NBagy9A=="
         }
       },
       "is_incremental": false,
@@ -14526,7 +14538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.NUIWatchApplication.html",
-          "hash": "vtwvi1xjd+17nwcw5Os/ig=="
+          "hash": "4qaVh4qB1pWNbOwHdVYtpA=="
         }
       },
       "is_incremental": false,
@@ -14538,7 +14550,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.NUIWidgetApplication.html",
-          "hash": "2kLwwhb3lV9Rt9OQA72+Lw=="
+          "hash": "b77VLzrbsD3J33dYVHz8dQ=="
         }
       },
       "is_incremental": false,
@@ -25482,7 +25494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "3LTjuQW1vtfco4DTZQGTOw=="
+          "hash": "gpyOio6zZZ7Oh490QITZ5g=="
         }
       },
       "is_incremental": false,

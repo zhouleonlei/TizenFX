@@ -145,7 +145,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationRunningContext.html">ApplicationRunningContext</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The application running context list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -153,6 +154,69 @@
   <h5 id="Tizen_Applications_ApplicationManager_GetAllRunningApplicationsAsync_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_Applications_ApplicationManager_GetAppId_" data-uid="Tizen.Applications.ApplicationManager.GetAppId*"></a>
+  <h4 id="Tizen_Applications_ApplicationManager_GetAppId_System_Int32_" data-uid="Tizen.Applications.ApplicationManager.GetAppId(System.Int32)">GetAppId(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the application id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAppId(int processId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">processId</span></td>
+        <td><p>The application pid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Returns the application id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Applications_ApplicationManager_GetAppId_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when the given parameter is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Applications_ApplicationManager_GetInstalledApplication_" data-uid="Tizen.Applications.ApplicationManager.GetInstalledApplication*"></a>
   <h4 id="Tizen_Applications_ApplicationManager_GetInstalledApplication_System_String_" data-uid="Tizen.Applications.ApplicationManager.GetInstalledApplication(System.String)">GetInstalledApplication(String)</h4>
   <div class="markdown level1 summary"><p>Gets the information of the specified application with the application ID.</p>
@@ -191,7 +255,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a></td>
-        <td></td>
+        <td><p>The application info.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -219,7 +284,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The installed application info list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +331,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The installed application info list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -311,7 +378,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The installed application info list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,7 +407,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationRunningContext.html">ApplicationRunningContext</a>&gt;&gt;</td>
-        <td></td>
+        <td><p>The application running context list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -406,6 +475,72 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>Thrown when the given parameter is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_" data-uid="Tizen.Applications.ApplicationManager.TerminateBackgroundApplication*"></a>
+  <h4 id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_Tizen_Applications_ApplicationRunningContext_" data-uid="Tizen.Applications.ApplicationManager.TerminateBackgroundApplication(Tizen.Applications.ApplicationRunningContext)">TerminateBackgroundApplication(ApplicationRunningContext)</h4>
+  <div class="markdown level1 summary"><p>Terminates the application if it is running on background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TerminateBackgroundApplication(ApplicationRunningContext app)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.ApplicationRunningContext.html">ApplicationRunningContext</a></td>
+        <td><span class="parametername">app</span></td>
+        <td><p>ApplicationRunningContext object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_Tizen_Applications_ApplicationRunningContext__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function returns after it just sends a request for terminating a background application.
+Platform will decide if the target application could be terminated or not according to the state of the target application.</p>
+</div>
+  
+  <h5 id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_Tizen_Applications_ApplicationRunningContext__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_Tizen_Applications_ApplicationRunningContext__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Applications_ApplicationManager_TerminateBackgroundApplication_Tizen_Applications_ApplicationRunningContext__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/appmanager.kill.bgapp">http://tizen.org/privilege/appmanager.kill.bgapp</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when failed of invalid argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>Thrown when failed because of permission denied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when failed because of system error.</p>
 </td>
       </tr>
     </tbody>
