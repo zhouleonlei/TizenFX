@@ -580,6 +580,42 @@ It provides the context ID.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_SendCustomGeometryUpdated_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendCustomGeometryUpdated*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_SendCustomGeometryUpdated" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendCustomGeometryUpdated">SendCustomGeometryUpdated()</h4>
+  <div class="markdown level1 summary"><p>Notifies the changed geometry of input panel window to the associated text input UI control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendCustomGeometryUpdated()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendCustomGeometryUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendCustomGeometryUpdated_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendCustomGeometryUpdated_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not yet started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Uix_InputMethod_InputMethodEditor_SendKeyEvent_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendKeyEvent*"></a>
   <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_SendKeyEvent_Tizen_Uix_InputMethod_KeyCode_Tizen_Uix_InputMethod_KeyMask_System_Boolean_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendKeyEvent(Tizen.Uix.InputMethod.KeyCode,Tizen.Uix.InputMethod.KeyMask,System.Boolean)">SendKeyEvent(KeyCode, KeyMask, Boolean)</h4>
   <div class="markdown level1 summary"><p>Sends a key event to the associated text input UI control.</p>
@@ -646,6 +682,99 @@ And if forwardKey is false, the ProcessKey event receives the key event before t
         <td><p>This can occur due to the following reasons:
 1) The application does not have the privilege to call this function.
 2) The IME main loop isn&apos;t started yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendLanguageUpdated*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendLanguageUpdated">SendLanguageUpdated()</h4>
+  <div class="markdown level1 summary"><p>Notifies the changed language of the input panel to the the associated text input UI control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendLanguageUpdated()</code></pre>
+  </div>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>LanguageRequestedCallback is raised after this API is called when the App requests changed language information.</p>
+</div>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendLanguageUpdated_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not yet started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_SendShiftModeUpdated_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendShiftModeUpdated*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_SendShiftModeUpdated_System_Boolean_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendShiftModeUpdated(System.Boolean)">SendShiftModeUpdated(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sends the changed shift mode of the input panel to the the associated text input UI control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendShiftModeUpdated(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p><code>true</code> if shift button is clicked, otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendShiftModeUpdated_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendShiftModeUpdated_System_Boolean__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendShiftModeUpdated_System_Boolean__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not yet started.</p>
 </td>
       </tr>
     </tbody>
