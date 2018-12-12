@@ -22098,7 +22098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Sensor.SensorPausePolicy.html",
-          "hash": "tUecRK5CnmA+J+1l0lsUXA=="
+          "hash": "6AQfnvzg2SdtxMv0hcM61Q=="
         }
       },
       "is_incremental": false,
@@ -22314,7 +22314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Sensor.html",
-          "hash": "jR1h6AUVNS3QGrjFBH8wpQ=="
+          "hash": "k2nTmJEuCu5eALTGwJazyw=="
         }
       },
       "is_incremental": false,
@@ -25271,17 +25271,17 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
