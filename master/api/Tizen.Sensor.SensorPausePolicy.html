@@ -83,7 +83,7 @@
   
   <h1 id="Tizen_Sensor_SensorPausePolicy" data-uid="Tizen.Sensor.SensorPausePolicy" class="text-break">Enum SensorPausePolicy
   </h1>
-  <div class="markdown level0 summary"><p>The Sensor Option Enum definition for sensor option values.</p>
+  <div class="markdown level0 summary"><p>The Sensor Option Enum definition for pause policies of sensor.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Tizen.Sensor.html">Tizen.Sensor</a></h6>
@@ -106,22 +106,22 @@
     <tbody>
       <tr>
         <td id="Tizen_Sensor_SensorPausePolicy_All">All</td>
-        <td><p>Receives data when the LCD is off and in the power save mode.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Tizen_Sensor_SensorPausePolicy_DisplayOff">DisplayOff</td>
-        <td><p>Receives data when the LCD is off.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Tizen_Sensor_SensorPausePolicy_None">None</td>
         <td><p>Does not receive data when the LCD is off and in the power save mode.</p>
 </td>
       </tr>
       <tr>
+        <td id="Tizen_Sensor_SensorPausePolicy_DisplayOff">DisplayOff</td>
+        <td><p>Does not receive data when the LCD is off.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Tizen_Sensor_SensorPausePolicy_None">None</td>
+        <td><p>Receives data when the LCD is off and in the power save mode.</p>
+</td>
+      </tr>
+      <tr>
         <td id="Tizen_Sensor_SensorPausePolicy_PowerSaveMode">PowerSaveMode</td>
-        <td><p>Receives data in the power save mode.</p>
+        <td><p>Does not receive data in the power save mode.</p>
 </td>
       </tr>
     </tbody>
