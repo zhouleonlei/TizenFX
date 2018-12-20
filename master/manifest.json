@@ -16386,7 +16386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.AcceptStateChangedEventArgs.html",
-          "hash": "S16loVUTugQdeABbyUKjPQ=="
+          "hash": "EWDWobVuzL9PEUip3ohTQw=="
         }
       },
       "is_incremental": false,
@@ -16446,7 +16446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothAdapter.html",
-          "hash": "4/Lone8PzgOmsEGEfMscaQ=="
+          "hash": "VJ2Hg6AZ6hG0F9jYoif8Lw=="
         }
       },
       "is_incremental": false,
@@ -16542,7 +16542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothDevice.html",
-          "hash": "KvauPKWCls7K50wgihCUpg=="
+          "hash": "EwSEBP/f8yCjih5OzB4dZA=="
         }
       },
       "is_incremental": false,
@@ -16614,7 +16614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothGattAttribute.html",
-          "hash": "hJIRICoYtDFLznjOEqTxQA=="
+          "hash": "NbVoLD+uaSGWgHBz6zB7ow=="
         }
       },
       "is_incremental": false,
@@ -16698,7 +16698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothGattServer.html",
-          "hash": "EGYhGY/OIO0HrfzS7bgpBw=="
+          "hash": "aVxMnDPjSNzBXi+MdWJ7WA=="
         }
       },
       "is_incremental": false,
@@ -16914,7 +16914,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothOppServer.html",
-          "hash": "Td+YybannSSByQ10///Myg=="
+          "hash": "ZWXlei+r5T4GvOKZ6tl0cQ=="
         }
       },
       "is_incremental": false,
@@ -16950,7 +16950,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothServerSocket.html",
-          "hash": "NXA3Sf9b0TKyLB0MBj3mhg=="
+          "hash": "zXEYWQst4BOuSXhbVgezTA=="
         }
       },
       "is_incremental": false,
@@ -17250,7 +17250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.PushFinishedEventArgs.html",
-          "hash": "QY2vjfwbR9QkX0saeRU6Sg=="
+          "hash": "jeaXulIH+3aK0nv31hHj5w=="
         }
       },
       "is_incremental": false,
@@ -17274,7 +17274,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.PushRespondedEventArgs.html",
-          "hash": "DKM0paCHvTluOHrifO0K8Q=="
+          "hash": "dNepKt2/XGMaLLDGgGl3sw=="
         }
       },
       "is_incremental": false,
@@ -17382,7 +17382,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.SocketConnection.html",
-          "hash": "vuBaSf6oJjCFUUxV3JjpaA=="
+          "hash": "4qelzI5NlDHgGo5yBF+0wA=="
         }
       },
       "is_incremental": false,
@@ -17550,7 +17550,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.html",
-          "hash": "+qb8fAPoKI3kaIKQTssyrQ=="
+          "hash": "1PGR3qKKGInDD775sbo/yw=="
         }
       },
       "is_incremental": false,
@@ -25590,11 +25590,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -25606,6 +25601,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
