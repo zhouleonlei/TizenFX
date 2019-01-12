@@ -24318,7 +24318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.InputMethod.InputMethodEditor.html",
-          "hash": "/SisY4wdvMlME4/o6CVdwA=="
+          "hash": "DG+LB5ejph+iU5EUuMj3fQ=="
         }
       },
       "is_incremental": false,
@@ -24422,11 +24422,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.InputMethod.MimeTypeUpdateRequestedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.InputMethod.MimeTypeUpdateRequestedEventArgs.html",
+          "hash": "7YNOEEfePiS1C127erBkKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Uix.InputMethod.PreEditAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.InputMethod.PreEditAttribute.html",
           "hash": "3JlpdAuNx0Gy3qZsUTXPpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.InputMethod.PredictionHintDataUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.InputMethod.PredictionHintDataUpdatedEventArgs.html",
+          "hash": "6f+yZ7TQNhNI/+snYICwzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.InputMethod.PredictionHintUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.InputMethod.PredictionHintUpdatedEventArgs.html",
+          "hash": "1KQIxi2YT66hp/72IL+SmQ=="
         }
       },
       "is_incremental": false,
@@ -24498,7 +24534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.InputMethod.html",
-          "hash": "98AKJhDccGfLuDU4M1r8lA=="
+          "hash": "g4nS6TX1uFGqF4+tkX5LPg=="
         }
       },
       "is_incremental": false,
@@ -25518,7 +25554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8CjzZmeJdzZ9P6A2mh6xyw=="
+          "hash": "XzOxEWZ7a4MYRwy7WEN9vQ=="
         }
       },
       "is_incremental": false,
@@ -25600,11 +25636,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }

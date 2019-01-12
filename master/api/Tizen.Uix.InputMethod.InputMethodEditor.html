@@ -125,6 +125,73 @@
   
   <h3 id="methods">Methods
   </h3>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_CommitContent_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.CommitContent*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_CommitContent_System_String_System_String_System_String_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.CommitContent(System.String,System.String,System.String)">CommitContent(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Commits contents such as image to the associated text input UI control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CommitContent(string content, string description, string mimeType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content URI to be sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The content description.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td><p>The MIME type received from the MimeTypeSetRequest</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_CommitContent_System_String_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_CommitContent_System_String_System_String_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_CommitContent_System_String_System_String_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not started yet.
+3) Invalid parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Uix_InputMethod_InputMethodEditor_CommitString_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.CommitString*"></a>
   <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_CommitString_System_String_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.CommitString(System.String)">CommitString(String)</h4>
   <div class="markdown level1 summary"><p>Sends the text to the associated text input UI control.</p>
@@ -289,6 +356,59 @@
 1) The application does not have the privilege to call this function.
 2) The IME main loop has not started yet.
 3) Operation failed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_GetSelectedText_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.GetSelectedText*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_GetSelectedText" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.GetSelectedText">GetSelectedText()</h4>
+  <div class="markdown level1 summary"><p>Gets the selected text synchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSelectedText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The selected text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_GetSelectedText_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_GetSelectedText_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_GetSelectedText_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not started yet.
+3) Invalid parameter.</p>
 </td>
       </tr>
     </tbody>
@@ -721,6 +841,61 @@ And if forwardKey is false, the ProcessKey event receives the key event before t
         <td><p>This can occur due to the following reasons:
 1) The application does not have the privilege to call this function.
 2) The IME main loop has not started yet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Uix_InputMethod_InputMethodEditor_SendPrivateCommand_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendPrivateCommand*"></a>
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_SendPrivateCommand_System_String_" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.SendPrivateCommand(System.String)">SendPrivateCommand(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a private command to the associated text input UI control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendPrivateCommand(string command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The UTF-8 string to be sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendPrivateCommand_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendPrivateCommand_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_SendPrivateCommand_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/ime">http://tizen.org/privilege/ime</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) The application does not have the privilege to call this function.
+2) The IME main loop has not started yet.
+3) Invalid parameter.</p>
 </td>
       </tr>
     </tbody>
@@ -1442,6 +1617,87 @@ It will only be called when the client application changes the edit field&apos;s
   
   <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_LayoutSet_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_MimeTypeUpdateRequested" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.MimeTypeUpdateRequested">MimeTypeUpdateRequested</h4>
+  <div class="markdown level1 summary"><p>Called when an associated text input UI control requests the text entry to set the MIME type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;MimeTypeUpdateRequestedEventArgs&gt; MimeTypeUpdateRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Uix.InputMethod.MimeTypeUpdateRequestedEventArgs.html">MimeTypeUpdateRequestedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_MimeTypeUpdateRequested_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_PredictionHintDataUpdated" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.PredictionHintDataUpdated">PredictionHintDataUpdated</h4>
+  <div class="markdown level1 summary"><p>Called to set the prediction hint key and value to deliver to the input panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;PredictionHintDataUpdatedEventArgs&gt; PredictionHintDataUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Uix.InputMethod.PredictionHintDataUpdatedEventArgs.html">PredictionHintDataUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_PredictionHintDataUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_PredictionHintUpdated" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.PredictionHintUpdated">PredictionHintUpdated</h4>
+  <div class="markdown level1 summary"><p>Called to set the prediction hint string to deliver to the input panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;PredictionHintUpdatedEventArgs&gt; PredictionHintUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Uix.InputMethod.PredictionHintUpdatedEventArgs.html">PredictionHintUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Uix_InputMethod_InputMethodEditor_PredictionHintUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <h4 id="Tizen_Uix_InputMethod_InputMethodEditor_ReturnKeySet" data-uid="Tizen.Uix.InputMethod.InputMethodEditor.ReturnKeySet">ReturnKeySet</h4>
   <div class="markdown level1 summary"><p>Called when an associated text input UI control requests the input panel to set the Return key label.
