@@ -16698,7 +16698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Network.Bluetooth.BluetoothGattServer.html",
-          "hash": "aVxMnDPjSNzBXi+MdWJ7WA=="
+          "hash": "5WDfDNR5XQGw/+Bm0mv8Bg=="
         }
       },
       "is_incremental": false,
@@ -21194,6 +21194,186 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.BluetoothPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.BluetoothPolicy.html",
+          "hash": "OYi1We1/M9lzaw/G3Vip6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.BrowserPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.BrowserPolicy.html",
+          "hash": "JxPpd6OCg0szYFiYI5TJlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.DevicePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.DevicePolicy.html",
+          "hash": "DzUtY7TrFEws8tdNHutenQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.DevicePolicyManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.DevicePolicyManager.html",
+          "hash": "4NMlL4ZsQwDHUtxkJNG+gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.EmailPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.EmailPolicy.html",
+          "hash": "ZPcF7qQKswC2t75LQAB8lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.LocationPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.LocationPolicy.html",
+          "hash": "jHAF6GaOLZWA0fHuXbkIJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.MediaPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.MediaPolicy.html",
+          "hash": "aq1J+cicGCgPvGRDrtGeog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.PasswordPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.PasswordPolicy.html",
+          "hash": "qHGG/YBOt4RLp+L63bzUfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.PasswordQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.PasswordQuality.html",
+          "hash": "3ICayuc8I/MfcviPQ7ZjWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.PolicyChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.PolicyChangedEventArgs.html",
+          "hash": "jAX5HpZpRO5XyAMrT6jB3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.StoragePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.StoragePolicy.html",
+          "hash": "yAXqLyobIE6e+xUCHIdAjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.TelephonyPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.TelephonyPolicy.html",
+          "hash": "YbuKCaVRYuOOO/4b1+kj8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.UsbPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.UsbPolicy.html",
+          "hash": "BRy2LnDi/NDGC7m5DoR5EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.WifiPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.WifiPolicy.html",
+          "hash": "az7qhRlSPrZHsXpJW+z1sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Security.DevicePolicyManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Security.DevicePolicyManager.html",
+          "hash": "FyunFoanz/K1JzZUAKbfUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Security.PermissionRequestResponse.yml",
       "output": {
         ".html": {
@@ -25554,7 +25734,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LV/tUfy8NNaOoSBfgPKdGQ=="
+          "hash": "VvKZtt9J8l+PT/Gseq6VLw=="
         }
       },
       "is_incremental": false,
@@ -25631,17 +25811,17 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

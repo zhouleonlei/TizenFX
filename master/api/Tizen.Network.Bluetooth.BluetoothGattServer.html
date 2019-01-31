@@ -91,6 +91,10 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">BluetoothGattServer</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -119,7 +123,7 @@
   <h6><strong>Assembly</strong>: Tizen.Network.Bluetooth.dll</h6>
   <h5 id="Tizen_Network_Bluetooth_BluetoothGattServer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BluetoothGattServer</code></pre>
+    <pre><code class="lang-csharp hljs">public class BluetoothGattServer : IDisposable</code></pre>
   </div>
   
   
@@ -175,6 +179,61 @@
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Dispose*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Destroys the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Dispose*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose_System_Boolean_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases all the resources currently used by this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>true if the managed resources should be disposed, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothGattServer_Dispose_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_Network_Bluetooth_BluetoothGattServer_Finalize_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Finalize*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothGattServer_Finalize" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Destroys the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
   <a id="Tizen_Network_Bluetooth_BluetoothGattServer_GetService_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.GetService*"></a>
   <h4 id="Tizen_Network_Bluetooth_BluetoothGattServer_GetService_System_String_" data-uid="Tizen.Network.Bluetooth.BluetoothGattServer.GetService(System.String)">GetService(String)</h4>
   <div class="markdown level1 summary"><p>Gets service with given UUID that belongs to this server.</p>
@@ -654,6 +713,10 @@ or when the remote device is disconnected, or the send response procedure fails.
   <h5 id="Tizen_Network_Bluetooth_BluetoothGattServer_NotificationSent_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
 </article>
           </div>
           
