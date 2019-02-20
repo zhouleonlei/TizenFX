@@ -22694,6 +22694,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.System.AccessibilityGrayscaleChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.System.AccessibilityGrayscaleChangedEventArgs.html",
+          "hash": "fsQnh/gdr05h2mHI7eu5Wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.System.AccessibilityNegativeColorChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.System.AccessibilityNegativeColorChangedEventArgs.html",
+          "hash": "sl7va1aUOOuo1hKKiW2+xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.System.AccessibilityTtsSettingChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -23418,7 +23442,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.SystemSettings.html",
-          "hash": "TujGWytRmHM8DF45fMZxtQ=="
+          "hash": "tqgxrPqJACyuCSNJRPtsmQ=="
         }
       },
       "is_incremental": false,
@@ -23454,7 +23478,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.SystemSettingsKeys.html",
-          "hash": "fq9HoNKVvzNlF4D73k5z6g=="
+          "hash": "uy1uQ3xL1hEn49KIrcZHLQ=="
         }
       },
       "is_incremental": false,
@@ -23778,7 +23802,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.html",
-          "hash": "z8B85kdoDHwUdbFA/EeGwg=="
+          "hash": "/W2czYU23hb7Jn2idnVqiQ=="
         }
       },
       "is_incremental": false,
@@ -25602,7 +25626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "j+I6NIX4sg5rXU4Hk0Sq8g=="
+          "hash": "t2NiB2vGJiiAeQ+Mtj5xAQ=="
         }
       },
       "is_incremental": false,
@@ -25679,11 +25703,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
