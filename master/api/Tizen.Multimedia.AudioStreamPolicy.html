@@ -608,6 +608,91 @@ An internal error occurs.</p>
   <h5 id="Tizen_Multimedia_AudioStreamPolicy_Dispose_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_Multimedia_AudioStreamPolicy_HasStreamOnDevice_" data-uid="Tizen.Multimedia.AudioStreamPolicy.HasStreamOnDevice*"></a>
+  <h4 id="Tizen_Multimedia_AudioStreamPolicy_HasStreamOnDevice_Tizen_Multimedia_AudioDevice_" data-uid="Tizen.Multimedia.AudioStreamPolicy.HasStreamOnDevice(Tizen.Multimedia.AudioDevice)">HasStreamOnDevice(AudioDevice)</h4>
+  <div class="markdown level1 summary"><p>Checks if any stream from the current AudioStreamPolicy is using the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasStreamOnDevice(AudioDevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioDevice.html">AudioDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device to be checked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if any audio stream from the current AudioStreamPolicy is using the device; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_HasStreamOnDevice_Tizen_Multimedia_AudioDevice__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The AudioStreamPolicy can be applied to each playback or recording stream via other API set.
+(For example., <a class="xref" href="Tizen.Multimedia.Player.html">Player</a>, <a class="xref" href="Tizen.Multimedia.WavPlayer.html">WavPlayer</a>,
+<a class="xref" href="Tizen.Multimedia.AudioPlayback.html">AudioPlayback</a>, <a class="xref" href="Tizen.Multimedia.AudioCapture.html">AudioCapture</a>, etc.)
+This method returns true only when the device is used for the stream which meets to the two conditions.
+One is that the current AudioStreamPolicy sets a audio route path to the device and the other is that the playback
+or recording stream from other API set should have already started to prepare or to play.(It depends on the API set.)</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_HasStreamOnDevice_Tizen_Multimedia_AudioDevice__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">device</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.AudioStreamPolicy.html">AudioStreamPolicy</a> has already been disposed of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_HasStreamOnDevice_Tizen_Multimedia_AudioDevice__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.AudioManager.html#Tizen_Multimedia_AudioManager_GetConnectedDevices">GetConnectedDevices()</a></div>
+  </div>
   <a id="Tizen_Multimedia_AudioStreamPolicy_ReleaseFocus_" data-uid="Tizen.Multimedia.AudioStreamPolicy.ReleaseFocus*"></a>
   <h4 id="Tizen_Multimedia_AudioStreamPolicy_ReleaseFocus_Tizen_Multimedia_AudioStreamFocusOptions_Tizen_Multimedia_AudioStreamBehaviors_System_String_" data-uid="Tizen.Multimedia.AudioStreamPolicy.ReleaseFocus(Tizen.Multimedia.AudioStreamFocusOptions,Tizen.Multimedia.AudioStreamBehaviors,System.String)">ReleaseFocus(AudioStreamFocusOptions, AudioStreamBehaviors, String)</h4>
   <div class="markdown level1 summary"><p>Releases the acquired focus.</p>
