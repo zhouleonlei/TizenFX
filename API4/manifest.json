@@ -2514,7 +2514,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.Wearable.CircleDateTimeSelector.html",
-          "hash": "QS6munEPr99aQ7WXFvyjJw=="
+          "hash": "O4W9+nSnOt2qpBEh4KFFKw=="
         }
       },
       "is_incremental": false,
@@ -2574,7 +2574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ElmSharp.Wearable.CircleSpinner.html",
-          "hash": "wj0XRAZHto1Y4IGcjNHzzw=="
+          "hash": "C4DdTgOq+YRPw57gv49avQ=="
         }
       },
       "is_incremental": false,
@@ -24222,6 +24222,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -24233,11 +24238,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
