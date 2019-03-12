@@ -433,6 +433,34 @@ This AutoRepeat mode is valid to both Play and ReversePlay cases.
   <h5 id="ElmSharp_AnimationView_AutoRepeat_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
+  <a id="ElmSharp_AnimationView_DefaultSize_" data-uid="ElmSharp.AnimationView.DefaultSize*"></a>
+  <h4 id="ElmSharp_AnimationView_DefaultSize" data-uid="ElmSharp.AnimationView.DefaultSize">DefaultSize</h4>
+  <div class="markdown level1 summary"><p>Get the default view size that specified from vector resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size DefaultSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.Size.html">Size</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="ElmSharp_AnimationView_DefaultSize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
   <a id="ElmSharp_AnimationView_DurationTime_" data-uid="ElmSharp.AnimationView.DurationTime*"></a>
   <h4 id="ElmSharp_AnimationView_DurationTime" data-uid="ElmSharp.AnimationView.DurationTime">DurationTime</h4>
   <div class="markdown level1 summary"><p>Get the duration of animation in seconds.</p>
@@ -465,19 +493,236 @@ If current animation source isn&apos;t animatable, it returns zero.</p>
   <h5 id="ElmSharp_AnimationView_DurationTime_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
-  <a id="ElmSharp_AnimationView_KeyFrame_" data-uid="ElmSharp.AnimationView.KeyFrame*"></a>
-  <h4 id="ElmSharp_AnimationView_KeyFrame" data-uid="ElmSharp.AnimationView.KeyFrame">KeyFrame</h4>
-  <div class="markdown level1 summary"><p>Sets or gets current keyframe position of animation view.
+  <a id="ElmSharp_AnimationView_Frame_" data-uid="ElmSharp.AnimationView.Frame*"></a>
+  <h4 id="ElmSharp_AnimationView_Frame" data-uid="ElmSharp.AnimationView.Frame">Frame</h4>
+  <div class="markdown level1 summary"><p>Sets or gets current frame position of animation view.
 <remarks>
-When you required to jump on a certain frame instantly,
-you can change current keyframe by using this property
-The range of keyframe is 0 ~ 1.
+The range of frame is from 0 to FrameCount - 1
 </remarks></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double KeyFrame { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Frame { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="ElmSharp_AnimationView_Frame_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_FrameCount_" data-uid="ElmSharp.AnimationView.FrameCount*"></a>
+  <h4 id="ElmSharp_AnimationView_FrameCount" data-uid="ElmSharp.AnimationView.FrameCount">FrameCount</h4>
+  <div class="markdown level1 summary"><p>Get the index of end frame of the AnimationView, if it&apos;s animated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FrameCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_FrameCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Frame number starts with 0.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_FrameCount_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_IsReversedPlaying_" data-uid="ElmSharp.AnimationView.IsReversedPlaying*"></a>
+  <h4 id="ElmSharp_AnimationView_IsReversedPlaying" data-uid="ElmSharp.AnimationView.IsReversedPlaying">IsReversedPlaying</h4>
+  <div class="markdown level1 summary"><p>Get the status whether current animation is on playing forward or backward.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReversedPlaying { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_IsReversedPlaying_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If AnimationView is not on playing, it will return False.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_IsReversedPlaying_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_MaxFrame_" data-uid="ElmSharp.AnimationView.MaxFrame*"></a>
+  <h4 id="ElmSharp_AnimationView_MaxFrame" data-uid="ElmSharp.AnimationView.MaxFrame">MaxFrame</h4>
+  <div class="markdown level1 summary"><p>Sets or Gets the last frame of the play</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxFrame { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_MaxFrame_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default value is FrameCount -1.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_MaxFrame_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_MaxProgress_" data-uid="ElmSharp.AnimationView.MaxProgress*"></a>
+  <h4 id="ElmSharp_AnimationView_MaxProgress" data-uid="ElmSharp.AnimationView.MaxProgress">MaxProgress</h4>
+  <div class="markdown level1 summary"><p>Sets or Gets the last progress of the play</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MaxProgress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_MaxProgress_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default value is 1.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_MaxProgress_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_MinFrame_" data-uid="ElmSharp.AnimationView.MinFrame*"></a>
+  <h4 id="ElmSharp_AnimationView_MinFrame" data-uid="ElmSharp.AnimationView.MinFrame">MinFrame</h4>
+  <div class="markdown level1 summary"><p>Sets or Gets the start frame of the play</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinFrame { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_MinFrame_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default value is 0.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_MinFrame_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_MinProgress_" data-uid="ElmSharp.AnimationView.MinProgress*"></a>
+  <h4 id="ElmSharp_AnimationView_MinProgress" data-uid="ElmSharp.AnimationView.MinProgress">MinProgress</h4>
+  <div class="markdown level1 summary"><p>Sets or Gets the start progress of the play</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MinProgress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ElmSharp_AnimationView_MinProgress_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Default value is 0.</p>
+</div>
+  
+  <h5 id="ElmSharp_AnimationView_MinProgress_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_Progress_" data-uid="ElmSharp.AnimationView.Progress*"></a>
+  <h4 id="ElmSharp_AnimationView_Progress" data-uid="ElmSharp.AnimationView.Progress">Progress</h4>
+  <div class="markdown level1 summary"><p>Sets or gets current progress position of animation view.
+<remarks>
+When you required to jump on a certain progress instantly,
+you can change current position by using this property
+The range of progress is 0 ~ 1.
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Progress { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -495,7 +740,7 @@ The range of keyframe is 0 ~ 1.
     </tbody>
   </table>
   
-  <h5 id="ElmSharp_AnimationView_KeyFrame_sinceTizen" class="sinceTizen">API Version</h5>
+  <h5 id="ElmSharp_AnimationView_Progress_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
   <a id="ElmSharp_AnimationView_Speed_" data-uid="ElmSharp.AnimationView.Speed*"></a>
@@ -530,6 +775,34 @@ Speed must be greater than zero.
   </table>
   
   <h5 id="ElmSharp_AnimationView_Speed_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">preview </span>
+  
+  <a id="ElmSharp_AnimationView_State_" data-uid="ElmSharp.AnimationView.State*"></a>
+  <h4 id="ElmSharp_AnimationView_State" data-uid="ElmSharp.AnimationView.State">State</h4>
+  <div class="markdown level1 summary"><p>Get current animation view state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationViewState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.AnimationViewState.html">AnimationViewState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="ElmSharp_AnimationView_State_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">preview </span>
   
   <h3 id="methods">Methods
