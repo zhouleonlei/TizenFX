@@ -547,6 +547,77 @@ And, if the external storage exists, then all files under data and shared/truste
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Applications_PackageManager_GetPackageArchive_" data-uid="Tizen.Applications.PackageManager.GetPackageArchive*"></a>
+  <h4 id="Tizen_Applications_PackageManager_GetPackageArchive_System_String_" data-uid="Tizen.Applications.PackageManager.GetPackageArchive(System.String)">GetPackageArchive(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the package archive&apos;s information for the given archive path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PackageArchive GetPackageArchive(string archivePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">archivePath</span></td>
+        <td><p>The path of the package archive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.PackageArchive.html">PackageArchive</a></td>
+        <td><p>Returns the package archive information for the given archive path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Applications_PackageManager_GetPackageArchive_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Regular 3rd party apps do not need to use this API</p>
+</div>
+  
+  <h5 id="Tizen_Applications_PackageManager_GetPackageArchive_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when the failed input package ID is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.ioexception">IOException</a></td>
+        <td><p>Thrown when the method fails due to an internal I/O error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Applications_PackageManager_GetPackageIdByApplicationId_" data-uid="Tizen.Applications.PackageManager.GetPackageIdByApplicationId*"></a>
   <h4 id="Tizen_Applications_PackageManager_GetPackageIdByApplicationId_System_String_" data-uid="Tizen.Applications.PackageManager.GetPackageIdByApplicationId(System.String)">GetPackageIdByApplicationId(String)</h4>
   <div class="markdown level1 summary"><p>Gets the package ID for the given application ID.</p>
@@ -871,7 +942,7 @@ And, if the external storage exists, then all files under data and shared/truste
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -945,7 +1016,7 @@ To check the result of installation, the caller should check the progress using 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1019,7 +1090,7 @@ To check the result of installation, the caller should check the progress using 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1099,7 +1170,7 @@ To check the result of installation, the caller should check the progress using 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1229,7 +1300,7 @@ To check the result of the installation, the caller should check the progress us
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1297,7 +1368,7 @@ To check the result of installation, the caller should check the progress using 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1371,7 +1442,7 @@ To check the result of installation, the caller should check the progress using 
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if installtion request is successful, false otherwise.</p>
+        <td><p>Returns true if installation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1896,7 +1967,7 @@ To check the result of uninstallation, the caller should check the progress usin
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>Returns true if the uninstalltion request is successful, false otherwise.</p>
+        <td><p>Returns true if the uninstallation request is successful, false otherwise.</p>
 </td>
       </tr>
     </tbody>

@@ -405,6 +405,34 @@
   <h5 id="Tizen_Applications_Package_Label_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_Applications_Package_MainApplication_" data-uid="Tizen.Applications.Package.MainApplication*"></a>
+  <h4 id="Tizen_Applications_Package_MainApplication" data-uid="Tizen.Applications.Package.MainApplication">MainApplication</h4>
+  <div class="markdown level1 summary"><p>Main application info of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationInfo MainApplication { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Applications_Package_MainApplication_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_Applications_Package_PackageType_" data-uid="Tizen.Applications.Package.PackageType*"></a>
   <h4 id="Tizen_Applications_Package_PackageType" data-uid="Tizen.Applications.Package.PackageType">PackageType</h4>
   <div class="markdown level1 summary"><p>Type of the package.</p>
@@ -648,6 +676,53 @@
   
   <h5 id="Tizen_Applications_Package_GetApplications_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_Applications_Package_GetApplications_" data-uid="Tizen.Applications.Package.GetApplications*"></a>
+  <h4 id="Tizen_Applications_Package_GetApplications_Tizen_Applications_ApplicationComponentType_" data-uid="Tizen.Applications.Package.GetApplications(Tizen.Applications.ApplicationComponentType)">GetApplications(ApplicationComponentType)</h4>
+  <div class="markdown level1 summary"><p>Retrieves all the application IDs of this package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ApplicationInfo&gt; GetApplications(ApplicationComponentType componentType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Applications.ApplicationComponentType.html">ApplicationComponentType</a></td>
+        <td><span class="parametername">componentType</span></td>
+        <td><p>Optional: AppType enumeration value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Applications.ApplicationInfo.html">ApplicationInfo</a>&gt;</td>
+        <td><p>Returns a dictionary containing all the application information for a given application type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Applications_Package_GetApplications_Tizen_Applications_ApplicationComponentType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_Applications_Package_GetApplications_" data-uid="Tizen.Applications.Package.GetApplications*"></a>
   <h4 id="Tizen_Applications_Package_GetApplications_Tizen_Applications_ApplicationType_" data-uid="Tizen.Applications.Package.GetApplications(Tizen.Applications.ApplicationType)">GetApplications(ApplicationType)</h4>
