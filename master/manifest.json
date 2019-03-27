@@ -10242,7 +10242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "+XH3zwY736RKO2ZBgzI6yw=="
+          "hash": "sGInRLWZhJh23X62AaW57Q=="
         }
       },
       "is_incremental": false,
@@ -10254,7 +10254,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.PlayerBufferingTime.html",
-          "hash": "dASsED4rmQnHfDAeJDwBTA=="
+          "hash": "Dx0NjEyGWn/WKxA3cGs21A=="
         }
       },
       "is_incremental": false,

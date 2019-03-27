@@ -360,9 +360,14 @@ But, state transition like pause or resume can be more slower than default(<a cl
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p><pramref name="PreBufferMillisecond"></pramref> is less than 0.<br>
+        <td><p><pramref name="PreBufferMillisecond"></pramref> is less than -1.<br>
 -or-<br>
-<pramref name="ReBufferMillisecond"></pramref> is less than 0.<br></p>
+<pramref name="ReBufferMillisecond"></pramref> is less than -1.<br></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>The required feature is not supported.</p>
 </td>
       </tr>
     </tbody>
