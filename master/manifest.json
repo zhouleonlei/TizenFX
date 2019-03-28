@@ -4550,6 +4550,390 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.ApplicationEventManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.ApplicationEventManager.html",
+          "hash": "J6Ju0asvv8u0nemyQRi0Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.EventManagerEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.EventManagerEventArgs.html",
+          "hash": "qUMfIa/fiiw8WCT2fvgNQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.EventReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.EventReceiver.html",
+          "hash": "I7XT1Xg+YGsrr+hcpGAgqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.AutoRotateState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.AutoRotateState.html",
+          "hash": "P4EGol2bNAZelkD2cG8PAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BatteryChargerStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BatteryChargerStatus.html",
+          "hash": "oIk08SZR4cZ5eTFioWCwng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BatteryLevelStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BatteryLevelStatus.html",
+          "hash": "0bDJXou5CZF6VlGT6hH/OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BootCompleted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.BootCompleted.html",
+          "hash": "TP6QCGkTK/9Ck7yWGur5Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.Btstate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.Btstate.html",
+          "hash": "upvnHPG1Htv7ryukShFP1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.DataRoamingState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.DataRoamingState.html",
+          "hash": "zvC1MhCyUKnFzrxMNfxMAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.DisplayState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.DisplayState.html",
+          "hash": "caMn2cOAKvOhcjYCpcZ0hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.EarjackStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.EarjackStatus.html",
+          "hash": "fZw2hea1saMPQf7jMBhTfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.FontSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.FontSet.html",
+          "hash": "c4g4r4SF3h6dNhYMdNZ+jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.GpsEnableState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.GpsEnableState.html",
+          "hash": "0B5IYKAPQjfL/TA5NXzFzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.HourFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.HourFormat.html",
+          "hash": "h/pF9I8P4zD2IsoNYvUCRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.IncomingMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.IncomingMsg.html",
+          "hash": "QbxlrsL/MqCTcZdhJLYRQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LanguageSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LanguageSet.html",
+          "hash": "WyKOuKXWtanoNjssQd6brw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LocatingEnableState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LocatingEnableState.html",
+          "hash": "IYpQzsNVwC0zbXpCRsVKsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LowMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.LowMemory.html",
+          "hash": "pwqSRThPg98hNVeXDZW3Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.MobileDataState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.MobileDataState.html",
+          "hash": "C73y9biuo1mTfVGHwBtQKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.NetworkStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.NetworkStatus.html",
+          "hash": "UUO2jGWrWov48DTK/3A+3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.NpsEnableState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.NpsEnableState.html",
+          "hash": "l8Bg/gd/YTR+2I2aCVZWjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.OutgoingMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.OutgoingMsg.html",
+          "hash": "8cuvjgvfCwjotv4uo1scBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.RegionFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.RegionFormat.html",
+          "hash": "7ftEFE3q+how+DRej2ts/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.SilentMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.SilentMode.html",
+          "hash": "9/cRUVGCgHDJnjvMam/TCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.SystemShutdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.SystemShutdown.html",
+          "hash": "Pr9PGVpt6AZ+VAttING1ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.TimeChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.TimeChanged.html",
+          "hash": "H0CxHzvsxFKYWIJPZmoJkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.TimeZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.TimeZone.html",
+          "hash": "+bA82kKJaZYVnheI82zmOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.UsbStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.UsbStatus.html",
+          "hash": "RXtnVfPYKNaIPL9qeaqtvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.VibrationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.VibrationState.html",
+          "hash": "kZvW57mx894yWNig0QI2Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.WifiState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.WifiState.html",
+          "hash": "6mTH4sBqQQ0jPYaSNDDfDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.SystemEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.SystemEvents.html",
+          "hash": "DKcKtLUb8pQFWjx3MSMgAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.EventManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.EventManager.html",
+          "hash": "/e7fzb6mU/H30FkP8TD8rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.Exceptions.AppNotFoundException.yml",
       "output": {
         ".html": {
@@ -25794,7 +26178,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "nG6evJDMK4oEkQcv3i4LMg=="
+          "hash": "k8nH0TE9ym9pTsPyfe6AVg=="
         }
       },
       "is_incremental": false,
@@ -25866,22 +26250,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
