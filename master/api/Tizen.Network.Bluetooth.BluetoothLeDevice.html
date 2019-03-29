@@ -632,7 +632,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BluetoothGattClient GattConnect(bool autoConnect)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use CreateClient() and ConnectAsync() method on BluetoothGattClient.&quot;)]
+public BluetoothGattClient GattConnect(bool autoConnect)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -704,7 +705,8 @@ or when the gatt connection attempt to remote device fails.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GattDisconnect()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use DisconnectAsync() method on BluetoothGattClient.&quot;)]
+public void GattDisconnect()</code></pre>
   </div>
   <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GattDisconnect_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
@@ -796,7 +798,8 @@ or when the GATT disconnection attempt to remote device fails.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GattConnectionStateChangedEventArgs&gt; GattConnectionStateChanged</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use ConnectionStateChanged event on BluetoothGattClient.&quot;)]
+public event EventHandler&lt;GattConnectionStateChangedEventArgs&gt; GattConnectionStateChanged</code></pre>
   </div>
   <h5 class="eventType">Event Type</h5>
   <table class="table table-bordered table-striped table-condensed">
