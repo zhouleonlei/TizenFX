@@ -11130,7 +11130,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.MediaControlMetadata.html",
-          "hash": "EmoxJMr6gM8V9QJaoNdtHA=="
+          "hash": "6w9GfgtRa+S/pn4hLUOZZg=="
         }
       },
       "is_incremental": false,
@@ -11606,6 +11606,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Remoting.SeriesInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Remoting.SeriesInformation.html",
+          "hash": "ZX6TJXYI9ftVN4JBp+f3DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Remoting.ShuffleModeCapabilityUpdatedEventArgs.yml",
       "output": {
         ".html": {
@@ -11658,7 +11670,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Remoting.html",
-          "hash": "MlRnlQcvXCQN+dDJGzxPKw=="
+          "hash": "gwQVo+BRFgiPkVkleMFywA=="
         }
       },
       "is_incremental": false,
@@ -21702,7 +21714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Security.DevicePolicyManager.PasswordPolicy.html",
-          "hash": "qHGG/YBOt4RLp+L63bzUfg=="
+          "hash": "iAXkr4xPEmgGnkS5vryHnQ=="
         }
       },
       "is_incremental": false,
@@ -26178,7 +26190,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "k8nH0TE9ym9pTsPyfe6AVg=="
+          "hash": "8gTs0F/lKhah+2q9vR5UOw=="
         }
       },
       "is_incremental": false,
@@ -26255,11 +26267,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
