@@ -189,7 +189,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Appearance { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetAppearance() method on BluetoothLeDevice.&quot;)]
+public int Appearance { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,7 +243,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DeviceName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetDeviceName() method on BluetoothLeDevice.&quot;)]
+public string DeviceName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -295,7 +297,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ManufacturerData ManufacturerData { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetManufacturerData() method on BluetoothLeDevice.&quot;)]
+public ManufacturerData ManufacturerData { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -348,7 +351,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BluetoothLePacketType PacketType { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use new methods with this type on BluetoothLeDevice.&quot;)]
+public BluetoothLePacketType PacketType { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -460,7 +464,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ServiceSolictationUuid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetServiceSolicitationUuid() method on BluetoothLeDevice.&quot;)]
+public IEnumerable&lt;string&gt; ServiceSolictationUuid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -513,7 +518,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ServiceUuid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetServiceUuid() method on BluetoothLeDevice.&quot;)]
+public IEnumerable&lt;string&gt; ServiceUuid { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -566,7 +572,8 @@ It handles the LE device operations like getting data from the scan result infor
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int TxPowerLevel { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetTxPowerLevel() method on BluetoothLeDevice.&quot;)]
+public int TxPowerLevel { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -737,6 +744,228 @@ or when the GATT disconnection attempt to remote device fails.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetAppearance_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetAppearance*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetAppearance_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetAppearance(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetAppearance(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the manufacturer data from the scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAppearance(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Gets the appearance value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetAppearance_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetAppearance_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetAppearance_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetDeviceName_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetDeviceName*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetDeviceName_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetDeviceName(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetDeviceName(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the device name from the LE scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDeviceName(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Gets the device name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetDeviceName_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetDeviceName_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetDeviceName_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetManufacturerData_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetManufacturerData*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetManufacturerData_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetManufacturerData(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetManufacturerData(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the manufacturer data from the scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ManufacturerData GetManufacturerData(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.ManufacturerData.html">ManufacturerData</a></td>
+        <td><p>Gets the manufacturer data containing the manucturer data and ID information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetManufacturerData_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetManufacturerData_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetManufacturerData_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceDataList*"></a>
   <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceDataList">GetServiceDataList()</h4>
   <div class="markdown level1 summary"><p>Gets the service data list from the scan result information.</p>
@@ -744,7 +973,8 @@ or when the GATT disconnection attempt to remote device fails.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BluetoothLeServiceData&gt; GetServiceDataList()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated since API level 6. Please use GetServiceDataList() method on BluetoothLeDevice.&quot;)]
+public IEnumerable&lt;BluetoothLeServiceData&gt; GetServiceDataList()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -768,6 +998,302 @@ or when the GATT disconnection attempt to remote device fails.</p>
   
   <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceDataList*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceDataList(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetServiceDataList(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the service data list from the scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BluetoothLeServiceData&gt; GetServiceDataList(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Network.Bluetooth.BluetoothLeServiceData.html">BluetoothLeServiceData</a>&gt;</td>
+        <td><p>Returns the service data list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceDataList_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceSolicitationUuid_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceSolicitationUuid*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceSolicitationUuid_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceSolicitationUuid(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetServiceSolicitationUuid(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the service solicitation UUID list from the scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetServiceSolicitationUuid(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>Gets the list of the service solicitation UUIDs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceSolicitationUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceSolicitationUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceSolicitationUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceUuid_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceUuid*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceUuid_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetServiceUuid(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetServiceUuid(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the service UUIDs list from the LE scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetServiceUuid(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>Gets the list of the string service UUIDs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetServiceUuid_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the Bluetooth LE is not enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetTxPowerLevel_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetTxPowerLevel*"></a>
+  <h4 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetTxPowerLevel_Tizen_Network_Bluetooth_BluetoothLePacketType_" data-uid="Tizen.Network.Bluetooth.BluetoothLeDevice.GetTxPowerLevel(Tizen.Network.Bluetooth.BluetoothLePacketType)">GetTxPowerLevel(BluetoothLePacketType)</h4>
+  <div class="markdown level1 summary"><p>Gets the transmission power level from the LE scan result information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTxPowerLevel(BluetoothLePacketType packetType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Network.Bluetooth.BluetoothLePacketType.html">BluetoothLePacketType</a></td>
+        <td><span class="parametername">packetType</span></td>
+        <td><p>The enumeration for BLE packet type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Gets the transmission power level in dB.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetTxPowerLevel_Tizen_Network_Bluetooth_BluetoothLePacketType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Bluetooth must be enabled.</p>
+</div>
+  
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetTxPowerLevel_Tizen_Network_Bluetooth_BluetoothLePacketType__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Network_Bluetooth_BluetoothLeDevice_GetTxPowerLevel_Tizen_Network_Bluetooth_BluetoothLePacketType__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/network.bluetooth.le">http://tizen.org/feature/network.bluetooth.le</a></p>
+</div>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
