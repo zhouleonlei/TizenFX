@@ -10626,7 +10626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "sGInRLWZhJh23X62AaW57Q=="
+          "hash": "rNlbZ6XVAayTfVAL2IgBPw=="
         }
       },
       "is_incremental": false,
@@ -11766,7 +11766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.SphericalVideo.html",
-          "hash": "ed1lAihBYdDeabwpaAjNrQ=="
+          "hash": "+aY2PNtxItE+Ygo4Ofv+nA=="
         }
       },
       "is_incremental": false,
@@ -12198,7 +12198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Util.ImageUtil.html",
-          "hash": "WJZR8iyZKK7dYGb3O4qxTQ=="
+          "hash": "pCPY52xkiHqweNV7KqQ1mg=="
         }
       },
       "is_incremental": false,
@@ -25994,6 +25994,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.BackForwardList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.BackForwardList.html",
+          "hash": "r5MoisGLLM7S/qY6bodQ5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.BackForwardListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.BackForwardListItem.html",
+          "hash": "6r2QN+RU6FCnMqpdfQdGqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.WebView.CacheModel.yml",
       "output": {
         ".html": {
@@ -26022,7 +26046,55 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.Context.html",
-          "hash": "IKX2vkjkDbSFafcJdNAvsQ=="
+          "hash": "SeMUhv9k3mZ0nJn51v68KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.ContextMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.ContextMenu.html",
+          "hash": "TK/dz5nRGJy0DBdUfTM6Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.ContextMenuItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.ContextMenuItem.html",
+          "hash": "TrIY4Bd9SNYcDo3c21SY1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.ContextMenuItemEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.ContextMenuItemEventArgs.html",
+          "hash": "uRWZ8I4FKyHuglbVlcTddw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.ContextMenuItemTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.ContextMenuItemTag.html",
+          "hash": "cPY8kNX8g+P8c0YtVZKyWQ=="
         }
       },
       "is_incremental": false,
@@ -26066,6 +26138,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.FindOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.FindOption.html",
+          "hash": "Bre43Zww58hL/y25aixiKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.HttpMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.HttpMethod.html",
+          "hash": "vfdnrSB29hFkIN+Wvp1ykQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.WebView.JavaScriptMessage.yml",
       "output": {
         ".html": {
@@ -26102,11 +26198,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.NavigationPolicyEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.NavigationPolicyEventArgs.html",
+          "hash": "OsXAQLzuKn9uJfenSJ67cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.NavigationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.NavigationType.html",
+          "hash": "TBAHRLQIfrtw/2M5P1RtlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.NewWindowPolicyEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.NewWindowPolicyEventArgs.html",
+          "hash": "s/lW52dFMfez3B3kc1QnCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.Orientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.Orientation.html",
+          "hash": "rOG9XvC7g2bxIWOk6ZtDGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.PolicyDecisionEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.PolicyDecisionEventArgs.html",
+          "hash": "UG/ABeOXL5s2WMLkY49aKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.ResponsePolicyEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.ResponsePolicyEventArgs.html",
+          "hash": "16WzZZQdKqx5wuxTwy3Msg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.WebView.Settings.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.Settings.html",
-          "hash": "D6rSYgJJRGRIYwHQtvNYOQ=="
+          "hash": "GTF9Fr+vtHNnROMFzfSt8w=="
         }
       },
       "is_incremental": false,
@@ -26138,11 +26306,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.WebView.WebView.ContextMenuCustomize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.WebView.WebView.ContextMenuCustomize.html",
+          "hash": "/QgHRNJbq1VgL0fpY/9RhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.WebView.WebView.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.WebView.html",
-          "hash": "pAR/ywpFkvi/4PTE4W2GTw=="
+          "hash": "HMGb+lgQDTh1K1tibws/Pw=="
         }
       },
       "is_incremental": false,
@@ -26154,7 +26334,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.html",
-          "hash": "Ha1BaIyHmLmLV6V9f5FuIA=="
+          "hash": "p1vMcbZDv+PuZusrZWyDSA=="
         }
       },
       "is_incremental": false,
@@ -26190,7 +26370,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8gTs0F/lKhah+2q9vR5UOw=="
+          "hash": "QOxpGHXsUlkauyEJnHEifg=="
         }
       },
       "is_incremental": false,

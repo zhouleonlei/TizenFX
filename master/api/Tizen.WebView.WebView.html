@@ -366,6 +366,35 @@
   
   <h3 id="properties">Properties
   </h3>
+  <a id="Tizen_WebView_WebView_ContentsSize_" data-uid="Tizen.WebView.WebView.ContentsSize*"></a>
+  <h4 id="Tizen_WebView_WebView_ContentsSize" data-uid="Tizen.WebView.WebView.ContentsSize">ContentsSize</h4>
+  <div class="markdown level1 summary"><p>Gets size of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size ContentsSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.Size.html">Size</a></td>
+        <td><p>size of the coordinate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_ContentsSize_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_WebView_WebView_HasFocus_" data-uid="Tizen.WebView.WebView.HasFocus*"></a>
   <h4 id="Tizen_WebView_WebView_HasFocus" data-uid="Tizen.WebView.WebView.HasFocus">HasFocus</h4>
   <div class="markdown level1 summary"><p>Whether a view has the focus.</p>
@@ -393,6 +422,92 @@
   
   <h5 id="Tizen_WebView_WebView_HasFocus_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <a id="Tizen_WebView_WebView_LoadProgress_" data-uid="Tizen.WebView.WebView.LoadProgress*"></a>
+  <h4 id="Tizen_WebView_WebView_LoadProgress" data-uid="Tizen.WebView.WebView.LoadProgress">LoadProgress</h4>
+  <div class="markdown level1 summary"><p>Gets the current load progress of the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LoadProgress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><p>&apos;value 0.0 to 1.0&apos; on success, otherwise &apos;-1.0&apos;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_LoadProgress_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_Scale_" data-uid="Tizen.WebView.WebView.Scale*"></a>
+  <h4 id="Tizen_WebView_WebView_Scale" data-uid="Tizen.WebView.WebView.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Gets the current scale factor of the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Scale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_Scale_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_ScrollPosition_" data-uid="Tizen.WebView.WebView.ScrollPosition*"></a>
+  <h4 id="Tizen_WebView_WebView_ScrollPosition" data-uid="Tizen.WebView.WebView.ScrollPosition">ScrollPosition</h4>
+  <div class="markdown level1 summary"><p>Get and Sets the scroll position of the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point ScrollPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.Point.html">Point</a></td>
+        <td><p>The class Point object with X, Y coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_ScrollPosition_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_WebView_WebView_Title_" data-uid="Tizen.WebView.WebView.Title*"></a>
   <h4 id="Tizen_WebView_WebView_Title" data-uid="Tizen.WebView.WebView.Title">Title</h4>
@@ -591,6 +706,19 @@
   <h5 id="Tizen_WebView_WebView_CanGoForward_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
   
+  <a id="Tizen_WebView_WebView_ClearBackForwardList_" data-uid="Tizen.WebView.WebView.ClearBackForwardList*"></a>
+  <h4 id="Tizen_WebView_WebView_ClearBackForwardList" data-uid="Tizen.WebView.WebView.ClearBackForwardList">ClearBackForwardList()</h4>
+  <div class="markdown level1 summary"><p>Clear the back/forward list object of this view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearBackForwardList()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_WebView_WebView_ClearBackForwardList_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_WebView_WebView_CreateHandle_" data-uid="Tizen.WebView.WebView.CreateHandle*"></a>
   <h4 id="Tizen_WebView_WebView_CreateHandle_ElmSharp_EvasObject_" data-uid="Tizen.WebView.WebView.CreateHandle(ElmSharp.EvasObject)">CreateHandle(EvasObject)</h4>
   <div class="markdown level1 summary"><p>Creates a widget handle.</p>
@@ -707,6 +835,91 @@
   
   <h5 id="Tizen_WebView_WebView_EvalWithResult_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <a id="Tizen_WebView_WebView_ExitFullscreen_" data-uid="Tizen.WebView.WebView.ExitFullscreen*"></a>
+  <h4 id="Tizen_WebView_WebView_ExitFullscreen" data-uid="Tizen.WebView.WebView.ExitFullscreen">ExitFullscreen()</h4>
+  <div class="markdown level1 summary"><p>Exit full screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitFullscreen()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_WebView_WebView_ExitFullscreen_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_FindText_" data-uid="Tizen.WebView.WebView.FindText*"></a>
+  <h4 id="Tizen_WebView_WebView_FindText_System_String_Tizen_WebView_FindOption_System_Int32_" data-uid="Tizen.WebView.WebView.FindText(System.String,Tizen.WebView.FindOption,System.Int32)">FindText(String, FindOption, Int32)</h4>
+  <div class="markdown level1 summary"><p>Searches and highlights the given text string in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindText(string text, FindOption option, int maxMatchCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.WebView.FindOption.html">FindOption</a></td>
+        <td><span class="parametername">option</span></td>
+        <td><p>The options to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxMatchCount</span></td>
+        <td><p>The maximum match count to find, unlimited if 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_FindText_System_String_Tizen_WebView_FindOption_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_GetBackForwardList_" data-uid="Tizen.WebView.WebView.GetBackForwardList*"></a>
+  <h4 id="Tizen_WebView_WebView_GetBackForwardList" data-uid="Tizen.WebView.WebView.GetBackForwardList">GetBackForwardList()</h4>
+  <div class="markdown level1 summary"><p>Gets the back/forward list object of this view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BackForwardList GetBackForwardList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.WebView.BackForwardList.html">BackForwardList</a></td>
+        <td><p>The BackForward List object of this view.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_GetBackForwardList_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_WebView_WebView_GetContext_" data-uid="Tizen.WebView.WebView.GetContext*"></a>
   <h4 id="Tizen_WebView_WebView_GetContext" data-uid="Tizen.WebView.WebView.GetContext">GetContext()</h4>
@@ -876,6 +1089,112 @@
   <h5 id="Tizen_WebView_WebView_Reload_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
   
+  <a id="Tizen_WebView_WebView_Resume_" data-uid="Tizen.WebView.WebView.Resume*"></a>
+  <h4 id="Tizen_WebView_WebView_Resume" data-uid="Tizen.WebView.WebView.Resume">Resume()</h4>
+  <div class="markdown level1 summary"><p>Resumes the operation associated with the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_WebView_WebView_Resume_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_ScrollBy_" data-uid="Tizen.WebView.WebView.ScrollBy*"></a>
+  <h4 id="Tizen_WebView_WebView_ScrollBy_ElmSharp_Point_" data-uid="Tizen.WebView.WebView.ScrollBy(ElmSharp.Point)">ScrollBy(Point)</h4>
+  <div class="markdown level1 summary"><p>Scrolls the webpage by the given amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollBy(Point delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ElmSharp.Point.html">Point</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td><p>The class Point object with X, Y coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_ScrollBy_ElmSharp_Point__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_SendOrientation_" data-uid="Tizen.WebView.WebView.SendOrientation*"></a>
+  <h4 id="Tizen_WebView_WebView_SendOrientation_Tizen_WebView_Orientation_" data-uid="Tizen.WebView.WebView.SendOrientation(Tizen.WebView.Orientation)">SendOrientation(Orientation)</h4>
+  <div class="markdown level1 summary"><p>Sends the orientation of the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendOrientation(Orientation orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.WebView.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The new orientation of the device in degree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_SendOrientation_Tizen_WebView_Orientation__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_SetContextMenuCustomizeDelegate_" data-uid="Tizen.WebView.WebView.SetContextMenuCustomizeDelegate*"></a>
+  <h4 id="Tizen_WebView_WebView_SetContextMenuCustomizeDelegate_Tizen_WebView_WebView_ContextMenuCustomize_" data-uid="Tizen.WebView.WebView.SetContextMenuCustomizeDelegate(Tizen.WebView.WebView.ContextMenuCustomize)">SetContextMenuCustomizeDelegate(WebView.ContextMenuCustomize)</h4>
+  <div class="markdown level1 summary"><p>Sets the delegate for context menu customization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContextMenuCustomizeDelegate(WebView.ContextMenuCustomize contextMenuCustomizeDelegate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.WebView.WebView.ContextMenuCustomize.html">WebView.ContextMenuCustomize</a></td>
+        <td><span class="parametername">contextMenuCustomizeDelegate</span></td>
+        <td><p>The delegate for context menu customization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_SetContextMenuCustomizeDelegate_Tizen_WebView_WebView_ContextMenuCustomize__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_WebView_WebView_SetFocus_" data-uid="Tizen.WebView.WebView.SetFocus*"></a>
   <h4 id="Tizen_WebView_WebView_SetFocus_System_Boolean_" data-uid="Tizen.WebView.WebView.SetFocus(System.Boolean)">SetFocus(Boolean)</h4>
   <div class="markdown level1 summary"><p>Requests to set or unset a view as the currently focused one.</p>
@@ -907,6 +1226,123 @@
   <h5 id="Tizen_WebView_WebView_SetFocus_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
   
+  <a id="Tizen_WebView_WebView_SetScale_" data-uid="Tizen.WebView.WebView.SetScale*"></a>
+  <h4 id="Tizen_WebView_WebView_SetScale_System_Double_ElmSharp_Point_" data-uid="Tizen.WebView.WebView.SetScale(System.Double,ElmSharp.Point)">SetScale(Double, Point)</h4>
+  <div class="markdown level1 summary"><p>Sets the current scale factor of the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScale(double scaleFactor, Point scrollTo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>A new level to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ElmSharp.Point.html">Point</a></td>
+        <td><span class="parametername">scrollTo</span></td>
+        <td><p>The class Point object with X, Y coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_SetScale_System_Double_ElmSharp_Point__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_SetUrlRequest_" data-uid="Tizen.WebView.WebView.SetUrlRequest*"></a>
+  <h4 id="Tizen_WebView_WebView_SetUrlRequest_System_String_Tizen_WebView_HttpMethod_System_Collections_Generic_IDictionary_System_String_System_String__System_String_" data-uid="Tizen.WebView.WebView.SetUrlRequest(System.String,Tizen.WebView.HttpMethod,System.Collections.Generic.IDictionary{System.String,System.String},System.String)">SetUrlRequest(String, HttpMethod, IDictionary&lt;String, String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Requests loading of the given request data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUrlRequest(string url, HttpMethod httpMethod, IDictionary&lt;string, string&gt; httpHeaders, string httpBody)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The uniform resource identifier to load.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.WebView.HttpMethod.html">HttpMethod</a></td>
+        <td><span class="parametername">httpMethod</span></td>
+        <td><p>The http method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>The http headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">httpBody</span></td>
+        <td><p>The http body data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_SetUrlRequest_System_String_Tizen_WebView_HttpMethod_System_Collections_Generic_IDictionary_System_String_System_String__System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_WebView_WebView_SetViewVisibility_" data-uid="Tizen.WebView.WebView.SetViewVisibility*"></a>
+  <h4 id="Tizen_WebView_WebView_SetViewVisibility_System_Boolean_" data-uid="Tizen.WebView.WebView.SetViewVisibility(System.Boolean)">SetViewVisibility(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the current page&apos;s visibility.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewVisibility(bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>&apos;true&apos; to set on the visibility of the page, &apos;false&apos; otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_SetViewVisibility_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_WebView_WebView_StopLoading_" data-uid="Tizen.WebView.WebView.StopLoading*"></a>
   <h4 id="Tizen_WebView_WebView_StopLoading" data-uid="Tizen.WebView.WebView.StopLoading">StopLoading()</h4>
   <div class="markdown level1 summary"><p>Asks the main frame to stop loading.</p>
@@ -920,8 +1356,48 @@
   <h5 id="Tizen_WebView_WebView_StopLoading_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
   
+  <a id="Tizen_WebView_WebView_Suspend_" data-uid="Tizen.WebView.WebView.Suspend*"></a>
+  <h4 id="Tizen_WebView_WebView_Suspend" data-uid="Tizen.WebView.WebView.Suspend">Suspend()</h4>
+  <div class="markdown level1 summary"><p>Suspends the operation associated with the view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Suspend()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_WebView_WebView_Suspend_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <h3 id="events">Events
   </h3>
+  <h4 id="Tizen_WebView_WebView_ContextMenuItemSelected" data-uid="Tizen.WebView.WebView.ContextMenuItemSelected">ContextMenuItemSelected</h4>
+  <div class="markdown level1 summary"><p>Event that occurs when the context menu item selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ContextMenuItemEventArgs&gt; ContextMenuItemSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.WebView.ContextMenuItemEventArgs.html">ContextMenuItemEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_ContextMenuItemSelected_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <h4 id="Tizen_WebView_WebView_LoadError" data-uid="Tizen.WebView.WebView.LoadError">LoadError</h4>
   <div class="markdown level1 summary"><p>Event that occurs when the load throws an error.</p>
 </div>
@@ -1002,6 +1478,84 @@
   
   <h5 id="Tizen_WebView_WebView_LoadStarted_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <h4 id="Tizen_WebView_WebView_NavigationPolicyDecideRequested" data-uid="Tizen.WebView.WebView.NavigationPolicyDecideRequested">NavigationPolicyDecideRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;NavigationPolicyEventArgs&gt; NavigationPolicyDecideRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.WebView.NavigationPolicyEventArgs.html">NavigationPolicyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Tizen_WebView_WebView_NewWindowPolicyDecideRequested" data-uid="Tizen.WebView.WebView.NewWindowPolicyDecideRequested">NewWindowPolicyDecideRequested</h4>
+  <div class="markdown level1 summary"><p>Event that occurs when the policy new window is decided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;NewWindowPolicyEventArgs&gt; NewWindowPolicyDecideRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.WebView.NewWindowPolicyEventArgs.html">NewWindowPolicyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_NewWindowPolicyDecideRequested_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_WebView_WebView_ResponsePolicyDecideRequested" data-uid="Tizen.WebView.WebView.ResponsePolicyDecideRequested">ResponsePolicyDecideRequested</h4>
+  <div class="markdown level1 summary"><p>Event that occurs when the policy response is decided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ResponsePolicyEventArgs&gt; ResponsePolicyDecideRequested</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.WebView.ResponsePolicyEventArgs.html">ResponsePolicyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_WebView_WebView_ResponsePolicyDecideRequested_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <h4 id="Tizen_WebView_WebView_TitleChanged" data-uid="Tizen.WebView.WebView.TitleChanged">TitleChanged</h4>
   <div class="markdown level1 summary"><p>Event that occurs when the title of the main frame is changed.</p>
