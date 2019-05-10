@@ -148,11 +148,10 @@
         <td><p>A duration of buffering data that must be prerolled to resume playback,
 when player is internally paused for buffering.
 Except 0 and -1, setting at least 1000 milliseconds is recommended to ensure the normal buffering operation.
-0 : use platform default value which could be different depending on the streaming type and network status. (the initial value)
--1 : use current value. (since 5.5)
-<p>0 means platform default value which could be different depending on the streaming type and network status.
+0 : use platform default value, which depends on the streaming type and network status. It is set as the initial value of this parameter.
 If the player state is <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a> or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a>,
-this function will return correct time value instead of 0. (since 5.5)</p></p>
+this function will return correct time value instead of 0. (since 5.5)
+-1 : use current value. (since 5.5)</p>
 </td>
       </tr>
     </tbody>
