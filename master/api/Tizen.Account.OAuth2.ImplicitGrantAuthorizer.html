@@ -154,87 +154,14 @@
   
   <h3 id="methods">Methods
   </h3>
-  <a id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_" data-uid="Tizen.Account.OAuth2.ImplicitGrantAuthorizer.AuthorizeAsync*"></a>
-  <h4 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_Tizen_Account_OAuth2_AuthorizationRequest_" data-uid="Tizen.Account.OAuth2.ImplicitGrantAuthorizer.AuthorizeAsync(Tizen.Account.OAuth2.AuthorizationRequest)">AuthorizeAsync(AuthorizationRequest)</h4>
-  <div class="markdown level1 summary"><p>Retrieves access token asynchronously. The authroization request parameters should be as defined in <a href="https://tools.ietf.org/html/rfc6749#section-4.2.1">https://tools.ietf.org/html/rfc6749#section-4.2.1</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;TokenResponse&gt; AuthorizeAsync(AuthorizationRequest request)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Tizen.Account.OAuth2.AuthorizationRequest.html">AuthorizationRequest</a></td>
-        <td><span class="parametername">request</span></td>
-        <td><p>The authorization request <a class="xref" href="Tizen.Account.OAuth2.ImplicitGrantAuthorizationRequest.html">ImplicitGrantAuthorizationRequest</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Tizen.Account.OAuth2.TokenResponse.html">TokenResponse</a>&gt;</td>
-        <td><p>The response containing access token.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h5 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_Tizen_Account_OAuth2_AuthorizationRequest__sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">3 </span>
-  <h5 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_Tizen_Account_OAuth2_AuthorizationRequest__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
-  <h5 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_Tizen_Account_OAuth2_AuthorizationRequest__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/internet">http://tizen.org/privilege/internet</a></p>
-</div>
-  
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>Thrown when method failed due to invalid argumets</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Tizen.Account.OAuth2.OAuth2Exception.html">OAuth2Exception</a></td>
-        <td><p>Thrown when method fails due to server error</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_GetAccessTokenAsync_" data-uid="Tizen.Account.OAuth2.ImplicitGrantAuthorizer.GetAccessTokenAsync*"></a>
   <h4 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_GetAccessTokenAsync_Tizen_Account_OAuth2_TokenRequest_" data-uid="Tizen.Account.OAuth2.ImplicitGrantAuthorizer.GetAccessTokenAsync(Tizen.Account.OAuth2.TokenRequest)">GetAccessTokenAsync(TokenRequest)</h4>
-  <div class="markdown level1 summary"><p>Access token can be retreived implicitly using <a class="xref" href="Tizen.Account.OAuth2.ImplicitGrantAuthorizer.html#Tizen_Account_OAuth2_ImplicitGrantAuthorizer_AuthorizeAsync_Tizen_Account_OAuth2_AuthorizationRequest_">AuthorizeAsync(AuthorizationRequest)</a> in this flow.</p>
+  <div class="markdown level1 summary"><p>Access token can be retreived implicitly using <see cref="!:AuthorizeAsync"></see> in this flow.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;TokenResponse&gt; GetAccessTokenAsync(TokenRequest request)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;TokenResponse&gt; GetAccessTokenAsync(TokenRequest request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,8 +195,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Tizen.Account.OAuth2.Authorizer.html#Tizen_Account_OAuth2_Authorizer_GetAccessTokenAsync_Tizen_Account_OAuth2_TokenRequest_">Authorizer.GetAccessTokenAsync(TokenRequest)</a></div>
   
   <h5 id="Tizen_Account_OAuth2_ImplicitGrantAuthorizer_GetAccessTokenAsync_Tizen_Account_OAuth2_TokenRequest__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
