@@ -1495,8 +1495,8 @@ The media is in the external USB storage (<a class="xref" href="Tizen.Content.Me
   </table>
   <h5 id="Tizen_Content_MediaContent_MediaInfoCommand_Delete_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html#Tizen_Content_MediaContent_MediaDatabase_ScanFile_System_String_">ScanFile(String)</a> or the <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html#Tizen_Content_MediaContent_MediaDatabase_ScanFolderAsync_System_String_">ScanFolderAsync(String)</a> can be used instead.<br>
-Since API level 6, If file still exists in file system before calling this method,
-<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> will be thrown to keep db consistency.</p>
+Since API level 6, if the file related with the <code data-dev-comment-type="paramref" class="paramref">mediaId</code> in DB still exists in file system before calling this method,
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a> will be thrown to keep consistency in DB.</p>
 </div>
   
   <h5 id="Tizen_Content_MediaContent_MediaInfoCommand_Delete_System_String__sinceTizen" class="sinceTizen">API Version</h5>
@@ -1520,7 +1520,7 @@ Since API level 6, If file still exists in file system before calling this metho
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html">MediaDatabase</a> is disconnected.<br>
 -or-<br>
-File still exists in file system. (Since API level 6)</p>
+The file related with the <code data-dev-comment-type="paramref" class="paramref">mediaId</code> in DB still exists in file system. (Since API level 6)</p>
 </td>
       </tr>
       <tr>

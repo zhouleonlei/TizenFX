@@ -327,6 +327,24 @@ The developers can use this function to launch the IME in on-demand mode.</p>
   <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/imemanager">http://tizen.org/privilege/imemanager</a></p>
 </div>
   
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can occur if:
+1) The application does not have the privilege to call this function.
+2) Operation failed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Uix_InputMethodManager_Manager_ShowIMEList_" data-uid="Tizen.Uix.InputMethodManager.Manager.ShowIMEList*"></a>
   <h4 id="Tizen_Uix_InputMethodManager_Manager_ShowIMEList" data-uid="Tizen.Uix.InputMethodManager.Manager.ShowIMEList">ShowIMEList()</h4>
   <div class="markdown level1 summary"><p>Requests to open the installed IME list menu.

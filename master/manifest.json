@@ -3390,7 +3390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Account.OAuth2.CodeGrantAuthorizer.html",
-          "hash": "iXxWKar8Ji1e2QcvADNY1A=="
+          "hash": "fqjaEaWWs/4Rgzuw0k7Nbg=="
         }
       },
       "is_incremental": false,
@@ -3426,7 +3426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Account.OAuth2.ImplicitGrantAuthorizer.html",
-          "hash": "PFFKb/JUdL+O+8GWFyDp7Q=="
+          "hash": "aNnakd0sz7yHepf3m9VKUA=="
         }
       },
       "is_incremental": false,
@@ -3570,7 +3570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Account.SyncManager.SyncAdapter.html",
-          "hash": "93XBY8lA8cXwDwqNGYqv9A=="
+          "hash": "Z4Nw6tA3dbMVar5lntdeHg=="
         }
       },
       "is_incremental": false,
@@ -5874,7 +5874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.RPCPort.ProxyBase.html",
-          "hash": "VdNYSghTUjJyrGEmqEA8RQ=="
+          "hash": "npIdxiCC6V6yrKdHpvOcJQ=="
         }
       },
       "is_incremental": false,
@@ -5886,7 +5886,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.RPCPort.StubBase.html",
-          "hash": "pZvob615DS8DbOyRb/rZKw=="
+          "hash": "6rrvO9LGLmmhRZ+k1+kLWQ=="
         }
       },
       "is_incremental": false,
@@ -7074,7 +7074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Content.MediaContent.MediaInfoColumns.html",
-          "hash": "79q9FYQC9jg9Nc73aVihjg=="
+          "hash": "/ZhIbaVja4amJsGEO+emvg=="
         }
       },
       "is_incremental": false,
@@ -7086,7 +7086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Content.MediaContent.MediaInfoCommand.html",
-          "hash": "GaMBo43dUXuW6WvdrTBCBw=="
+          "hash": "R0hVDGmBNHpt/s59EyZu3A=="
         }
       },
       "is_incremental": false,
@@ -7266,7 +7266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Content.MediaContent.Storage.html",
-          "hash": "5dRTBq1NdniQzhq+WN0qcg=="
+          "hash": "FJpqROZ0ATMo1tDU18BoFA=="
         }
       },
       "is_incremental": false,
@@ -13134,7 +13134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Animatable.html",
-          "hash": "DPq0yzHveGH7Tl6W28MlcA=="
+          "hash": "H1Z/RHevqkimGpMpiTCC7Q=="
         }
       },
       "is_incremental": false,
@@ -13194,7 +13194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Animation.html",
-          "hash": "sfG1xtJLlndmUln8rVPkXw=="
+          "hash": "KjBYcFPDDPvGnlPG7jZdTw=="
         }
       },
       "is_incremental": false,
@@ -13230,7 +13230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.AnimatedVectorImageView.html",
-          "hash": "rDB587E2Ctz8SCB6Udi43A=="
+          "hash": "zrqwNyYnLs9nVHAetJT/OA=="
         }
       },
       "is_incremental": false,
@@ -13242,7 +13242,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.CustomView.html",
-          "hash": "1vnSdRoIl2lDCldgd1+DNg=="
+          "hash": "+OZQkTTga7V48/5YG8To/A=="
         }
       },
       "is_incremental": false,
@@ -13326,7 +13326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.FlexContainer.html",
-          "hash": "03GJH577eQPh8KkT33hkgQ=="
+          "hash": "YTrBJbswgYxFxy+0GIqE+A=="
         }
       },
       "is_incremental": false,
@@ -13362,7 +13362,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.ImageView.html",
-          "hash": "yUOfOs3CoDJ8W+KvjxRzFQ=="
+          "hash": "zChqcVQrxX44zZJh32jujw=="
         }
       },
       "is_incremental": false,
@@ -13422,7 +13422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.Scrollable.html",
-          "hash": "SdGRTxioUB5nwyDc6GRK/Q=="
+          "hash": "enSPaIejOA1gjJfXoWA8WQ=="
         }
       },
       "is_incremental": false,
@@ -13458,7 +13458,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TableView.html",
-          "hash": "hvCMWcodPzoKQAFAxI3E5Q=="
+          "hash": "BW+rzBN2QBGn/1JS03f1lA=="
         }
       },
       "is_incremental": false,
@@ -13494,7 +13494,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextEditor.html",
-          "hash": "AtPn+5ygXaIVoxz02FEI2w=="
+          "hash": "Wk6/o5srY2zjFV6EXFen/A=="
         }
       },
       "is_incremental": false,
@@ -13530,7 +13530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextField.html",
-          "hash": "Zze/w5o8gRaCWA9IOBfShw=="
+          "hash": "c7ugvpocq7jd+SuglGtMgw=="
         }
       },
       "is_incremental": false,
@@ -13542,7 +13542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.TextLabel.html",
-          "hash": "82dikmf3tzT8tnSSCh7B1Q=="
+          "hash": "jW/fJaboYR5KJ3mRKniVcQ=="
         }
       },
       "is_incremental": false,
@@ -13566,7 +13566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.VideoView.html",
-          "hash": "045bslktGNtA+1BhOYU62w=="
+          "hash": "adI/ObF0xLDZImTRLzEcOA=="
         }
       },
       "is_incremental": false,
@@ -13698,7 +13698,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.View.html",
-          "hash": "rMkktkFfn/MIBKWHkJAb7w=="
+          "hash": "h2tdGDWvg79t7WEZ16USxg=="
         }
       },
       "is_incremental": false,
@@ -13722,7 +13722,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.VisualView.html",
-          "hash": "8QBKDeZNMDkvbMxMfTG2pA=="
+          "hash": "+QMsg9WYep4yiPOQ13C5/g=="
         }
       },
       "is_incremental": false,
@@ -13758,7 +13758,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseHandle.html",
-          "hash": "hyAZiIqnoZk1OPTnUY3qpw=="
+          "hash": "6t19DPEMGP+Sr8mdlhjJUA=="
         }
       },
       "is_incremental": false,
@@ -13974,7 +13974,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Container.html",
-          "hash": "qZlREc6zr23yjhF+vfmohw=="
+          "hash": "Oez+jMRUZ98O9p/Qgakoxw=="
         }
       },
       "is_incremental": false,
@@ -14226,7 +14226,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.FocusManager.html",
-          "hash": "RrigzunJeKdMiocpk+dZhw=="
+          "hash": "CzdCo7oTKtpgj0IO6+/Igw=="
         }
       },
       "is_incremental": false,
@@ -14238,7 +14238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.FontClient.html",
-          "hash": "yojlpJv5xvj+kEuIRDs3kQ=="
+          "hash": "YGXwHDs7wHqUUZCWh20MSw=="
         }
       },
       "is_incremental": false,
@@ -14298,7 +14298,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Geometry.html",
-          "hash": "lHq/MOTJVJ6WvMyEpSoPkA=="
+          "hash": "xw4pc+Vv7d01oqB21vRGsQ=="
         }
       },
       "is_incremental": false,
@@ -14346,7 +14346,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.GetResourcesProvider.html",
-          "hash": "BZ5gAAeLBLbgBRaFlwoMVg=="
+          "hash": "7X5DNwdxbV62/yXuFm/+wg=="
         }
       },
       "is_incremental": false,
@@ -14742,7 +14742,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.InputMethodContext.html",
-          "hash": "WpfEa7iDoyM6+yefStrlPQ=="
+          "hash": "HsB8O7HGqLnOqMhPIne7Jg=="
         }
       },
       "is_incremental": false,
@@ -14778,7 +14778,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.KeyFrames.html",
-          "hash": "jO6E7N8yRO7pMnJqG0jXZQ=="
+          "hash": "rbXBXHHTPhYZUW7xfZnrCQ=="
         }
       },
       "is_incremental": false,
@@ -14826,7 +14826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Layer.html",
-          "hash": "kYXfkTsNF4p5OEx9bhzF7A=="
+          "hash": "h5X7FUsDgrfxxW5i/KRK5Q=="
         }
       },
       "is_incremental": false,
@@ -15078,7 +15078,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Path.html",
-          "hash": "SzqyQXAHB7za1ej4sqknrA=="
+          "hash": "Anbd8Euo/7QHnNcZdtSLZw=="
         }
       },
       "is_incremental": false,
@@ -15246,7 +15246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyBuffer.html",
-          "hash": "iO7//9B9PJjeGU3Xj0ZTGg=="
+          "hash": "rjxTR6OYlcZaPF0Yp3eOoQ=="
         }
       },
       "is_incremental": false,
@@ -15258,7 +15258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyCondition.html",
-          "hash": "jStEQbRMUqJQShw7W0RBKA=="
+          "hash": "YcHJfEjonWclOdEysCdavQ=="
         }
       },
       "is_incremental": false,
@@ -15330,7 +15330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.PropertyNotification.html",
-          "hash": "xJ/Kq/bGy1ve1Hjhz2Dc3g=="
+          "hash": "QwpiXmnsZuuOWl05sExDNg=="
         }
       },
       "is_incremental": false,
@@ -15474,7 +15474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Renderer.html",
-          "hash": "A20XxOxuCzxVylkcmKgxoA=="
+          "hash": "dWdDq8dF1l2oFVZSQM75zA=="
         }
       },
       "is_incremental": false,
@@ -15546,7 +15546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Sampler.html",
-          "hash": "7c2i9Wd4BgSqzf8XrJlyzA=="
+          "hash": "ja++goRhUROZYEJdHR67Og=="
         }
       },
       "is_incremental": false,
@@ -15666,7 +15666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ScrollView.html",
-          "hash": "YJEou9TrC+BbT9JuWRv+9g=="
+          "hash": "5k/0Kj2yxMtclVCyD9WRbw=="
         }
       },
       "is_incremental": false,
@@ -15678,7 +15678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ScrollViewEffect.html",
-          "hash": "BhncDJe0vvQD86wTJP7shw=="
+          "hash": "aGDX9U1n7/YwED5H6ZlCMQ=="
         }
       },
       "is_incremental": false,
@@ -15726,7 +15726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Shader.html",
-          "hash": "oMcwgwPosCXa7cA60wpRXQ=="
+          "hash": "GWsfYarGdGbuwNxxcoD7DQ=="
         }
       },
       "is_incremental": false,
@@ -15774,7 +15774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Spin.html",
-          "hash": "cQ4Bw9cRbe87NVP1JJWIRA=="
+          "hash": "YyyY6AeZbBMO8S7Z9oOLbQ=="
         }
       },
       "is_incremental": false,
@@ -15810,7 +15810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.StyleManager.html",
-          "hash": "z9I+JhOR2XTH4P3vZP7uvw=="
+          "hash": "D8ZJY6aVHMD+gWF2WMt8Ow=="
         }
       },
       "is_incremental": false,
@@ -15858,7 +15858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TTSPlayer.html",
-          "hash": "Tzx/y5c5bSSHzaPo59I9zQ=="
+          "hash": "1sf7EG2kNTBQ0QmEaj9tvQ=="
         }
       },
       "is_incremental": false,
@@ -15918,7 +15918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Texture.html",
-          "hash": "JQtP/y2FzPpKvxvdkCyWTw=="
+          "hash": "Yl08tL6j2DhhH7BB3gObNw=="
         }
       },
       "is_incremental": false,
@@ -15930,7 +15930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TextureSet.html",
-          "hash": "tcxr/NCuJfSUdl9uIIj8ng=="
+          "hash": "DZV6NrNMa/mWq1PAgsRuXw=="
         }
       },
       "is_incremental": false,
@@ -15966,7 +15966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Timer.html",
-          "hash": "R8U9jEGL6nhu32ttOUdEOQ=="
+          "hash": "cEjHAQepdKfgYavKdqAqNA=="
         }
       },
       "is_incremental": false,
@@ -15990,7 +15990,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ToggleButton.html",
-          "hash": "DBTIjOSWWdOxtk+hqWKZTw=="
+          "hash": "Ix0MdmmrPQuAclpL3EAlEw=="
         }
       },
       "is_incremental": false,
@@ -16002,7 +16002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Touch.html",
-          "hash": "HA8lzxfh2qPEnNT8eEPyoA=="
+          "hash": "zh/TSlaX3Du/T7BswpYyPQ=="
         }
       },
       "is_incremental": false,
@@ -16014,7 +16014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TransitionData.html",
-          "hash": "Fi/1f361J+/sG9RNeIofUQ=="
+          "hash": "yirRQXq9DcZMobqnhazlug=="
         }
       },
       "is_incremental": false,
@@ -16026,7 +16026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.TypeInfo.html",
-          "hash": "JQHj7SLwyYymAFNd8eY8lA=="
+          "hash": "8BJY0QTSyqpOAfqOv4/gwQ=="
         }
       },
       "is_incremental": false,
@@ -16050,7 +16050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Button.html",
-          "hash": "W84+W14SgfbT1UOA0Ujiag=="
+          "hash": "RKEEMMboxXAnMWQB50VjDw=="
         }
       },
       "is_incremental": false,
@@ -16062,7 +16062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.CheckBoxButton.html",
-          "hash": "7iGiyFoQU0tzyk6lqIJ4Cg=="
+          "hash": "k0nHQ2eh4scnUBtXvJvOkg=="
         }
       },
       "is_incremental": false,
@@ -16170,7 +16170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Popup.html",
-          "hash": "++VWPj229X03hps4PSrY8Q=="
+          "hash": "bfxMzhz5whNtznarRV7Jiw=="
         }
       },
       "is_incremental": false,
@@ -16194,7 +16194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.ProgressBar.html",
-          "hash": "CfwZn3q11xVYumSQEkCZ8A=="
+          "hash": "X3PNPT7+nKakoormdyiHnQ=="
         }
       },
       "is_incremental": false,
@@ -16206,7 +16206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.PushButton.html",
-          "hash": "bxEPQR1UTnz5WxqT8r9Pdw=="
+          "hash": "6BKRoHL712lcQiHqZzDy+A=="
         }
       },
       "is_incremental": false,
@@ -16218,7 +16218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.RadioButton.html",
-          "hash": "l/XeJcZSEc548hXGqpVz/Q=="
+          "hash": "A4mXtTTUNdxKJEk/yuJDbw=="
         }
       },
       "is_incremental": false,
@@ -16278,7 +16278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.ScrollBar.html",
-          "hash": "x/jCvoLhMR9Dv97smvvLZg=="
+          "hash": "4MsW1/iZ3Br+/Ht+Bp6wsQ=="
         }
       },
       "is_incremental": false,
@@ -16326,7 +16326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.UIComponents.Slider.html",
-          "hash": "RloZu96IOroETL2SBbLuqA=="
+          "hash": "D4n2fWDgQCl5kGm2ux8OPA=="
         }
       },
       "is_incremental": false,
@@ -16422,7 +16422,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.ViewWrapper.html",
-          "hash": "CRHBb1uyF48uAHMOtWX5mA=="
+          "hash": "7xHLzoQxndK1uO4Pv/zWrQ=="
         }
       },
       "is_incremental": false,
@@ -16518,7 +16518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.VisualBase.html",
-          "hash": "cYLMDdZ4m6sRKpzFw5wsxg=="
+          "hash": "/u/noqdc7vouVwq6e8v0ww=="
         }
       },
       "is_incremental": false,
@@ -16530,7 +16530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.VisualFactory.html",
-          "hash": "Am4ZodElmrEKTnJ8tRnQPQ=="
+          "hash": "f6t4J1PG9lY92cku8A90Dw=="
         }
       },
       "is_incremental": false,
@@ -16638,7 +16638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Widget.html",
-          "hash": "Q2Zf9ppxezuqQwHDiB0k9A=="
+          "hash": "QHa+F4gZQKRZygQGkf+4Qw=="
         }
       },
       "is_incremental": false,
@@ -16662,7 +16662,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.WidgetView.html",
-          "hash": "VVj3x6EVI+sMU/xSotR+EQ=="
+          "hash": "glrUxx/Ed4mVPLs+o79LXw=="
         }
       },
       "is_incremental": false,
@@ -16674,7 +16674,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.WidgetViewManager.html",
-          "hash": "oF+AFdAM3S5nesiNSXNPKw=="
+          "hash": "eS+r47L8r5XSSXhDfYCyHw=="
         }
       },
       "is_incremental": false,
@@ -16794,7 +16794,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Window.html",
-          "hash": "dEoftVnADKBpjkvyHoSTGw=="
+          "hash": "ZMYUJJXD+TzV4oc0mJNuJQ=="
         }
       },
       "is_incremental": false,
@@ -25206,7 +25206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.InputMethodManager.Manager.html",
-          "hash": "ND6tAYZRk0afIyWpkU2G7Q=="
+          "hash": "rZae6fvpK4IuwSV0lSHOAA=="
         }
       },
       "is_incremental": false,
@@ -26018,6 +26018,378 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.AllRecognitionResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.AllRecognitionResultEventArgs.html",
+          "hash": "rv41BjVcFp166pxZUVVAng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.AudioChanelType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.AudioChanelType.html",
+          "hash": "WDVYjGc/5tu4pjmwBOM2zA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.AudioType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.AudioType.html",
+          "hash": "qt8V1ejp9ZmMtkpk6hrcFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.CommandFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.CommandFormat.html",
+          "hash": "JF8s1dfPZE9iFELbCJ6/rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.CommandType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.CommandType.html",
+          "hash": "ZQqxxK1kCyV+LZcWwJaafg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.ConversationRequestedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.ConversationRequestedEventArgs.html",
+          "hash": "/h+L1TRjlImJ0Sq1hk4Gag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.CurrentLanguageChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.CurrentLanguageChangedEventArgs.html",
+          "hash": "7EGLDiyj/1utX7OwoAqHKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.ErrorOccurredEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.ErrorOccurredEventArgs.html",
+          "hash": "AX4UVkUVLhrL5harIUnI7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackAudioFormatEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackAudioFormatEventArgs.html",
+          "hash": "e+pkOjVbAZX9MYPqfB50iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackStreamingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackStreamingEventArgs.html",
+          "hash": "JRSVDOcD/tiwvWM7EnSAHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.FeedbackType.html",
+          "hash": "et/Y+Z0A5QPX3z3/A6zZYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.PreRecognitionResultUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.PreRecognitionResultUpdatedEventArgs.html",
+          "hash": "bGyfhpVp5c7tBb54dX7GTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.PreResultEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.PreResultEventType.html",
+          "hash": "Ip1USyjsqoymqFOGh0F1Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.PrivateDataUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.PrivateDataUpdatedEventArgs.html",
+          "hash": "gNaHdtn/wWMBOckKe4k4Qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.RecognitionModeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.RecognitionModeType.html",
+          "hash": "53kGUgq1/DFQ1LkAKLdliw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.RecognitionResultUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.RecognitionResultUpdatedEventArgs.html",
+          "hash": "d569AP9Y7O+l8fwT99JFyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.RecognizedResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.RecognizedResult.html",
+          "hash": "vLT3CZWrLI0aYpLmRYmvlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.SendEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.SendEventType.html",
+          "hash": "MkZR3fb+XBNfAmeBe5HBig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.ServiceState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.ServiceState.html",
+          "hash": "CVBDvt/+XkpQQYb+CJG4Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.ServiceStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.ServiceStateChangedEventArgs.html",
+          "hash": "sRMSWlZ+gRMqU7k+AmHyMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.SpecificEngineResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.SpecificEngineResultEventArgs.html",
+          "hash": "I1qqFxXpVpYjipbCYCRwHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.State.html",
+          "hash": "gJStOopfVxrGgHe1HZInXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.StateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.StateChangedEventArgs.html",
+          "hash": "AIFQoBBYgLF1JQtdjcPFwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VcTtsStreamingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VcTtsStreamingEventArgs.html",
+          "hash": "VfGbkdi5Aj7/NFxUyLKqZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommand.html",
+          "hash": "WM+8s717QyZtm9g9mY/hIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommandsGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommandsGroup.html",
+          "hash": "aVOiIdrJsEGbPiFoKdXC0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.PrivateDataProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.PrivateDataProvider.html",
+          "hash": "zbZUlrohGuHnVdCOXxKMIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.SelectRecognizedCommandsDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.SelectRecognizedCommandsDelegate.html",
+          "hash": "FwOgvqs1H0D/HEENPy/UaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.html",
+          "hash": "wbJRP3/XCX8M6QfwjoxGHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceError.html",
+          "hash": "plJhYNuuN4jhvHIZqJSHtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Uix.VoiceControlManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Uix.VoiceControlManager.html",
+          "hash": "KT1a9aHm+kZRj7AAJBqXFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.WebView.BackForwardList.yml",
       "output": {
         ".html": {
@@ -26334,7 +26706,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.WebView.ContextMenuCustomize.html",
-          "hash": "/QgHRNJbq1VgL0fpY/9RhQ=="
+          "hash": "N9bXWoVRPkIXaQGeEnBWnA=="
         }
       },
       "is_incremental": false,
@@ -26346,7 +26718,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.WebView.html",
-          "hash": "HMGb+lgQDTh1K1tibws/Pw=="
+          "hash": "URTB8vOPDkjBJRYlzhBCWg=="
         }
       },
       "is_incremental": false,
@@ -26358,7 +26730,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.WebView.html",
-          "hash": "p1vMcbZDv+PuZusrZWyDSA=="
+          "hash": "lI0yCq81cITy0Vyn6e5PPQ=="
         }
       },
       "is_incremental": false,
@@ -26394,7 +26766,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "S60QJI2NjyXpqJ4gpbtYEQ=="
+          "hash": "U6Dp0HMTt3U4krM1q6ty4g=="
         }
       },
       "is_incremental": false,
