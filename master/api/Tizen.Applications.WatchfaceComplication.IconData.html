@@ -83,7 +83,7 @@
   
   <h1 id="Tizen_Applications_WatchfaceComplication_IconData" data-uid="Tizen.Applications.WatchfaceComplication.IconData" class="text-break">Class IconData
   </h1>
-  <div class="markdown level0 summary"><p>Represents the IconData class for the Icon type complication.</p>
+  <div class="markdown level0 summary"><p>Represents the icon data for a complication.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -167,7 +167,7 @@
   <pre><code>    protected override ComplicationData OnDataUpdateRequested(string reqestAppId, ComplicationTypes type, Bundle contextData)
     {
         if (type == ComplicationTypes.Icon)
-        {                
+        {
             return new IconData(&quot;Icon&quot;, &quot;extra&quot;);
         }
         else if (type == ComplicationTypes.LongText)

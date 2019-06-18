@@ -83,7 +83,7 @@
   
   <h1 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider" class="text-break">Class ComplicationProvider
   </h1>
-  <div class="markdown level0 summary"><p>Represents the ComplicationProvider class for the complication provider service application.</p>
+  <div class="markdown level0 summary"><p>Represents the complication provider for a service application.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -131,7 +131,7 @@
   </h3>
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider__ctor_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.#ctor*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider__ctor_System_String_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.#ctor(System.String)">ComplicationProvider(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes the ComplicationProvider class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ComplicationProvider class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -255,7 +255,7 @@
   
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_Dispose_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.Dispose*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_Dispose_System_Boolean_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Releases the unmanaged resources used by the ComplicationProvider class specifying whether to perform a normal dispose operation.</p>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources used by the ComplicationProvider instance specifying whether to perform a normal dispose operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -297,7 +297,7 @@
   
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventComplicationType_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventComplicationType*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventComplicationType_Tizen_Applications_ReceivedAppControl_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventComplicationType(Tizen.Applications.ReceivedAppControl)">GetEventComplicationType(ReceivedAppControl)</h4>
-  <div class="markdown level1 summary"><p>Gets the received event target complication type.</p>
+  <div class="markdown level1 summary"><p>Gets the complication type of the received appcontrol.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -317,7 +317,7 @@
       <tr>
         <td><a class="xref" href="Tizen.Applications.ReceivedAppControl.html">ReceivedAppControl</a></td>
         <td><span class="parametername">recvAppCtrl</span></td>
-        <td><p>The appcontrol received event args.</p>
+        <td><p>The received appcontrol.</p>
 </td>
       </tr>
     </tbody>
@@ -377,7 +377,7 @@
   </table>
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventContext_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventContext*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventContext_Tizen_Applications_ReceivedAppControl_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventContext(Tizen.Applications.ReceivedAppControl)">GetEventContext(ReceivedAppControl)</h4>
-  <div class="markdown level1 summary"><p>Gets the received event target complication context.</p>
+  <div class="markdown level1 summary"><p>Gets the complication context of appcontrol that raises the event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -397,7 +397,7 @@
       <tr>
         <td><a class="xref" href="Tizen.Applications.ReceivedAppControl.html">ReceivedAppControl</a></td>
         <td><span class="parametername">recvAppCtrl</span></td>
-        <td><p>The appcontrol received event args.</p>
+        <td><p>The received appcontrol.</p>
 </td>
       </tr>
     </tbody>
@@ -457,7 +457,7 @@
   </table>
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventProviderId_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventProviderId*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_GetEventProviderId_Tizen_Applications_ReceivedAppControl_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.GetEventProviderId(Tizen.Applications.ReceivedAppControl)">GetEventProviderId(ReceivedAppControl)</h4>
-  <div class="markdown level1 summary"><p>Gets the received event target provider ID.</p>
+  <div class="markdown level1 summary"><p>Gets the provider ID of appcontrol that raises the event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -477,7 +477,7 @@
       <tr>
         <td><a class="xref" href="Tizen.Applications.ReceivedAppControl.html">ReceivedAppControl</a></td>
         <td><span class="parametername">recvAppCtrl</span></td>
-        <td><p>The appcontrol received event args.</p>
+        <td><p>The received appcontrol.</p>
 </td>
       </tr>
     </tbody>
@@ -557,7 +557,7 @@
       <tr>
         <td><a class="xref" href="Tizen.Applications.ReceivedAppControl.html">ReceivedAppControl</a></td>
         <td><span class="parametername">recvAppCtrl</span></td>
-        <td><p>The appcontrol received event args.</p>
+        <td><p>The received appcontrol.</p>
 </td>
       </tr>
     </tbody>
@@ -660,7 +660,7 @@
   </table>
   <a id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_OnDataUpdateRequested_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.OnDataUpdateRequested*"></a>
   <h4 id="Tizen_Applications_WatchfaceComplication_ComplicationProvider_OnDataUpdateRequested_System_String_Tizen_Applications_WatchfaceComplication_ComplicationTypes_Tizen_Applications_Bundle_" data-uid="Tizen.Applications.WatchfaceComplication.ComplicationProvider.OnDataUpdateRequested(System.String,Tizen.Applications.WatchfaceComplication.ComplicationTypes,Tizen.Applications.Bundle)">OnDataUpdateRequested(String, ComplicationTypes, Bundle)</h4>
-  <div class="markdown level1 summary"><p>Overrides this method to handle the behavior when the complication data update request event comes from watchface complication.</p>
+  <div class="markdown level1 summary"><p>Overrides this method to handle the behavior when the event for requesting the update of complication data comes from watchface complication.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -680,7 +680,7 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">reqestAppId</span></td>
-        <td><p>The application ID of application which sent update request.</p>
+        <td><p>The ID of application which sent update request.</p>
 </td>
       </tr>
       <tr>

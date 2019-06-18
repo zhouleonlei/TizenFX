@@ -92,15 +92,17 @@ in a grid without loosing their depth scaling.<br></p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">Tizen.NUI.Binding.Element</span></div>
-    <div class="level2"><a class="xref" href="Tizen.NUI.BaseHandle.html">BaseHandle</a></div>
-    <div class="level3"><a class="xref" href="Tizen.NUI.Animatable.html">Animatable</a></div>
-    <div class="level4"><a class="xref" href="Tizen.NUI.Container.html">Container</a></div>
-    <div class="level5"><a class="xref" href="Tizen.NUI.BaseComponents.View.html">View</a></div>
-    <div class="level6"><span class="xref">TableView</span></div>
+    <div class="level1"><span class="xref">Tizen.NUI.Binding.BindableObject</span></div>
+    <div class="level2"><span class="xref">Tizen.NUI.Binding.Element</span></div>
+    <div class="level3"><a class="xref" href="Tizen.NUI.BaseHandle.html">BaseHandle</a></div>
+    <div class="level4"><a class="xref" href="Tizen.NUI.Animatable.html">Animatable</a></div>
+    <div class="level5"><a class="xref" href="Tizen.NUI.Container.html">Container</a></div>
+    <div class="level6"><a class="xref" href="Tizen.NUI.BaseComponents.View.html">View</a></div>
+    <div class="level7"><span class="xref">TableView</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
@@ -572,7 +574,7 @@ in a grid without loosing their depth scaling.<br></p>
   <h6><strong>Assembly</strong>: Tizen.NUI.dll</h6>
   <h5 id="Tizen_NUI_BaseComponents_TableView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TableView : View, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TableView : View, INotifyPropertyChanged, IDynamicResourceHandler, IElement, INameScope, IElementController, IDisposable, IResourcesProvider</code></pre>
   </div>
   
   
@@ -1801,6 +1803,9 @@ Setting a relative width of 0 has no effect.<br></p>
   <span class="level1 sinceTizen">3 </span>
   
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">System.ComponentModel.INotifyPropertyChanged</a>
+  </div>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
