@@ -276,6 +276,226 @@
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Insert*"></a>
+  <h4 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation_" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Insert(System.String,Tizen.Content.MediaContent.Rectangle,Tizen.Content.MediaContent.Orientation)">Insert(String, Rectangle, Orientation)</h4>
+  <div class="markdown level1 summary"><p>Inserts a new face information to the database with the specified media ID, area, orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FaceInfo Insert(string mediaId, Rectangle area, Orientation orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">mediaId</span></td>
+        <td><p>The media ID to be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">area</span></td>
+        <td><p>The region of face in the media.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The orientation of specified media.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.FaceInfo.html">FaceInfo</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.FaceInfo.html">FaceInfo</a> containing the results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/content.write">http://tizen.org/privilege/content.write</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html">MediaDatabase</a> is disconnected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html">MediaDatabase</a> has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.MediaDatabaseException.html">MediaDatabaseException</a></td>
+        <td><p>An error occurred while executing the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mediaId</code> is null. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mediaId</code> is a zero-length string, contains only white space.<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">orientation</code> is not valid enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Insert*"></a>
+  <h4 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation_System_String_" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Insert(System.String,Tizen.Content.MediaContent.Rectangle,Tizen.Content.MediaContent.Orientation,System.String)">Insert(String, Rectangle, Orientation, String)</h4>
+  <div class="markdown level1 summary"><p>Inserts a new face information to the database with the specified media ID, area, orientation, and tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FaceInfo Insert(string mediaId, Rectangle area, Orientation orientation, string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">mediaId</span></td>
+        <td><p>The media ID to be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">area</span></td>
+        <td><p>The region of face in the media.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.Orientation.html">Orientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The orientation of specified media.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The tag value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.FaceInfo.html">FaceInfo</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.FaceInfo.html">FaceInfo</a> containing the results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Content_MediaContent_FaceInfoCommand_Insert_System_String_Tizen_Content_MediaContent_Rectangle_Tizen_Content_MediaContent_Orientation_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/content.write">http://tizen.org/privilege/content.write</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html">MediaDatabase</a> is disconnected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Content.MediaContent.MediaDatabase.html">MediaDatabase</a> has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Content.MediaContent.MediaDatabaseException.html">MediaDatabaseException</a></td>
+        <td><p>An error occurred while executing the command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mediaId</code> is null. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mediaId</code> is a zero-length string, contains only white space.<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">orientation</code> is not valid enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Content_MediaContent_FaceInfoCommand_Select_" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Select*"></a>
   <h4 id="Tizen_Content_MediaContent_FaceInfoCommand_Select" data-uid="Tizen.Content.MediaContent.FaceInfoCommand.Select">Select()</h4>
   <div class="markdown level1 summary"><p>Retrieves the face information.</p>
