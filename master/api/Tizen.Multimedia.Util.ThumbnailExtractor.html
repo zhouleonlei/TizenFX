@@ -125,6 +125,390 @@
   
   <h3 id="methods">Methods
   </h3>
+  <a id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract*"></a>
+  <h4 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract(System.String)">Extract(String)</h4>
+  <div class="markdown level1 summary"><p>Extracts the thumbnail for the given media with the specified path and size.
+The generated thumbnail will be returned in <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractionResult.html">ThumbnailExtractionResult</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThumbnailExtractionResult Extract(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the media file to extract the thumbnail.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractionResult.html">ThumbnailExtractionResult</a></td>
+        <td><p>The result of extracting operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The size of generated thumbnail will be 320x240.<br>
+If you want to set the size of generated thumbnail, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_">Extract(String, Size)</a><br>
+<br>
+If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
+If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a><br>
+<a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.FileFormatException.html">FileFormatException</a></td>
+        <td><p>The specified file is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract*"></a>
+  <h4 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract(System.String,System.String)">Extract(String, String)</h4>
+  <div class="markdown level1 summary"><p>Extracts the thumbnail for the given media with the specified path and size.
+The generated thumbnail will be saved in <code data-dev-comment-type="paramref" class="paramref">resultThumbnailPath</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Extract(string path, string resultThumbnailPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the media file to extract the thumbnail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">resultThumbnailPath</span></td>
+        <td><p>The path to save the generated thumbnail.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The size of generated thumbnail will be 320x240.<br>
+If you want to set the size of generated thumbnail, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String_">Extract(String, Size, String)</a><br>
+<br>
+If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
+If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a><br>
+<a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.FileFormatException.html">FileFormatException</a></td>
+        <td><p>The specified file is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract*"></a>
+  <h4 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract(System.String,Tizen.Multimedia.Size)">Extract(String, Size)</h4>
+  <div class="markdown level1 summary"><p>Extracts the thumbnail for the given media with the specified path and size.
+The generated thumbnail will be returned in <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractionResult.html">ThumbnailExtractionResult</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ThumbnailExtractionResult Extract(string path, Size size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the media file to extract the thumbnail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Size.html">Size</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the thumbnail.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractionResult.html">ThumbnailExtractionResult</a></td>
+        <td><p>The result of extracting operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
+If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a><br>
+<a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>The width or the height of <code data-dev-comment-type="paramref" class="paramref">size</code> is less than or equal to zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.FileFormatException.html">FileFormatException</a></td>
+        <td><p>The specified file is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract*"></a>
+  <h4 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.Extract(System.String,Tizen.Multimedia.Size,System.String)">Extract(String, Size, String)</h4>
+  <div class="markdown level1 summary"><p>Extracts the thumbnail for the given media with the specified path and size.
+The generated thumbnail will be saved in <code data-dev-comment-type="paramref" class="paramref">resultThumbnailPath</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Extract(string path, Size size, string resultThumbnailPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path of the media file to extract the thumbnail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Size.html">Size</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the thumbnail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">resultThumbnailPath</span></td>
+        <td><p>The path to save the generated thumbnail.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
+If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String__privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">public</span>
+  <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String__privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a><br>
+<a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">path</code> does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>The width or the height of <code data-dev-comment-type="paramref" class="paramref">size</code> is less than or equal to zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.FileFormatException.html">FileFormatException</a></td>
+        <td><p>The specified file is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Util_ThumbnailExtractor_ExtractAsync_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.ExtractAsync*"></a>
   <h4 id="Tizen_Multimedia_Util_ThumbnailExtractor_ExtractAsync_System_String_" data-uid="Tizen.Multimedia.Util.ThumbnailExtractor.ExtractAsync(System.String)">ExtractAsync(String)</h4>
   <div class="markdown level1 summary"><p>Extracts the thumbnail for the given media with the specified path.</p>
