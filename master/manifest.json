@@ -10638,7 +10638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "NG6TYlV4q4xOZszxp7c+Wg=="
+          "hash": "tLci61k/pYDSoDYBnRSWSw=="
         }
       },
       "is_incremental": false,
@@ -10650,7 +10650,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.PlayerAudioExtractOption.html",
-          "hash": "kXJZSvsKJ4hFfAfIwKwtjw=="
+          "hash": "YQCuA1Gil3xde4Qh3uWU/w=="
         }
       },
       "is_incremental": false,
