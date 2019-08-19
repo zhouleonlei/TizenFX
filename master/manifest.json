@@ -4206,7 +4206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.CoreBackend.EventType.html",
-          "hash": "lz/lMnJheGBHGRffrneYBw=="
+          "hash": "ZJ/9D/rrJbazPjLLWzYVwA=="
         }
       },
       "is_incremental": false,
@@ -4230,7 +4230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.CoreBackend.WatchEventType.html",
-          "hash": "hh7zx5pzhmhoSFklwAC4dA=="
+          "hash": "KttGzds5CI7/VhZBDaCvpw=="
         }
       },
       "is_incremental": false,
@@ -6218,6 +6218,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.SuspendedState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.SuspendedState.html",
+          "hash": "4zsDyZrL+SwFE6Ii5M/zjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.SuspendedStateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.SuspendedStateEventArgs.html",
+          "hash": "YPSqOn/8Anz/KLWi+CrGoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.TimeEventArgs.yml",
       "output": {
         ".html": {
@@ -6642,7 +6666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.html",
-          "hash": "ZWj/95l87WCKsb8BEXJBKQ=="
+          "hash": "rwTqu6ZXlYr3VO0KchCUMA=="
         }
       },
       "is_incremental": false,
@@ -10194,7 +10218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.MediaCodec.BufferStatusChangedEventArgs.html",
-          "hash": "ENKOi4YabGUbI5WZjRx4RA=="
+          "hash": "+s/Mpvd1k6p89oyJk1uqUg=="
         }
       },
       "is_incremental": false,
@@ -10242,7 +10266,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.MediaCodec.MediaCodecErrorOccurredEventArgs.html",
-          "hash": "/JWZAyiaKZQK2c3h5rN+mg=="
+          "hash": "gYnahuBstXovZmhqttnDsA=="
         }
       },
       "is_incremental": false,
@@ -14946,7 +14970,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.NUIEventType.html",
-          "hash": "lCFrdFYoFNXnRu1cUcg6jw=="
+          "hash": "Yu5VLm4EvFd+V4P6W6XnWQ=="
         }
       },
       "is_incremental": false,
@@ -26766,7 +26790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NSbacUl5Bsvg/UMhHiPDXg=="
+          "hash": "oYf+QA2X+NdqpgCy+EbI7A=="
         }
       },
       "is_incremental": false,
@@ -26843,17 +26867,17 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
