@@ -4166,6 +4166,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentInfo.html",
+          "hash": "Vu16dReFYZx5svwn0B4IsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentManager.html",
+          "hash": "ijlwm4tL3OQ8MqUmmer+UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentRunningContext.ComponentState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentRunningContext.ComponentState.html",
+          "hash": "C7fJ1Yb73yrajSV7iz88XQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentRunningContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentRunningContext.html",
+          "hash": "O3ZtlVKJaITAGxpH+6wKNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentType.html",
+          "hash": "ZUIgq3dgSJ1vrRWIHaMWGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.CoreApplication.yml",
       "output": {
         ".html": {
@@ -6666,7 +6726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.html",
-          "hash": "rwTqu6ZXlYr3VO0KchCUMA=="
+          "hash": "kmfnMxHVHzucciaqOaFelg=="
         }
       },
       "is_incremental": false,
@@ -26790,7 +26850,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "oYf+QA2X+NdqpgCy+EbI7A=="
+          "hash": "RqaTIIAl+y1aW+VP5AmSIg=="
         }
       },
       "is_incremental": false,
@@ -26862,22 +26922,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
