@@ -153,6 +153,22 @@
   <h5 id="Tizen_Multimedia_EqualizerBand_Frequency_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_EqualizerBand_FrequencyRange_" data-uid="Tizen.Multimedia.EqualizerBand.FrequencyRange*"></a>
   <h4 id="Tizen_Multimedia_EqualizerBand_FrequencyRange" data-uid="Tizen.Multimedia.EqualizerBand.FrequencyRange">FrequencyRange</h4>
   <div class="markdown level1 summary"><p>Gets the frequency range in the dB.</p>
@@ -181,6 +197,22 @@
   <h5 id="Tizen_Multimedia_EqualizerBand_FrequencyRange_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_EqualizerBand_Level_" data-uid="Tizen.Multimedia.EqualizerBand.Level*"></a>
   <h4 id="Tizen_Multimedia_EqualizerBand_Level" data-uid="Tizen.Multimedia.EqualizerBand.Level">Level</h4>
   <div class="markdown level1 summary"><p>Sets or gets the gain for the equalizer band.</p>
@@ -226,6 +258,11 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is not inside of <a class="xref" href="Tizen.Multimedia.AudioEffect.html#Tizen_Multimedia_AudioEffect_BandLevelRange">BandLevelRange</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
     </tbody>

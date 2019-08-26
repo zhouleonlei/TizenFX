@@ -277,8 +277,41 @@ But, state transition like pause or resume can be more slower than default(<a cl
         <td><p>The value is not valid.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_Player_AudioOffload_" data-uid="Tizen.Multimedia.Player.AudioOffload*"></a>
+  <h4 id="Tizen_Multimedia_Player_AudioOffload" data-uid="Tizen.Multimedia.Player.AudioOffload">AudioOffload</h4>
+  <div class="markdown level1 summary"><p>Gets the setting for audio offload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioOffload AudioOffload { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioOffload.html">AudioOffload</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Player_AudioOffload_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_Multimedia_Player_AudioPitch_" data-uid="Tizen.Multimedia.Player.AudioPitch*"></a>
   <h4 id="Tizen_Multimedia_Player_AudioPitch" data-uid="Tizen.Multimedia.Player.AudioPitch">AudioPitch</h4>
   <div class="markdown level1 summary"><p>Gets or sets the pitch of audio.</p>
@@ -323,7 +356,9 @@ This function is used for audio content only.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>A pitch is not enabled.</p>
+        <td><p>A pitch is not enabled.
+-or-<br>
+If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
       <tr>
@@ -389,7 +424,9 @@ To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerS
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The player is not in the valid state.</p>
+        <td><p>The player is not in the valid state.
+-or-<br>
+If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
       <tr>
@@ -882,7 +919,9 @@ otherwise, the replaygain is not affected by tag and properties.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>The player is not in the valid state.</p>
+        <td><p>The player is not in the valid state.
+-or-<br>
+If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
     </tbody>
@@ -1436,7 +1475,9 @@ and all the packets have to be destroyed before <a class="xref" href="Tizen.Mult
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>Operation failed; internal error.
 -or-<br>
-The player is not in the valid state.</p>
+The player is not in the valid state.
+-or-<br>
+If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
     </tbody>
@@ -1952,7 +1993,9 @@ or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_Play
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>The player is not in the valid state.<br>
 -or-<br>
-Streaming playback.</p>
+Streaming playback.
+-or-<br>
+If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
       <tr>

@@ -9258,7 +9258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.AudioEffect.html",
-          "hash": "Z5NkJV+nFtTQpbHBhGNfkQ=="
+          "hash": "8PBvyBDeMfhrpS9/Er3usQ=="
         }
       },
       "is_incremental": false,
@@ -9331,6 +9331,18 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.AudioMetadata.html",
           "hash": "3nulNbF4PlrJUvDOzKTZdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.AudioOffload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.AudioOffload.html",
+          "hash": "os3odW0PIEwGmvu1F3smOA=="
         }
       },
       "is_incremental": false,
@@ -10134,7 +10146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.EqualizerBand.html",
-          "hash": "SL5Giuems9rB/8OaMQGZIQ=="
+          "hash": "/OW5QZVnQPOd3ifLWIPApg=="
         }
       },
       "is_incremental": false,
@@ -10722,7 +10734,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "tLci61k/pYDSoDYBnRSWSw=="
+          "hash": "l1KhhF18f878JhmgMydiPA=="
         }
       },
       "is_incremental": false,
@@ -10818,7 +10830,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.PlayerTrackInfo.html",
-          "hash": "YZ7UwS72FrrinvH7sa76CQ=="
+          "hash": "dKRAFsCSrXVHc0P4FGYF8g=="
         }
       },
       "is_incremental": false,
@@ -13170,7 +13182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "IxATJf7eLk0MVHHPH/l4uQ=="
+          "hash": "x05s5DXS//M5uncX7tekGQ=="
         }
       },
       "is_incremental": false,
@@ -14898,7 +14910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.Layer.LayerBehavior.html",
-          "hash": "SVLUOoAL+YU+KzY4FowfXQ=="
+          "hash": "nKAgXu6pzayxgIo9jeRXbg=="
         }
       },
       "is_incremental": false,
@@ -26850,7 +26862,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RqaTIIAl+y1aW+VP5AmSIg=="
+          "hash": "bPjC/1AmawsVEv+0szTIww=="
         }
       },
       "is_incremental": false,
@@ -26922,22 +26934,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
