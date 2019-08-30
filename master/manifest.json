@@ -4166,11 +4166,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Applications.ComponentInfo.yml",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Tizen.Applications.ComponentInfo.html",
-          "hash": "Vu16dReFYZx5svwn0B4IsA=="
+          "relative_path": "api/Tizen.Applications.ComponentBased.ComponentInfo.html",
+          "hash": "ZsQu4jSFPmT/0jUWn3EvEg=="
         }
       },
       "is_incremental": false,
@@ -4178,11 +4178,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Applications.ComponentManager.yml",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Tizen.Applications.ComponentManager.html",
-          "hash": "ijlwm4tL3OQ8MqUmmer+UA=="
+          "relative_path": "api/Tizen.Applications.ComponentBased.ComponentManager.html",
+          "hash": "gUCNJBx3FKR/3h0D0dnhVQ=="
         }
       },
       "is_incremental": false,
@@ -4190,11 +4190,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Applications.ComponentRunningContext.ComponentState.yml",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentRunningContext.ComponentState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Tizen.Applications.ComponentRunningContext.ComponentState.html",
-          "hash": "C7fJ1Yb73yrajSV7iz88XQ=="
+          "relative_path": "api/Tizen.Applications.ComponentBased.ComponentRunningContext.ComponentState.html",
+          "hash": "0wS6gr5hoNJlwEqfEnJpGg=="
         }
       },
       "is_incremental": false,
@@ -4202,11 +4202,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Applications.ComponentRunningContext.yml",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentRunningContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Tizen.Applications.ComponentRunningContext.html",
-          "hash": "O3ZtlVKJaITAGxpH+6wKNQ=="
+          "relative_path": "api/Tizen.Applications.ComponentBased.ComponentRunningContext.html",
+          "hash": "pkMD586Pq9VO19k+v7+Afw=="
         }
       },
       "is_incremental": false,
@@ -4214,11 +4214,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Tizen.Applications.ComponentType.yml",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Tizen.Applications.ComponentType.html",
-          "hash": "ZUIgq3dgSJ1vrRWIHaMWGw=="
+          "relative_path": "api/Tizen.Applications.ComponentBased.ComponentType.html",
+          "hash": "ZWd0mnxymlgXVU2bK0+MPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.html",
+          "hash": "4RouKJ38cu5KSenE+JR9TA=="
         }
       },
       "is_incremental": false,
@@ -6726,7 +6738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.html",
-          "hash": "kmfnMxHVHzucciaqOaFelg=="
+          "hash": "rwTqu6ZXlYr3VO0KchCUMA=="
         }
       },
       "is_incremental": false,
@@ -26862,7 +26874,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bPjC/1AmawsVEv+0szTIww=="
+          "hash": "4Uoz6bIu3l3u13LfgzpVNg=="
         }
       },
       "is_incremental": false,
@@ -26944,11 +26956,11 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
