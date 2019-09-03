@@ -3810,7 +3810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.Application.html",
-          "hash": "KU5xfMUNlHbwr/OPDVMcRA=="
+          "hash": "XkXP5ipdmUSkIDDxDkLoHA=="
         }
       },
       "is_incremental": false,
@@ -4166,6 +4166,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.BaseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.BaseComponent.html",
+          "hash": "7jeOXKKNYgbdv+PTss+ofw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.ComponentBasedApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.ComponentBasedApplication.html",
+          "hash": "KFVzFZ0YvpQtDLnXxbyCSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.DisplayStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.DisplayStatus.html",
+          "hash": "xm+oUFm6/1huVLJnyyJ/Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.FrameComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.FrameComponent.html",
+          "hash": "0Xl84nEINXYoSKpyTdkoEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.IWindowInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.IWindowInfo.html",
+          "hash": "76O0FeJQ351xqhJeFbjOTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.ServiceComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.ServiceComponent.html",
+          "hash": "i22hQLbYRZk5zqLXUY7+/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Common.html",
+          "hash": "sEjuEyhpwT7L91E2L3Qf1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Applications.ComponentBased.ComponentInfo.yml",
       "output": {
         ".html": {
@@ -4219,6 +4303,42 @@
         ".html": {
           "relative_path": "api/Tizen.Applications.ComponentBased.ComponentType.html",
           "hash": "ZWd0mnxymlgXVU2bK0+MPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Default.EFLComponentBasedApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Default.EFLComponentBasedApplication.html",
+          "hash": "ZLtpZdfGW1lqJv6dkTvK8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Default.EFLWindowInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Default.EFLWindowInfo.html",
+          "hash": "bFy7tXYOFtfLbAd+gbXhag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.ComponentBased.Default.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.ComponentBased.Default.html",
+          "hash": "oIMkFlBbmAzVKfMhLKTJgA=="
         }
       },
       "is_incremental": false,
@@ -9486,7 +9606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.AudioStreamPolicy.html",
-          "hash": "HX3ObwFbZCuaLqdHmBqVmw=="
+          "hash": "DgOvVaClWncOjVOM7zyQAw=="
         }
       },
       "is_incremental": false,
@@ -26874,7 +26994,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4Uoz6bIu3l3u13LfgzpVNg=="
+          "hash": "/VrlATHbd0Jilvw9jrLr3w=="
         }
       },
       "is_incremental": false,

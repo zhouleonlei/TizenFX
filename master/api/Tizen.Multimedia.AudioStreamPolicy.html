@@ -278,6 +278,144 @@ disable the focus reacquisition.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_AudioStreamPolicy_PreferredInputDevice_" data-uid="Tizen.Multimedia.AudioStreamPolicy.PreferredInputDevice*"></a>
+  <h4 id="Tizen_Multimedia_AudioStreamPolicy_PreferredInputDevice" data-uid="Tizen.Multimedia.AudioStreamPolicy.PreferredInputDevice">PreferredInputDevice</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the preferred input device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioDevice PreferredInputDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioDevice.html">AudioDevice</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.AudioDevice.html">AudioDevice</a> instance.<br>
+The default is null which means any device is not set on this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredInputDevice_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is to set a specific built-in device when the system has multiple devices of the same built-in device type.
+When there&apos;s only one device for a built-in device type in the system, nothing will happen even if this property is set successfully.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredInputDevice_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>A device is not for input.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioPolicyException.html">AudioPolicyException</a></td>
+        <td><p>A device is not supported by this <a class="xref" href="Tizen.Multimedia.AudioStreamPolicy.html">AudioStreamPolicy</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.AudioStreamPolicy.html">AudioStreamPolicy</a> has already been disposed of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredInputDevice_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.AudioManager.html#Tizen_Multimedia_AudioManager_GetConnectedDevices">GetConnectedDevices()</a></div>
+  </div>
+  <a id="Tizen_Multimedia_AudioStreamPolicy_PreferredOutputDevice_" data-uid="Tizen.Multimedia.AudioStreamPolicy.PreferredOutputDevice*"></a>
+  <h4 id="Tizen_Multimedia_AudioStreamPolicy_PreferredOutputDevice" data-uid="Tizen.Multimedia.AudioStreamPolicy.PreferredOutputDevice">PreferredOutputDevice</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the preferred output device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioDevice PreferredOutputDevice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioDevice.html">AudioDevice</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.AudioDevice.html">AudioDevice</a> instance.<br>
+The default is null which means any device is not set on this property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredOutputDevice_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is to set a specific built-in device when the system has multiple devices of the same built-in device type.
+When there&apos;s only one device for a built-in device type in the system, nothing will happen even if this property is set successfully.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredOutputDevice_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>A device is not for output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.AudioPolicyException.html">AudioPolicyException</a></td>
+        <td><p>A device is not supported by this <a class="xref" href="Tizen.Multimedia.AudioStreamPolicy.html">AudioStreamPolicy</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.AudioStreamPolicy.html">AudioStreamPolicy</a> has already been disposed of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioStreamPolicy_PreferredOutputDevice_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.AudioManager.html#Tizen_Multimedia_AudioManager_GetConnectedDevices">GetConnectedDevices()</a></div>
+  </div>
   <a id="Tizen_Multimedia_AudioStreamPolicy_RecordingFocusState_" data-uid="Tizen.Multimedia.AudioStreamPolicy.RecordingFocusState*"></a>
   <h4 id="Tizen_Multimedia_AudioStreamPolicy_RecordingFocusState" data-uid="Tizen.Multimedia.AudioStreamPolicy.RecordingFocusState">RecordingFocusState</h4>
   <div class="markdown level1 summary"><p>Gets the state of focus for the recording.</p>
