@@ -5742,7 +5742,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.Package.html",
-          "hash": "bHYDE/ctgJ+XNS2YlpkDYw=="
+          "hash": "JwPYjmksBnF0j3PIas80Rw=="
         }
       },
       "is_incremental": false,
@@ -5754,7 +5754,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.PackageArchive.html",
-          "hash": "mb43y5/x9hmBnYNJUY3Kpg=="
+          "hash": "jmwBhJFfYYXcFDI6SfiZJQ=="
         }
       },
       "is_incremental": false,
@@ -5767,6 +5767,18 @@
         ".html": {
           "relative_path": "api/Tizen.Applications.PackageCertificate.html",
           "hash": "Yx5CJ2NNo9DlNpcWCi13hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Applications.PackageDependencyInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Applications.PackageDependencyInformation.html",
+          "hash": "xpmf7Td+s1oc2fBZHCXWTg=="
         }
       },
       "is_incremental": false,
@@ -6858,7 +6870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.html",
-          "hash": "rwTqu6ZXlYr3VO0KchCUMA=="
+          "hash": "J0PrAjOthV8M9Z60AeGjgA=="
         }
       },
       "is_incremental": false,
@@ -9379,6 +9391,30 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.AudioDeviceType.html",
           "hash": "ATkBanpQtgfKw9wtpy/9pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.AudioDucking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.AudioDucking.html",
+          "hash": "63e3hVItXkRWmLsu1DPWtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.AudioDuckingStateChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.AudioDuckingStateChangedEventArgs.html",
+          "hash": "lXfWGICrYmhTB2izJnuFnw=="
         }
       },
       "is_incremental": false,
@@ -13314,7 +13350,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "x05s5DXS//M5uncX7tekGQ=="
+          "hash": "9JvA/GCrQrRUI8MEhTVNcw=="
         }
       },
       "is_incremental": false,
@@ -26994,7 +27030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "/VrlATHbd0Jilvw9jrLr3w=="
+          "hash": "rZU2ubAvC2vESo4gm3wSYw=="
         }
       },
       "is_incremental": false,
