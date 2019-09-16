@@ -232,7 +232,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -284,7 +284,217 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetDisplayMode_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayMode*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayMode" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayMode">GetDisplayMode()</h4>
+  <div class="markdown level1 summary"><p>Gets the current display mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaControlDisplayMode GetDisplayMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlDisplayMode.html">MediaControlDisplayMode</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlDisplayMode.html">MediaControlDisplayMode</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayMode_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetDisplayModeCapability_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayModeCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayModeCapability" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayModeCapability">GetDisplayModeCapability()</h4>
+  <div class="markdown level1 summary"><p>Gets the value whether the repeat mode is supported or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;MediaControlDisplayMode&gt; GetDisplayModeCapability()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.MediaControlDisplayMode.html">MediaControlDisplayMode</a>&gt;</td>
+        <td><p>If there&apos;s no supported display mode by server, it will return null.
+otherwise, it will return the supported list of <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlDisplayMode.html">MediaControlDisplayMode</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayModeCapability_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotation_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayRotation*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotation" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayRotation">GetDisplayRotation()</h4>
+  <div class="markdown level1 summary"><p>Gets the current display rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rotation GetDisplayRotation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Rotation.html">Rotation</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Rotation.html">Rotation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotation_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotationapability_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayRotationapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotationapability" data-uid="Tizen.Multimedia.Remoting.MediaController.GetDisplayRotationapability">GetDisplayRotationapability()</h4>
+  <div class="markdown level1 summary"><p>Gets the value whether the display mode is supported or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Rotation&gt; GetDisplayRotationapability()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Multimedia.Rotation.html">Rotation</a>&gt;</td>
+        <td><p>If there&apos;s no supported display rotation by server, it will return null.
+otherwise, it will return the supported list of <a class="xref" href="Tizen.Multimedia.Rotation.html">Rotation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetDisplayRotationapability_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -336,7 +546,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -388,7 +598,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -440,7 +650,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -496,7 +706,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -571,7 +781,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -623,7 +833,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -679,7 +889,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -735,7 +945,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -787,7 +997,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -839,7 +1049,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -895,7 +1105,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -947,7 +1157,59 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_IsMode360Enabled_" data-uid="Tizen.Multimedia.Remoting.MediaController.IsMode360Enabled*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_IsMode360Enabled" data-uid="Tizen.Multimedia.Remoting.MediaController.IsMode360Enabled">IsMode360Enabled()</h4>
+  <div class="markdown level1 summary"><p>Gets whether the 360 mode is enabled or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMode360Enabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A value indicating whether the 360 mode is enabled or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_IsMode360Enabled_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -999,7 +1261,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1008,6 +1270,58 @@ An internal error occurs.</p>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlServer.html#Tizen_Multimedia_Remoting_MediaControlServer_SetShuffleModeEnabled_System_Boolean_">SetShuffleModeEnabled(Boolean)</a></div>
   </div>
+  <a id="Tizen_Multimedia_Remoting_MediaController_IsSubtitleModeEnabled_" data-uid="Tizen.Multimedia.Remoting.MediaController.IsSubtitleModeEnabled*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_IsSubtitleModeEnabled" data-uid="Tizen.Multimedia.Remoting.MediaController.IsSubtitleModeEnabled">IsSubtitleModeEnabled()</h4>
+  <div class="markdown level1 summary"><p>Gets whether the subtitle mode is enabled or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSubtitleModeEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A value indicating whether the subtitle mode is enabled or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_IsSubtitleModeEnabled_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Remoting_MediaController_RequestAsync_" data-uid="Tizen.Multimedia.Remoting.MediaController.RequestAsync*"></a>
   <h4 id="Tizen_Multimedia_Remoting_MediaController_RequestAsync_Tizen_Multimedia_Remoting_Command_" data-uid="Tizen.Multimedia.Remoting.MediaController.RequestAsync(Tizen.Multimedia.Remoting.Command)">RequestAsync(Command)</h4>
   <div class="markdown level1 summary"><p>Requests command to the server.</p>
@@ -1083,7 +1397,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1269,7 +1583,7 @@ An internal error occurs.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
-        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed of.</p>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1307,6 +1621,114 @@ An internal error occurs.</p>
   <h5 id="Tizen_Multimedia_Remoting_MediaController_CustomCommandReceived_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
   
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_DisplayModeCapabilityUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.DisplayModeCapabilityUpdated">DisplayModeCapabilityUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the display mode capabilities are updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DisplayModeCapabilityUpdatedEventArgs&gt; DisplayModeCapabilityUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.DisplayModeCapabilityUpdatedEventArgs.html">DisplayModeCapabilityUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_DisplayModeCapabilityUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_DisplayModeUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.DisplayModeUpdated">DisplayModeUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the display mode is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DisplayModeUpdatedEventArgs&gt; DisplayModeUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.DisplayModeUpdatedEventArgs.html">DisplayModeUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_DisplayModeUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_DisplayRotationCapabilityUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.DisplayRotationCapabilityUpdated">DisplayRotationCapabilityUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the display rotation capabilities are updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DisplayRotationCapabilityUpdatedEventArgs&gt; DisplayRotationCapabilityUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.DisplayRotationCapabilityUpdatedEventArgs.html">DisplayRotationCapabilityUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_DisplayRotationCapabilityUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_DisplayRotationUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.DisplayRotationUpdated">DisplayRotationUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the display rotation is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DisplayRotationUpdatedEventArgs&gt; DisplayRotationUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.DisplayRotationUpdatedEventArgs.html">DisplayRotationUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_DisplayRotationUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <h4 id="Tizen_Multimedia_Remoting_MediaController_MetadataUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.MetadataUpdated">MetadataUpdated</h4>
   <div class="markdown level1 summary"><p>Occurs when the metadata is updated.</p>
 </div>
@@ -1333,6 +1755,33 @@ An internal error occurs.</p>
   
   <h5 id="Tizen_Multimedia_Remoting_MediaController_MetadataUpdated_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_Mode360Updated" data-uid="Tizen.Multimedia.Remoting.MediaController.Mode360Updated">Mode360Updated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the 360 mode is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Mode360UpdatedEventArgs&gt; Mode360Updated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.Mode360UpdatedEventArgs.html">Mode360UpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_Mode360Updated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <h4 id="Tizen_Multimedia_Remoting_MediaController_PlaybackCapabilityUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.PlaybackCapabilityUpdated">PlaybackCapabilityUpdated</h4>
   <div class="markdown level1 summary"><p>Occurs when the playback capabilities are updated.</p>
@@ -1549,6 +1998,33 @@ An internal error occurs.</p>
   
   <h5 id="Tizen_Multimedia_Remoting_MediaController_ShuffleModeUpdated_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_SubtitleModeUpdated" data-uid="Tizen.Multimedia.Remoting.MediaController.SubtitleModeUpdated">SubtitleModeUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when the subtitle mode is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SubtitleModeUpdatedEventArgs&gt; SubtitleModeUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.Multimedia.Remoting.SubtitleModeUpdatedEventArgs.html">SubtitleModeUpdatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_SubtitleModeUpdated_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
 </article>
           </div>

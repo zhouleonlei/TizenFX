@@ -198,6 +198,114 @@ channel, sample rate, bit, and bit rate.</p>
     </tbody>
   </table>
   <a id="Tizen_Multimedia_AudioMediaFormat__ctor_" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor*"></a>
+  <h4 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition__" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor(Tizen.Multimedia.MediaFormatAudioMimeType,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IList{Tizen.Multimedia.MediaFormatAudioChannelPosition})">AudioMediaFormat(MediaFormatAudioMimeType, Int32, Int32, Int32, Int32, Int32, IList&lt;MediaFormatAudioChannelPosition&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AudioMediaFormat class with the specified mime type,
+channel, sample rate, bit, bit rate, bit depth, and audio channel map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMediaFormat(MediaFormatAudioMimeType mimeType, int channel, int sampleRate, int bit, int bitRate, int bitDepth, IList&lt;MediaFormatAudioChannelPosition&gt; audioChannelMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.MediaFormatAudioMimeType.html">MediaFormatAudioMimeType</a></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td><p>The mime type of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The channel value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleRate</span></td>
+        <td><p>The sample rate value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bit</span></td>
+        <td><p>The bit value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bitRate</span></td>
+        <td><p>The bit rate value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bitDepth</span></td>
+        <td><p>The bit depth value of the PCM audio format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html">MediaFormatAudioChannelPosition</a>&gt;</td>
+        <td><span class="parametername">audioChannelMap</span></td>
+        <td><p>The loudspeaker position in PCM audio format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> contains <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a>,
+<code data-dev-comment-type="paramref" class="paramref">channel</code> should be set greater than 0.<br>
+If <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> contains <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a>,
+<code data-dev-comment-type="paramref" class="paramref">channel</code> should be set 1.<br>
+User can not set <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a> with another channel positions.<br>
+User can not set <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a> with another channel positions.<br>
+If same channel position is added in <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> more than once, the duplicaiton will be removed.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mimeType</code> is invalid (i.e. undefined value).<br></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is invalid or mismatched with <code data-dev-comment-type="paramref" class="paramref">channel</code> like the following:<br>
+<code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is not matched correctly with <code data-dev-comment-type="paramref" class="paramref">channel</code>.
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is set to <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Invaild">Invaild</a>.
+-or-<br>
+<a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a> or <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a> is set with another channel position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">channel</code>, <code data-dev-comment-type="paramref" class="paramref">sampleRate</code>, <code data-dev-comment-type="paramref" class="paramref">bit</code>, or <code data-dev-comment-type="paramref" class="paramref">bitRate</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_AudioMediaFormat__ctor_" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor*"></a>
   <h4 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_Tizen_Multimedia_MediaFormatAacType_" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor(Tizen.Multimedia.MediaFormatAudioMimeType,System.Int32,System.Int32,System.Int32,System.Int32,Tizen.Multimedia.MediaFormatAacType)">AudioMediaFormat(MediaFormatAudioMimeType, Int32, Int32, Int32, Int32, MediaFormatAacType)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the AudioMediaFormat class with the specified mime type,
 channel, sample rate, bit, bit rate, and AAC type.</p>
@@ -282,6 +390,122 @@ channel, sample rate, bit, bit rate, and AAC type.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_AudioMediaFormat__ctor_" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor*"></a>
+  <h4 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_Tizen_Multimedia_MediaFormatAacType_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition__" data-uid="Tizen.Multimedia.AudioMediaFormat.#ctor(Tizen.Multimedia.MediaFormatAudioMimeType,System.Int32,System.Int32,System.Int32,System.Int32,Tizen.Multimedia.MediaFormatAacType,System.Int32,System.Collections.Generic.IList{Tizen.Multimedia.MediaFormatAudioChannelPosition})">AudioMediaFormat(MediaFormatAudioMimeType, Int32, Int32, Int32, Int32, MediaFormatAacType, Int32, IList&lt;MediaFormatAudioChannelPosition&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AudioMediaFormat class with the specified mime type,
+channel, sample rate, bit, bit rate, bit depth, and audio channel map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMediaFormat(MediaFormatAudioMimeType mimeType, int channel, int sampleRate, int bit, int bitRate, MediaFormatAacType aacType, int bitDepth, IList&lt;MediaFormatAudioChannelPosition&gt; audioChannelMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.MediaFormatAudioMimeType.html">MediaFormatAudioMimeType</a></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td><p>The mime type of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>The channel value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleRate</span></td>
+        <td><p>The sample rate value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bit</span></td>
+        <td><p>The bit value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bitRate</span></td>
+        <td><p>The bit rate value of the format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.MediaFormatAacType.html">MediaFormatAacType</a></td>
+        <td><span class="parametername">aacType</span></td>
+        <td><p>The AAC bitstream format(ADIF or ADTS).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">bitDepth</span></td>
+        <td><p>The bit depth value of the PCM audio format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html">MediaFormatAudioChannelPosition</a>&gt;</td>
+        <td><span class="parametername">audioChannelMap</span></td>
+        <td><p>The loudspeaker position in PCM audio format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_Tizen_Multimedia_MediaFormatAacType_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> contains <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a>,
+<code data-dev-comment-type="paramref" class="paramref">channel</code> should be set greater than 0.<br>
+If <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> contains <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a>,
+<code data-dev-comment-type="paramref" class="paramref">channel</code> should be set 1.<br>
+User can not set <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a> with another channel positions.<br>
+User can not set <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a> with another channel positions.<br>
+If same channel position is added in <code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> more than twice, its duplicaiton will be removed.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioMediaFormat__ctor_Tizen_Multimedia_MediaFormatAudioMimeType_System_Int32_System_Int32_System_Int32_System_Int32_Tizen_Multimedia_MediaFormatAacType_System_Int32_System_Collections_Generic_IList_Tizen_Multimedia_MediaFormatAudioChannelPosition___sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mimeType</code> or <code data-dev-comment-type="paramref" class="paramref">aacType</code> is invalid (i.e. undefined value).<br>
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">aacType</code> is not <a class="xref" href="Tizen.Multimedia.MediaFormatAacType.html#Tizen_Multimedia_MediaFormatAacType_None">None</a>, but <code data-dev-comment-type="paramref" class="paramref">mimeType</code> is one of the AAC types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is invalid or mismatched with <code data-dev-comment-type="paramref" class="paramref">channel</code> like the following:<br>
+<code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is not matched correctly with <code data-dev-comment-type="paramref" class="paramref">channel</code>.
+-or-<br>
+<code data-dev-comment-type="paramref" class="paramref">audioChannelMap</code> is set to <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Invaild">Invaild</a>.
+-or-<br>
+<a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_Mono">Mono</a> or <a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html#Tizen_Multimedia_MediaFormatAudioChannelPosition_None">None</a> is set with another channel position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">channel</code>, <code data-dev-comment-type="paramref" class="paramref">sampleRate</code>, <code data-dev-comment-type="paramref" class="paramref">bit</code>, or <code data-dev-comment-type="paramref" class="paramref">bitRate</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="Tizen_Multimedia_AudioMediaFormat_AacType_" data-uid="Tizen.Multimedia.AudioMediaFormat.AacType*"></a>
@@ -312,6 +536,43 @@ channel, sample rate, bit, bit rate, and AAC type.</p>
   <h5 id="Tizen_Multimedia_AudioMediaFormat_AacType_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_Multimedia_AudioMediaFormat_AudioChannelMap_" data-uid="Tizen.Multimedia.AudioMediaFormat.AudioChannelMap*"></a>
+  <h4 id="Tizen_Multimedia_AudioMediaFormat_AudioChannelMap" data-uid="Tizen.Multimedia.AudioMediaFormat.AudioChannelMap">AudioChannelMap</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the list of channel position value of PCM audio format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;MediaFormatAudioChannelPosition&gt; AudioChannelMap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1">ReadOnlyCollection</a>&lt;<a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html">MediaFormatAudioChannelPosition</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_AudioMediaFormat_AudioChannelMap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The channel mask specifies the mapping of channels to speakers.
+default value is 0.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_AudioMediaFormat_AudioChannelMap_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 id="Tizen_Multimedia_AudioMediaFormat_AudioChannelMap_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.AudioMediaFormat.html#Tizen_Multimedia_AudioMediaFormat_Channel">Channel</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.MediaFormatAudioChannelPosition.html">MediaFormatAudioChannelPosition</a></div>
+  </div>
   <a id="Tizen_Multimedia_AudioMediaFormat_Bit_" data-uid="Tizen.Multimedia.AudioMediaFormat.Bit*"></a>
   <h4 id="Tizen_Multimedia_AudioMediaFormat_Bit" data-uid="Tizen.Multimedia.AudioMediaFormat.Bit">Bit</h4>
   <div class="markdown level1 summary"><p>Gets the bit value of the current format.</p>
@@ -339,6 +600,34 @@ channel, sample rate, bit, bit rate, and AAC type.</p>
   
   <h5 id="Tizen_Multimedia_AudioMediaFormat_Bit_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_Multimedia_AudioMediaFormat_BitDepth_" data-uid="Tizen.Multimedia.AudioMediaFormat.BitDepth*"></a>
+  <h4 id="Tizen_Multimedia_AudioMediaFormat_BitDepth" data-uid="Tizen.Multimedia.AudioMediaFormat.BitDepth">BitDepth</h4>
+  <div class="markdown level1 summary"><p>Gets the bit depth value of the current format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BitDepth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_AudioMediaFormat_BitDepth_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_Multimedia_AudioMediaFormat_BitRate_" data-uid="Tizen.Multimedia.AudioMediaFormat.BitRate*"></a>
   <h4 id="Tizen_Multimedia_AudioMediaFormat_BitRate" data-uid="Tizen.Multimedia.AudioMediaFormat.BitRate">BitRate</h4>
