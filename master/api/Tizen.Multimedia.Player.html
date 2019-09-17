@@ -1392,6 +1392,56 @@ state.</p>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_EnableExportingAudioData_Tizen_Multimedia_AudioMediaFormat_Tizen_Multimedia_PlayerAudioExtractOption_">EnableExportingAudioData(AudioMediaFormat, PlayerAudioExtractOption)</a></div>
   </div>
+  <a id="Tizen_Multimedia_Player_DisableExportingVideoFrame_" data-uid="Tizen.Multimedia.Player.DisableExportingVideoFrame*"></a>
+  <h4 id="Tizen_Multimedia_Player_DisableExportingVideoFrame" data-uid="Tizen.Multimedia.Player.DisableExportingVideoFrame">DisableExportingVideoFrame()</h4>
+  <div class="markdown level1 summary"><p>Disables to decode a video data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableExportingVideoFrame()</code></pre>
+  </div>
+  <h5 id="Tizen_Multimedia_Player_DisableExportingVideoFrame_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>
+state.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_DisableExportingVideoFrame_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Player_DisableExportingVideoFrame_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/multimedia.raw_video">http://tizen.org/feature/multimedia.raw_video</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>The required feature is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The player is not in the valid state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_DisableExportingVideoFrame_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_EnableExportingVideoFrame">EnableExportingVideoFrame()</a></div>
+  </div>
   <a id="Tizen_Multimedia_Player_Dispose_" data-uid="Tizen.Multimedia.Player.Dispose*"></a>
   <h4 id="Tizen_Multimedia_Player_Dispose" data-uid="Tizen.Multimedia.Player.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Releases all resources used by the current instance.</p>
@@ -1486,6 +1536,64 @@ If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.Au
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.PlayerAudioExtractOption.html">PlayerAudioExtractOption</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_DisableExportingAudioData">DisableExportingAudioData()</a></div>
+  </div>
+  <a id="Tizen_Multimedia_Player_EnableExportingVideoFrame_" data-uid="Tizen.Multimedia.Player.EnableExportingVideoFrame*"></a>
+  <h4 id="Tizen_Multimedia_Player_EnableExportingVideoFrame" data-uid="Tizen.Multimedia.Player.EnableExportingVideoFrame">EnableExportingVideoFrame()</h4>
+  <div class="markdown level1 summary"><p>Enables to decode a video data for every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableExportingVideoFrame()</code></pre>
+  </div>
+  <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.
+    And, <a class="xref" href="Tizen.Multimedia.Display.html">Display</a> must not be set.</p>
+<p>A <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event is called in a separate thread(not in the main loop).</p>
+<p>The video frame can be retrieved using a <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event as a media packet.
+So if you change the media packet in the <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event, it will be displayed on the device.
+The callback function holds the same buffer that will be drawn on the display device.
+and the <a class="xref" href="Tizen.Multimedia.MediaPacket.html">MediaPacket</a> is available until it&apos;s destroyed by <a class="xref" href="Tizen.Multimedia.MediaPacket.html#Tizen_Multimedia_MediaPacket_Dispose">Dispose()</a>.
+The packet has to be destroyed as quickly as possible after rendering the data
+and all the packets have to be destroyed before <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Unprepare">Unprepare()</a> is called.</p></div>
+  
+  <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/multimedia.raw_video">http://tizen.org/feature/multimedia.raw_video</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>The required feature is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Operation failed; internal error.
+-or-<br>
+The player is not in the valid state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_DisableExportingVideoFrame">DisableExportingVideoFrame()</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_GetDownloadProgress_" data-uid="Tizen.Multimedia.Player.GetDownloadProgress*"></a>
   <h4 id="Tizen_Multimedia_Player_GetDownloadProgress" data-uid="Tizen.Multimedia.Player.GetDownloadProgress">GetDownloadProgress()</h4>
