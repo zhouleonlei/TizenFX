@@ -89,7 +89,8 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">PropertyValue</span></div>
+    <div class="level1"><a class="xref" href="Tizen.NUI.Disposable.html">Disposable</a></div>
+    <div class="level2"><span class="xref">PropertyValue</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -97,6 +98,12 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Tizen.NUI.Disposable.html#Tizen_NUI_Disposable_disposed">Disposable.disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="Tizen.NUI.Disposable.html#Tizen_NUI_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
     </div>
@@ -120,7 +127,7 @@
   <h6><strong>Assembly</strong>: Tizen.NUI.dll</h6>
   <h5 id="Tizen_NUI_PropertyValue_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PropertyValue : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class PropertyValue : Disposable, IDisposable</code></pre>
   </div>
   
   
@@ -699,33 +706,6 @@
   
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Tizen_NUI_PropertyValue_disposed" data-uid="Tizen.NUI.PropertyValue.disposed">disposed</h4>
-  <div class="markdown level1 summary"><p>A Flat to check if it is already disposed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool disposed</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h5 id="Tizen_NUI_PropertyValue_disposed_sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">3 </span>
-  
   <h4 id="Tizen_NUI_PropertyValue_swigCMemOwn" data-uid="Tizen.NUI.PropertyValue.swigCMemOwn">swigCMemOwn</h4>
   <div class="markdown level1 summary"><p>swigCMemOwn</p>
 </div>
@@ -804,26 +784,13 @@ Property value from a C# object, for example, integer, float, or string.<br></p>
   <span class="level1 sinceTizen">3 </span>
   
   <a id="Tizen_NUI_PropertyValue_Dispose_" data-uid="Tizen.NUI.PropertyValue.Dispose*"></a>
-  <h4 id="Tizen_NUI_PropertyValue_Dispose" data-uid="Tizen.NUI.PropertyValue.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Dispose.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
-  
-  <h5 id="Tizen_NUI_PropertyValue_Dispose_sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">3 </span>
-  
-  <a id="Tizen_NUI_PropertyValue_Dispose_" data-uid="Tizen.NUI.PropertyValue.Dispose*"></a>
   <h4 id="Tizen_NUI_PropertyValue_Dispose_Tizen_NUI_DisposeTypes_" data-uid="Tizen.NUI.PropertyValue.Dispose(Tizen.NUI.DisposeTypes)">Dispose(DisposeTypes)</h4>
   <div class="markdown level1 summary"><p>Dispose.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void Dispose(DisposeTypes type)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Dispose(DisposeTypes type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -842,21 +809,10 @@ Property value from a C# object, for example, integer, float, or string.<br></p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Tizen.NUI.Disposable.html#Tizen_NUI_Disposable_Dispose_Tizen_NUI_DisposeTypes_">Disposable.Dispose(DisposeTypes)</a></div>
   
   <h5 id="Tizen_NUI_PropertyValue_Dispose_Tizen_NUI_DisposeTypes__sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">3 </span>
-  
-  <a id="Tizen_NUI_PropertyValue_Finalize_" data-uid="Tizen.NUI.PropertyValue.Finalize*"></a>
-  <h4 id="Tizen_NUI_PropertyValue_Finalize" data-uid="Tizen.NUI.PropertyValue.Finalize">Finalize()</h4>
-  <div class="markdown level1 summary"><p>Dispose.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
-  </div>
-  
-  <h5 id="Tizen_NUI_PropertyValue_Finalize_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
   <a id="Tizen_NUI_PropertyValue_Get_" data-uid="Tizen.NUI.PropertyValue.Get*"></a>

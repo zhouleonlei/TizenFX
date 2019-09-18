@@ -83,7 +83,7 @@
   
   <h1 id="Tizen_Multimedia_AudioOffload" data-uid="Tizen.Multimedia.AudioOffload" class="text-break">Class AudioOffload
   </h1>
-  <div class="markdown level0 summary"><p>Provides the ability to control the audio offload for <a class="xref" href="Tizen.Multimedia.Player.html">Player</a>.</p>
+  <div class="markdown level0 summary"><p>The class that control the audio offload for <a class="xref" href="Tizen.Multimedia.Player.html">Player</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -151,7 +151,7 @@
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_AudioOffload_IsActivated_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Audio offload could be inactivated depending on the audio device capability even if the audio offload feature is supported.
+  <div class="markdown level1 remarks"><p>Audio offload could be inactivated depending on the audio device capability even though the audio offload feature is supported.
 The <a class="xref" href="Tizen.Multimedia.Player.html">Player</a> that owns this instance must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>,
 <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>, or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.</p>
 </div>
@@ -210,17 +210,16 @@ Operation failed; internal error.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>The value indicating whether or not AudioOffload is enabled. The default value is false.</p>
+        <td><p>The value indicating whether or not audio offload is enabled. The default value is false.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_AudioOffload_IsEnabled_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The player lets the hardware decode and render the sound if the audio offload is enabled.
-    This will reduce the power consumption, but will disable the ability to handle output PCM.
+    Audio offload can reduce the power consumption, but disable the ability to handle output PCM.
     Please check the below list of functions which will not work if offloading is enabled.</p>
-<p>If audio offload is enabled, the following functions will return <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a>
-and they will not work at all even if they were called before offload is enabled.<br>
+<p>If audio offload is enabled, the following functions will return <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a>: <br>
 <a class="xref" href="Tizen.Multimedia.AudioEffect.html">AudioEffect</a><br>
 <a class="xref" href="Tizen.Multimedia.EqualizerBand.html">EqualizerBand</a><br>
 <a class="xref" href="Tizen.Multimedia.PlayerTrackInfo.html">PlayerTrackInfo</a><br>
@@ -230,6 +229,7 @@ and they will not work at all even if they were called before offload is enabled
 <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_ReplayGain">ReplayGain</a><br>
 <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitch">AudioPitch</a><br>
 <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitchEnabled">AudioPitchEnabled</a><br></p>
+<p>Although they are called before offload is enabled, they don&apos;t work normally.</p>
 <p>To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.
 The sound stream type of the player should be <a class="xref" href="Tizen.Multimedia.AudioStreamType.html#Tizen_Multimedia_AudioStreamType_Media">Media</a>.</p></div>
   
@@ -269,7 +269,7 @@ Operation failed; internal error.</p>
   </table>
   <a id="Tizen_Multimedia_AudioOffload_SupportedFormats_" data-uid="Tizen.Multimedia.AudioOffload.SupportedFormats*"></a>
   <h4 id="Tizen_Multimedia_AudioOffload_SupportedFormats" data-uid="Tizen.Multimedia.AudioOffload.SupportedFormats">SupportedFormats</h4>
-  <div class="markdown level1 summary"><p>Retrieves all formats for audio offload.</p>
+  <div class="markdown level1 summary"><p>Retrieves the supported audio formats for audio offload.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -287,7 +287,7 @@ Operation failed; internal error.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Multimedia.MediaFormatAudioMimeType.html">MediaFormatAudioMimeType</a>&gt;</td>
-        <td><p>It returns a list contained all formats for audio offload.</p>
+        <td><p>It returns a list containing supported audio formats for audio offload.</p>
 </td>
       </tr>
     </tbody>
