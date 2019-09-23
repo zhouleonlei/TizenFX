@@ -171,6 +171,90 @@ The window has an orientation and indicator properties.<br></p>
   </div>
   
   
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Tizen_NUI_Window__ctor_" data-uid="Tizen.NUI.Window.#ctor*"></a>
+  <h4 id="Tizen_NUI_Window__ctor_System_String_Tizen_NUI_Rectangle_System_Boolean_" data-uid="Tizen.NUI.Window.#ctor(System.String,Tizen.NUI.Rectangle,System.Boolean)">Window(String, Rectangle, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Window.<br>
+This creates an extra window in addition to the default main window<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window(string name, Rectangle windowPosition = null, bool isTranslucent = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name for extra window. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">windowPosition</span></td>
+        <td><p>The position and size of the Window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isTranslucent</span></td>
+        <td><p>Whether Window is translucent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window__ctor_System_String_Tizen_NUI_Rectangle_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_NUI_Window__ctor_" data-uid="Tizen.NUI.Window.#ctor*"></a>
+  <h4 id="Tizen_NUI_Window__ctor_Tizen_NUI_Rectangle_System_Boolean_" data-uid="Tizen.NUI.Window.#ctor(Tizen.NUI.Rectangle,System.Boolean)">Window(Rectangle, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Window.<br>
+This creates an extra window in addition to the default main window<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window(Rectangle windowPosition = null, bool isTranslucent = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">windowPosition</span></td>
+        <td><p>The position and size of the Window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isTranslucent</span></td>
+        <td><p>Whether Window is translucent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window__ctor_Tizen_NUI_Rectangle_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <h3 id="properties">Properties
   </h3>
   <a id="Tizen_NUI_Window_BackgroundColor_" data-uid="Tizen.NUI.Window.BackgroundColor*"></a>
@@ -555,6 +639,37 @@ Queries the number of on-Window layers.<br></p>
   <h5 id="Tizen_NUI_Window_AddAuxiliaryHint_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_Window_AddAvailableOrientation_" data-uid="Tizen.NUI.Window.AddAvailableOrientation*"></a>
+  <h4 id="Tizen_NUI_Window_AddAvailableOrientation_Tizen_NUI_Window_WindowOrientation_" data-uid="Tizen.NUI.Window.AddAvailableOrientation(Tizen.NUI.Window.WindowOrientation)">AddAvailableOrientation(Window.WindowOrientation)</h4>
+  <div class="markdown level1 summary"><p>Adds an orientation to the list of available orientations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAvailableOrientation(Window.WindowOrientation orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.WindowOrientation.html">Window.WindowOrientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The available orientation to add</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_AddAvailableOrientation_Tizen_NUI_Window_WindowOrientation__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_NUI_Window_AddLayer_" data-uid="Tizen.NUI.Window.AddLayer*"></a>
   <h4 id="Tizen_NUI_Window_AddLayer_Tizen_NUI_Layer_" data-uid="Tizen.NUI.Window.AddLayer(Tizen.NUI.Layer)">AddLayer(Layer)</h4>
   <div class="markdown level1 summary"><p>Adds a layer to the stage.</p>
@@ -929,6 +1044,64 @@ public static void FeedKeyEvent(Key keyEvent)</code></pre>
   
   <h5 id="Tizen_NUI_Window_GetNotificationLevel_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_NUI_Window_GetParent_" data-uid="Tizen.NUI.Window.GetParent*"></a>
+  <h4 id="Tizen_NUI_Window_GetParent" data-uid="Tizen.NUI.Window.GetParent">GetParent()</h4>
+  <div class="markdown level1 summary"><p>Gets parent window of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window GetParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.html">Window</a></td>
+        <td><p>The parent window of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_GetParent_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_NUI_Window_GetPreferredOrientation_" data-uid="Tizen.NUI.Window.GetPreferredOrientation*"></a>
+  <h4 id="Tizen_NUI_Window_GetPreferredOrientation" data-uid="Tizen.NUI.Window.GetPreferredOrientation">GetPreferredOrientation()</h4>
+  <div class="markdown level1 summary"><p>Gets the preferred orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Window.WindowOrientation GetPreferredOrientation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.WindowOrientation.html">Window.WindowOrientation</a></td>
+        <td><p>The preferred orientation if previously set, or none.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_GetPreferredOrientation_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_NUI_Window_GetScreenOffMode_" data-uid="Tizen.NUI.Window.GetScreenOffMode*"></a>
   <h4 id="Tizen_NUI_Window_GetScreenOffMode" data-uid="Tizen.NUI.Window.GetScreenOffMode">GetScreenOffMode()</h4>
@@ -1383,6 +1556,37 @@ This function can be used for following example scenarios: <br></p>
   <h5 id="Tizen_NUI_Window_RemoveAuxiliaryHint_System_UInt32__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_Window_RemoveAvailableOrientation_" data-uid="Tizen.NUI.Window.RemoveAvailableOrientation*"></a>
+  <h4 id="Tizen_NUI_Window_RemoveAvailableOrientation_Tizen_NUI_Window_WindowOrientation_" data-uid="Tizen.NUI.Window.RemoveAvailableOrientation(Tizen.NUI.Window.WindowOrientation)">RemoveAvailableOrientation(Window.WindowOrientation)</h4>
+  <div class="markdown level1 summary"><p>Removes an orientation from the list of available orientations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAvailableOrientation(Window.WindowOrientation orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.WindowOrientation.html">Window.WindowOrientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The available orientation to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_RemoveAvailableOrientation_Tizen_NUI_Window_WindowOrientation__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_NUI_Window_RemoveLayer_" data-uid="Tizen.NUI.Window.RemoveLayer*"></a>
   <h4 id="Tizen_NUI_Window_RemoveLayer_Tizen_NUI_Layer_" data-uid="Tizen.NUI.Window.RemoveLayer(Tizen.NUI.Layer)">RemoveLayer(Layer)</h4>
   <div class="markdown level1 summary"><p>Removes a layer from the stage.</p>
@@ -1764,6 +1968,71 @@ It doesn&apos;t change transparent window to opaque window but lets the window m
   <h5 id="Tizen_NUI_Window_SetOpaqueState_System_Boolean__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_Window_SetParent_" data-uid="Tizen.NUI.Window.SetParent*"></a>
+  <h4 id="Tizen_NUI_Window_SetParent_Tizen_NUI_Window_" data-uid="Tizen.NUI.Window.SetParent(Tizen.NUI.Window)">SetParent(Window)</h4>
+  <div class="markdown level1 summary"><p>Sets parent window of the window.
+After setting that, these windows do together when raise-up, lower and iconified/deiconified.
+Initially, the window is located on top of the parent. The window can go below parent by calling Lower().
+If parent&apos;s window stack is changed by calling Raise() or Lower(), child windows are located on top of the parent again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParent(Window parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.html">Window</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_SetParent_Tizen_NUI_Window__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_NUI_Window_SetPreferredOrientation_" data-uid="Tizen.NUI.Window.SetPreferredOrientation*"></a>
+  <h4 id="Tizen_NUI_Window_SetPreferredOrientation_Tizen_NUI_Window_WindowOrientation_" data-uid="Tizen.NUI.Window.SetPreferredOrientation(Tizen.NUI.Window.WindowOrientation)">SetPreferredOrientation(Window.WindowOrientation)</h4>
+  <div class="markdown level1 summary"><p>Sets a preferred orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredOrientation(Window.WindowOrientation orientation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.Window.WindowOrientation.html">Window.WindowOrientation</a></td>
+        <td><span class="parametername">orientation</span></td>
+        <td><p>The preferred orientation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_Window_SetPreferredOrientation_Tizen_NUI_Window_WindowOrientation__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_NUI_Window_SetScreenOffMode_" data-uid="Tizen.NUI.Window.SetScreenOffMode*"></a>
   <h4 id="Tizen_NUI_Window_SetScreenOffMode_Tizen_NUI_ScreenOffMode_" data-uid="Tizen.NUI.Window.SetScreenOffMode(Tizen.NUI.ScreenOffMode)">SetScreenOffMode(ScreenOffMode)</h4>
   <div class="markdown level1 summary"><p>Sets a window&apos;s screen off mode.</p>
@@ -1950,6 +2219,20 @@ Note: If this function is called between key down and up events of a grabbed key
   
   <h5 id="Tizen_NUI_Window_UngrabKeyTopmost_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_NUI_Window_Unparent_" data-uid="Tizen.NUI.Window.Unparent*"></a>
+  <h4 id="Tizen_NUI_Window_Unparent" data-uid="Tizen.NUI.Window.Unparent">Unparent()</h4>
+  <div class="markdown level1 summary"><p>Unsets parent window of the window.
+After unsetting, the window is disconnected his parent window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unparent()</code></pre>
+  </div>
+  
+  <h5 id="Tizen_NUI_Window_Unparent_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <h3 id="events">Events
   </h3>
