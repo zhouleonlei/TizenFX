@@ -19874,6 +19874,102 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.ApplicationStateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.ApplicationStateType.html",
+          "hash": "6R5PsnLWx/oJV1wFLzndPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.NetworkInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.NetworkInterface.html",
+          "hash": "sZirG5jV+F0GZr3zCudMdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.NetworkProtocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.NetworkProtocol.html",
+          "hash": "hFVeQtCX2o5duCVez0QmeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.NetworkStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.NetworkStatistics.html",
+          "hash": "HfuLj7JV1lQIlzXdHhNHlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.StatisticsFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.StatisticsFilter.html",
+          "hash": "pLhE2WhedH1Nmt8BinD3jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.StcManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.StcManager.html",
+          "hash": "GxCHq1mXkwQXca9/PmgANw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.TimePeriodType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.TimePeriodType.html",
+          "hash": "eOxSbT7BxmJIKqg+XpOWMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Network.Stc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Network.Stc.html",
+          "hash": "mHIyB4RL+cbM3WA3qXuQlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Network.WiFi.ConnectionStateChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -27258,7 +27354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SUwJ3Asts93XREH0pNW8LA=="
+          "hash": "PDbp4ePp78FLIw+ri5glpg=="
         }
       },
       "is_incremental": false,
@@ -27330,9 +27426,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -27343,9 +27439,9 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
