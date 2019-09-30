@@ -241,32 +241,6 @@
   <h5 id="Tizen_NUI_BaseComponents_View__ctor_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="Tizen_NUI_BaseComponents_View_FlexProperty" data-uid="Tizen.NUI.BaseComponents.View.FlexProperty">FlexProperty</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly BindableProperty FlexProperty</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Tizen.NUI.Binding.BindableProperty</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h3 id="properties">Properties
   </h3>
   <a id="Tizen_NUI_BaseComponents_View_AlignSelf_" data-uid="Tizen.NUI.BaseComponents.View.AlignSelf*"></a>
@@ -1014,6 +988,34 @@ When a view is connected, it will be directly or indirectly parented to the root
   <h5 id="Tizen_NUI_BaseComponents_View_IsOnWindow_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_BaseComponents_View_Layout_" data-uid="Tizen.NUI.BaseComponents.View.Layout*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_Layout" data-uid="Tizen.NUI.BaseComponents.View.Layout">Layout</h4>
+  <div class="markdown level1 summary"><p>Set the layout on this View. Replaces any existing Layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutItem Layout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.LayoutItem.html">LayoutItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_Layout_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_NUI_BaseComponents_View_LayoutDirection_" data-uid="Tizen.NUI.BaseComponents.View.LayoutDirection*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_LayoutDirection" data-uid="Tizen.NUI.BaseComponents.View.LayoutDirection">LayoutDirection</h4>
   <div class="markdown level1 summary"><p>Gets/Sets the layout Direction.</p>
@@ -1041,6 +1043,65 @@ When a view is connected, it will be directly or indirectly parented to the root
   
   <h5 id="Tizen_NUI_BaseComponents_View_LayoutDirection_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">4 </span>
+  
+  <a id="Tizen_NUI_BaseComponents_View_LayoutTransition_" data-uid="Tizen.NUI.BaseComponents.View.LayoutTransition*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_LayoutTransition" data-uid="Tizen.NUI.BaseComponents.View.LayoutTransition">LayoutTransition</h4>
+  <div class="markdown level1 summary"><p>Set a layout transitions for this View.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutTransition LayoutTransition { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.NUI.LayoutTransition.html">LayoutTransition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_LayoutTransition_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use LayoutTransitions to receive a collection of LayoutTransitions set on the View.</p>
+</div>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_LayoutTransition_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <a id="Tizen_NUI_BaseComponents_View_LayoutTransitions_" data-uid="Tizen.NUI.BaseComponents.View.LayoutTransitions*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_LayoutTransitions" data-uid="Tizen.NUI.BaseComponents.View.LayoutTransitions">LayoutTransitions</h4>
+  <div class="markdown level1 summary"><p>Gets the List of transitions for this View.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TransitionCondition, TransitionList&gt; LayoutTransitions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Tizen.NUI.TransitionCondition.html">TransitionCondition</a>, <a class="xref" href="Tizen.NUI.TransitionList.html">TransitionList</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_LayoutTransitions_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_NUI_BaseComponents_View_LeaveRequired_" data-uid="Tizen.NUI.BaseComponents.View.LeaveRequired*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_LeaveRequired" data-uid="Tizen.NUI.BaseComponents.View.LeaveRequired">LeaveRequired</h4>
@@ -2300,6 +2361,34 @@ This is regardless of the individual visibility values of the children, i.e., th
   <h5 id="Tizen_NUI_BaseComponents_View_Visibility_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
+  <a id="Tizen_NUI_BaseComponents_View_Weight_" data-uid="Tizen.NUI.BaseComponents.View.Weight*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_Weight" data-uid="Tizen.NUI.BaseComponents.View.Weight">Weight</h4>
+  <div class="markdown level1 summary"><p>The weight of the View, used to share available space in a layout with siblings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Weight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_Weight_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
   <a id="Tizen_NUI_BaseComponents_View_WidthForHeight_" data-uid="Tizen.NUI.BaseComponents.View.WidthForHeight*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_WidthForHeight" data-uid="Tizen.NUI.BaseComponents.View.WidthForHeight">WidthForHeight</h4>
   <div class="markdown level1 summary"><p>Gets or sets the status of whether the width size is dependent on the height size.</p>
@@ -2355,6 +2444,34 @@ This is regardless of the individual visibility values of the children, i.e., th
   
   <h5 id="Tizen_NUI_BaseComponents_View_WidthResizePolicy_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
+  
+  <a id="Tizen_NUI_BaseComponents_View_WidthSpecification_" data-uid="Tizen.NUI.BaseComponents.View.WidthSpecification*"></a>
+  <h4 id="Tizen_NUI_BaseComponents_View_WidthSpecification" data-uid="Tizen.NUI.BaseComponents.View.WidthSpecification">WidthSpecification</h4>
+  <div class="markdown level1 summary"><p>The required policy for this dimension, LayoutParamPolicies enum or exact value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WidthSpecification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_NUI_BaseComponents_View_WidthSpecification_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <a id="Tizen_NUI_BaseComponents_View_WorldColor_" data-uid="Tizen.NUI.BaseComponents.View.WorldColor*"></a>
   <h4 id="Tizen_NUI_BaseComponents_View_WorldColor" data-uid="Tizen.NUI.BaseComponents.View.WorldColor">WorldColor</h4>
