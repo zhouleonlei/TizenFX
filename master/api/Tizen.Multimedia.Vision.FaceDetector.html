@@ -121,6 +121,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class FaceDetector</code></pre>
   </div>
+  <h5 id="Tizen_Multimedia_Vision_FaceDetector_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If you want to use face detection based on inference engine(<a class="xref" href="Tizen.Multimedia.Vision.InferenceBackendType.html">InferenceBackendType</a>),
+please use <a class="xref" href="Tizen.Multimedia.Vision.FaceDetector.html#Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration_">DetectAsync(MediaVisionSource, InferenceModelConfiguration)</a>.</p>
+</div>
   
   
   <h3 id="methods">Methods
@@ -277,6 +281,103 @@ Each time when DetectAsync is called, a set of the detected faces at the media s
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_" data-uid="Tizen.Multimedia.Vision.FaceDetector.DetectAsync*"></a>
+  <h4 id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration_" data-uid="Tizen.Multimedia.Vision.FaceDetector.DetectAsync(Tizen.Multimedia.Vision.MediaVisionSource,Tizen.Multimedia.Vision.InferenceModelConfiguration)">DetectAsync(MediaVisionSource, InferenceModelConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Detects faces on the source image using inference engine set in <code data-dev-comment-type="paramref" class="paramref">config</code>.<br>
+Each time when DetectAsync is called, a set of the detected faces at the media source are received asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;IEnumerable&lt;FaceDetectionResult&gt;&gt; DetectAsync(MediaVisionSource source, InferenceModelConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Vision.MediaVisionSource.html">MediaVisionSource</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source of the media where faces will be detected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Vision.InferenceModelConfiguration.html">InferenceModelConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The engine&apos;s configuration that will be used for detecting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Multimedia.Vision.FaceDetectionResult.html">FaceDetectionResult</a>&gt;&gt;</td>
+        <td><p>A task that represents the asynchronous detect operation.<br>
+If there&apos;s no detected face, empty collection will be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If there&apos;s no detected face, empty collection will be returned.</p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration__sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration__feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/vision.inference">http://tizen.org/feature/vision.inference</a><br>
+<a href="http://tizen.org/feature/vision.inference.face">http://tizen.org/feature/vision.inference.face</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">source</code> or <code data-dev-comment-type="paramref" class="paramref">config</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Internal error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>The feature is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>The caller has no required privilege.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Vision_FaceDetector_DetectAsync_Tizen_Multimedia_Vision_MediaVisionSource_Tizen_Multimedia_Vision_InferenceModelConfiguration__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Vision.InferenceModelConfiguration.html">InferenceModelConfiguration</a></div>
+  </div>
 </article>
           </div>
           

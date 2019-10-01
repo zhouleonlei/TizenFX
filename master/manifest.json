@@ -4218,7 +4218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ComponentBased.Common.IWindowInfo.html",
-          "hash": "76O0FeJQ351xqhJeFbjOTw=="
+          "hash": "2PifSrTnZEVKQsvW7A94rA=="
         }
       },
       "is_incremental": false,
@@ -4326,7 +4326,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Applications.ComponentBased.Default.EFLWindowInfo.html",
-          "hash": "bFy7tXYOFtfLbAd+gbXhag=="
+          "hash": "c++AhpQzIjEzbR+KyG2STA=="
         }
       },
       "is_incremental": false,
@@ -9510,7 +9510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.AudioEffect.html",
-          "hash": "MmkPAF+/YjgVIy6GPRHidA=="
+          "hash": "gUaJ9+CYD9wzH4yqnIyJPQ=="
         }
       },
       "is_incremental": false,
@@ -10298,6 +10298,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.CodecType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.CodecType.html",
+          "hash": "Onghr5s7dmiVE8wwjk1HMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.ColorSpace.yml",
       "output": {
         ".html": {
@@ -10958,6 +10970,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.NotAvailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.NotAvailableException.html",
+          "hash": "7qmK/HcqV0ED66mRiHFSMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.PlaneType.yml",
       "output": {
         ".html": {
@@ -10998,7 +11022,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Player.html",
-          "hash": "lH2899BiviyzniCjaxIv8Q=="
+          "hash": "2HKfXgQV0lnHiLz1Z3yZVw=="
         }
       },
       "is_incremental": false,
@@ -13110,7 +13134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Vision.EngineConfiguration.html",
-          "hash": "8EosIB72Rb91WsNQoL76Ew=="
+          "hash": "77EIk9gQFXE0fRZzcJiQ4g=="
         }
       },
       "is_incremental": false,
@@ -13154,11 +13178,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.FaceDetectionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.FaceDetectionResult.html",
+          "hash": "j6rBeIO+oXoQeXRKt7u8BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Vision.FaceDetector.yml",
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Vision.FaceDetector.html",
-          "hash": "9IgQz8CIHEDgxP9EXHmHDg=="
+          "hash": "kiTh93k2LbafneSWFBkYLw=="
         }
       },
       "is_incremental": false,
@@ -13274,6 +13310,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.FacialLandmarkDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.FacialLandmarkDetector.html",
+          "hash": "0MFiitnT/I2ZTELPAELUZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.ImageClassificationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.ImageClassificationResult.html",
+          "hash": "TAgJT8IU3q1NU1XE3EamdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.ImageClassifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.ImageClassifier.html",
+          "hash": "SM1AMZoe+wSdMqvf5onv2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Vision.ImageFillConfiguration.yml",
       "output": {
         ".html": {
@@ -13370,6 +13442,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.InferenceBackendType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.InferenceBackendType.html",
+          "hash": "XF1/TntFXiSE0MFvtO++kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.InferenceModelConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.InferenceModelConfiguration.html",
+          "hash": "uSFRdNXmlNz63bg1PJu+fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.InferenceTargetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.InferenceTargetType.html",
+          "hash": "jtadEcYKqoK8IpFvfrU+gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.Multimedia.Vision.MediaVisionSource.yml",
       "output": {
         ".html": {
@@ -13411,6 +13519,30 @@
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Vision.MovementDetector.html",
           "hash": "6mAZYeFbyf6Cz896ZtRDMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.ObjectDetectionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.ObjectDetectionResult.html",
+          "hash": "iNHh89tbM7etqe6vqRc2Fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.Multimedia.Vision.ObjectDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.Multimedia.Vision.ObjectDetector.html",
+          "hash": "MXCXD0bc29evCeYTGAECWg=="
         }
       },
       "is_incremental": false,
@@ -13578,7 +13710,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.Vision.html",
-          "hash": "ilMQvyoQR65Lg8q6YSfuAQ=="
+          "hash": "30V3KJZO49u1neRBZwIJIw=="
         }
       },
       "is_incremental": false,
@@ -13626,7 +13758,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Multimedia.html",
-          "hash": "tOXlEfFtHRPqiMLHX8ugUA=="
+          "hash": "1SkRKw6s/HWVNKIt5QZnkA=="
         }
       },
       "is_incremental": false,
@@ -24090,7 +24222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.AccessibilityGrayscaleChangedEventArgs.html",
-          "hash": "fsQnh/gdr05h2mHI7eu5Wg=="
+          "hash": "N+BZvMr0FAwNv7NpPg+n6Q=="
         }
       },
       "is_incremental": false,
@@ -24102,7 +24234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.AccessibilityNegativeColorChangedEventArgs.html",
-          "hash": "sl7va1aUOOuo1hKKiW2+xg=="
+          "hash": "pk7Eiudz58MKu2IGQDL/7Q=="
         }
       },
       "is_incremental": false,
@@ -24662,6 +24794,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.System.RotaryEventEnabledChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.System.RotaryEventEnabledChangedEventArgs.html",
+          "hash": "+8ISUcsIa5gr3T+pTZJrfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Tizen.System.RuntimeFeatureStatusChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -24834,7 +24978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.SystemSettings.html",
-          "hash": "Miue44ZGFR7eVaMl7ap8jA=="
+          "hash": "vUwPZ+0CeQ2lubS+ZZF2RA=="
         }
       },
       "is_incremental": false,
@@ -24870,7 +25014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.SystemSettingsKeys.html",
-          "hash": "uy1uQ3xL1hEn49KIrcZHLQ=="
+          "hash": "2c/i9+rd5fjhY1W9fRk4fQ=="
         }
       },
       "is_incremental": false,
@@ -25194,7 +25338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.System.html",
-          "hash": "/W2czYU23hb7Jn2idnVqiQ=="
+          "hash": "7Y1o4pdBp+kY3ICaQyfmDQ=="
         }
       },
       "is_incremental": false,
@@ -27570,7 +27714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qNmIJbFbcXNtHGRFWris2Q=="
+          "hash": "ceDkYDN3rFSCGzy+WIURlQ=="
         }
       },
       "is_incremental": false,
@@ -27642,6 +27786,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -27653,11 +27802,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

@@ -177,6 +177,82 @@ Note that only one video player can be played at one time.</p>
   <h5 id="Tizen_Multimedia_Player_AdaptiveVariants_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
   
+  <a id="Tizen_Multimedia_Player_AudioCodecType_" data-uid="Tizen.Multimedia.Player.AudioCodecType*"></a>
+  <h4 id="Tizen_Multimedia_Player_AudioCodecType" data-uid="Tizen.Multimedia.Player.AudioCodecType">AudioCodecType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default codec type of the audio decoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CodecType AudioCodecType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.CodecType.html">CodecType</a></td>
+        <td><p>A <a class="xref" href="Tizen.Multimedia.CodecType.html">CodecType</a> that specifies the type.
+The default codec type could be different depending on the device capability.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_Multimedia_Player_AudioCodecType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.</p>
+<p>If H/W audio codec type is not supported in some cases, S/W audio codec type could be used instead.</p>
+<p>The availability could be changed depending on the codec capability.
+If an application wants to use the H/W audio codec type as default,
+following functions should be called after the codec type is set. :<br>
+<a class="xref" href="Tizen.Multimedia.AudioEffect.html#Tizen_Multimedia_AudioEffect_IsAvailable">IsAvailable</a><br>
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_EnableExportingAudioData_Tizen_Multimedia_AudioMediaFormat_Tizen_Multimedia_PlayerAudioExtractOption_">EnableExportingAudioData(AudioMediaFormat, PlayerAudioExtractOption)</a><br>
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_DisableExportingAudioData">DisableExportingAudioData()</a><br>
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_ReplayGain">ReplayGain</a><br>
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitch">AudioPitch</a><br>
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitchEnabled">AudioPitchEnabled</a><br></p>
+</div>
+  
+  <h5 id="Tizen_Multimedia_Player_AudioCodecType_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The player has already been disposed of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>The value is not valid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The player is not in the valid state.
+-or-<br>
+Operation failed; internal error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.CodecNotSupportedException.html">CodecNotSupportedException</a></td>
+        <td><p>The selected codec is not supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Player_AudioEffect_" data-uid="Tizen.Multimedia.Player.AudioEffect*"></a>
   <h4 id="Tizen_Multimedia_Player_AudioEffect" data-uid="Tizen.Multimedia.Player.AudioEffect">AudioEffect</h4>
   <div class="markdown level1 summary"><p>Gets the audio effect.</p>
@@ -339,7 +415,8 @@ But, state transition like pause or resume can be more slower than default(<a cl
   </table>
   <h5 id="Tizen_Multimedia_Player_AudioPitch_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Enabling pitch control could increase the CPU usage on some devices.
-This function is used for audio content only.</p>
+This function is used for audio content only.
+This function could be unavailable depending on the audio codec type.</p>
 </div>
   
   <h5 id="Tizen_Multimedia_Player_AudioPitch_sinceTizen" class="sinceTizen">API Version</h5>
@@ -373,11 +450,17 @@ If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.Au
 value is greater than 2.0.<br></p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a></td>
+        <td><p>The function is not available depending on the audio codec type. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_Player_AudioPitch_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitchEnabled">AudioPitchEnabled</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioCodecType">AudioCodecType</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_AudioPitchEnabled_" data-uid="Tizen.Multimedia.Player.AudioPitchEnabled*"></a>
   <h4 id="Tizen_Multimedia_Player_AudioPitchEnabled" data-uid="Tizen.Multimedia.Player.AudioPitchEnabled">AudioPitchEnabled</h4>
@@ -407,7 +490,8 @@ Gets the status of controlling the pitch of audio.</p>
   </table>
   <h5 id="Tizen_Multimedia_Player_AudioPitchEnabled_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This function is used for audio content only.
-To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.</p>
+To set, the player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.
+This function could be unavailable depending on the audio codec type.</p>
 </div>
   
   <h5 id="Tizen_Multimedia_Player_AudioPitchEnabled_sinceTizen" class="sinceTizen">API Version</h5>
@@ -434,11 +518,17 @@ If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.Au
         <td><p>The player has already been disposed of.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a></td>
+        <td><p>The function is not available depending on the audio codec type. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_Player_AudioPitchEnabled_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioPitch">AudioPitch</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioCodecType">AudioCodecType</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_AudioTrackInfo_" data-uid="Tizen.Multimedia.Player.AudioTrackInfo*"></a>
   <h4 id="Tizen_Multimedia_Player_AudioTrackInfo" data-uid="Tizen.Multimedia.Player.AudioTrackInfo">AudioTrackInfo</h4>
@@ -899,6 +989,9 @@ otherwise, the replaygain is not affected by tag and properties.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_Multimedia_Player_ReplayGain_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function could be unavailable depending on the audio codec type.</p>
+</div>
   
   <h5 id="Tizen_Multimedia_Player_ReplayGain_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
@@ -924,8 +1017,17 @@ otherwise, the replaygain is not affected by tag and properties.</p>
 If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a></td>
+        <td><p>The function is not available depending on the audio codec type. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_Multimedia_Player_ReplayGain_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioCodecType">AudioCodecType</a></div>
+  </div>
   <a id="Tizen_Multimedia_Player_SphericalVideo_" data-uid="Tizen.Multimedia.Player.SphericalVideo*"></a>
   <h4 id="Tizen_Multimedia_Player_SphericalVideo" data-uid="Tizen.Multimedia.Player.SphericalVideo">SphericalVideo</h4>
   <div class="markdown level1 summary"><p>Gets the spherical video settings.</p>
@@ -1361,7 +1463,8 @@ Supported types are <a class="xref" href="Tizen.Multimedia.AudioStreamType.html#
   </div>
   <h5 id="Tizen_Multimedia_Player_DisableExportingAudioData_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>
-state.</p>
+state.
+This function could be unavailable depending on the audio codec type.</p>
 </div>
   
   <h5 id="Tizen_Multimedia_Player_DisableExportingAudioData_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1386,11 +1489,17 @@ state.</p>
         <td><p>The player is not in the valid state.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a></td>
+        <td><p>The function is not available depending on the audio codec type. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_Player_DisableExportingAudioData_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_EnableExportingAudioData_Tizen_Multimedia_AudioMediaFormat_Tizen_Multimedia_PlayerAudioExtractOption_">EnableExportingAudioData(AudioMediaFormat, PlayerAudioExtractOption)</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioCodecType">AudioCodecType</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_DisableExportingVideoFrame_" data-uid="Tizen.Multimedia.Player.DisableExportingVideoFrame*"></a>
   <h4 id="Tizen_Multimedia_Player_DisableExportingVideoFrame" data-uid="Tizen.Multimedia.Player.DisableExportingVideoFrame">DisableExportingVideoFrame()</h4>
@@ -1497,7 +1606,8 @@ If the format is NULL, the original PCM format or platform default PCM format wi
 <p>The audio PCM data can be retrieved using a <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioDataDecoded">AudioDataDecoded</a> event as a media packet
 and it is available until it&apos;s destroyed by <a class="xref" href="Tizen.Multimedia.MediaPacket.html#Tizen_Multimedia_MediaPacket_Dispose">Dispose()</a>.
 The packet has to be destroyed as quickly as possible after rendering the data
-and all the packets have to be destroyed before <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Unprepare">Unprepare()</a> is called.</p></div>
+and all the packets have to be destroyed before <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Unprepare">Unprepare()</a> is called.</p>
+<p>This function could be unavailable depending on the audio codec type.</p></div>
   
   <h5 id="Tizen_Multimedia_Player_EnableExportingAudioData_Tizen_Multimedia_AudioMediaFormat_Tizen_Multimedia_PlayerAudioExtractOption__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">6 </span>
@@ -1530,12 +1640,18 @@ The player is not in the valid state.
 If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.AudioOffload.html#Tizen_Multimedia_AudioOffload_IsEnabled">IsEnabled</a>. (Since tizen 6.0)</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a></td>
+        <td><p>The function is not available depending on the audio codec type. (Since tizen 6.0)</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 id="Tizen_Multimedia_Player_EnableExportingAudioData_Tizen_Multimedia_AudioMediaFormat_Tizen_Multimedia_PlayerAudioExtractOption__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.PlayerAudioExtractOption.html">PlayerAudioExtractOption</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_DisableExportingAudioData">DisableExportingAudioData()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_AudioCodecType">AudioCodecType</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_EnableExportingVideoFrame_" data-uid="Tizen.Multimedia.Player.EnableExportingVideoFrame*"></a>
   <h4 id="Tizen_Multimedia_Player_EnableExportingVideoFrame" data-uid="Tizen.Multimedia.Player.EnableExportingVideoFrame">EnableExportingVideoFrame()</h4>
@@ -1547,15 +1663,15 @@ If audio offload is enabled by calling <a class="xref" href="Tizen.Multimedia.Au
     <pre><code class="lang-csharp hljs">public void EnableExportingVideoFrame()</code></pre>
   </div>
   <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.
-    And, <a class="xref" href="Tizen.Multimedia.Display.html">Display</a> must not be set.</p>
-<p>A <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event is called in a separate thread(not in the main loop).</p>
-<p>The video frame can be retrieved using a <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event as a media packet.
-So if you change the media packet in the <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event, it will be displayed on the device.
-The callback function holds the same buffer that will be drawn on the display device.
-and the <a class="xref" href="Tizen.Multimedia.MediaPacket.html">MediaPacket</a> is available until it&apos;s destroyed by <a class="xref" href="Tizen.Multimedia.MediaPacket.html#Tizen_Multimedia_MediaPacket_Dispose">Dispose()</a>.
-The packet has to be destroyed as quickly as possible after rendering the data
-and all the packets have to be destroyed before <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Unprepare">Unprepare()</a> is called.</p></div>
+  <div class="markdown level1 remarks"><p>The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state,
+    but <a class="xref" href="Tizen.Multimedia.Display.html">Display</a> must not be set.</p>
+<p>A <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event is called in a separate thread, not called in the main loop.</p>
+<p>The video frame can be retrieved using a <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event with a media packet parameter.
+If you change the media packet in the <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_VideoFrameDecoded">VideoFrameDecoded</a> event, it will be displayed on the device.
+The callback function holds the same buffer that is drawn on the display device.
+and the <a class="xref" href="Tizen.Multimedia.MediaPacket.html">MediaPacket</a> is available until it is destroyed by <a class="xref" href="Tizen.Multimedia.MediaPacket.html#Tizen_Multimedia_MediaPacket_Dispose">Dispose()</a>.
+It is recommended to destroy the packet as quickly as possible after the decoded data is rendered on the display.
+All the packets have to be destroyed before <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Unprepare">Unprepare()</a> is called.</p></div>
   
   <h5 id="Tizen_Multimedia_Player_EnableExportingVideoFrame_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">6 </span>

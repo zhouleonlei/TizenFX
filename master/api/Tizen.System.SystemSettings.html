@@ -1752,6 +1752,66 @@ If the value is false, the 12-hour clock is used.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Tizen_System_SystemSettings_RotaryEventEnabled_" data-uid="Tizen.System.SystemSettings.RotaryEventEnabled*"></a>
+  <h4 id="Tizen_System_SystemSettings_RotaryEventEnabled" data-uid="Tizen.System.SystemSettings.RotaryEventEnabled">RotaryEventEnabled</h4>
+  <div class="markdown level1 summary"><p>Indicates whether rotary event is enabled on the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RotaryEventEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabled_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="http://tizen.org/privilege/systemsettings.admin">http://tizen.org/privilege/systemsettings.admin</a> is needed only for setting value. When getting the value, it isn&apos;t needed.</p>
+</div>
+  
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabled_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabled_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">platform</span>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabled_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/systemsettings.admin">http://tizen.org/privilege/systemsettings.admin</a></p>
+</div>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabled_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/systemsetting">http://tizen.org/feature/systemsetting</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Not Supported feature</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>Thrown when application does not have privilege to access this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_System_SystemSettings_ScreenBacklightTime_" data-uid="Tizen.System.SystemSettings.ScreenBacklightTime*"></a>
   <h4 id="Tizen_System_SystemSettings_ScreenBacklightTime" data-uid="Tizen.System.SystemSettings.ScreenBacklightTime">ScreenBacklightTime</h4>
   <div class="markdown level1 summary"><p>Indicates the backlight time (in seconds). The following values can be used: 15, 30, 60, 120, 300, and 600.</p>
@@ -4077,6 +4137,65 @@ If the value is false, the 12-hour clock is used.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>Invalid operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>Thrown when application does not have privilege to access this method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged" data-uid="Tizen.System.SystemSettings.RotaryEventEnabledChanged">RotaryEventEnabledChanged</h4>
+  <div class="markdown level1 summary"><p>The RotaryEventEnabledChanged event is triggered when the RotaryEventEnabled value is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event EventHandler&lt;RotaryEventEnabledChangedEventArgs&gt; RotaryEventEnabledChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Tizen.System.RotaryEventEnabledChangedEventArgs.html">RotaryEventEnabledChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><a href="http://tizen.org/privilege/systemsettings.admin">http://tizen.org/privilege/systemsettings.admin</a> is needed only for setting value. When getting the value, it isn&apos;t needed.</p>
+</div>
+  
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged_privlevel" class="privlevel">Privilege Level</h5>
+  <span class="markdown level1 privlevel">platform</span>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged_privilege" class="privilege">Privilege</h5>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/systemsettings.admin">http://tizen.org/privilege/systemsettings.admin</a></p>
+</div>
+  <h5 id="Tizen_System_SystemSettings_RotaryEventEnabledChanged_feature" class="feature">Feature</h5>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/systemsetting">http://tizen.org/feature/systemsetting</a></p>
+</div>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
+        <td><p>Not Supported feature</p>
 </td>
       </tr>
       <tr>
