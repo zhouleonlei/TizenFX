@@ -659,6 +659,58 @@ An internal error occurs.</p>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlServer.html#Tizen_Multimedia_Remoting_MediaControlServer_SetMetadata_Tizen_Multimedia_Remoting_MediaControlMetadata_">SetMetadata(MediaControlMetadata)</a></div>
   </div>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetMode360Capability_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetMode360Capability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetMode360Capability" data-uid="Tizen.Multimedia.Remoting.MediaController.GetMode360Capability">GetMode360Capability()</h4>
+  <div class="markdown level1 summary"><p>Gets the value whether the 360 mode is supported or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaControlCapabilitySupport GetMode360Capability()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a></td>
+        <td><p>A <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetMode360Capability_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Tizen_Multimedia_Remoting_MediaController_GetPlaybackCapabilities_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetPlaybackCapabilities*"></a>
   <h4 id="Tizen_Multimedia_Remoting_MediaController_GetPlaybackCapabilities" data-uid="Tizen.Multimedia.Remoting.MediaController.GetPlaybackCapabilities">GetPlaybackCapabilities()</h4>
   <div class="markdown level1 summary"><p>Gets the value whether <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlPlaybackCommand.html">MediaControlPlaybackCommand</a> is supported or not.</p>
@@ -1138,6 +1190,58 @@ An internal error occurs.</p>
   
   <h5 id="Tizen_Multimedia_Remoting_MediaController_GetShuffleModeCapability_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
+  
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>The server has already been stopped.<br>
+-or-<br>
+An internal error occurs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></td>
+        <td><p>The <a class="xref" href="Tizen.Multimedia.Remoting.MediaControllerManager.html">MediaControllerManager</a> has already been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Tizen_Multimedia_Remoting_MediaController_GetSubtitleModeCapability_" data-uid="Tizen.Multimedia.Remoting.MediaController.GetSubtitleModeCapability*"></a>
+  <h4 id="Tizen_Multimedia_Remoting_MediaController_GetSubtitleModeCapability" data-uid="Tizen.Multimedia.Remoting.MediaController.GetSubtitleModeCapability">GetSubtitleModeCapability()</h4>
+  <div class="markdown level1 summary"><p>Gets the value whether the subtitle mode is supported or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaControlCapabilitySupport GetSubtitleModeCapability()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a></td>
+        <td><p>A <a class="xref" href="Tizen.Multimedia.Remoting.MediaControlCapabilitySupport.html">MediaControlCapabilitySupport</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h5 id="Tizen_Multimedia_Remoting_MediaController_GetSubtitleModeCapability_sinceTizen" class="sinceTizen">API Version</h5>
+  <span class="level1 sinceTizen">6 </span>
   
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
