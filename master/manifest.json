@@ -26898,7 +26898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommand.html",
-          "hash": "WM+8s717QyZtm9g9mY/hIw=="
+          "hash": "OWlZRsc0C//z+EBttzxcVQ=="
         }
       },
       "is_incremental": false,
@@ -26910,7 +26910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceCommandsGroup.html",
-          "hash": "aVOiIdrJsEGbPiFoKdXC0A=="
+          "hash": "NXO7lycl7JDMvVF8ZxAmCA=="
         }
       },
       "is_incremental": false,
@@ -26934,7 +26934,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.SelectRecognizedCommandsDelegate.html",
-          "hash": "FwOgvqs1H0D/HEENPy/UaA=="
+          "hash": "ggrZyvzA0zOKGduDVUtO5g=="
         }
       },
       "is_incremental": false,
@@ -26946,7 +26946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.html",
-          "hash": "wbJRP3/XCX8M6QfwjoxGHw=="
+          "hash": "oEiiIfW15M7MKOZFvhGr6w=="
         }
       },
       "is_incremental": false,

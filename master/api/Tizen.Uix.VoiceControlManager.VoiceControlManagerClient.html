@@ -127,8 +127,8 @@
   </h3>
   <a id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AudioType_" data-uid="Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.AudioType*"></a>
   <h4 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AudioType" data-uid="Tizen.Uix.VoiceControlManager.VoiceControlManagerClient.AudioType">AudioType</h4>
-  <div class="markdown level1 summary"><p>Sets or Gets the Audio In Type
-the Values of the strings can be &quot;VC_AUDIO_ID_BLUETOOTH&quot; or &quot;VC_AUDIO_ID_MSF&quot;</p>
+  <div class="markdown level1 summary"><p>Sets or Gets the Audio In Type.
+The Values of the strings can be &quot;VC_AUDIO_ID_BLUETOOTH&quot; or &quot;VC_AUDIO_ID_MSF&quot;</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -157,12 +157,13 @@ the Values of the strings can be &quot;VC_AUDIO_ID_BLUETOOTH&quot; or &quot;VC_A
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AudioType_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AudioType_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AudioType_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -177,14 +178,17 @@ the Values of the strings can be &quot;VC_AUDIO_ID_BLUETOOTH&quot; or &quot;VC_A
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to invalid state.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -230,12 +234,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The state must be initialized or ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguage_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguage_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguage_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -248,6 +253,16 @@ An empty string is returned in case of some internal error.</p>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can be due to an invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -286,12 +301,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionMode_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionMode_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionMode_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -312,6 +328,11 @@ An empty string is returned in case of some internal error.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -352,12 +373,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The Service State must be Recording.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecordingVolume_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecordingVolume_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecordingVolume_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -370,6 +392,16 @@ An empty string is returned in case of some internal error.</p>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can be due to an invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -409,12 +441,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The state must be ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceState_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceState_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceState_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -427,6 +460,18 @@ An empty string is returned in case of some internal error.</p>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This can occur due to the following reasons:
+1) This exception can be due to an invalid state.
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -466,12 +511,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The state must be initialized or ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_State_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_State_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_State_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -484,6 +530,16 @@ An empty string is returned in case of some internal error.</p>
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can be due to an invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -512,12 +568,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 postconditions"><p>The Service State will become Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Cancel_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Cancel_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Cancel_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -535,7 +592,19 @@ An empty string is returned in case of some internal error.</p>
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
 2) This exception can be due to operation failed.
-3) This exception can be due to out of memory.</p>
+3) This exception can be due to progress to ready is not finished.
+4) This exception can be due to progress to recording is not finished.
+5) This exception can be due to progress to processing is not finished.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>This exception can be due to no answer from service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -561,12 +630,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ClearCommands_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ClearCommands_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ClearCommands_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -582,6 +652,11 @@ An empty string is returned in case of some internal error.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>This exception can be due to invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -607,12 +682,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 postconditions"><p>The State will be None.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Deinitialize_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Deinitialize_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Deinitialize_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -628,6 +704,11 @@ An empty string is returned in case of some internal error.</p>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>This exception can be due to an invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -671,12 +752,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DisableCommandType_Tizen_Uix_VoiceControlManager_CommandType__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DisableCommandType_Tizen_Uix_VoiceControlManager_CommandType__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DisableCommandType_Tizen_Uix_VoiceControlManager_CommandType__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -691,7 +773,24 @@ An empty string is returned in case of some internal error.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This exception can be due to invalid state.</p>
+        <td><p>This can occur due to the following reasons:
+1) This exception can be due to an invalid state.
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>This exception can be due to no answer from service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -741,12 +840,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DoAction_Tizen_Uix_VoiceControlManager_SendEventType_System_String__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DoAction_Tizen_Uix_VoiceControlManager_SendEventType_System_String__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_DoAction_Tizen_Uix_VoiceControlManager_SendEventType_System_String__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -763,8 +863,17 @@ An empty string is returned in case of some internal error.</p>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.
-3) This exception can be due to out of memory.</p>
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -808,12 +917,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_EnableCommandType_Tizen_Uix_VoiceControlManager_CommandType__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_EnableCommandType_Tizen_Uix_VoiceControlManager_CommandType__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_EnableCommandType_Tizen_Uix_VoiceControlManager_CommandType__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -828,7 +938,19 @@ An empty string is returned in case of some internal error.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This exception can be due to invalid state.</p>
+        <td><p>This can occur due to the following reasons:
+1) This exception can be due to an invalid state.
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>This exception can be due to no answer from service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -870,12 +992,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetCurrentCommands_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetCurrentCommands_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetCurrentCommands_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -896,8 +1019,8 @@ An empty string is returned in case of some internal error.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>This exception can be due to an invalid parameter.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -957,12 +1080,13 @@ An empty string is returned in case of some internal error.</p>
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetPrivateData_System_String__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetPrivateData_System_String__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetPrivateData_System_String__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -977,10 +1101,17 @@ An empty string is returned in case of some internal error.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.
-3) This exception can be due to out of memory.</p>
+        <td><p>This exception can be due to an invalid state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1025,12 +1156,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The state must be ready or initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetSupportedLanguages_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetSupportedLanguages_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_GetSupportedLanguages_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1045,9 +1177,7 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
@@ -1078,13 +1208,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 postconditions"><p>The State will be Initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Initialize_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Initialize_privilege" class="privilege">Privilege</h5>
   <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
 <a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Initialize_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1099,7 +1229,14 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This exception can be due to operation failed.</p>
+        <td><p>This can occur due to the following reasons:
+1) This exception can be due to out of memory.
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1159,12 +1296,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_IsSupportedCommandFormat_Tizen_Uix_VoiceControlManager_CommandFormat__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_IsSupportedCommandFormat_Tizen_Uix_VoiceControlManager_CommandFormat__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_IsSupportedCommandFormat_Tizen_Uix_VoiceControlManager_CommandFormat__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1185,6 +1323,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1213,12 +1356,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 postconditions"><p>The state must be ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Prepare_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Prepare_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Prepare_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1233,9 +1377,7 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
@@ -1293,12 +1435,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SendSpecificEngineRequest_System_String_System_String_System_String__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">6 </span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SendSpecificEngineRequest_System_String_System_String_System_String__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SendSpecificEngineRequest_System_String_System_String_System_String__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SendSpecificEngineRequest_System_String_System_String_System_String__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1316,6 +1459,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
 2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
 </td>
       </tr>
       <tr>
@@ -1364,12 +1512,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommands_Tizen_Uix_VoiceControlManager_VoiceCommandsGroup__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommands_Tizen_Uix_VoiceControlManager_VoiceCommandsGroup__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommands_Tizen_Uix_VoiceControlManager_VoiceCommandsGroup__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1390,6 +1539,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1439,12 +1593,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommandsFromFile_System_String_Tizen_Uix_VoiceControlManager_CommandType__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommandsFromFile_System_String_Tizen_Uix_VoiceControlManager_CommandType__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetCommandsFromFile_System_String_Tizen_Uix_VoiceControlManager_CommandType__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1459,14 +1614,17 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to invalid state.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
         <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1516,12 +1674,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State must be Ready.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateData_System_String_System_String__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateData_System_String_System_String__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateData_System_String_System_String__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1538,8 +1697,17 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.
-3) This exception can be due to out of memory.</p>
+2) This exception can be due to operation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1580,12 +1748,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateDataProviderDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataProvider__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">6 </span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateDataProviderDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataProvider__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateDataProviderDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataProvider__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetPrivateDataProviderDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataProvider__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1599,13 +1768,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>This exception can be due to an invalid parameter.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This exception can be due to an invalid state.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
 </td>
       </tr>
       <tr>
@@ -1651,12 +1820,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetRecognizedCommandsSelectionDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SelectRecognizedCommandsDelegate__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">6 </span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetRecognizedCommandsSelectionDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SelectRecognizedCommandsDelegate__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetRecognizedCommandsSelectionDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SelectRecognizedCommandsDelegate__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SetRecognizedCommandsSelectionDelegate_Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SelectRecognizedCommandsDelegate__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1670,13 +1840,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>This exception can be due to an invalid parameter.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This exception can be due to an invalid state.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>This exception can be due to an invalid parameter.</p>
 </td>
       </tr>
       <tr>
@@ -1728,12 +1898,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 postconditions"><p>The Service State will become Recording.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Start_System_Boolean__privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Start_System_Boolean__privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Start_System_Boolean__feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1751,7 +1922,17 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
 2) This exception can be due to operation failed.
-3) This exception can be due to out of memory.</p>
+3) This exception can be due to progress to recording is not finished.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>This exception can be due to no answer from service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1777,12 +1958,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StartFeedback_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StartFeedback_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StartFeedback_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1797,9 +1979,7 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
@@ -1833,12 +2013,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 postconditions"><p>The Service State will become Processing.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Stop_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Stop_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Stop_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1855,7 +2036,20 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
         <td><p>This can occur due to the following reasons:
 1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+2) This exception can be due to operation failed.
+3) This exception can be due to progress to ready is not finished.
+4) This exception can be due to progress to recording is not finished.
+5) This exception can be due to progress to processing is not finished.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></td>
+        <td><p>This exception can be due to no answer from service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
 </td>
       </tr>
       <tr>
@@ -1881,12 +2075,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Ready</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StopFeedback_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StopFeedback_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StopFeedback_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -1901,9 +2096,7 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>This can occur due to the following reasons:
-1) This exception can be due to an invalid state.
-2) This exception can be due to operation failed.</p>
+        <td><p>This exception can be due to an invalid state.</p>
 </td>
       </tr>
       <tr>
@@ -1937,12 +2130,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 postconditions"><p>The state must be initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Unprepare_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Unprepare_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_Unprepare_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2004,12 +2198,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AllRecognitionResultReceived_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AllRecognitionResultReceived_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_AllRecognitionResultReceived_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2022,6 +2217,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2053,18 +2253,17 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
     </tbody>
   </table>
   
-  <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ConversationRequested_sinceTizen" class="sinceTizen">API Version</h5>
-  <span class="level1 sinceTizen">6 </span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ConversationRequested_pre" class="preconditions">Precondition</h5>
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ConversationRequested_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ConversationRequested_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ConversationRequested_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2077,6 +2276,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2114,12 +2318,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The state must be initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguageChanged_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguageChanged_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_CurrentLanguageChanged_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2132,6 +2337,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2169,12 +2379,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The state must be initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ErrorOccurred_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ErrorOccurred_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ErrorOccurred_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2187,6 +2398,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2224,12 +2440,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackAudioFormatChanged_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackAudioFormatChanged_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackAudioFormatChanged_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2242,6 +2459,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2279,12 +2501,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackStreaming_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackStreaming_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_FeedbackStreaming_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2297,6 +2520,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2334,12 +2562,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PreRecognitionResultUpdated_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PreRecognitionResultUpdated_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PreRecognitionResultUpdated_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2352,6 +2581,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2389,12 +2623,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataUpdated_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataUpdated_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_PrivateDataUpdated_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2407,6 +2642,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2444,12 +2684,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionResultUpdated_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionResultUpdated_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_RecognitionResultUpdated_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2462,6 +2703,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2499,12 +2745,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The state must be initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceStateChanged_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceStateChanged_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_ServiceStateChanged_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2517,6 +2764,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2554,12 +2806,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpecificEngineResult_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpecificEngineResult_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpecificEngineResult_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2572,6 +2825,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2609,12 +2867,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpeechDetected_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpeechDetected_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_SpeechDetected_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2627,6 +2886,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2664,12 +2928,13 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <div class="markdown level1 preconditions"><p>The state must be initialized.</p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StateChanged_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
+  <span class="markdown level1 privlevel">platform</span>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StateChanged_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
+  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a><br>
+<a href="http://tizen.org/privilege/recorder">http://tizen.org/privilege/recorder</a></p>
 </div>
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_StateChanged_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
+  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control_manager">http://tizen.org/feature/speech.control_manager</a><br>
 <a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
 </div>
   
@@ -2682,6 +2947,11 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.unauthorizedaccessexception">UnauthorizedAccessException</a></td>
+        <td><p>This exception can be due to permission denied.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
         <td><p>The required feature is not supported.</p>
@@ -2718,32 +2988,7 @@ For example, &quot;ko_KR&quot; for Korean, &quot;en_US&quot; for American Englis
   <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_VcTtsStreaming_pre" class="preconditions">Precondition</h5>
   <div class="markdown level1 preconditions"><p>The State should be Initialized</p>
 </div>
-  <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_VcTtsStreaming_privlevel" class="privlevel">Privilege Level</h5>
-  <span class="markdown level1 privlevel">public</span>
-  <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_VcTtsStreaming_privilege" class="privilege">Privilege</h5>
-  <div class="markdown level1 privilege"><p><a href="http://tizen.org/privilege/voicecontrol.manager">http://tizen.org/privilege/voicecontrol.manager</a></p>
-</div>
-  <h5 id="Tizen_Uix_VoiceControlManager_VoiceControlManagerClient_VcTtsStreaming_feature" class="feature">Feature</h5>
-  <div class="markdown level1 feature"><p><a href="http://tizen.org/feature/speech.control">http://tizen.org/feature/speech.control</a><br>
-<a href="http://tizen.org/feature/microphone">http://tizen.org/feature/microphone</a></p>
-</div>
   
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></td>
-        <td><p>The required feature is not supported.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
