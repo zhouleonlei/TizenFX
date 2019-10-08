@@ -219,7 +219,7 @@ Operation failed; internal error.</p>
   <div class="markdown level1 remarks"><p>The player lets the hardware decode and render the sound if the audio offload is enabled.
     Audio offload can reduce the power consumption, but disable the ability to handle output PCM.
     Please check the below list of functions which will not work if offloading is enabled.</p>
-<p>If audio offload is enabled, the following functions will return <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a>: <br>
+<p>If audio offload is enabled, the following functions will return <a class="xref" href="Tizen.Multimedia.NotAvailableException.html">NotAvailableException</a>: <br>
 <a class="xref" href="Tizen.Multimedia.AudioEffect.html">AudioEffect</a><br>
 <a class="xref" href="Tizen.Multimedia.EqualizerBand.html">EqualizerBand</a><br>
 <a class="xref" href="Tizen.Multimedia.PlayerTrackInfo.html">PlayerTrackInfo</a><br>
