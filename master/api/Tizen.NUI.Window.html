@@ -175,7 +175,7 @@ The window has an orientation and indicator properties.<br></p>
   </h3>
   <a id="Tizen_NUI_Window__ctor_" data-uid="Tizen.NUI.Window.#ctor*"></a>
   <h4 id="Tizen_NUI_Window__ctor_System_String_Tizen_NUI_Rectangle_System_Boolean_" data-uid="Tizen.NUI.Window.#ctor(System.String,Tizen.NUI.Rectangle,System.Boolean)">Window(String, Rectangle, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a new Window.<br>
+  <div class="markdown level1 summary"><p>Creates a new Window with a specific name.<br>
 This creates an extra window in addition to the default main window<br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2264,7 +2264,7 @@ After unsetting, the window is disconnected his parent window.</p>
   <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_NUI_Window_KeyEvent" data-uid="Tizen.NUI.Window.KeyEvent">KeyEvent</h4>
-  <div class="markdown level1 summary"><p>This event is emitted when the key event is received.</p>
+  <div class="markdown level1 summary"><p>Emits the event when the key event is received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2291,7 +2291,7 @@ After unsetting, the window is disconnected his parent window.</p>
   <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_NUI_Window_Resized" data-uid="Tizen.NUI.Window.Resized">Resized</h4>
-  <div class="markdown level1 summary"><p>This event is emitted when the window resized.</p>
+  <div class="markdown level1 summary"><p>Emits the event when the window resized.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2318,10 +2318,10 @@ After unsetting, the window is disconnected his parent window.</p>
   <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_NUI_Window_TouchEvent" data-uid="Tizen.NUI.Window.TouchEvent">TouchEvent</h4>
-  <div class="markdown level1 summary"><p>This event is emitted when the screen is touched and when the touch ends.<br>
-If there are multiple touch points, then this will be emitted when the first touch occurs and
-then when the last finger is lifted.<br>
-An interrupted event will also be emitted (if it occurs).<br></p>
+  <div class="markdown level1 summary"><p>Emits the event when the screen is touched and when the touch ends.<br>
+If there are multiple touch points then it is emitted when the first touch occurs and
+when the last finger is lifted too.<br>
+Even though incoming events are interrupted, the event occurs.<br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2348,7 +2348,7 @@ An interrupted event will also be emitted (if it occurs).<br></p>
   <span class="level1 sinceTizen">3 </span>
   
   <h4 id="Tizen_NUI_Window_WheelEvent" data-uid="Tizen.NUI.Window.WheelEvent">WheelEvent</h4>
-  <div class="markdown level1 summary"><p>This event is emitted when the wheel event is received.</p>
+  <div class="markdown level1 summary"><p>Emits the event when the wheel event is received.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
