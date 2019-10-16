@@ -2494,6 +2494,7 @@ It is not able to assign the source to the player.</p>
   <h5 id="Tizen_Multimedia_Player_SetSource_Tizen_Multimedia_MediaSource__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync">PrepareAsync()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync_System_Threading_CancellationToken_">PrepareAsync(CancellationToken)</a></div>
   </div>
   <a id="Tizen_Multimedia_Player_SetSubtitle_" data-uid="Tizen.Multimedia.Player.SetSubtitle*"></a>
   <h4 id="Tizen_Multimedia_Player_SetSubtitle_System_String_" data-uid="Tizen.Multimedia.Player.SetSubtitle(System.String)">SetSubtitle(String)</h4>
@@ -2749,6 +2750,7 @@ In other cases, the player will keep playing without returning error.</p></p>
   <h5 id="Tizen_Multimedia_Player_Start_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync">PrepareAsync()</a></div>
+      <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync_System_Threading_CancellationToken_">PrepareAsync(CancellationToken)</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Stop">Stop()</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_Pause">Pause()</a></div>
       <div><a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PlaybackCompleted">PlaybackCompleted</a></div>
@@ -2809,7 +2811,8 @@ It has no effect if the player is already in the <a class="xref" href="Tizen.Mul
   </div>
   <h5 id="Tizen_Multimedia_Player_Unprepare_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The most recently used source is reset and is no longer associated with the player. Playback is no longer possible.
-If you want to use the player again, you have to set a source and call <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync">PrepareAsync()</a> again.
+If you want to use the player again, you have to set a source and call <a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync">PrepareAsync()</a> or
+<a class="xref" href="Tizen.Multimedia.Player.html#Tizen_Multimedia_Player_PrepareAsync_System_Threading_CancellationToken_">PrepareAsync(CancellationToken)</a> again.
 <p>
 The player must be in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Ready">Ready</a>, <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Playing">Playing</a>, or <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Paused">Paused</a> state.
 It has no effect if the player is already in the <a class="xref" href="Tizen.Multimedia.PlayerState.html#Tizen_Multimedia_PlayerState_Idle">Idle</a> state.
