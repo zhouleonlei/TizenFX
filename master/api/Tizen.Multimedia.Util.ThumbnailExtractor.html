@@ -171,10 +171,10 @@ The generated thumbnail will be returned in <a class="xref" href="Tizen.Multimed
   </table>
   <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The size of generated thumbnail will be 320x240.<br>
-But, if the size of <code data-dev-comment-type="paramref" class="paramref">path</code> has different ratio with 320x240 (approximately 1.33:1),<br>
-thumbnail will be generated in a way to keep the ratio of <code data-dev-comment-type="paramref" class="paramref">path</code>, which based on short axis of <code data-dev-comment-type="paramref" class="paramref">path</code>.<br>
+If the size of <code data-dev-comment-type="paramref" class="paramref">path</code> has different ratio from 320x240 (approximately 1.33:1),<br>
+thumbnail is generated in a way to keep the ratio of <code data-dev-comment-type="paramref" class="paramref">path</code>, which is based on short axis of <code data-dev-comment-type="paramref" class="paramref">path</code>.<br>
 For example, if the size of <code data-dev-comment-type="paramref" class="paramref">path</code> is 900x500 (1.8:1), the size of generated thumbnail is 432x240(1.8:1).<br>
-If you want to set the size, which is different with 320x240, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_">Extract(String, Size)</a>.<br>
+To set the size different from 320x240, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_">Extract(String, Size)</a>.<br>
 <br>
 If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
 If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
@@ -261,10 +261,10 @@ The generated thumbnail will be saved in <code data-dev-comment-type="paramref" 
   </table>
   <h5 id="Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The size of <code data-dev-comment-type="paramref" class="paramref">resultThumbnailPath</code> image will be 320x240.<br>
-But, if the size of <code data-dev-comment-type="paramref" class="paramref">path</code> has different ratio with 320x240 (approximately 1.33:1),<br>
-thumbnail will be generated in a way to keep the ratio of <code data-dev-comment-type="paramref" class="paramref">path</code>, which based on short axis of <code data-dev-comment-type="paramref" class="paramref">path</code>.<br>
+If the size of <code data-dev-comment-type="paramref" class="paramref">path</code> has different ratio with 320x240 (approximately 1.33:1),<br>
+thumbnail is generated in a way to keep the ratio of <code data-dev-comment-type="paramref" class="paramref">path</code>, which is based on short axis of <code data-dev-comment-type="paramref" class="paramref">path</code>.<br>
 For example, if the size of <code data-dev-comment-type="paramref" class="paramref">path</code> is 900x500 (1.8:1), the size of <code data-dev-comment-type="paramref" class="paramref">resultThumbnailPath</code> is 432x240(1.8:1).<br>
-If you want to set the size, which is different with 320x240, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String_">Extract(String, Size, String)</a>.<br>
+To set the size different from 320x240, please use <a class="xref" href="Tizen.Multimedia.Util.ThumbnailExtractor.html#Tizen_Multimedia_Util_ThumbnailExtractor_Extract_System_String_Tizen_Multimedia_Size_System_String_">Extract(String, Size, String)</a>.<br>
 <br>
 If you want to access internal storage, you should add privilege <a href="http://tizen.org/privilege/mediastorage">http://tizen.org/privilege/mediastorage</a>. <br>
 If you want to access external storage, you should add privilege <a href="http://tizen.org/privilege/externalstorage">http://tizen.org/privilege/externalstorage</a>.</p>
