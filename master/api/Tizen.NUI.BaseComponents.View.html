@@ -319,6 +319,9 @@ The alignment of the flex item along the cross axis, which, if set, overides the
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_BackgroundColor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.BackgroundColor.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_BackgroundColor_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -403,6 +406,9 @@ The alignment of the flex item along the cross axis, which, if set, overides the
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_CellIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.CellIndex.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_CellIndex_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -695,6 +701,9 @@ The space around the flex item.<br></p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_FlexMargin_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.FlexMargin.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_FlexMargin_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1182,7 +1191,8 @@ This will also return null if the specified left focusable view is not on a wind
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Margin_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Margin property is supported by Layout algorithms and containers.
-Please Set Layout if you want to use Margin property.</p>
+Please Set Layout if you want to use Margin property.
+The property cascade chaining set is possible. For example, this (view.Margin.X = 0.1f;) is possible.</p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Margin_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1212,6 +1222,9 @@ Please Set Layout if you want to use Margin property.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_MaximumSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.MaximumSize.Width = 1;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_MaximumSize_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1240,6 +1253,9 @@ Please Set Layout if you want to use Margin property.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_MinimumSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.MinimumSize.Width = 1;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_MinimumSize_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1423,6 +1439,9 @@ Animatable - This property can be animated using <code>Animation</code> class.
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_Padding_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.Padding.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Padding_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">5 </span>
@@ -1490,6 +1509,9 @@ A view&apos;s orientation is the rotation from its default orientation, the rota
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_PivotPoint_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.PivotPoint.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_PivotPoint_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -1521,9 +1543,10 @@ If the position inheritance is disabled, sets the world position.<br></p>
     </tbody>
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Position_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
+  <div class="markdown level1 remarks"><p><p>
 Animatable - This property can be animated using <code>Animation</code> class.
 </p>
+The property cascade chaining set is possible. For example, this (view.Position.X = 1.0f;) is possible.</p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Position_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1557,11 +1580,7 @@ If the position inheritance is disabled, sets the world position.<br></p>
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Position2D_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This NUI object (Position2D) typed property can be configured by multiple cascade setting. <br>
-For example, this code ( view.Position2D.X = 100; view.Position2D.Y = 100; ) is equivalent to this ( view.Position2D = new Position2D(100, 100); ). <br>
-Please note that this multi-cascade setting is especially possible for this NUI object (Position2D). <br>
-This means by default others are impossible so it is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
-For example, this code is working fine : view.Scale = new Vector3( 2.0f, 1.5f, 0.0f); <br>
-but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br></p>
+For example, this code ( view.Position2D.X = 100; view.Position2D.Y = 100; ) is equivalent to this ( view.Position2D = new Position2D(100, 100); ). <br></p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Position2D_sinceTizen" class="sinceTizen">API Version</h5>
@@ -1810,9 +1829,10 @@ This will also return null if the specified right focusable view is not on a win
     </tbody>
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Scale_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
+  <div class="markdown level1 remarks"><p><p>
 Animatable - This property can be animated using <code>Animation</code> class.
 </p>
+The property cascade chaining set is possible. For example, this (view.Scale.X = 0.1f;) is possible.</p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Scale_sinceTizen" class="sinceTizen">API Version</h5>
@@ -2034,16 +2054,10 @@ The views default depth is the minimum of width and height.<br></p>
     </tbody>
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Size_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-Please note that multi-cascade setting is not possible for this NUI object. <br>
-It is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
-For example, this code is working fine : view.Size = new Size( 1.0f, 1.0f, 0.0f); <br>
-but this will not work! : view.Size.Width = 2.0f; view.Size.Height = 2.0f; <br>
-It may not match the current value in some cases, i.e. when the animation is progressing or the maximum or minimu size is set. <br>
-</p>
-<p>
+  <div class="markdown level1 remarks"><p><p>
 Animatable - This property can be animated using <code>Animation</code> class.
 </p>
+The property cascade chaining set is possible. For example, this (view.Size.Width = 1.0f;) is possible.</p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Size_sinceTizen" class="sinceTizen">API Version</h5>
@@ -2078,12 +2092,7 @@ The views default depth is the minimum of width and height.<br></p>
   </table>
   <h5 id="Tizen_NUI_BaseComponents_View_Size2D_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This NUI object (Size2D) typed property can be configured by multiple cascade setting. <br>
-For example, this code ( view.Size2D.Width = 100; view.Size2D.Height = 100; ) is equivalent to this ( view.Size2D = new Size2D(100, 100); ). <br>
-Please note that this multi-cascade setting is especially possible for this NUI object (Size2D). <br>
-This means by default others are impossible so it is recommended that NUI object typed properties are configured by their constructor with parameters. <br>
-For example, this code is working fine : view.Scale = new Vector3( 2.0f, 1.5f, 0.0f); <br>
-but this will not work! : view.Scale.X = 2.0f; view.Scale.Y = 1.5f; <br>
-It may not match the current value in some cases, i.e. when the animation is progressing or the maximum or minimum size is set. <br></p>
+For example, this code ( view.Size2D.Width = 100; view.Size2D.Height = 100; ) is equivalent to this ( view.Size2D = new Size2D(100, 100); ). <br></p>
 </div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_Size2D_sinceTizen" class="sinceTizen">API Version</h5>
@@ -2148,6 +2157,9 @@ This view&apos;s size is set to the view&apos;s size multiplied by or added to t
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_BaseComponents_View_SizeModeFactor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The property cascade chaining set is possible. For example, this (view.DecorationBoundingBox.X = 0.1f;) is possible.</p>
+</div>
   
   <h5 id="Tizen_NUI_BaseComponents_View_SizeModeFactor_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
