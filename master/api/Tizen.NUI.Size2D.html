@@ -142,6 +142,14 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Size2D()</code></pre>
   </div>
+  <h5 id="Tizen_NUI_Size2D__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Size2D and Size are implicitly converted to each other, so these are compatible and can be replaced without any type casting. <br>
+For example, the followings are possible. <br>
+view.Size2D = new Size(10.0f, 10.0f, 10.0f); // be aware that here the depth value(10.0f) will be lost. <br>
+view.Size = new Size2D(10, 10); // be aware that here the depth value is 0.0f by default. <br>
+view.MinimumSize = new Size(10, 10, 0); <br>
+Size Tmp = view.MaximumSize; //here Tmp.Depth will be 0.0f. <br></p>
+</div>
   
   <h5 id="Tizen_NUI_Size2D__ctor_sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
@@ -153,7 +161,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Size2D(int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public Size2D(int width, int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,18 +175,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>The x (or width) component.</p>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width component.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>The y (or height) component.</p>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height component.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Tizen_NUI_Size2D__ctor_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Size2D and Size are implicitly converted to each other, so these are compatible and can be replaced without any type casting. <br>
+For example, the followings are possible. <br>
+view.Size2D = new Size(10.0f, 10.0f, 10.0f); // be aware that here the depth value(10.0f) will be lost. <br>
+view.Size = new Size2D(10, 10); // be aware that here the depth value is 0.0f by default. <br>
+view.MinimumSize = new Size(10, 10, 0); <br>
+Size Tmp = view.MaximumSize; //here Tmp.Depth will be 0.0f. <br></p>
+</div>
   
   <h5 id="Tizen_NUI_Size2D__ctor_System_Int32_System_Int32__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
