@@ -14046,7 +14046,55 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.ImageView.html",
-          "hash": "wsMT10lIvrQc9c++CwZZsg=="
+          "hash": "3WDuixcKl6wUoJaQVBAd0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.LoopingModeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.LoopingModeType.html",
+          "hash": "7rkS4J6W4FU7Mpory3B3+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.PlayStateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.PlayStateType.html",
+          "hash": "J+hrCQ18gMv5cqBHnaVZDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.StopBehaviorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.StopBehaviorType.html",
+          "hash": "x7QsPhtZpRBVwiXu0jDwlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Tizen.NUI.BaseComponents.LottieAnimationView.html",
+          "hash": "TvhWUMjYAOod+bmOQlUTyw=="
         }
       },
       "is_incremental": false,
@@ -14406,7 +14454,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Tizen.NUI.BaseComponents.html",
-          "hash": "+hsbX0q9rhOC21FDb54ikA=="
+          "hash": "1W2j9XtzRoXagqD3uiiYTA=="
         }
       },
       "is_incremental": false,
@@ -27657,7 +27705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "BWXmKhifj/X2jV+bdvsMqg=="
+          "hash": "WrSZ+wwZFW34d6fXnWenSQ=="
         }
       },
       "is_incremental": false,
@@ -27732,21 +27780,21 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
