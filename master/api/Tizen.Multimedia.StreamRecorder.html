@@ -460,8 +460,8 @@ The recorder state will be <a class="xref" href="Tizen.Multimedia.RecorderState.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Size</span>&gt;</td>
-        <td><p>An IEnumerable of <see cref="!:Size"></see> representing the supported resolutions.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Tizen.Multimedia.Size.html">Size</a>&gt;</td>
+        <td><p>An IEnumerable of <a class="xref" href="Tizen.Multimedia.Size.html">Size</a> representing the supported resolutions.</p>
 </td>
       </tr>
     </tbody>
@@ -592,7 +592,7 @@ It has no effect if the recorder is already in the <a class="xref" href="Tizen.M
       <div><a class="xref" href="Tizen.Multimedia.StreamRecorderVideoOptions.html">StreamRecorderVideoOptions</a></div>
   </div>
   <a id="Tizen_Multimedia_StreamRecorder_PushBuffer_" data-uid="Tizen.Multimedia.StreamRecorder.PushBuffer*"></a>
-  <h4 id="Tizen_Multimedia_StreamRecorder_PushBuffer_MediaPacket_" data-uid="Tizen.Multimedia.StreamRecorder.PushBuffer(MediaPacket)">PushBuffer(MediaPacket)</h4>
+  <h4 id="Tizen_Multimedia_StreamRecorder_PushBuffer_Tizen_Multimedia_MediaPacket_" data-uid="Tizen.Multimedia.StreamRecorder.PushBuffer(Tizen.Multimedia.MediaPacket)">PushBuffer(MediaPacket)</h4>
   <div class="markdown level1 summary"><p>Pushes a packet as recording raw data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -611,18 +611,18 @@ It has no effect if the recorder is already in the <a class="xref" href="Tizen.M
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MediaPacket</span></td>
+        <td><a class="xref" href="Tizen.Multimedia.MediaPacket.html">MediaPacket</a></td>
         <td><span class="parametername">packet</span></td>
         <td><p>An audio or video packet to record.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_MediaPacket__remarks">Remarks</h5>
+  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_Tizen_Multimedia_MediaPacket__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The recorder state must be <a class="xref" href="Tizen.Multimedia.RecorderState.html#Tizen_Multimedia_RecorderState_Recording">Recording</a> state by <a class="xref" href="Tizen.Multimedia.StreamRecorder.html#Tizen_Multimedia_StreamRecorder_Start">Start()</a>.</p>
 </div>
   
-  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_MediaPacket__sinceTizen" class="sinceTizen">API Version</h5>
+  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_Tizen_Multimedia_MediaPacket__sinceTizen" class="sinceTizen">API Version</h5>
   <span class="level1 sinceTizen">3 </span>
   
   <h5 class="exceptions">Exceptions</h5>
@@ -642,7 +642,7 @@ It has no effect if the recorder is already in the <a class="xref" href="Tizen.M
 -or-<br>
 <code data-dev-comment-type="paramref" class="paramref">packet</code> is a video packet but video recording is not enabled(See <a class="xref" href="Tizen.Multimedia.StreamRecorderOptions.html#Tizen_Multimedia_StreamRecorderOptions_Video">Video</a>).<br>
 -or-<br>
-<code data-dev-comment-type="paramref" class="paramref">packet</code> is a video packet but the <see cref="!:VideoMediaFormat.MimeType"></see> does not match the video source format.<br>
+<code data-dev-comment-type="paramref" class="paramref">packet</code> is a video packet but the <a class="xref" href="Tizen.Multimedia.VideoMediaFormat.html#Tizen_Multimedia_VideoMediaFormat_MimeType">MimeType</a> does not match the video source format.<br>
 -or-<br>
 An internal error occurs.</p>
 </td>
@@ -654,7 +654,7 @@ An internal error occurs.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_MediaPacket__seealso">See Also</h5>
+  <h5 id="Tizen_Multimedia_StreamRecorder_PushBuffer_Tizen_Multimedia_MediaPacket__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="Tizen.Multimedia.StreamRecorderOptions.html#Tizen_Multimedia_StreamRecorderOptions_Audio">Audio</a></div>
       <div><a class="xref" href="Tizen.Multimedia.StreamRecorderOptions.html#Tizen_Multimedia_StreamRecorderOptions_Video">Video</a></div>
