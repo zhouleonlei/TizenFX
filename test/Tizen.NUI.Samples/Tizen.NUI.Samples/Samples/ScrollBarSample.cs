@@ -1,6 +1,11 @@
 ﻿using Tizen.NUI;
 using Tizen.NUI.BaseComponents;
 using Tizen.NUI.Components;
+using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
 
 namespace Tizen.NUI.Samples
 {
@@ -20,14 +25,42 @@ namespace Tizen.NUI.Samples
                 Size = new Size(1920, 1080),
                 BackgroundColor = new Color(0.7f, 0.9f, 0.8f, 1.0f),
             };
+
+
             root.Layout = new LinearLayout() { LinearOrientation = LinearLayout.Orientation.Vertical };
             window.Add(root);
 
-            // TextLabel of Null style construction and Style construction
-            CreateTopView();
+            var serverIP = "109.123.102.129";
+            var serverPort = "8888";
+            IPAddress ip = IPAddress.Parse(serverIP);
+            Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            try
+            {
+                clientSocket.Connect(new IPEndPoint(ip, 8888));
+            }
+            catch
+            {
 
-            // Buttons for moving thumbnail
-            CreateBottomView();
+            }
+
+            var recStr = "";
+            try
+            {
+                //send
+                byte[] sendBytes = Encoding.UTF8.GetBytes("qwe111111~~TizenFx~~11111111");
+                clientSocket.Send(sendBytes);
+
+                //receive
+                byte[] resBytes = new byte[1024];
+                int bytes = clientSocket.Receive(resBytes, resBytes.Length, 0);
+                recStr += Encoding.UTF8.GetString(resBytes, 0, bytes);
+            }
+            catch
+            {
+                clientSocket.Shutdown(SocketShutdown.Both);
+                clientSocket.Close();
+                recStr = "failed";
+            }
         }
         private void CreateTopView()
         {
